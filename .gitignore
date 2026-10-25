@@ -1,0 +1,4 @@
+node_modules/
+robocze/
+*.zip
+__pycache__/

@@ -1,0 +1,233 @@
+{
+ "config": {
+  "tytul": "Próbka typów zadań",
+  "przedmiot": "Różne",
+  "klasa": 7,
+  "klucz": "probka-typow",
+  "tagi": {
+   "m": "Matematyka",
+   "h": "Historia",
+   "a": "Angielski"
+  },
+  "liczbaPytan": 9,
+  "tryb": "luzno",
+  "progi": [
+   [
+    100,
+    6
+   ],
+   [
+    90,
+    5
+   ],
+   [
+    75,
+    4
+   ],
+   [
+    50,
+    3
+   ],
+   [
+    30,
+    2
+   ],
+   [
+    0,
+    1
+   ]
+  ],
+  "mowa": "en-GB"
+ },
+ "fiszki": [
+  {
+   "tag": "m",
+   "p": "Pole trójkąta – wzór",
+   "o": "P = ½ · a · h",
+   "w": "a – podstawa, h – wysokość opuszczona na tę podstawę."
+  },
+  {
+   "tag": "h",
+   "p": "Chrzest Polski – rok",
+   "o": "966",
+   "w": "Mieszko I przyjął chrzest w 966 roku."
+  },
+  {
+   "tag": "a",
+   "p": "dog",
+   "o": "pies",
+   "dwa": true,
+   "lang": "p",
+   "w": "My dog loves walks."
+  },
+  {
+   "tag": "m",
+   "p": "Oblicz pole trójkąta z rysunku.",
+   "o": "P = ½ · 8 · 5 = 20 cm²",
+   "img": "trojkat",
+   "alt": "Trójkąt o podstawie 8 cm i wysokości 5 cm",
+   "w": "Wysokość opada prostopadle na podstawę."
+  }
+ ],
+ "pytania": [
+  {
+   "t": "num",
+   "q": "Oblicz: 3/4 + 1/2",
+   "a": 1.25,
+   "ex": "3/4 + 2/4 = 5/4 = 1 1/4 = 1,25. Każdy z tych zapisów jest poprawny.",
+   "c": "ulamki"
+  },
+  {
+   "t": "num",
+   "q": "Pole trójkąta o podstawie 6 cm i wysokości 4 cm wynosi:",
+   "a": 12,
+   "jedn": "cm²",
+   "ex": "P = ½ · 6 · 4 = 12 cm².",
+   "c": "pola"
+  },
+  {
+   "t": "in",
+   "q": "Podaj wzór sumaryczny wody.",
+   "a": [
+    "H₂O"
+   ],
+   "tryb": "scisle",
+   "cs": true,
+   "zle": [
+    "h2o",
+    "HO2"
+   ],
+   "ex": "Dwa atomy wodoru i jeden atom tlenu: H₂O.",
+   "c": "chemia"
+  },
+  {
+   "t": "order",
+   "q": "Ułóż wydarzenia od najwcześniejszego:",
+   "o": [
+    "Chrzest Polski",
+    "Bitwa pod Grunwaldem",
+    "Konstytucja 3 maja",
+    "Odzyskanie niepodległości"
+   ],
+   "ex": "966 → 1410 → 1791 → 1918.",
+   "c": "chronologia"
+  },
+  {
+   "t": "gap",
+   "q": "Na stole leży [[ksi(ą/o)żka]].",
+   "o": [
+    "ą",
+    "o"
+   ],
+   "a": 0,
+   "f": "książka",
+   "ex": "Piszemy: książka.",
+   "c": "ortografia",
+   "typ": "Wybierz brakującą literę"
+  },
+  {
+   "t": "multi",
+   "q": "Odmień czasownik „haben” (Präsens):",
+   "pola": [
+    {
+     "l": "ich",
+     "a": [
+      "habe"
+     ]
+    },
+    {
+     "l": "du",
+     "a": [
+      "hast"
+     ]
+    },
+    {
+     "l": "er/sie/es",
+     "a": [
+      "hat"
+     ]
+    }
+   ],
+   "tryb": "scisle",
+   "ex": "ich habe, du hast, er hat.",
+   "c": "niemiecki"
+  },
+  {
+   "t": "multi",
+   "q": "Zamień jednostki:",
+   "pola": [
+    {
+     "l": "2,5 km = ? m",
+     "num": true,
+     "a": 2500
+    },
+    {
+     "l": "300 cm = ? m",
+     "num": true,
+     "a": 3
+    }
+   ],
+   "ex": "1 km = 1000 m, 1 m = 100 cm.",
+   "c": "jednostki"
+  },
+  {
+   "t": "in",
+   "q": "Przetłumacz na angielski: „pies”",
+   "a": [
+    "dog",
+    "a dog"
+   ],
+   "tryb": "scisle",
+   "ex": "pies – dog.",
+   "c": "angielski"
+  },
+  {
+   "t": "match",
+   "q": "Dopasuj jednostkę do wielkości.",
+   "p": [
+    [
+     "siła",
+     "niuton (N)"
+    ],
+    [
+     "masa",
+     "kilogram (kg)"
+    ],
+    [
+     "czas",
+     "sekunda (s)"
+    ]
+   ],
+   "ex": "Siła – N, masa – kg, czas – s.",
+   "c": "fizyka"
+  },
+  {
+   "t": "num",
+   "q": "Oblicz pole trójkąta z rysunku.",
+   "img": "trojkat",
+   "alt": "Trójkąt o podstawie 8 cm i wysokości 5 cm",
+   "a": 20,
+   "jedn": "cm²",
+   "ex": "P = ½ · 8 · 5 = 20 cm².",
+   "c": "pola"
+  },
+  {
+   "t": "spot",
+   "q": "Wskaż czerwone koło.",
+   "img": "plansza",
+   "alt": "Plansza z kołem i prostokątem",
+   "cel": {
+    "x": 72.5,
+    "y": 36,
+    "r": 8
+   },
+   "f": "czerwone koło w prawej górnej części",
+   "ex": "Czerwone koło jest po prawej, u góry.",
+   "c": "obrazy"
+  }
+ ],
+ "obrazy": {
+  "trojkat": "obrazy/trojkat.svg",
+  "plansza": "obrazy/plansza.jpg"
+ }
+}
