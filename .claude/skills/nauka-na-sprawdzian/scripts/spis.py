@@ -8,7 +8,8 @@ from pathlib import Path
 kat = Path(sys.argv[1]); tytul = sys.argv[2] if len(sys.argv) > 2 else 'Nauka na sprawdziany'
 apps = {}
 for f in sorted(kat.rglob('*.html')):
-    if f.name == 'index.html' or any(p.startswith('.') for p in f.relative_to(kat).parts): continue
+    czesci = f.relative_to(kat).parts
+    if f.name == 'index.html' or any(p.startswith('.') or p in ('robocze', 'node_modules') for p in czesci): continue
     t = f.read_text(encoding='utf-8', errors='ignore')
     m = re.search(r'<title>(.*?)</title>', t)
     p = re.search(r'"przedmiot":"(.*?)"', t); k = re.search(r'"klasa":"?(\d+)', t)
