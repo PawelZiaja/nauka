@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nauka na sprawdzian</title>
 <script>/* licznik odwiedzin GoatCounter (panel: ziaja.goatcounter.com) – tylko na stronie, nie w pliku ani podglądzie */
-if(location.hostname==='pawelziaja.github.io'){var gc=document.createElement('script');gc.async=true;gc.src='https://gc.zgo.at/count.js';gc.dataset.goatcounter='https://ziaja.goatcounter.com/count';document.head.appendChild(gc);}</script>
+if(location.hostname==='pawelziaja.github.io'){var gc=document.createElement('script');gc.async=true;gc.src='https://gc.zgo.at/count.js';gc.dataset.goatcounter='https://ziaja.goatcounter.com/count';gc.onload=function(){if(window.gcEvent)gcEvent('aplikacja otwarta');};document.head.appendChild(gc);}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -186,6 +186,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   </div>
   <div class="spacer"></div>
   <button class="btn ghost" id="resetBtn" style="min-height:48px;font-size:.95rem">Wyczyść cały postęp</button>
+  <p class="muted" id="devCode" hidden style="text-align:center;font-size:.8rem;margin:10px 0 0"></p>
 </section>
 <section id="cards" hidden>
   <div class="topbar"><button class="back" data-home>← Menu</button><span class="muted" id="cProg"></span></div>
@@ -339,9 +340,9 @@ function openCards(){const used=TAGS.filter(t=>CARDS.some(c=>c.tag===t));if(used
   [[null,'Wszystkie']].concat(used.map(t=>[t,CFG.tagi[t]])).forEach(([t,l])=>{const b=document.createElement('button');b.className='mode';b.style.minHeight='64px';
     b.innerHTML='<span><b>'+esc(l)+'</b><span class="d">do nauki: '+left(t)+' z '+CARDS.filter(c=>!t||c.tag===t).length+'</span></span>';b.onclick=()=>startCards(t);L.appendChild(b);});
   show('cardsPick');}
-function startCards(t){ftag=t;fq=shuffle(CARDS.filter(c=>(!t||c.tag===t)&&!S.known[c._id]));if(!fq.length){show('cardsDone');return;}show('cards');renderCard();}
+function startCards(t){ftag=t;fq=shuffle(CARDS.filter(c=>(!t||c.tag===t)&&!S.known[c._id]));if(!fq.length){show('cardsDone');return;}gcEvent('fiszki rozpoczęte');show('cards');renderCard();}
 function renderCard(){
-  if(!fq.length){show('cardsDone');return;}
+  if(!fq.length){gcEvent('fiszki: zestaw opanowany');show('cardsDone');return;}
   const c=fq[0],card=$('#card');card.classList.remove('flip','go-l','go-r');card.style.transform='';
   const ti=Math.max(0,TAGS.indexOf(c.tag));const label=CFG.tagi[c.tag]||'';
   ['#cTagF','#cTagB'].forEach(s=>{$(s).textContent=label;$(s).className='tag t'+(ti%4);$(s).hidden=!label;});
@@ -354,6 +355,7 @@ function renderCard(){
   const k=CARDS.filter(x=>S.known[x._id]).length;$('#cProg').textContent='Umiesz '+k+' z '+CARDS.length;$('#cBar').style.width=(k/CARDS.length*100)+'%';
 }
 function cardAnswer(know){if(!fq.length)return;const c=fq.shift(),card=$('#card');
+  gcEvent('fiszka: '+(know?'umiem':'jeszcze raz')+(card.classList.contains('flip')?', po sprawdzeniu':', bez sprawdzenia'));
   S.known[c._id]=know;if(!know)fq.splice(Math.min(3,fq.length),0,c);save();
   card.style.transform='';card.classList.add(know?'go-r':'go-l');setTimeout(renderCard,220);}
 $('#cYes').onclick=()=>cardAnswer(true);$('#cNo').onclick=()=>cardAnswer(false);
@@ -372,7 +374,11 @@ let R=null;
 function draw(n){const by={};Q.forEach(q=>{(by[q.c||'_']=by[q.c||'_']||[]).push(q._id);});
   const cats=shuffle(Object.keys(by)).map(c=>shuffle(by[c]));const out=[];let r=0;n=Math.min(n,Q.length);
   while(out.length<n){const c=cats[r%cats.length];if(c.length)out.push(c.pop());r++;}return shuffle(out);}
-function gcEvent(name){try{if(window.goatcounter&&goatcounter.count)goatcounter.count({path:name+' – '+CFG.klucz,title:name+' – '+CFG.tytul,event:true});}catch(e){}}
+/* Statystyki (GoatCounter, tylko na stronie): anonimowy kod urządzenia – losowy, wspólny dla wszystkich aplikacji w tej przeglądarce */
+const NA_STRONIE=location.hostname==='pawelziaja.github.io';
+function devId(){let d='';try{d=localStorage.getItem('nauka-urzadzenie')||'';if(!d){d=Math.random().toString(36).slice(2,6);localStorage.setItem('nauka-urzadzenie',d);}}catch(e){}return d||'brak';}
+function gcEvent(name){try{if(NA_STRONIE&&window.goatcounter&&goatcounter.count)goatcounter.count({path:name+' – '+CFG.klucz+' – urz. '+devId(),title:name+' – '+CFG.tytul,event:true});}catch(e){}}
+if(NA_STRONIE){$('#devCode').textContent='Kod urządzenia: '+devId();$('#devCode').hidden=false;}
 function startQuiz(mode){const pool=mode==='test'?draw(CFG.liczbaPytan):shuffle(S.errors.slice());
   if(!pool.length){renderHome();show('home');return;}R={mode,ids:pool,res:[]};S.cur=R;save();if(mode==='test')gcEvent('test rozpoczęty');resume();}
 function resume(){show('quiz');renderQ();}
