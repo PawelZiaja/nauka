@@ -47,7 +47,9 @@ Zasada nadrzędna: tolerancja nie może zaliczyć odpowiedzi, która jest **inn�
 
 ## Geografia
 - Stolice, rzeki, góry: `in` `luzno` z wariantami nazw; położenie: `mc`; dane liczbowe: `num` z `tol`.
-- Mapy: zdjęcie mapy z atlasu/podręcznika (od rodzica) + `spot` („wskaż na mapie…”) i `mc` z obrazkiem. Bez mapy pytaj o położenie słowami.
+- Przyporządkowanie (rzeka → dorzecze, jezioro → typ, przyczyna → rodzaj zjawiska): `match` i `mc`; kolejność (rzeki wg długości, miasta wzdłuż rzeki): `order`.
+- Mapy: na stronę publiczną – mapa konturowa/reliefowa bez napisów z Wikimedia Commons (`obrazy.md`, „Mapy z Wikimedia Commons”) + `spot` („wskaż na mapie…”) i wersja z literami do `mc`/`in` („która rzeka to A?”). Zdjęcie mapy z podręcznika – tylko w aplikacji prywatnej. Bez mapy pytaj o położenie słowami.
+- Schematy (dorzecze, zlewisko, przekroje jezior, wał, polder, wezbranie, cofka) – własne SVG z numerami.
 - Dane statystyczne (ludność, wysokości) sprawdzaj i zaokrąglaj jak w podręczniku.
 
 ## Fizyka

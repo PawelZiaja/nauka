@@ -9,13 +9,30 @@ Z materiału szkolnego powstaje aplikacja mobilna: **fiszki**, **test** (losuje 
 
 Silnik aplikacji jest gotowy i przetestowany (`assets/szablon.html`). Twoja praca to **treść** – plik JSON z fiszkami i pytaniami – oraz jej bezwzględna poprawność. Nie przepisuj silnika od zera; jeśli brakuje typu zadania, dopisz go do szablonu i do testu.
 
+## 0. Tryb „jedno zdanie” (domyślny)
+
+Rodzic zwykle pisze tylko jedno zdanie: tytuł sprawdzianu, ścieżkę do folderu ze zdjęciami albo jedno i drugie (np. „Sprawdzian z geografii, materiały w C:\…\Photos-1-001(6)”). **Wszystko inne ustalasz sam** według tego skilla – nie dopytuj o klasę, wielkość puli, typy zadań, obrazki ani o zgodę na publikację.
+
+Przebieg:
+1. Obejrzyj **wszystkie** materiały (zdjęcia zmniejsz najpierw do ok. 1800 px w katalogu roboczym, żeby dało się je przeczytać).
+2. Napisz rodzicowi **krótką analizę** (kilka punktów): tematy i zagadnienia, pojęcia, nazwy własne, dane liczbowe, mapy i schematy z książki, typy zadań – oraz **plan w 2–3 zdaniach** (klasa, liczba fiszek i pytań, kategorie, obrazki). **Nie czekaj na odpowiedź** – od razu buduj.
+3. Treść, obrazki, budowa, test, publikacja – kroki 3–5 i `references/claude-code.md`.
+4. Raport końcowy (krok 7).
+
+Pytanie zadaj tylko wtedy, gdy bez odpowiedzi nie da się zacząć: nie wiadomo, jaki to przedmiot lub dział, materiały się nie otwierają (np. link do albumu Google Photos – poproś o pobrany folder), albo temat jednakowo pasuje do klas obu dzieci (patrz niżej). Wtedy jedno krótkie pytanie, nie lista.
+
 ## 1. Ustal, zanim zaczniesz
 
-- **Dla kogo:** która klasa. Jeśli w pamięci jest informacja o dzieciach i ich klasach, użyj jej; jeśli nie wiadomo, o które dziecko chodzi – zapytaj krótko.
-- **Przedmiot i dział.**
-- **Materiał:** najlepiej zdjęcie zagadnień od nauczyciela, notatek albo stron podręcznika – to one wyznaczają zakres i akcenty. Bez materiału oprzyj się na podstawie programowej dla danej klasy i powiedz o tym.
-- **Obrazki** – czy materiał ich wymaga (mapa, obraz, przedmiot historyczny, schemat, wykres). Jeśli tak, a rodzic nie wrzucił zdjęć – poproś o nie (szczegóły: `references/obrazy.md`).
-- **Progi ocen** – jeśli rodzic je podał, wpisz do `config.progi`; inaczej użyj domyślnych i wspomnij o tym raz.
+- **Dla kogo – klasa.** Ustal sama/sam, w tej kolejności:
+  1. jawnie podana klasa w zdaniu rodzica;
+  2. nagłówek, numer rozdziału lub tytuł podręcznika na zdjęciach (np. „Planeta Nowa 7”, „klasa 5”);
+  3. podstawa programowa: w której klasie jest ten dział (np. fizyka i chemia – tylko 7–8; „wody powierzchniowe Polski” – geografia 7; „ułamki zwykłe – wprowadzenie” – matematyka 4–5);
+  4. klasy dzieci z `CLAUDE.md` / pamięci – wybierz tę, która pasuje do działu.
+  Gdy dział realnie pasuje do obu klas dzieci (np. „rzeczownik” – kl. 5 i 7 w innym zakresie), a materiałów brak – zapytaj krótko.
+- **Przedmiot i dział** – z tytułu lub materiałów.
+- **Materiał:** zdjęcia zagadnień od nauczyciela, notatek albo stron podręcznika wyznaczają zakres i akcenty. Ścieżkę do folderu czytaj w całości. Bez materiału oprzyj się na podstawie programowej dla danej klasy i powiedz o tym w analizie.
+- **Obrazki** – zdecyduj sam, gdzie pomagają (mapa, schemat, wykres, obraz). Mapy i dzieła pobierz z Wikimedia Commons na wolnej licencji, schematy narysuj jako SVG (`references/obrazy.md`). O zdjęcia proś tylko wtedy, gdy potrzebny jest konkretny obraz, którego nie ma na wolnej licencji.
+- **Progi ocen** – jeśli rodzic je podał, wpisz do `config.progi`; inaczej użyj domyślnych i nie wspominaj o nich.
 
 Nie zasypuj pytaniami – jeśli zakres jest jasny, buduj.
 
@@ -30,17 +47,19 @@ Nie zasypuj pytaniami – jeśli zakres jest jasny, buduj.
 
 ## 3. Zaplanuj zakres
 
-Rozpisz zagadnienia z materiału na **8–16 kategorii** (pole `c`). Test losuje z różnych kategorii, więc każda powinna mieć sensowną liczbę pytań. Domyślne rozmiary:
-- fiszki: 30–60; **języki obce: 80–200** (słówka i zwroty, `dwa: true` – losowy kierunek, `lang` + `config.mowa` – wymowa),
-- pula pytań: ok. 300–500 dla pełnego działu, min. ok. 150 dla wąskiego tematu (rodzic woli duże pule – lepiej więcej niż mniej),
-- test: 15 zadań (klasa 7–8: można 20).
+Rozpisz zagadnienia z materiału na **8–16 kategorii** (pole `c`). Test losuje z różnych kategorii, więc każda musi mieć **min. ok. 15 pytań**. Wielkość dobierz sam do ilości materiału:
+- fiszki: **60–100** dla pełnego działu (2–3 lekcje), 40–60 dla wąskiego tematu; **języki obce: 80–200** (słówka i zwroty, `dwa: true` – losowy kierunek, `lang` + `config.mowa` – wymowa). Przy więcej niż ~40 fiszkach podziel je tagami na 3–4 zestawy,
+- pula pytań: **300–500** dla pełnego działu, ok. 200 dla wąskiego tematu (rodzic woli duże pule – lepiej więcej niż mniej, ale nie dobijaj liczby pytaniami-wydmuszkami),
+- test (`liczbaPytan`): klasa 4–6 – **15**, klasa 7–8 – **20**.
 
 ## 4. Napisz treść generatorem
 
 Przy dużej puli pisz skrypt w Pythonie (`/home/claude/gen.py`): **tabele danych** (np. odmiana wyrazów, daty, wzory, słówka) → z nich różne typy pytań, plus pytania pisane ręcznie (pułapki, zdania z życia ucznia). Tabele ręcznie sprawdzone raz dają setki poprawnych pytań; generowanie losowymi regułami (np. odmiana „z automatu”) – nie, bo produkuje błędy. Użyj stałego ziarna losowania, żeby wynik był powtarzalny.
 
 Zasady treści:
-- **Poprawność ponad wszystko.** Sprawdź każdą formę, datę, wzór, wynik. Przy faktach, których nie jesteś pewien (daty, dane liczbowe, nazwy), szukaj w sieci przed wpisaniem. Lepiej usunąć pytanie niż zostawić wątpliwe.
+- **Poprawność ponad wszystko.** Sprawdź każdą formę, datę, wzór, wynik. Każdą nazwę i liczbę porównaj z materiałem; gdy jej tam nie ma – sprawdź w wiarygodnym źródle (np. Wikipedia, GUS, IMGW) przed wpisaniem. Gdy książka zaokrągla (np. 800 km zamiast 808,2 km), trzymaj się książki. Lepiej usunąć pytanie niż zostawić wątpliwe.
+- **Zakres i poziom z książki** – zadania podobne do tych z podręcznika, ale nie przepisane dosłownie. Treści spoza materiału dodawaj oszczędnie i wymień je w raporcie.
+- **Typy zadań dobieraj do treści** (szczegóły w `references/przedmioty.md`): nazwy wpisywane – `in` w trybie `luzno` z wariantami (z polskimi znakami i bez); przyporządkowanie (rzeka → dorzecze, przyczyna → skutek) – `match` i `mc`; kolejność (chronologia, długości) – `order`; dane liczbowe – `num` z tolerancją; położenie na mapie lub schemacie – `spot` i `mc` z obrazkiem.
 - **Jedna poprawna odpowiedź.** W zadaniach wyboru żadna z błędnych opcji nie może być też poprawna (uwaga na formy o tym samym brzmieniu, wyjątki, synonimy).
 - **Każde pytanie ma wyjaśnienie** (`ex`) – krótkie: dlaczego tak, jaka zasada.
 - Przykłady z życia ucznia: szkoła, sport, gry, zwierzęta, wycieczki. Bez infantylizmu.
@@ -66,7 +85,15 @@ Zawsze oddawaj **oba**: opublikuj plik narzędziem Artifact (tytuł = temat, jed
 
 ## 7. Odpowiedź dla rodzica
 
-Krótko: link i plik, co zawiera (liczba fiszek i pytań, główne działy, obrazki), jak sprawdzane są wpisy. Dodaj jedno zdanie przypomnienia:
+Zawsze w tym samym układzie, krótko:
+- **adres** aplikacji (w Claude Code – adres na stronie; na claude.ai – link i plik),
+- **liczba fiszek, pytań i obrazków**, długość testu,
+- **lista kategorii** (z liczbą pytań),
+- jak sprawdzane są wpisy (jedno zdanie),
+- **źródła i licencje** pobranych obrazków (autor, tytuł pliku, licencja),
+- co dodano **spoza materiału** i które dane sprawdzono w innych źródłach.
+
+Na claude.ai dodaj jedno zdanie przypomnienia:
 > Link z Claude otworzy tylko ktoś zalogowany do Claude (na koncie firmowym – tylko osoby z organizacji). Dla dzieci najlepiej wrzucić plik na własną stronę (patrz `references/strona.md`) albo otworzyć plik w przeglądarce – nie w podglądzie komunikatora, bo tam nic nie da się kliknąć.
 
 Jeśli rodzic ma już stronę z aplikacjami, przypomnij, żeby po wrzuceniu nowego pliku odświeżył spis (`scripts/spis.py`) – albo wygeneruj mu nowy `index.html`.

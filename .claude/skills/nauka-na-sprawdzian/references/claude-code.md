@@ -13,14 +13,17 @@ Sprawdź po kolei i doinstaluj tylko to, czego brakuje (Windows: `winget install
 7. Dodaj do repozytorium `.gitignore` z `node_modules/`, `*.zip`, `robocze/`.
 
 ## Każda nowa aplikacja
+Rodzic podaje zwykle jedno zdanie (tytuł i/lub ścieżkę do folderu ze zdjęciami) – resztę ustalasz sam według `SKILL.md` (krok 0).
 1. `git pull` w repozytorium.
-2. Treść i obrazki przygotuj w `robocze/` (ignorowany przez git) – zdjęcia od rodzica mogą leżeć gdziekolwiek na dysku, poproś o ścieżkę.
-3. Buduj prosto do docelowego miejsca: `python <skill>/scripts/buduj.py robocze/dane.json klasa-X/przedmiot/temat.html`
-4. Test: `NODE_PATH=~/.nauka-narzedzia/node_modules node <skill>/scripts/test_aplikacji.js klasa-X/przedmiot/temat.html` (PowerShell: `$env:NODE_PATH="$HOME\.nauka-narzedzia\node_modules"`).
-5. Spis: `python <skill>/scripts/spis.py . "Nauka na sprawdziany"`.
-6. Zachowaj plik treści w repozytorium obok aplikacji jako `temat.json` (ułatwia późniejsze poprawki) – ale tylko jeśli nie zawiera ścieżek do prywatnych plików; obrazki są już w HTML.
-7. `git add` → `git commit -m "Klasa X, przedmiot: temat"` → `git push`. Jeśli rodzic poprosił o wrzucenie na stronę – wypchnij od razu; jeśli tylko o zrobienie aplikacji – pokaż listę zmian i zapytaj.
-8. Podaj adres: `https://<login małymi literami>.github.io/nauka/klasa-X/przedmiot/temat.html` (strona odświeża się 1–2 minuty).
+2. Zdjęcia od rodzica mogą leżeć gdziekolwiek na dysku (np. `Downloads\Photos-…`). Zmniejszone kopie do oglądania i pobrane pliki z sieci trzymaj w katalogu tymczasowym (scratchpad), każde pobranie w osobnym folderze. Generator (`gen.py`), `dane.json` i gotowe obrazki – w `robocze/<przedmiot>/` (ignorowany przez git). **Żadnych stron podglądu ani plików HTML w `robocze/` ani nigdzie w repozytorium** poza samymi aplikacjami.
+3. W generatorze wklejaj obrazki od razu jako `data:` URI (SVG – base64; zdjęcia i mapy – zmniejszone do 1100 px JPEG), żeby `temat.json` w repozytorium był samodzielny i dał się przebudować bez folderu `robocze`.
+4. Buduj prosto do docelowego miejsca: `python <skill>/scripts/buduj.py robocze/<przedmiot>/dane.json klasa-X/przedmiot/temat.html`. Na Windows uruchamiaj Pythona z `-X utf8` (inaczej komunikaty z polskimi znakami i emoji wywracają skrypt).
+5. Test: `NODE_PATH=~/.nauka-narzedzia/node_modules node <skill>/scripts/test_aplikacji.js klasa-X/przedmiot/temat.html` (PowerShell: `$env:NODE_PATH="$HOME\.nauka-narzedzia\node_modules"`, ścieżki bezwzględne). Potem przejrzyj losowe 20–30 pytań.
+6. Spis: `python <skill>/scripts/spis.py . "Nauka na sprawdziany"` (pomija `robocze/`, `node_modules/` i ukryte foldery). Sprawdź w `index.html`, że nie ma pozycji „Klasa ?”.
+7. Zachowaj plik treści w repozytorium obok aplikacji jako `temat.json` – sprawdź, że nie zawiera ścieżek do prywatnych plików (`grep -c "Downloads\|pawel"` → 0).
+8. `git add` (tylko aplikacja, jej JSON i `index.html`) → `git commit -m "Klasa X, przedmiot: temat"` → `git push` – **bez pytania** (tak ustalił rodzic w `CLAUDE.md`).
+9. Poczekaj na build GitHub Pages (`gh api repos/<login>/nauka/pages/builds/latest --jq .status` → `built`) i sprawdź, że adres odpowiada (`curl -s -o /dev/null -w "%{http_code}"` → 200).
+10. Raport według `SKILL.md`, krok 7, z adresem `https://<login małymi literami>.github.io/nauka/klasa-X/przedmiot/temat.html`.
 
 ## Poprawki
 Edytuj `temat.json` (nie HTML), przebuduj, przetestuj, commit i push. Nie zmieniaj `config.klucz` – postęp dzieci zostaje.

@@ -20,6 +20,7 @@ Do tworzenia i poprawiania aplikacji ZAWSZE używaj skilla `.claude/skills/nauka
 6. Podaj mi adres strony i aplikacji; po 1–2 minutach sprawdź `gh api repos/PawelZiaja/nauka/pages` (status „built”).
 
 ## Zasady
-- Gdy proszę o aplikację „na stronę” albo o poprawkę – zbuduj, przetestuj, odśwież spis, commit i push bez dodatkowego pytania. Na koniec podaj adres.
+- Prośba o aplikację to zwykle jedno zdanie: tytuł sprawdzianu i/lub ścieżka do folderu ze zdjęciami. Klasę, wielkość puli, typy zadań, obrazki i mapy ustalasz sam według skilla (krok 0 w SKILL.md): krótka analiza i plan, potem od razu budowa – bez czekania na moją odpowiedź.
+- Każda nowa aplikacja i każda poprawka idzie na stronę: zbuduj, przetestuj, odśwież spis, commit i push bez dodatkowego pytania. Na koniec podaj adres, liczby, kategorie i źródła obrazków.
 - Repozytorium jest publiczne: bez imion i nazwisk dzieci, nazwy szkoły i skanów podręczników.
 - Nie usuwaj plików i nie rób `push --force` bez mojej wyraźnej prośby.
