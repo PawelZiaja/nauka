@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Pierwsze spotkanie z fizyką</title>
 <script>/* licznik odwiedzin GoatCounter (panel: ziaja.goatcounter.com) – tylko na stronie, nie w pliku ani podglądzie */
-if(location.hostname==='pawelziaja.github.io'){var gc=document.createElement('script');gc.async=true;gc.src='https://gc.zgo.at/count.js';gc.dataset.goatcounter='https://ziaja.goatcounter.com/count';gc.onload=function(){if(window.gcEvent)gcEvent('aplikacja otwarta');};document.head.appendChild(gc);}</script>
+if(location.hostname==='pawelziaja.github.io'){var gc=document.createElement('script');gc.async=true;gc.src='https://gc.zgo.at/count.js';gc.dataset.goatcounter='https://ziaja.goatcounter.com/count';gc.onload=function(){window.gcGotowy=true;if(window.gcEvent)gcEvent('aplikacja otwarta');};document.head.appendChild(gc);}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -378,7 +378,7 @@ function draw(n){const by={};Q.forEach(q=>{(by[q.c||'_']=by[q.c||'_']||[]).push(
 const NA_STRONIE=location.hostname==='pawelziaja.github.io';
 function devId(){let d='';try{d=localStorage.getItem('nauka-urzadzenie')||'';if(!d){d=Math.random().toString(36).slice(2,6);localStorage.setItem('nauka-urzadzenie',d);}}catch(e){}return d||'brak';}
 function gcEvent(name){try{if(NA_STRONIE&&window.goatcounter&&goatcounter.count)goatcounter.count({path:name+' – '+CFG.klucz+' – urz. '+devId(),title:name+' – '+CFG.tytul,event:true});}catch(e){}}
-if(NA_STRONIE){$('#devCode').textContent='Kod urządzenia: '+devId();$('#devCode').hidden=false;}
+if(NA_STRONIE){$('#devCode').textContent='Kod urządzenia: '+devId();$('#devCode').hidden=false;if(window.gcGotowy)gcEvent('aplikacja otwarta');}
 function startQuiz(mode){const pool=mode==='test'?draw(CFG.liczbaPytan):shuffle(S.errors.slice());
   if(!pool.length){renderHome();show('home');return;}R={mode,ids:pool,res:[]};S.cur=R;save();if(mode==='test')gcEvent('test rozpoczęty');resume();}
 function resume(){show('quiz');renderQ();}
