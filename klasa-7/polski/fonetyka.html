@@ -372,8 +372,9 @@ let R=null;
 function draw(n){const by={};Q.forEach(q=>{(by[q.c||'_']=by[q.c||'_']||[]).push(q._id);});
   const cats=shuffle(Object.keys(by)).map(c=>shuffle(by[c]));const out=[];let r=0;n=Math.min(n,Q.length);
   while(out.length<n){const c=cats[r%cats.length];if(c.length)out.push(c.pop());r++;}return shuffle(out);}
+function gcEvent(name){try{if(window.goatcounter&&goatcounter.count)goatcounter.count({path:name+' – '+CFG.klucz,title:name+' – '+CFG.tytul,event:true});}catch(e){}}
 function startQuiz(mode){const pool=mode==='test'?draw(CFG.liczbaPytan):shuffle(S.errors.slice());
-  if(!pool.length){renderHome();show('home');return;}R={mode,ids:pool,res:[]};S.cur=R;save();resume();}
+  if(!pool.length){renderHome();show('home');return;}R={mode,ids:pool,res:[]};S.cur=R;save();if(mode==='test')gcEvent('test rozpoczęty');resume();}
 function resume(){show('quiz');renderQ();}
 function btnOpts(box,labels,correct,onPick){labels.forEach((l,j)=>{const b=document.createElement('button');b.className='opt';b.textContent=l;
   b.onclick=()=>{box.querySelectorAll('.opt').forEach((x,i)=>{x.disabled=true;if(i===correct)x.classList.add('ok');});if(j!==correct)b.classList.add('ko');onPick(j===correct);};box.appendChild(b);});}
@@ -459,7 +460,7 @@ function answer(ok,q,extra,note){
 function finishQuiz(){
   const n=R.ids.length,good=R.res.filter(Boolean).length,pct=Math.round(good/n*100),wrong=R.ids.filter((id,k)=>!R.res[k]);
   $('#rTitle').textContent=R.mode==='test'?'Twój wynik':'Powtórka zakończona';$('#rPct').textContent=pct+'%';
-  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};$('#rGrade').textContent=g;
+  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};$('#rGrade').textContent=g;gcEvent('test ukończony, ocena '+g);
     $('#rInfo').textContent=good+' z '+n+' dobrze · przewidywana ocena: '+GNAME[g];
     $('#rMsg').textContent=g>=5?'Jesteś gotowy na sprawdzian! Świetna robota.':g>=4?'Dobrze Ci idzie. Popraw błędy, a będzie jeszcze lepiej.':g>=3?'Masz już podstawy. Powtórz błędy i wróć do fiszek.':'Nie poddawaj się! Zacznij od fiszek, potem popraw błędy – każde podejście pomaga.';}
   else{$('#rGrade').textContent='🔁';$('#rInfo').textContent=good+' z '+n+' poprawionych';
