@@ -166,6 +166,22 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
 .target{position:absolute;border:3px dashed #16a34a;border-radius:50%;background:rgba(22,163,74,.15);pointer-events:none}
 .say{align-self:flex-start;min-height:44px;min-width:44px;border-radius:12px;border:2px solid var(--line);background:var(--paper);font-size:1.2rem}
 .picklist{display:flex;flex-direction:column;gap:10px}
+/* grywalizacja: punkty, poziomy, seria dni, konfetti */
+.game{background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
+.gtop{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.streak{font-size:1.25rem;font-weight:700;color:var(--c3)}
+.streak small{font-size:.8rem;font-weight:500;color:var(--muted)}
+.lvl{text-align:right;font-size:.95rem;color:var(--muted)}.lvl b{color:var(--ink);font-size:1.05rem}
+.game .bar i{background:var(--c3)}
+.goal{font-size:.85rem;color:var(--muted)}.goal.ok{color:var(--good);font-weight:600}
+.xp{display:inline-block;margin-left:6px;padding:0 8px;border-radius:99px;background:var(--marker);color:var(--marker-text);font-size:.85rem;font-weight:700;vertical-align:middle}
+#toasts{position:fixed;left:0;right:0;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:55;display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;padding:0 16px}
+.toast{max-width:520px;background:var(--ink);color:var(--paper);border-radius:14px;padding:10px 16px;font-weight:600;box-shadow:0 4px 14px rgba(0,0,0,.25);animation:tIn .25s ease-out}
+.toast.mini{padding:4px 12px;font-size:.9rem;background:var(--marker);color:var(--marker-text)}
+@keyframes tIn{from{transform:translateY(-12px);opacity:0}}
+.konfetti{position:fixed;inset:0;pointer-events:none;z-index:60;overflow:hidden}
+.konfetti i{position:absolute;top:-16px;width:9px;height:15px;border-radius:2px;animation:spad 2.8s cubic-bezier(.25,.6,.4,1) forwards}
+@keyframes spad{to{transform:translate(var(--dx),110vh) rotate(var(--r))}}
 </style>
 </head>
 <body>
@@ -174,6 +190,11 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <div class="topbar"><span class="muted" id="hSub"></span><button class="icon-btn" id="themeBtn" aria-label="Zmień motyw">🌓</button></div>
   <h1 id="hTitle"></h1>
   <p class="muted">Ucz się po kawałku. Twój postęp zapisuje się sam – możesz wrócić w każdej chwili.</p>
+  <div class="game">
+    <div class="gtop"><span class="streak" id="gStreak">🔥 0 <small>dni z rzędu</small></span><span class="lvl"><b id="gLvl">Nowicjusz</b><br><span id="gXp">0 XP</span></span></div>
+    <div class="bar"><i id="gBar"></i></div>
+    <p class="goal" id="gGoal"></p>
+  </div>
   <div class="stats">
     <div class="stat"><b id="stCards">0/0</b><span>fiszek umiesz</span></div>
     <div class="stat"><b id="stErr">0</b><span>błędów do poprawy</span></div>
@@ -232,6 +253,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <div class="bottom"><button class="btn" id="rReview">Popraw błędy</button><button class="btn ghost" id="rNew">Nowy test</button></div>
 </section>
 </main>
+<div id="toasts" aria-live="polite"></div>
 <div id="zoom" hidden><button aria-label="Zamknij">✕</button><img alt=""></div>
 <script>
 /* ===== DANE (wstawiane przez scripts/buduj.py) ===== */
@@ -310,6 +332,38 @@ function applyTheme(){const r=document.documentElement;if(S.theme==='auto')r.rem
 $('#themeBtn').onclick=()=>{const dark=S.theme==='dark'||(S.theme==='auto'&&matchMedia('(prefers-color-scheme: dark)').matches);S.theme=dark?'light':'dark';applyTheme();save();};
 applyTheme();
 
+/* ===== GRA: punkty (XP), poziomy, seria dni – wspólne dla wszystkich aplikacji w tej przeglądarce =====
+   Tabela poziomów i liczenie serii są też w scripts/spis.py – zmieniaj w obu miejscach. */
+const GKEY='nauka-gra',CEL=10;
+const POZIOMY=[[0,'Nowicjusz'],[100,'Uczeń'],[250,'Odkrywca'],[500,'Badacz'],[900,'Znawca'],[1500,'Ekspert'],[2300,'Mistrz'],[3500,'Profesor'],[5000,'Geniusz']];
+function dzien(o){const d=new Date();d.setDate(d.getDate()-(o||0));return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+function gLoad(){let g=null;try{g=JSON.parse(localStorage.getItem(GKEY)||'null');}catch(e){}return Object.assign({xp:0,dni:{},dzis:'',ile:0},g||{});}
+function gSave(g){const k=Object.keys(g.dni).sort();k.slice(0,Math.max(0,k.length-120)).forEach(d=>delete g.dni[d]);try{localStorage.setItem(GKEY,JSON.stringify(g));}catch(e){}}
+function poziom(xp){let i=0;while(i+1<POZIOMY.length&&xp>=POZIOMY[i+1][0])i++;return i;}
+function seria(g){let o=g.dni[dzien()]?0:1,n=0;while(g.dni[dzien(o+n)])n++;return n;}
+const dniTxt=n=>n===1?'dzień':'dni';
+/* xp – punkty; akcja – odpowiedź liczona do celu dnia; zaliczDzien – ukończony test zalicza cel od razu */
+function gra(xp,akcja,zaliczDzien){const g=gLoad(),p0=poziom(g.xp),t=dzien(),msg=[];
+  if(g.dzis!==t){g.dzis=t;g.ile=0;}
+  g.xp+=xp;if(akcja)g.ile++;
+  if(!g.dni[t]&&(g.ile>=CEL||zaliczDzien)){g.dni[t]=1;g.xp+=20;const s=seria(g);msg.push('🔥 Cel dnia zaliczony! '+s+' '+dniTxt(s)+' z rzędu (+20 XP)');}
+  const p1=poziom(g.xp);if(p1>p0){msg.push('⭐ Nowy poziom: '+POZIOMY[p1][1]+'!');konfetti();}
+  gSave(g);msg.forEach(m=>toast(m));renderGra();}
+function renderGra(){const g=gLoad(),s=seria(g),i=poziom(g.xp),nx=POZIOMY[i+1],t=dzien(),ile=g.dzis===t?g.ile:0;
+  $('#gStreak').innerHTML='🔥 '+s+' <small>'+dniTxt(s)+' z rzędu</small>';
+  $('#gLvl').textContent=POZIOMY[i][1];
+  $('#gXp').textContent=g.xp+' XP'+(nx?' / '+nx[0]:'');
+  $('#gBar').style.width=(nx?(g.xp-POZIOMY[i][0])/(nx[0]-POZIOMY[i][0])*100:100)+'%';
+  const ok=!!g.dni[t];$('#gGoal').className='goal'+(ok?' ok':'');
+  $('#gGoal').textContent=ok?'✔ Cel dnia zaliczony – wróć jutro, żeby seria rosła!':'Cel dnia: '+Math.min(ile,CEL)+'/'+CEL+' odpowiedzi albo jeden cały test'+(s?' – nie przerwij serii!':'');}
+function toast(m,mini){const b=$('#toasts'),d=document.createElement('div');if(mini)b.querySelectorAll('.mini').forEach(x=>x.remove());d.className='toast'+(mini?' mini':'');d.textContent=m;b.appendChild(d);
+  while(b.children.length>3)b.firstChild.remove();setTimeout(()=>d.remove(),mini?1100:3200);}
+function konfetti(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  const box=document.createElement('div');box.className='konfetti';const kol=['#f43f5e','#f59e0b','#22c55e','#3b82f6','#a855f7','#facc15'];
+  for(let i=0;i<90;i++){const p=document.createElement('i');p.style.left=Math.random()*100+'%';p.style.background=rnd(kol);
+    p.style.animationDelay=Math.random()*.6+'s';p.style.setProperty('--dx',(Math.random()*160-80)+'px');p.style.setProperty('--r',(Math.random()*900-450)+'deg');box.appendChild(p);}
+  document.body.appendChild(box);setTimeout(()=>box.remove(),3600);}
+
 /* ===== START ===== */
 document.title=CFG.tytul;
 $('#hTitle').textContent=CFG.tytul;
@@ -325,6 +379,7 @@ function renderHome(){
   $('#revDesc').textContent=S.errors.length?('Do poprawy: '+S.errors.length+'. Popraw je, a znikną z listy.'):'Brak błędów do poprawy. Zrób najpierw test.';
   const cur=S.cur&&S.cur.mode==='test';
   $('#testLabel').textContent=cur?'Dokończ test':'Test';
+  renderGra();
   $('#testDesc').textContent=cur?('Jesteś na pytaniu '+(Math.min(S.cur.res.length,S.cur.ids.length-1)+1)+' z '+S.cur.ids.length+'.'):(Math.min(CFG.liczbaPytan,Q.length)+' losowych zadań z puli '+Q.length+' i przewidywana ocena.');
 }
 $('#goCards').onclick=openCards;
@@ -342,7 +397,7 @@ function openCards(){const used=TAGS.filter(t=>CARDS.some(c=>c.tag===t));if(used
   show('cardsPick');}
 function startCards(t){ftag=t;fq=shuffle(CARDS.filter(c=>(!t||c.tag===t)&&!S.known[c._id]));if(!fq.length){show('cardsDone');return;}gcEvent('fiszki rozpoczęte');show('cards');renderCard();}
 function renderCard(){
-  if(!fq.length){gcEvent('fiszki: zestaw opanowany');show('cardsDone');return;}
+  if(!fq.length){gcEvent('fiszki: zestaw opanowany');show('cardsDone');konfetti();gra(10);toast('🎉 Zestaw opanowany! +10 XP');return;}
   const c=fq[0],card=$('#card');card.classList.remove('flip','go-l','go-r');card.style.transform='';
   const ti=Math.max(0,TAGS.indexOf(c.tag));const label=CFG.tagi[c.tag]||'';
   ['#cTagF','#cTagB'].forEach(s=>{$(s).textContent=label;$(s).className='tag t'+(ti%4);$(s).hidden=!label;});
@@ -357,6 +412,7 @@ function renderCard(){
 function cardAnswer(know){if(!fq.length)return;const c=fq.shift(),card=$('#card');
   gcEvent('fiszka: '+(know?'umiem':'jeszcze raz')+(card.classList.contains('flip')?', po sprawdzeniu':', bez sprawdzenia'));
   S.known[c._id]=know;if(!know)fq.splice(Math.min(3,fq.length),0,c);save();
+  gra(know?2:1,true);toast('+'+(know?2:1)+' XP',true);
   card.style.transform='';card.classList.add(know?'go-r':'go-l');setTimeout(renderCard,220);}
 $('#cYes').onclick=()=>cardAnswer(true);$('#cNo').onclick=()=>cardAnswer(false);
 (function(){const card=$('#card');let x0=null,y0=0,dx=0;
@@ -454,9 +510,9 @@ function qTitle(q){return q.t==='gap'?q.q.replace(/\[\[(.*?)\]\]/,'$1'):q.q;}
 function answer(ok,q,extra,note){
   R.res.push(ok?1:0);
   if(ok)S.errors=S.errors.filter(x=>x!==q._id);else if(!S.errors.includes(q._id))S.errors.push(q._id);
-  S.cur=R;save();
+  S.cur=R;save();const xp=ok?5:1;gra(xp,true);
   const fb=$('#qFb');
-  fb.innerHTML='<div class="fb '+(ok?'ok':'ko')+'" role="status"><div class="t">'+(ok?'✔ '+(note?'Dobrze!':rnd(OK_MSG)):'✘ '+esc(extra||rnd(KO_MSG)))+'</div>'+(note?'<div class="c">'+esc(note)+'</div>':'')+
+  fb.innerHTML='<div class="fb '+(ok?'ok':'ko')+'" role="status"><div class="t">'+(ok?'✔ '+(note?'Dobrze!':rnd(OK_MSG)):'✘ '+esc(extra||rnd(KO_MSG)))+'<span class="xp">+'+xp+' XP</span></div>'+(note?'<div class="c">'+esc(note)+'</div>':'')+
     (ok?'':'<div class="c">Poprawnie: '+esc(ansText(q))+'</div>')+'<div>'+txt(q.ex||'')+'</div></div>';
   $('#qScore').textContent='Dobrze: '+R.res.filter(Boolean).length;
   const act=$('#qActions');act.innerHTML='';const b=document.createElement('button');b.className='btn';
@@ -466,10 +522,12 @@ function answer(ok,q,extra,note){
 function finishQuiz(){
   const n=R.ids.length,good=R.res.filter(Boolean).length,pct=Math.round(good/n*100),wrong=R.ids.filter((id,k)=>!R.res[k]);
   $('#rTitle').textContent=R.mode==='test'?'Twój wynik':'Powtórka zakończona';$('#rPct').textContent=pct+'%';
-  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};$('#rGrade').textContent=g;gcEvent('test ukończony, ocena '+g);
+  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};S.best=Math.max(S.best||0,g);$('#rGrade').textContent=g;gcEvent('test ukończony, ocena '+g);
+    const bonus={6:50,5:30,4:15}[g]||0;gra(bonus,false,true);if(bonus)toast('🏆 Bonus za ocenę '+g+': +'+bonus+' XP');if(g>=5)konfetti();
     $('#rInfo').textContent=good+' z '+n+' dobrze · przewidywana ocena: '+GNAME[g];
     $('#rMsg').textContent=g>=5?'Jesteś gotowy na sprawdzian! Świetna robota.':g>=4?'Dobrze Ci idzie. Popraw błędy, a będzie jeszcze lepiej.':g>=3?'Masz już podstawy. Powtórz błędy i wróć do fiszek.':'Nie poddawaj się! Zacznij od fiszek, potem popraw błędy – każde podejście pomaga.';}
   else{$('#rGrade').textContent='🔁';$('#rInfo').textContent=good+' z '+n+' poprawionych';
+    if(!S.errors.length&&good){gra(20);toast('✨ Wszystkie błędy poprawione! +20 XP');konfetti();}
     $('#rMsg').textContent=S.errors.length?('Zostało do poprawy: '+S.errors.length+'. Spróbuj jeszcze raz!'):'Wszystkie błędy poprawione. Brawo!';}
   $('#rErrs').innerHTML=wrong.length?('<h2 style="font-size:1.1rem">Do zapamiętania</h2>'+wrong.map(id=>{const q=Q[QI[id]];
     return '<div class="err"><b>'+esc(qTitle(q))+'</b><span class="c">'+esc(ansText(q))+'</span><div class="muted">'+txt(q.ex||'')+'</div></div>';}).join('')):'';

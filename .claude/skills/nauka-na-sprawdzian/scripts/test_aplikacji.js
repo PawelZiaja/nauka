@@ -32,6 +32,11 @@ setTimeout(()=>{
     if($('#result').hidden)errs.push('Test nie doszedł do ekranu wyniku');
     if(!$('#rReview').disabled){$('#rReview').click();if($('#quiz').hidden)errs.push('Powtórka błędów się nie otwiera');}
     $('[data-home]').click();if(A.CARDS.length){$('#goCards').click();if(!$('#cardsPick').hidden)$('#pickList button').click();if($('#cards').hidden&&$('#cardsDone').hidden)errs.push('Fiszki się nie otwierają');$('#cYes').click();}
+    // 4. Grywalizacja: po teście i fiszkach są punkty, cel dnia zaliczony (test ukończony), pasek na ekranie głównym
+    const G=JSON.parse(w.localStorage.getItem('nauka-gra')||'null');
+    if(!G||!(G.xp>0))errs.push('Grywalizacja: brak punktów XP po teście');
+    else if(!Object.keys(G.dni||{}).length)errs.push('Grywalizacja: ukończony test nie zaliczył celu dnia');
+    w.eval('renderHome()');if(!/XP/.test($('#gXp').textContent))errs.push('Grywalizacja: brak paska poziomu na ekranie głównym');
   }catch(e){errs.push('Przebieg testu: '+e.message);}
   if(errs.length){console.log('❌ Problemy ('+errs.length+'):');errs.slice(0,60).forEach(e=>console.log(' - '+e));process.exit(2);}
   console.log(`✅ Test OK: ${A.Q.length} pytań i ${A.CARDS.length} fiszek – wszystko się wyświetla, poprawne odpowiedzi są przyjmowane.`);
