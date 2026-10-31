@@ -13,6 +13,7 @@ Nie wyszukuj i nie wklejaj obrazków przedstawiających przemoc, treści drastyc
 
 ## Prawa autorskie
 - Aplikacja tylko dla rodziny (plik, link Claude): zdjęcia z podręcznika są w porządku jako prywatna pomoc do nauki.
+- Okładki podręczników (`okladki/`) tylko jako małe miniatury do rozpoznania książki – nie wstawiaj ich do zadań.
 - **Publiczna strona** (GitHub Pages itp.): skany podręczników to cudza własność – używaj własnych rysunków SVG, własnych zdjęć i dzieł w domenie publicznej (np. obrazy malarzy zmarłych ponad 70 lat temu). Jeśli w aplikacji są skany z podręcznika, a rodzic planuje stronę publiczną – powiedz mu o tym jednym zdaniem.
 
 ## Przygotowanie

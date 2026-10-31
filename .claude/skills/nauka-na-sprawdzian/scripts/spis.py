@@ -21,7 +21,7 @@ for f in sorted(kat.rglob('*.html')):
         d = json.loads(f.with_suffix('.json').read_text(encoding='utf-8'))
         kl = d.get('config', {}).get('klucz'); nf = len(d.get('fiszki', []))
     else: kl = kl.group(1) if kl else ''
-    apps.setdefault(klasa, {}).setdefault(przedm, []).append((m.group(1) if m else f.stem, f.relative_to(kat).as_posix(), kl, nf))
+    apps.setdefault(klasa, {}).setdefault((przedm, czesci[1] if len(czesci) > 2 else ''), []).append((m.group(1) if m else f.stem, f.relative_to(kat).as_posix(), kl, nf))
 # Postęp z localStorage: wspólny „nauka-gra” (XP, seria) i „nauka-<klucz>” każdej aplikacji (fiszki, oceny, błędy).
 # Tabela poziomów i liczenie serii – tak samo jak w assets/szablon.html.
 GRA_JS = r"""
@@ -48,9 +48,19 @@ document.querySelectorAll('a.it[data-k]').forEach(a=>{const S=wczytaj('nauka-'+a
   a.querySelector('.pg').innerHTML=(n?'<span class="bar"><i style="width:'+(k/n*100)+'%"></i></span><span>fiszki '+k+'/'+n+'</span>':'<span style="flex:1">'+(best?'najlepsza ocena: '+best:'')+'</span>')+
     '<span class="st" title="gwiazdki: wszystkie fiszki · test na 5 lub 6 · zero błędów do poprawy">'+'★'.repeat(gw)+'☆'.repeat(3-gw)+'</span>';});
 """
+# Podręczniki dzieci (podreczniki.json + okladki/): okładka przy każdym przedmiocie, także bez aplikacji
+pod = json.loads((kat / 'podreczniki.json').read_text(encoding='utf-8')) if (kat / 'podreczniki.json').exists() else {}
+for klucz, P in pod.items():
+    kl, folder = klucz.split('/'); nr = kl.replace('klasa-', '')
+    if not any(f == folder for _, f in apps.get(nr, {})): apps.setdefault(nr, {})[(P['przedmiot'], folder)] = []
+def ksiazka(nr, folder):
+    P = pod.get(f'klasa-{nr}/{folder}')
+    if not P: return ''
+    return (f'<div class="bk"><img src="{html.escape(P["okladka"])}" alt="Okładka: {html.escape(P["tytul"])}" loading="lazy">'
+            f'<span>Podręcznik: <b>{html.escape(P["tytul"])}</b> · {html.escape(P["wydawnictwo"])}<br><small>{html.escape(P["opis"])}</small></span></div>')
 sekcje = []
 for klasa in sorted(apps, key=lambda x: int(x) if x.isdigit() else 99):
-    przedm = ''.join(f'<h3>{html.escape(p)}</h3>' + ''.join(f'<a class="it" href="{html.escape(h)}" data-k="{html.escape(kl)}" data-n="{nf}"><span>{html.escape(t)}</span><span class="pg"></span></a>' for t, h, kl, nf in sorted(lst)) for p, lst in sorted(apps[klasa].items()))
+    przedm = ''.join(f'<h3>{html.escape(p)}</h3>' + ksiazka(klasa, fo) + ('' if lst else '<p class="pusto">Aplikacje pojawią się przed sprawdzianem.</p>') + ''.join(f'<a class="it" href="{html.escape(h)}" data-k="{html.escape(kl)}" data-n="{nf}"><span>{html.escape(t)}</span><span class="pg"></span></a>' for t, h, kl, nf in sorted(lst)) for (p, fo), lst in sorted(apps[klasa].items()))
     sekcje.append(f'<details open><summary>Klasa {klasa}</summary>{przedm}</details>')
 n = sum(len(l) for d in apps.values() for l in d.values())
 page = f'''<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
@@ -66,6 +76,8 @@ h3{{margin:14px 0 6px;font-size:1rem;color:var(--m);font-weight:600}}
 .it{{display:block;padding:16px;margin:8px 0;border:2px solid var(--l);border-radius:14px;background:var(--s);color:var(--i);text-decoration:none;font-weight:600}}
 .pg{{display:flex;align-items:center;gap:10px;margin-top:8px;font-size:.85rem;font-weight:500;color:var(--m)}}.pg:empty{{display:none}}
 .bar{{flex:1;height:8px;border-radius:99px;background:var(--l);overflow:hidden}}.bar i{{display:block;height:100%;background:var(--i);border-radius:99px}}
+.bk{{display:flex;align-items:center;gap:10px;margin:2px 0 6px;font-size:.85rem;color:var(--m)}}.bk img{{width:40px;height:auto;border-radius:3px;box-shadow:0 1px 3px rgba(0,0,0,.3)}}
+.bk b{{color:var(--t)}}.bk small{{font-size:.78rem}}.pusto{{margin:4px 0 8px;font-size:.85rem;color:var(--m)}}
 .st{{color:#d97706;font-size:1rem;letter-spacing:1px}}
 .game{{border:2px solid var(--l);border-radius:16px;background:var(--s);padding:12px 14px;margin:0 0 8px}}
 .gtop{{display:flex;justify-content:space-between;align-items:center;gap:10px}}.sr{{font-size:1.25rem;font-weight:700;color:#d97706}}

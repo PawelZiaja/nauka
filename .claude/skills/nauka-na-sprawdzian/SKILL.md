@@ -32,6 +32,7 @@ Pytanie zadaj tylko wtedy, gdy bez odpowiedzi nie da się zacząć: nie wiadomo,
   4. klasy dzieci z `CLAUDE.md` / pamięci – wybierz tę, która pasuje do działu.
   Gdy dział realnie pasuje do obu klas dzieci (np. „rzeczownik” – kl. 5 i 7 w innym zakresie), a materiałów brak – zapytaj krótko.
 - **Przedmiot i dział** – z tytułu lub materiałów.
+- **Podręcznik dziecka** – w `podreczniki.json` w katalogu strony (klucz `klasa-X/przedmiot`: tytuł, wydawnictwo, edycja, okładka w `okladki/`). Treść, kolejność działów i nazewnictwo dopasuj do tej książki – szkoły mają różne podręczniki i edycje, więc nie zastępuj jej inną. `buduj.py` sam wstawia okładkę i opis do aplikacji, a `spis.py` – do spisu. Nowy podręcznik = nowa pozycja w JSON i okładka (miniatura ok. 200 px, bez stron ze środka).
 - **Materiał:** zdjęcia zagadnień od nauczyciela, notatek albo stron podręcznika wyznaczają zakres i akcenty. Ścieżkę do folderu czytaj w całości. Bez materiału oprzyj się na podstawie programowej dla danej klasy i powiedz o tym w analizie.
 - **Obrazki** – zdecyduj sam, gdzie pomagają (mapa, schemat, wykres, obraz). Mapy i dzieła pobierz z Wikimedia Commons na wolnej licencji, schematy narysuj jako SVG (`references/obrazy.md`). O zdjęcia proś tylko wtedy, gdy potrzebny jest konkretny obraz, którego nie ma na wolnej licencji.
 - **Progi ocen** – jeśli rodzic je podał, wpisz do `config.progi`; inaczej użyj domyślnych i nie wspominaj o nich.

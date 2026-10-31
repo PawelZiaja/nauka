@@ -124,6 +124,18 @@ def main():
     for x in err: print('❌', x)
     if err: print(f'\nBudowanie przerwane: {len(err)} błędów.'); sys.exit(2)
 
+    # Podręcznik, z którego jest materiał: podreczniki.json w katalogu strony, klucz „klasa-X/przedmiot” (z miejsca zapisu)
+    for kat in [out.resolve().parent, *out.resolve().parents]:
+        pf = kat / 'podreczniki.json'
+        if pf.exists():
+            pod = json.loads(pf.read_text(encoding='utf-8')).get(f'{out.resolve().parent.parent.name}/{out.resolve().parent.name}')
+            if pod and 'podrecznik' not in cfg:
+                cfg['podrecznik'] = {k: pod[k] for k in ('tytul', 'wydawnictwo', 'opis')}
+                cfg['podrecznik']['okladka'] = do_data_uri(pod['okladka'], kat, maks=200)
+                d['config'] = cfg
+                print(f'Podręcznik: {pod["tytul"]} ({pod["wydawnictwo"]})')
+            break
+
     tpl = (Path(__file__).resolve().parent.parent / 'assets' / 'szablon.html').read_text(encoding='utf-8')
     js = json.dumps(d, ensure_ascii=False, separators=(',',':')).replace('</', '<\\/')
     html = tpl.replace('/*__DANE__*/null', js).replace('<title>Nauka na sprawdzian</title>', f'<title>{cfg["tytul"]}</title>')

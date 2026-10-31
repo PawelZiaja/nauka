@@ -1,0 +1,58 @@
+{
+ "klasa-5/historia": {
+  "przedmiot": "Historia",
+  "tytul": "Wczoraj i dziś 5",
+  "wydawnictwo": "Nowa Era",
+  "opis": "podręcznik do historii dla klasy 5, nowa edycja 2024–2026",
+  "okladka": "okladki/klasa-5-historia.jpg"
+ },
+ "klasa-5/matematyka": {
+  "przedmiot": "Matematyka",
+  "tytul": "Matematyka z plusem 5",
+  "wydawnictwo": "GWO",
+  "opis": "podręcznik do matematyki dla klasy 5",
+  "okladka": "okladki/klasa-5-matematyka.jpg"
+ },
+ "klasa-5/polski": {
+  "przedmiot": "Język polski",
+  "tytul": "Między nami 5",
+  "wydawnictwo": "GWO",
+  "opis": "podręcznik do języka polskiego dla klasy 5",
+  "okladka": "okladki/klasa-5-polski.jpg"
+ },
+ "klasa-7/historia": {
+  "przedmiot": "Historia",
+  "tytul": "Wczoraj i dziś 7",
+  "wydawnictwo": "Nowa Era",
+  "opis": "podręcznik do historii dla klasy 7, nowa edycja 2026–2028",
+  "okladka": "okladki/klasa-7-historia.jpg"
+ },
+ "klasa-7/fizyka": {
+  "przedmiot": "Fizyka",
+  "tytul": "Spotkania z fizyką 7",
+  "wydawnictwo": "Nowa Era",
+  "opis": "podręcznik do fizyki dla klasy 7, nowa edycja 2026–2028",
+  "okladka": "okladki/klasa-7-fizyka.jpg"
+ },
+ "klasa-7/matematyka": {
+  "przedmiot": "Matematyka",
+  "tytul": "Matematyka z plusem 7",
+  "wydawnictwo": "GWO",
+  "opis": "podręcznik do matematyki dla klasy 7",
+  "okladka": "okladki/klasa-7-matematyka.jpg"
+ },
+ "klasa-7/geografia": {
+  "przedmiot": "Geografia",
+  "tytul": "Planeta Nowa 7",
+  "wydawnictwo": "Nowa Era",
+  "opis": "podręcznik do geografii dla klasy 7, edycja 2026–2028, zaktualizowane treści",
+  "okladka": "okladki/klasa-7-geografia.jpg"
+ },
+ "klasa-7/polski": {
+  "przedmiot": "Język polski",
+  "tytul": "Między nami 7",
+  "wydawnictwo": "GWO",
+  "opis": "podręcznik do języka polskiego dla klasy 7",
+  "okladka": "okladki/klasa-7-polski.jpg"
+ }
+}

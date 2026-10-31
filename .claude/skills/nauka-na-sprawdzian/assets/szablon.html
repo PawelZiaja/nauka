@@ -191,6 +191,9 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
 .target{position:absolute;border:3px dashed #16a34a;border-radius:50%;background:rgba(22,163,74,.15);pointer-events:none}
 .say{align-self:flex-start;min-height:44px;min-width:44px;border-radius:12px;border:2px solid var(--line);background:var(--paper);font-size:1.2rem}
 .picklist{display:flex;flex-direction:column;gap:10px}
+.book{display:flex;align-items:center;gap:12px;padding:10px 12px;border:2px solid var(--line);border-radius:14px;background:var(--surface)}
+.book img{width:52px;height:auto;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.25);flex:none}
+.book b{display:block;color:var(--ink)}.book span{display:block;font-size:.82rem;color:var(--muted)}
 /* grywalizacja: punkty, poziomy, seria dni, konfetti */
 .game{background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow)}
 .gtop{display:flex;align-items:center;justify-content:space-between;gap:10px}
@@ -231,6 +234,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
     <button class="mode" id="goTest"><span class="ic">✏️</span><span><b id="testLabel">Test</b><span class="d" id="testDesc"></span></span></button>
     <button class="mode" id="goReview"><span class="ic">🔁</span><span><b>Powtórka błędów</b><span class="d" id="revDesc"></span></span></button>
   </div>
+  <div class="book" id="book" hidden><img alt="Okładka podręcznika"><div><span>Podręcznik</span><b></b><span></span></div></div>
   <div class="spacer"></div>
   <button class="btn ghost" id="resetBtn" style="min-height:48px;font-size:.95rem">Wyczyść cały postęp</button>
   <p class="muted" id="devCode" hidden style="text-align:center;font-size:.8rem;margin:10px 0 0"></p>
@@ -438,6 +442,8 @@ function konfetti(){if(window.matchMedia&&matchMedia('(prefers-reduced-motion: r
 document.title=CFG.tytul;
 $('#hTitle').textContent=CFG.tytul;
 $('#hSub').textContent=[CFG.przedmiot,CFG.klasa?'klasa '+CFG.klasa:''].filter(Boolean).join(', ')+(HW?' · 🎃':'');
+if(CFG.podrecznik){const P=CFG.podrecznik,B=$('#book');B.hidden=false;B.querySelector('img').src=P.okladka||'';B.querySelector('img').hidden=!P.okladka;
+  B.querySelector('b').textContent=P.tytul+(P.wydawnictwo?' · '+P.wydawnictwo:'');B.querySelectorAll('span')[1].textContent=P.opis||'';}
 function gradeOf(p){for(const [min,g] of CFG.progi)if(p>=min)return g;return 1;}
 function renderHome(){
   const k=CARDS.filter(c=>S.known[c._id]).length;
