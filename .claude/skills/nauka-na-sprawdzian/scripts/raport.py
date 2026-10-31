@@ -30,10 +30,11 @@ def kiedy(h):
     return '', None
 
 def main():
-    a = [x for x in sys.argv[1:] if not x.startswith('--')]
-    nazwy = {}
-    if '--nazwy' in sys.argv:
-        nazwy = dict(x.split('=', 1) for x in sys.argv[sys.argv.index('--nazwy') + 1].split(',') if '=' in x)
+    argv, nazwy = sys.argv[1:], {}
+    if '--nazwy' in argv:
+        i = argv.index('--nazwy'); lista = argv[i + 1] if i + 1 < len(argv) else ''
+        nazwy = dict(x.split('=', 1) for x in lista.split(',') if '=' in x); argv = argv[:i] + argv[i + 2:]
+    a = [x for x in argv if not x.startswith('--')]
     dzis = datetime.date.today()
     od = a[0] if a else dzis.isoformat()
     do = a[1] if len(a) > 1 else (datetime.date.fromisoformat(od) + datetime.timedelta(days=1)).isoformat()
