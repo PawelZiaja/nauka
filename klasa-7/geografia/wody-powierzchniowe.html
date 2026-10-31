@@ -518,10 +518,23 @@ function draw(n){const by={};Q.forEach(q=>{(by[q.c||'_']=by[q.c||'_']||[]).push(
 /* Statystyki (GoatCounter, tylko na stronie): anonimowy kod urządzenia – losowy, wspólny dla wszystkich aplikacji w tej przeglądarce */
 const NA_STRONIE=location.hostname==='pawelziaja.github.io';
 function devId(){let d='';try{d=localStorage.getItem('nauka-urzadzenie')||'';if(!d){d=Math.random().toString(36).slice(2,6);localStorage.setItem('nauka-urzadzenie',d);}}catch(e){}return d||'brak';}
-function gcEvent(name){try{if(NA_STRONIE&&window.goatcounter&&goatcounter.count)goatcounter.count({path:name+' – '+CFG.klucz+' – urz. '+devId(),title:name+' – '+CFG.tytul,event:true});}catch(e){}}
+/* GoatCounter liczy każdą ścieżkę raz na urządzenie, więc zdarzenia z testów mają numer podejścia (test #3), a błędy – identyfikator pytania.
+   dod – dopisek na końcu ścieżki, tyt – własny tytuł (np. pytanie i odpowiedź dziecka). window.__gcTest – podgląd zdarzeń w testach. */
+function gcEvent(name,dod,tyt){try{if((NA_STRONIE||window.__gcTest)&&window.goatcounter&&goatcounter.count)goatcounter.count({path:name+' – '+CFG.klucz+' – urz. '+devId()+(dod?' – '+dod:''),title:tyt||(name+' – '+CFG.tytul),event:true});}catch(e){}}
+const krotko=(s,n)=>{s=String(s==null?'':s).replace(/\s+/g,' ').trim();return s.length>n?s.slice(0,n-1)+'…':s;};
+/* co dziecko zaznaczyło/wpisało przy błędnej odpowiedzi – odczyt z ekranu zadania */
+function podanaOdp(q){const b=$('#qBody'),val=s=>[...b.querySelectorAll(s)];
+  switch(q.t){case 'mc':case 'tf':case 'gap':{const x=b.querySelector('.opt.ko');return x?x.textContent:'';}
+    case 'in':case 'num':case 'multi':return val('input').map(x=>x.value).join('; ');
+    case 'match':return val('select').map((x,k)=>q.p[k][0]+' → '+x.value).join('; ');
+    case 'pick':return val('.word.ok,.word.ko').map(x=>x.textContent).join(', ')||'(nic)';
+    case 'order':return val('.seq .opt').map(x=>x.textContent.replace(/^\d+/,'')).join(' → ');
+    case 'spot':return 'kliknięcie poza celem';}return '';}
 if(NA_STRONIE){$('#devCode').textContent='Kod urządzenia: '+devId();$('#devCode').hidden=false;if(window.gcGotowy)gcEvent('aplikacja otwarta');}
 function startQuiz(mode){const pool=mode==='test'?draw(CFG.liczbaPytan):shuffle(S.errors.slice());
-  if(!pool.length){renderHome();show('home');return;}R={mode,ids:pool,res:[]};S.cur=R;save();combo=0;if(mode==='test')gcEvent('test rozpoczęty');resume();}
+  if(!pool.length){renderHome();show('home');return;}const nr=mode==='test'?(S.nTest=(S.nTest||0)+1):(S.nPowt=(S.nPowt||0)+1);
+  R={mode,ids:pool,res:[],nr};S.cur=R;save();combo=0;gcEvent(mode==='test'?'test #'+nr+' rozpoczęty':'powtórka #'+nr+' rozpoczęta');resume();}
+const nazwaR=()=>(R.mode==='test'?'test #':'powtórka #')+(R.nr||0);
 function resume(){show('quiz');renderQ();}
 function btnOpts(box,labels,correct,onPick){labels.forEach((l,j)=>{const b=document.createElement('button');b.className='opt';b.textContent=l;
   b.onclick=()=>{box.querySelectorAll('.opt').forEach((x,i)=>{x.disabled=true;if(i===correct)x.classList.add('ok');});if(j!==correct)b.classList.add('ko');onPick(j===correct);};box.appendChild(b);});}
@@ -597,6 +610,7 @@ function answer(ok,q,extra,note){
   if(ok)S.errors=S.errors.filter(x=>x!==q._id);else if(!S.errors.includes(q._id))S.errors.push(q._id);
   S.cur=R;save();const xp=ok?5:1;gra(xp,true);
   combo=ok?combo+1:0;graj(ok?'dobrze':'zle');
+  if(!ok)gcEvent('błąd – '+nazwaR(),q._id,'Pytanie: '+krotko(qTitle(q),140)+' | odp.: '+krotko(podanaOdp(q),90)+' | poprawnie: '+krotko(ansText(q),90));
   if(combo>=3&&combo%5===0){if(HW){nietoperz();cukierek(5,OGIEN+' Combo ×'+combo+'! 🍬 +5 XP');}else{gra(5);toast(OGIEN+' Combo ×'+combo+'! +5 XP');graj('combo');}}
   else if(combo===3){toast(OGIEN+' Combo ×3!');graj('combo');}
   const fb=$('#qFb');
@@ -610,12 +624,12 @@ function answer(ok,q,extra,note){
 function finishQuiz(){
   const n=R.ids.length,good=R.res.filter(Boolean).length,pct=Math.round(good/n*100),wrong=R.ids.filter((id,k)=>!R.res[k]);
   $('#rTitle').textContent=R.mode==='test'?'Twój wynik':'Powtórka zakończona';$('#rPct').textContent=pct+'%';
-  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};S.best=Math.max(S.best||0,g);$('#rGrade').textContent=g;gcEvent('test ukończony, ocena '+g);
+  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};S.best=Math.max(S.best||0,g);$('#rGrade').textContent=g;gcEvent(nazwaR()+' ukończony, ocena '+g+', wynik '+good+'/'+n);
     const bonus={6:50,5:30,4:15}[g]||0;gra(bonus,false,true);if(bonus)toast('🏆 Bonus za ocenę '+g+': +'+bonus+' XP');if(g>=5){konfetti();graj('fanfara');}
     if(HW)setTimeout(()=>duch(g>=5?'Buu! Upiornie dobry wynik!':g>=3?'Buu! Popraw błędy – będzie straszniej dobrze!':'Buu! Spokojnie – fiszki i powtórka, potem znowu test!'),g>=5?900:300);
     $('#rInfo').textContent=good+' z '+n+' dobrze · przewidywana ocena: '+GNAME[g];
     $('#rMsg').textContent=g>=5?'Jesteś gotowy na sprawdzian! Świetna robota.':g>=4?'Dobrze Ci idzie. Popraw błędy, a będzie jeszcze lepiej.':g>=3?'Masz już podstawy. Powtórz błędy i wróć do fiszek.':'Nie poddawaj się! Zacznij od fiszek, potem popraw błędy – każde podejście pomaga.';}
-  else{$('#rGrade').textContent='🔁';$('#rInfo').textContent=good+' z '+n+' poprawionych';
+  else{$('#rGrade').textContent='🔁';$('#rInfo').textContent=good+' z '+n+' poprawionych';gcEvent(nazwaR()+' ukończona, poprawione '+good+'/'+n);
     if(!S.errors.length&&good){gra(20);toast('✨ Wszystkie błędy poprawione! +20 XP');konfetti();}
     $('#rMsg').textContent=S.errors.length?('Zostało do poprawy: '+S.errors.length+'. Spróbuj jeszcze raz!'):'Wszystkie błędy poprawione. Brawo!';}
   $('#rErrs').innerHTML=wrong.length?('<h2 style="font-size:1.1rem">Do zapamiętania</h2>'+wrong.map(id=>{const q=Q[QI[id]];
