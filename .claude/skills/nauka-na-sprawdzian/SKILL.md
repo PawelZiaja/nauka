@@ -7,7 +7,7 @@ description: Tworzy interaktywną aplikację do nauki na sprawdzian dla ucznia s
 
 Z materiału szkolnego powstaje aplikacja mobilna: **fiszki**, **test** (losuje zadania z różnych działów, daje wynik w % i przewidywaną ocenę) oraz **powtórka błędów**. Postęp zapisuje się w przeglądarce dziecka.
 
-Silnik ma też grywalizację wspólną dla wszystkich aplikacji w tej przeglądarce: punkty XP i poziomy, serię dni z celem dnia (10 odpowiedzi albo cały test) i konfetti; spis (`scripts/spis.py`) pokazuje serię, poziom oraz przy każdej aplikacji pasek opanowania fiszek i gwiazdki 0–3. Zmiana szablonu = przebuduj wszystkie aplikacje z ich `temat.json`.
+Silnik ma też grywalizację wspólną dla wszystkich aplikacji w tej przeglądarce: punkty XP i poziomy, serię dni z celem dnia (10 odpowiedzi albo cały test) i konfetti; spis (`scripts/spis.py`) pokazuje serię, poziom oraz przy każdej aplikacji pasek opanowania fiszek i gwiazdki 0–3. Zmiana szablonu = przebuduj wszystkie aplikacje z ich `temat.json` Fiszka zawsze mieści się na jednym ekranie (tekst sam się zmniejsza), „Umiem” działa dopiero po odwróceniu karty. Motyw sezonowy Halloween (25.10–2.11, podgląd `?motyw=halloween`) dodaje dynie, duchy, nietoperze, cukierki i dźwięki z Web Audio (przycisk 🔊).
 
 Silnik aplikacji jest gotowy i przetestowany (`assets/szablon.html`). Twoja praca to **treść** – plik JSON z fiszkami i pytaniami – oraz jej bezwzględna poprawność. Nie przepisuj silnika od zera; jeśli brakuje typu zadania, dopisz go do szablonu i do testu.
 

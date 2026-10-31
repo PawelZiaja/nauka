@@ -15,6 +15,8 @@ h3{margin:14px 0 6px;font-size:1rem;color:var(--m);font-weight:600}
 .game{border:2px solid var(--l);border-radius:16px;background:var(--s);padding:12px 14px;margin:0 0 8px}
 .gtop{display:flex;justify-content:space-between;align-items:center;gap:10px}.sr{font-size:1.25rem;font-weight:700;color:#d97706}
 .sr small,.lv span,.goal{font-size:.85rem;font-weight:500;color:var(--m)}.lv{text-align:right}.lv b{color:var(--i)}
+:root[data-sezon=halloween]{--bg:#fbf7ef;--i:#4c1d95;--l:#ddd2ea}
+@media (prefers-color-scheme:dark){:root[data-sezon=halloween]{--bg:#17111f;--s:#211830;--t:#f5f0fa;--m:#b9a9c9;--l:#3b2d4d;--i:#fdba74}}
 .game .bar{margin:8px 0 6px}.game .bar i{background:#d97706}.goal{margin:0}
 </style></head><body><main><h1>Nauka na sprawdziany</h1>
 <div class="game" id="game" hidden><div class="gtop"><span class="sr" id="gS"></span><span class="lv"><b id="gL"></b><br><span id="gX"></span></span></div><div class="bar"><i id="gB"></i></div><p class="goal" id="gG"></p></div>
@@ -22,16 +24,20 @@ h3{margin:14px 0 6px;font-size:1rem;color:var(--m);font-weight:600}
 const POZIOMY=[[0,'Nowicjusz'],[100,'Uczeń'],[250,'Odkrywca'],[500,'Badacz'],[900,'Znawca'],[1500,'Ekspert'],[2300,'Mistrz'],[3500,'Profesor'],[5000,'Geniusz']];
 const wczytaj=k=>{try{return JSON.parse(localStorage.getItem(k)||'null');}catch(e){return null;}};
 function dzien(o){const d=new Date();d.setDate(d.getDate()-(o||0));return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');}
+const m=(location.search.match(/motyw=(\w+)/)||[])[1],dt=new Date(),mc=dt.getMonth()+1,dz=dt.getDate();
+const HW=m?m==='halloween':(mc===10&&dz>=25)||(mc===11&&dz<=2),OG=HW?'🎃':'🔥';
+if(HW){document.documentElement.dataset.sezon='halloween';document.querySelector('h1').textContent+=' 🎃';}
 const g=Object.assign({xp:0,dni:{},dzis:'',ile:0},wczytaj('nauka-gra')||{});
 let o=g.dni[dzien()]?0:1,s=0;while(g.dni[dzien(o+s)])s++;
 let i=0;while(i+1<POZIOMY.length&&g.xp>=POZIOMY[i+1][0])i++;const nx=POZIOMY[i+1];
 if(g.xp>0){document.getElementById('game').hidden=false;
-  document.getElementById('gS').innerHTML='🔥 '+s+' <small>'+(s===1?'dzień':'dni')+' z rzędu</small>';
+  document.getElementById('gS').innerHTML=OG+' '+s+' <small>'+(s===1?'dzień':'dni')+' z rzędu</small>';
   document.getElementById('gL').textContent=POZIOMY[i][1];
   document.getElementById('gX').textContent=g.xp+' XP'+(nx?' / '+nx[0]:'');
   document.getElementById('gB').style.width=(nx?(g.xp-POZIOMY[i][0])/(nx[0]-POZIOMY[i][0])*100:100)+'%';
   const ile=g.dzis===dzien()?g.ile:0;
-  document.getElementById('gG').textContent=g.dni[dzien()]?'✔ Cel dnia zaliczony':'Cel dnia: '+Math.min(ile,10)+'/10 odpowiedzi albo jeden cały test';}
+  document.getElementById('gG').textContent=g.dni[dzien()]?'✔ Cel dnia zaliczony':'Cel dnia: '+Math.min(ile,10)+'/10 odpowiedzi albo jeden cały test';
+  if(HW&&g.cukD===dzien()&&g.cuk)document.getElementById('gG').textContent+=' · 🍬 '+g.cuk;}
 document.querySelectorAll('a.it[data-k]').forEach(a=>{const S=wczytaj('nauka-'+a.dataset.k);if(!S)return;
   const n=+a.dataset.n,k=Math.min(n,Object.values(S.known||{}).filter(Boolean).length),best=S.best||(S.last&&S.last.g)||0;
   const gw=(n&&k>=n?1:0)+(best>=5?1:0)+(S.last&&!(S.errors||[]).length?1:0);
