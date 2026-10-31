@@ -61,7 +61,7 @@ Przy dużej puli pisz skrypt w Pythonie (`/home/claude/gen.py`): **tabele danych
 
 Zasady treści:
 - **Poprawność ponad wszystko.** Sprawdź każdą formę, datę, wzór, wynik. Każdą nazwę i liczbę porównaj z materiałem; gdy jej tam nie ma – sprawdź w wiarygodnym źródle (np. Wikipedia, GUS, IMGW) przed wpisaniem. Gdy książka zaokrągla (np. 800 km zamiast 808,2 km), trzymaj się książki. Lepiej usunąć pytanie niż zostawić wątpliwe.
-- **Zakres i poziom z książki** – zadania podobne do tych z podręcznika, ale nie przepisane dosłownie. Treści spoza materiału dodawaj oszczędnie i wymień je w raporcie.
+- **Zakres i poziom z książki** – zadania podobne do tych z podręcznika, ale nie przepisane dosłownie. **Gdy rodzic dał zdjęcia, pytaj tylko o to, co na nich jest** (tak ustalił rodzic). Spoza materiału – wyłącznie rzeczy naprawdę istotne dla tematu (np. pojęcie, bez którego reszta jest niezrozumiała); żadnych ciekawostek, dat i liczb spoza książki. Każdą taką rzecz wymień w raporcie.
 - **Typy zadań dobieraj do treści** (szczegóły w `references/przedmioty.md`): nazwy wpisywane – `in` w trybie `luzno` z wariantami (z polskimi znakami i bez); przyporządkowanie (rzeka → dorzecze, przyczyna → skutek) – `match` i `mc`; kolejność (chronologia, długości) – `order`; dane liczbowe – `num` z tolerancją; położenie na mapie lub schemacie – `spot` i `mc` z obrazkiem.
 - **Jedna poprawna odpowiedź.** W zadaniach wyboru żadna z błędnych opcji nie może być też poprawna (uwaga na formy o tym samym brzmieniu, wyjątki, synonimy).
 - **Każde pytanie ma wyjaśnienie** (`ex`) – krótkie: dlaczego tak, jaka zasada.
