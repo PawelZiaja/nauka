@@ -33,9 +33,9 @@
   },
   {
    "tag": "p",
-   "p": "Dwuznak",
-   "o": "Dwie litery oznaczające jedną głoskę:\nch, cz, dz, dź, dż, rz, sz.",
-   "w": "szczur – 6 liter, 4 głoski [sz-cz-u-r]."
+   "p": "Jedna głoska – kilka liter",
+   "o": "Jednej głosce mogą odpowiadać dwie lub trzy litery, np. ch, cz, sz, rz, dz, dż, ni, si, dzi.",
+   "w": "morze [m-o-rz-e], dziecko [dzi-e-c-k-o] – w zapisie głosek: [dź-e-c-k-o]."
   },
   {
    "tag": "p",
@@ -57,57 +57,57 @@
   },
   {
    "tag": "p",
-   "p": "Narządy mowy",
-   "o": "górne – nasada (jama gardłowa, ustna, nosowa)\nśrodkowe – krtań z wiązadłami głosowymi\ndolne – płuca, tchawica",
-   "w": "Dźwięk powstaje z powietrza wydychanego z płuc."
+   "p": "Narządy mowy (schemat w podręczniku)",
+   "o": "górne – nasada: jama gardłowa, ustna i nosowa\nśrodkowe – krtań z wiązadłami głosowymi\ndolne – płuca",
+   "w": "Dźwięk powstaje wskutek przekształcania strumienia powietrza wydychanego z płuc."
   },
   {
    "tag": "p",
-   "p": "„i” – tylko samogłoska",
-   "o": "Na początku wyrazu i po samogłosce.",
-   "w": "igła [i-g-ł-a], boisko."
+   "p": "„i” – tylko samogłoska i",
+   "o": "Litera „i” oznacza samogłoskę i i niczego nie zmiękcza.",
+   "w": "liga [l-i-g-a], igła, boisko."
   },
   {
    "tag": "p",
    "p": "„i” – tylko znak miękkości",
-   "o": "Przed samogłoską.",
+   "o": "Litera „i” nie oznacza osobnej głoski – tylko zmiękcza poprzednią spółgłoskę.",
    "w": "siano [ś-a-n-o], niebo [ń-e-b-o], dziecko [dź-e-c-k-o]."
   },
   {
    "tag": "p",
-   "p": "„i” – miękkość i samogłoska",
-   "o": "Przed spółgłoską i na końcu wyrazu.",
-   "w": "nic [ń-i-c], piłka [p'-i-ł-k-a]."
+   "p": "„i” – samogłoska i znak miękkości",
+   "o": "Litera „i” oznacza samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę.",
+   "w": "piłka [p'-i-ł-k-a], nic [ń-i-c]."
   },
   {
    "tag": "p",
    "p": "„i” jako głoska j",
-   "o": "W niektórych wyrazach obcych przed samogłoską.",
+   "o": "Litera „i” może oznaczać spółgłoskę j.",
    "w": "chemia [ch-e-m-j-a]."
   },
   {
    "tag": "p",
-   "p": "„i” po p, b, f, w, m, k, g przed samogłoską",
-   "o": "Wymowa z j albo bez niej – obie dopuszczalne.",
-   "w": "pies [p-j-e-s] lub [p'-e-s], miasto, kiedy."
+   "p": "„i” po p, b, f, w, m, k, g",
+   "o": "Możliwa jest wymowa ze spółgłoską j albo bez niej.",
+   "w": "pies [p-j-e-s] lub [p'-e-s], miasto [m-j-a-s-t-o] lub [m'-a-s-t-o]."
   },
   {
    "tag": "p",
    "p": "Głoski dźwięczne",
-   "o": "Wiązadła głosowe zsunięte – drgają.\nb, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j + wszystkie samogłoski",
-   "w": "Powietrze natrafia na opór w krtani."
+   "o": "Wiązadła głosowe są zsunięte – powietrze natrafia na opór w krtani.\nb, d, g, w, z, ż (rz), ź, dz, dź, dż (dzi), m, n, ń, l, ł, r, j + wszystkie samogłoski",
+   "w": "Przy bezdźwięcznych wiązadła są rozsunięte."
   },
   {
    "tag": "p",
    "p": "Głoski bezdźwięczne",
-   "o": "Wiązadła głosowe rozsunięte.\np, t, k, f, s, ś, sz, c, ć, cz, ch (h)",
-   "w": "Powietrze przepływa swobodnie przez krtań."
+   "o": "Wiązadła głosowe są rozsunięte – powietrze swobodnie przepływa przez krtań.\np, t, k, f, s, ś, sz, c, ć, cz, ch (h)",
+   "w": "Przy dźwięcznych wiązadła są zsunięte."
   },
   {
    "tag": "p",
-   "p": "Pary: dźwięczna – bezdźwięczna",
-   "o": "b–p, d–t, g–k, w–f, z–s, ż–sz, ź–ś, dz–c, dź–ć, dż–cz",
-   "w": "ch (h) nie ma dźwięcznej pary."
+   "p": "Odpowiedniki: dźwięczna – bezdźwięczna",
+   "o": "b–p, d–t, g–k, w–f, z–s, ż (rz)–sz, ź–ś, dz–c, dź–ć, dż–cz",
+   "w": "Zamiana na odpowiednik zmienia wyraz: wiatrem – wiadrem, żal – szal."
   },
   {
    "tag": "p",
@@ -129,33 +129,15 @@
   },
   {
    "tag": "p",
-   "p": "ę, ą przed t, d, c, cz / p, b / l, ł",
-   "o": "en, on / em, om / e, o",
-   "w": "ręce [rence], kąt [kont], zęby [zemby], wziął [wzioł]."
-  },
-  {
-   "tag": "p",
-   "p": "ę, ą przed s, ś, sz, z, ż, w, f, ch",
-   "o": "Zachowują nosowość.",
-   "w": "gęś, wąs, mąż, wąchać."
-  },
-  {
-   "tag": "p",
    "p": "Spółgłoski twarde i miękkie",
    "o": "Przy miękkich środek języka się unosi, przy twardych – nie.",
    "w": "Twardość/miękkość dotyczy tylko spółgłosek."
   },
   {
    "tag": "p",
-   "p": "Miękkie spółgłoski",
-   "o": "ś, ź, ć, dź, ń oraz zmiękczone p', b', m', f', w', k', g', ch', l'",
-   "w": "Pary: s–ś, z–ź, c–ć, dz–dź, n–ń."
-  },
-  {
-   "tag": "p",
-   "p": "Zapis głosek miękkich",
-   "o": "ś, ź, ć, dź, ń – przed spółgłoską i na końcu;\nsi, zi, ci, dzi, ni – przed samogłoską",
-   "w": "ślub, koń – siano, konie."
+   "p": "Pary: twarda – miękka",
+   "o": "s–ś, z–ź, c–ć, dz–dź, n–ń; miękkie są też spółgłoski zmiękczone przez „i”: p', b', m', k'…",
+   "w": "siad – sad, kuć – kuc, badanie – biadanie."
   },
   {
    "tag": "p",
@@ -164,94 +146,58 @@
    "w": "Wystarczy zmiana jednej głoski."
   },
   {
-   "tag": "w",
-   "p": "Rozbieżności pisowni i wymowy",
-   "o": "Część wyrazów wymawiamy inaczej, niż piszemy.",
-   "w": "ławka [łafka], chleb [chlep], jabłko [japko]."
+   "tag": "p",
+   "p": "Podział głosek – podstawowe pojęcia",
+   "o": "samogłoski i spółgłoski\ndźwięczne i bezdźwięczne\nustne i nosowe\nspółgłoski twarde i miękkie",
+   "w": "Twardość i miękkość dotyczy tylko spółgłosek."
+  },
+  {
+   "tag": "p",
+   "p": "„i” jako połączenie ji",
+   "o": "Litera „i” może oznaczać połączenie głoskowe ji.",
+   "w": "epopei [e-p-o-p-e-j-i]."
   },
   {
    "tag": "w",
-   "p": "Upodobnienie pod względem dźwięczności",
-   "o": "Spółgłoska traci lub zyskuje dźwięczność pod wpływem sąsiedniej.",
-   "w": "ławka [łafka] – traci; prośba [proźba] – zyskuje."
+   "p": "Pisownia a wymowa",
+   "o": "Część wyrazów zapisujemy tak, jak je słyszymy; niektóre piszemy inaczej, niż się je wymawia.",
+   "w": "koło, kula – tak samo; ławka [łafka] – inaczej (w innych formach słyszymy w: ławek)."
   },
   {
    "tag": "w",
-   "p": "Upodobnienie wsteczne",
-   "o": "Głoska upodabnia się do NASTĘPNEJ.",
-   "w": "ławka [łafka], łódka [łótka], wtorek [ftorek]."
+   "p": "Spółgłoski różne pod względem dźwięczności obok siebie",
+   "o": "Jedna z nich zmienia dźwięczność pod wpływem sąsiedniej: traci ją albo zyskuje.",
+   "w": "twoja [tfoja], powstawać [pofstawać] – traci; prośba [proźba] – zyskuje."
   },
   {
    "tag": "w",
-   "p": "Udźwięcznienie wsteczne",
-   "o": "Bezdźwięczna przed dźwięczną staje się dźwięczna.",
-   "w": "prośba [proźba], liczba [lidżba], także [tagże]."
+   "p": "Spółgłoska dźwięczna na końcu wyrazu",
+   "o": "W wymowie traci swoją dźwięczność.",
+   "w": "ksiąg [ksiąk], sposób [sposóp], psalmów [psalmóf], chleb [chlep]."
   },
   {
    "tag": "w",
-   "p": "Upodobnienie postępowe",
-   "o": "Głoska upodabnia się do POPRZEDNIEJ.\nDotyczy w i rz po bezdźwięcznej.",
-   "w": "twoja [tfoja], kwiat [kfiat], przyjaciel [pszyjaciel]."
-  },
-  {
-   "tag": "w",
-   "p": "„w” po k, t, s, ś, ch",
-   "o": "Brzmi jak f.",
-   "w": "kwiat [kfiat], świat [śfiat], chwila [chfila]."
-  },
-  {
-   "tag": "w",
-   "p": "„rz” po p, t, k, ch",
-   "o": "Brzmi jak sz.",
-   "w": "trzy [tszy], krzesło [kszesło], chrzan [chszan]."
-  },
-  {
-   "tag": "w",
-   "p": "Ubezdźwięcznienie na końcu wyrazu",
-   "o": "Dźwięczna spółgłoska na końcu wyrazu traci dźwięczność.",
-   "w": "chleb [chlep], ksiąg [ksiąk], sposób [sposóp], psalmów [psalmóf]."
-  },
-  {
-   "tag": "w",
-   "p": "Jak sprawdzić literę na końcu wyrazu?",
-   "o": "Odmień wyraz lub znajdź pokrewny – tam słychać właściwą głoskę.",
-   "w": "ogród – ogrodu, chleb – chleba."
-  },
-  {
-   "tag": "w",
-   "p": "Uproszczenie grupy spółgłoskowej",
-   "o": "W zbitce spółgłosek jedna znika w wymowie.",
-   "w": "jabłko [japko], warszawski [warszaski], pierwszy [pierszy]."
-  },
-  {
-   "tag": "w",
-   "p": "Uproszczenia w czasownikach",
-   "o": "Końcowe ł po spółgłosce zwykle znika.",
-   "w": "poszedł [poszet], mógł [mók], pomysł [pomys]."
+   "p": "Uproszczenie zbitki spółgłoskowej",
+   "o": "Gdy w wyrazie występuje zbitka spółgłoskowa, w wymowie może ona ulec uproszczeniu.",
+   "w": "warszawski [warszaski], jabłko [japko], pierwszy [pierszy]."
   },
   {
    "tag": "w",
    "p": "Wyrazy, które brzmią tak samo",
-   "o": "lód – lud [lut]\nkod – kot\nmorze – może\nlont – ląd",
+   "o": "morze – może, lud – lód, lont – ląd, rzuć – żuć, karze – każe",
    "w": "Różnią się pisownią i znaczeniem."
   },
   {
    "tag": "w",
    "p": "ó – u, rz – ż, ch – h",
-   "o": "Te same głoski, różne litery.",
-   "w": "Pisownię sprawdzamy w słowniku lub przez wymianę: wóz – wozy."
+   "o": "Ta sama głoska zapisana różnymi literami.",
+   "w": "lud – lód, morze – może, rzuć – żuć."
   },
   {
    "tag": "w",
-   "p": "twarz, przecież, przód",
-   "o": "[tfasz], [pszeciesz], [pszót]",
-   "w": "Upodobnienie postępowe + ubezdźwięcznienie na końcu."
-  },
-  {
-   "tag": "w",
-   "p": "wschód, odpowiedź, wpływ",
-   "o": "[fschót], [otpowieć], [fpłyf]",
-   "w": "Upodobnienie wsteczne + ubezdźwięcznienie na końcu."
+   "p": "Brzmią tak samo – ą i ę",
+   "o": "kąta – konta, sądy – sondy, tępo – tempo",
+   "w": "Inaczej piszemy, tak samo wymawiamy."
   },
   {
    "tag": "a",
@@ -298,8 +244,8 @@
   {
    "tag": "a",
    "p": "Akcent na ostatniej sylabie",
-   "o": "Skrótowce; anty-, ekstra-, super-, eks-, wice-, arcy- + jednosylabowy rzeczownik; niektóre obce.",
-   "w": "pe-ka-PE, wi-ce-MISS, su-per-SAM, me-NU, a-te-LIER."
+   "o": "Skrótowce; wyrazy z cząstek anty-, ekstra-, super-, kontr-, eks-, wice-, arcy- + jednosylabowy rzeczownik; niektóre wyrazy obce.",
+   "w": "pe-ka-PE, er-PE, wi-ce-MISS, su-per-SAM, me-NU, a-te-LIER."
   },
   {
    "tag": "a",
@@ -316,7 +262,7 @@
   {
    "tag": "a",
    "p": "Podział na sylaby – pułapki",
-   "o": "Nie rozdzielamy dwuznaków ani zmiękczeń.",
+   "o": "Nie rozdzielamy liter, które oznaczają jedną głoskę.",
    "w": "ka-sza (nie: kas-za), sia-no (nie: si-a-no)."
   }
  ],
@@ -325,7 +271,7 @@
    "t": "num",
    "q": "Ile głosek ma wyraz „ciasto”?",
    "a": 5,
-   "ex": "[ć-a-s-t-o] – 5 gł., 6 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ć-a-s-t-o] – 5 gł., 6 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Ile głosek?"
   },
@@ -333,7 +279,7 @@
    "t": "num",
    "q": "O ile więcej jest liter niż głosek w wyrazie „niebo”?",
    "a": 1,
-   "ex": "[ń-e-b-o] – 4 gł., 5 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ń-e-b-o] – 4 gł., 5 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Litery a głoski"
   },
@@ -352,7 +298,7 @@
      "num": true
     }
    ],
-   "ex": "[dź-a-d-e-k] – 5 gł., 7 lit. Jedna głoska zapisana kilkoma literami: „dzi” (= dź). „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[dź-a-d-e-k] – 5 gł., 7 lit. Jedna głoska zapisana kilkoma literami: „dzi” (= dź). „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Ile liter, ile głosek?"
   },
@@ -360,7 +306,7 @@
    "t": "num",
    "q": "O ile więcej jest liter niż głosek w wyrazie „nic”?",
    "a": 0,
-   "ex": "[ń-i-c] – 3 gł., 3 lit. „i” przed spółgłoską lub na końcu zmiękcza i jest samogłoską.",
+   "ex": "[ń-i-c] – 3 gł., 3 lit. „i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę.",
    "c": "Głoska a litera",
    "typ": "Litery a głoski"
   },
@@ -384,7 +330,7 @@
    "t": "num",
    "q": "Ile głosek ma wyraz „szczęście”?",
    "a": 6,
-   "ex": "[sz-cz-ę-ś-ć-e] – 6 gł., 9 lit. Jedna głoska zapisana kilkoma literami: „cz”, „sz”. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[sz-cz-ę-ś-ć-e] – 6 gł., 9 lit. Jedna głoska zapisana kilkoma literami: „cz”, „sz”. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Ile głosek?"
   },
@@ -392,7 +338,7 @@
    "t": "num",
    "q": "O ile więcej jest liter niż głosek w wyrazie „ciepło”?",
    "a": 1,
-   "ex": "[ć-e-p-ł-o] – 5 gł., 6 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ć-e-p-ł-o] – 5 gł., 6 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Litery a głoski"
   },
@@ -411,7 +357,7 @@
      "num": true
     }
    ],
-   "ex": "[ć-e-ń] – 3 gł., 4 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ć-e-ń] – 3 gł., 4 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Ile liter, ile głosek?"
   },
@@ -419,7 +365,7 @@
    "t": "num",
    "q": "Ile głosek ma wyraz „sierść”?",
    "a": 5,
-   "ex": "[ś-e-r-ś-ć] – 5 gł., 6 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ś-e-r-ś-ć] – 5 gł., 6 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Ile głosek?"
   },
@@ -438,7 +384,7 @@
      "num": true
     }
    ],
-   "ex": "[dź-i-ś] – 3 gł., 4 lit. Jedna głoska zapisana kilkoma literami: „dzi” (= dź). „i” przed spółgłoską lub na końcu zmiękcza i jest samogłoską.",
+   "ex": "[dź-i-ś] – 3 gł., 4 lit. Jedna głoska zapisana kilkoma literami: „dzi” (= dź). „i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę.",
    "c": "Głoska a litera",
    "typ": "Ile liter, ile głosek?"
   },
@@ -457,7 +403,7 @@
      "num": true
     }
    ],
-   "ex": "[g-ę-ś-i] – 4 gł., 4 lit. „i” przed spółgłoską lub na końcu zmiękcza i jest samogłoską.",
+   "ex": "[g-ę-ś-i] – 4 gł., 4 lit. „i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę.",
    "c": "Głoska a litera",
    "typ": "Ile liter, ile głosek?"
   },
@@ -500,7 +446,7 @@
    "t": "num",
    "q": "O ile więcej jest liter niż głosek w wyrazie „ziarno”?",
    "a": 1,
-   "ex": "[ź-a-r-n-o] – 5 gł., 6 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ź-a-r-n-o] – 5 gł., 6 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Litery a głoski"
   },
@@ -546,7 +492,7 @@
      "num": true
     }
    ],
-   "ex": "[dż-dż-o-w-ń-i-c-a] – 8 gł., 10 lit. Jedna głoska zapisana kilkoma literami: „dż”. „i” przed spółgłoską lub na końcu zmiękcza i jest samogłoską.",
+   "ex": "[dż-dż-o-w-ń-i-c-a] – 8 gł., 10 lit. Jedna głoska zapisana kilkoma literami: „dż”. „i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę.",
    "c": "Głoska a litera",
    "typ": "Ile liter, ile głosek?"
   },
@@ -562,7 +508,7 @@
    "t": "num",
    "q": "Ile głosek ma wyraz „siostra”?",
    "a": 6,
-   "ex": "[ś-o-s-t-r-a] – 6 gł., 7 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ś-o-s-t-r-a] – 6 gł., 7 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera",
    "typ": "Ile głosek?"
   },
@@ -589,7 +535,7 @@
    "t": "num",
    "q": "O ile więcej jest liter niż głosek w wyrazie „nitka”?",
    "a": 0,
-   "ex": "[ń-i-t-k-a] – 5 gł., 5 lit. „i” przed spółgłoską lub na końcu zmiękcza i jest samogłoską.",
+   "ex": "[ń-i-t-k-a] – 5 gł., 5 lit. „i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę.",
    "c": "Głoska a litera",
    "typ": "Litery a głoski"
   },
@@ -622,7 +568,7 @@
     "dźwig"
    ],
    "a": 0,
-   "ex": "„zima” – 4 liter i 4 głosek. W pozostałych są dwuznaki lub „i” jako znak miękkości.",
+   "ex": "„zima” – 4 litery i 4 głoski [ź-i-m-a]. W pozostałych jakąś głoskę zapisujemy kilkoma literami.",
    "c": "Głoska a litera"
   },
   {
@@ -635,7 +581,7 @@
     "zielony"
    ],
    "a": 0,
-   "ex": "„koło” – 4 liter i 4 głosek. W pozostałych są dwuznaki lub „i” jako znak miękkości.",
+   "ex": "„koło” – 4 litery i 4 głoski. W pozostałych jakąś głoskę zapisujemy kilkoma literami.",
    "c": "Głoska a litera"
   },
   {
@@ -648,7 +594,7 @@
     "książka"
    ],
    "a": 0,
-   "ex": "„jajko” – 5 liter i 5 głosek. W pozostałych są dwuznaki lub „i” jako znak miękkości.",
+   "ex": "„jajko” – 5 liter i 5 głosek. W pozostałych jakąś głoskę zapisujemy kilkoma literami.",
    "c": "Głoska a litera"
   },
   {
@@ -661,7 +607,7 @@
     "chrzan"
    ],
    "a": 0,
-   "ex": "„gęsi” – 4 liter i 4 głosek. W pozostałych są dwuznaki lub „i” jako znak miękkości.",
+   "ex": "„gęsi” – 4 litery i 4 głoski [g-ę-ś-i]. W pozostałych jakąś głoskę zapisujemy kilkoma literami.",
    "c": "Głoska a litera"
   },
   {
@@ -674,7 +620,7 @@
     "cebula"
    ],
    "a": 0,
-   "ex": "[ć-e-ń] – 3 gł., 4 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ć-e-ń] – 3 gł., 4 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera"
   },
   {
@@ -687,7 +633,7 @@
     "sito"
    ],
    "a": 0,
-   "ex": "[ź-a-r-n-o] – 5 gł., 6 lit. „i” przed samogłoską jest tylko znakiem miękkości – nie jest osobną głoską.",
+   "ex": "[ź-a-r-n-o] – 5 gł., 6 lit. „i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski.",
    "c": "Głoska a litera"
   },
   {
@@ -699,7 +645,7 @@
     4,
     5
    ],
-   "ex": "Więcej liter niż głosek mają wyrazy z dwuznakami (ch, cz, dz, dź, dż, rz, sz) lub z „i” jako znakiem miękkości przed samogłoską.",
+   "ex": "Więcej liter niż głosek jest wtedy, gdy jedną głoskę zapisujemy kilkoma literami (np. ch, cz, sz, rz, dz, si, ni, dzi).",
    "c": "Głoska a litera"
   },
   {
@@ -711,7 +657,7 @@
     1,
     2
    ],
-   "ex": "Więcej liter niż głosek mają wyrazy z dwuznakami (ch, cz, dz, dź, dż, rz, sz) lub z „i” jako znakiem miękkości przed samogłoską.",
+   "ex": "Więcej liter niż głosek jest wtedy, gdy jedną głoskę zapisujemy kilkoma literami (np. ch, cz, sz, rz, dz, si, ni, dzi).",
    "c": "Głoska a litera"
   },
   {
@@ -723,7 +669,7 @@
     2,
     4
    ],
-   "ex": "Więcej liter niż głosek mają wyrazy z dwuznakami (ch, cz, dz, dź, dż, rz, sz) lub z „i” jako znakiem miękkości przed samogłoską.",
+   "ex": "Więcej liter niż głosek jest wtedy, gdy jedną głoskę zapisujemy kilkoma literami (np. ch, cz, sz, rz, dz, si, ni, dzi).",
    "c": "Głoska a litera"
   },
   {
@@ -735,7 +681,7 @@
     4,
     5
    ],
-   "ex": "Więcej liter niż głosek mają wyrazy z dwuznakami (ch, cz, dz, dź, dż, rz, sz) lub z „i” jako znakiem miękkości przed samogłoską.",
+   "ex": "Więcej liter niż głosek jest wtedy, gdy jedną głoskę zapisujemy kilkoma literami (np. ch, cz, sz, rz, dz, si, ni, dzi).",
    "c": "Głoska a litera"
   },
   {
@@ -747,25 +693,25 @@
     1,
     2
    ],
-   "ex": "Więcej liter niż głosek mają wyrazy z dwuznakami (ch, cz, dz, dź, dż, rz, sz) lub z „i” jako znakiem miękkości przed samogłoską.",
+   "ex": "Więcej liter niż głosek jest wtedy, gdy jedną głoskę zapisujemy kilkoma literami (np. ch, cz, sz, rz, dz, si, ni, dzi).",
    "c": "Głoska a litera"
   },
   {
    "t": "mc",
-   "q": "Która grupa zawiera wyłącznie dwuznaki?",
+   "q": "W której grupie każde połączenie liter oznacza jedną głoskę?",
    "o": [
     "ch, cz, rz, sz",
-    "ch, ć, rz, sz",
-    "cz, dż, ń, sz",
-    "rz, ż, ó, ch"
+    "ch, ćm, rz, sz",
+    "cz, dż, ńs, sz",
+    "rz, żo, ó, ch"
    ],
    "a": 0,
-   "ex": "Dwuznak to dwie litery oznaczające jedną głoskę: ch, cz, dz, dź, dż, rz, sz. Ć, ń, ż, ó to pojedyncze litery.",
+   "ex": "ch, cz, rz, sz – dwie litery, jedna głoska. ćm, ńs, żo to po dwie głoski.",
    "c": "Głoska a litera"
   },
   {
    "t": "mc",
-   "q": "Ile głosek oznacza dwuznak „sz”?",
+   "q": "Ile głosek oznaczają litery „sz”?",
    "o": [
     "jedną",
     "dwie",
@@ -773,7 +719,7 @@
     "zależy od wyrazu"
    ],
    "a": 0,
-   "ex": "Dwuznak to dwie litery, które oznaczają jedną głoskę.",
+   "ex": "Jednej głosce mogą odpowiadać dwie lub trzy litery – „sz” to jedna głoska.",
    "c": "Głoska a litera"
   },
   {
@@ -877,8 +823,8 @@
    "zle": [
     "w"
    ],
-   "ex": "„ławka” [łafka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„ławka” [łafka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
@@ -890,8 +836,8 @@
     "[szapka]"
    ],
    "a": 0,
-   "ex": "„żabka” [żapka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy b, słyszymy p.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„żabka” [żapka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy b, słyszymy p.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -904,23 +850,23 @@
    "zle": [
     "d"
    ],
-   "ex": "„kładka” [kłatka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy d, słyszymy t.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„kładka” [kłatka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy d, słyszymy t.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „prośba” [proźba]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „ś” w wyrazie „prośba” [proźba]?",
    "o": [
-    "upodobnienie wsteczne",
-    "upodobnienie postępowe",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„prośba” [proźba] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
-   "typ": "Nazwij zjawisko"
+   "ex": "ś stoi przed dźwięcznym b, więc zyskuje dźwięczność: słyszymy ź.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -931,8 +877,8 @@
     "[liczpa]"
    ],
    "a": 0,
-   "ex": "„liczba” [lidżba] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy cz, słyszymy dż.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„liczba” [lidżba] – spółgłoska zyskuje dźwięczność pod wpływem sąsiedniej głoski. Piszemy cz, słyszymy dż.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -945,8 +891,8 @@
    "zle": [
     "k"
    ],
-   "ex": "„jakże” [jagże] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy k, słyszymy g.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„jakże” [jagże] – spółgłoska zyskuje dźwięczność pod wpływem sąsiedniej głoski. Piszemy k, słyszymy g.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
@@ -959,8 +905,8 @@
    "zle": [
     "ż"
    ],
-   "ex": "„łyżka” [łyszka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy ż, słyszymy sz.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„łyżka” [łyszka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy ż, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
@@ -972,8 +918,8 @@
     "[nóżga]"
    ],
    "a": 0,
-   "ex": "„nóżka” [nószka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy ż, słyszymy sz.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„nóżka” [nószka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy ż, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -985,8 +931,8 @@
     "[wbis]"
    ],
    "a": 0,
-   "ex": "„wpis” [fpis] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„wpis” [fpis] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -999,8 +945,8 @@
    "zle": [
     "w"
    ],
-   "ex": "„wpis” [fpis] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„wpis” [fpis] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
@@ -1012,51 +958,51 @@
     "[odbis]"
    ],
    "a": 0,
-   "ex": "„odpis” [otpis] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy d, słyszymy t.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„odpis” [otpis] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy d, słyszymy t.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „odpis” [otpis]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „d” w wyrazie „odpis” [otpis]?",
    "o": [
-    "upodobnienie wsteczne",
-    "upodobnienie postępowe",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„odpis” [otpis] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
-   "typ": "Nazwij zjawisko"
+   "ex": "d stoi przed bezdźwięcznym p, więc traci dźwięczność: słyszymy t.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „babcia” [bapcia]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „b” w wyrazie „babcia” [bapcia]?",
    "o": [
-    "upodobnienie wsteczne",
-    "upodobnienie postępowe",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„babcia” [bapcia] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
-   "typ": "Nazwij zjawisko"
+   "ex": "b (drugie) stoi przed bezdźwięcznym ć, więc traci dźwięczność: słyszymy p.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „rzadko” [żatko]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „d” w wyrazie „rzadko” [żatko]?",
    "o": [
-    "upodobnienie wsteczne",
-    "upodobnienie postępowe",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„rzadko” [żatko] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
-   "typ": "Nazwij zjawisko"
+   "ex": "d stoi przed bezdźwięcznym k, więc traci dźwięczność: słyszymy t.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -1067,8 +1013,8 @@
     "[zakładga]"
    ],
    "a": 0,
-   "ex": "„zakładka” [zakłatka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy d, słyszymy t.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„zakładka” [zakłatka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy d, słyszymy t.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1081,23 +1027,23 @@
    "zle": [
     "w"
    ],
-   "ex": "„kawka” [kafka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„kawka” [kafka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „trawka” [trafka]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „k” w wyrazie „jakby” [jagby]?",
    "o": [
-    "upodobnienie wsteczne",
-    "upodobnienie postępowe",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„trawka” [trafka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
-   "typ": "Nazwij zjawisko"
+   "ex": "k stoi przed dźwięcznym b, więc zyskuje dźwięczność: słyszymy g.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -1108,8 +1054,8 @@
     "[główga]"
    ],
    "a": 0,
-   "ex": "„główka” [głófka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„główka” [głófka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1122,8 +1068,8 @@
    "zle": [
     "w"
    ],
-   "ex": "„słówko” [słófko] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„słówko” [słófko] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
@@ -1135,8 +1081,8 @@
     "[klazówka]"
    ],
    "a": 0,
-   "ex": "„klasówka” [klasófka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„klasówka” [klasófka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1149,37 +1095,37 @@
    "zle": [
     "w"
    ],
-   "ex": "„klasówka” [klasófka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„klasówka” [klasófka] – spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „klasówka” [klasófka]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „k” w wyrazie „także” [tagże]?",
    "o": [
-    "upodobnienie wsteczne",
-    "upodobnienie postępowe",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„klasówka” [klasófka] – spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
-   "typ": "Nazwij zjawisko"
+   "ex": "k stoi przed dźwięcznym ż, więc zyskuje dźwięczność: słyszymy g.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "tf",
-   "q": "W wyrazie „wschód” [fschót] zachodzą dwa zjawiska: upodobnienie wsteczne i ubezdźwięcznienie na końcu wyrazu.",
+   "q": "W wyrazie „wschód” [fschót] jedna spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski, a druga – dlatego, że stoi na końcu wyrazu.",
    "a": true,
-   "ex": "„wschód” [fschót] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne"
+   "ex": "„wschód” [fschót] – w przed s brzmi jak f, a d na końcu wyrazu – jak t.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "tf",
-   "q": "W wyrazie „odpowiedź” [otpowieć] zachodzą dwa zjawiska: upodobnienie wsteczne i ubezdźwięcznienie na końcu wyrazu.",
+   "q": "W wyrazie „odpowiedź” [otpowieć] jedna spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski, a druga – dlatego, że stoi na końcu wyrazu.",
    "a": true,
-   "ex": "„odpowiedź” [otpowieć] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne"
+   "ex": "„odpowiedź” [otpowieć] – d przed p brzmi jak t, a dź na końcu wyrazu – jak ć.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -1190,85 +1136,30 @@
     "[wpłyf]"
    ],
    "a": 0,
-   "ex": "„wpływ” [fpłyf] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne",
+   "ex": "„wpływ” [fpłyf] – w przed bezdźwięcznym p traci dźwięczność, a w na końcu wyrazu też brzmi jak f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "tf",
-   "q": "W wyrazie „wpływ” [fpłyf] zachodzą dwa zjawiska: upodobnienie wsteczne i ubezdźwięcznienie na końcu wyrazu.",
+   "q": "W wyrazie „wpływ” [fpłyf] jedna spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski, a druga – dlatego, że stoi na końcu wyrazu.",
    "a": true,
-   "ex": "„wpływ” [fpłyf] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski.",
-   "c": "Upodobnienia wsteczne"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem wstecznym.",
-   "s": "kwiat zakładka ćwiczenie książka kwiecień wpis",
-   "a": [
-    1,
-    3,
-    5
-   ],
-   "ex": "Wsteczne: głoska upodabnia się do następnej (ławka [łafka], prośba [proźba]). Pozostałe to upodobnienia postępowe.",
-   "c": "Upodobnienia wsteczne"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem wstecznym.",
-   "s": "twoja rzadko babcia kwas krzesło łódka",
-   "a": [
-    1,
-    2,
-    5
-   ],
-   "ex": "Wsteczne: głoska upodabnia się do następnej (ławka [łafka], prośba [proźba]). Pozostałe to upodobnienia postępowe.",
-   "c": "Upodobnienia wsteczne"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem wstecznym.",
-   "s": "odpis liczba potwór światło wszystko przygoda",
-   "a": [
-    0,
-    1,
-    4
-   ],
-   "ex": "Wsteczne: głoska upodabnia się do następnej (ławka [łafka], prośba [proźba]). Pozostałe to upodobnienia postępowe.",
-   "c": "Upodobnienia wsteczne"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem wstecznym.",
-   "s": "przerwa podpis trawka babcia światło kwas",
-   "a": [
-    1,
-    2,
-    3
-   ],
-   "ex": "Wsteczne: głoska upodabnia się do następnej (ławka [łafka], prośba [proźba]). Pozostałe to upodobnienia postępowe.",
-   "c": "Upodobnienia wsteczne"
-  },
-  {
-   "t": "tf",
-   "q": "W upodobnieniu wstecznym głoska upodabnia się do głoski następnej.",
-   "a": true,
-   "ex": "spółgłoska upodabnia się pod względem dźwięczności do NASTĘPNEJ głoski: ławka [łafka].",
-   "c": "Upodobnienia wsteczne"
+   "ex": "„wpływ” [fpłyf] – pierwsze w przed p brzmi jak f, a w na końcu wyrazu – też jak f.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "tf",
    "q": "W wyrazie „prośba” spółgłoska ś traci dźwięczność.",
    "a": false,
-   "ex": "Odwrotnie: ś zyskuje dźwięczność pod wpływem b – [proźba]. To udźwięcznienie wsteczne.",
-   "c": "Upodobnienia wsteczne"
+   "ex": "Odwrotnie: ś zyskuje dźwięczność pod wpływem b – [proźba].",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "tf",
-   "q": "Upodobnienie może polegać na utracie lub zyskaniu dźwięczności.",
+   "q": "Spółgłoska pod wpływem sąsiedniej głoski może stracić albo zyskać dźwięczność.",
    "a": true,
-   "ex": "Ławka [łafka] – utrata; prośba [proźba] – zyskanie.",
-   "c": "Upodobnienia wsteczne"
+   "ex": "ławka [łafka] – traci; prośba [proźba] – zyskuje.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -1281,31 +1172,31 @@
    ],
    "a": 0,
    "ex": "prośba [proźba] – ś przed b brzmi jak ź.",
-   "c": "Upodobnienia wsteczne"
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "match",
-   "q": "Dopasuj wyraz do zjawiska (3).",
+   "q": "Dopasuj wyraz do zjawiska.",
    "p": [
     [
      "łyżka [łyszka]",
-     "wsteczne"
+     "traci dźwięczność przez sąsiednią głoskę"
     ],
     [
-     "kwiat [kfiat]",
-     "postępowe"
+     "liczba [lidżba]",
+     "zyskuje dźwięczność przez sąsiednią głoskę"
     ],
     [
      "Jakub [jakup]",
-     "na końcu wyrazu"
+     "traci dźwięczność na końcu wyrazu"
     ],
     [
      "sześćset [szejset]",
-     "uproszczenie"
+     "uproszczenie zbitki spółgłoskowej"
     ]
    ],
-   "ex": "Wsteczne – wpływ następnej głoski; postępowe – poprzedniej; na końcu wyrazu – utrata dźwięczności; uproszczenie – znika głoska.",
-   "c": "Upodobnienia wsteczne"
+   "ex": "Spółgłoska może zmienić dźwięczność pod wpływem sąsiedniej (traci lub zyskuje), dźwięczna na końcu wyrazu traci dźwięczność, a zbitka spółgłoskowa może się uprościć.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -1316,7 +1207,7 @@
    ],
    "a": 0,
    "ex": "„dąb” [dąp] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy b, słyszymy p.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1330,7 +1221,7 @@
     "b"
    ],
    "ex": "„dąb” [dąp] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy b, słyszymy p.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1342,7 +1233,7 @@
    ],
    "a": 0,
    "ex": "„sad” [sat] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy d, słyszymy t.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1354,7 +1245,7 @@
    ],
    "a": 0,
    "ex": "„lód” [lót] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy d, słyszymy t.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1366,7 +1257,7 @@
    ],
    "a": 0,
    "ex": "„róg” [rók] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy g, słyszymy k.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1378,7 +1269,7 @@
    ],
    "a": 0,
    "ex": "„wóz” [wós] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy z, słyszymy s.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1390,7 +1281,7 @@
    ],
    "a": 0,
    "ex": "„śnieg” [śniek] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy g, słyszymy k.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1404,7 +1295,7 @@
     "g"
    ],
    "ex": "„brzeg” [bżek] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy g, słyszymy k.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1418,7 +1309,7 @@
     "g"
    ],
    "ex": "„wróg” [wrók] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy g, słyszymy k.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1432,7 +1323,7 @@
     "w"
    ],
    "ex": "„ołów” [ołóf] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy w, słyszymy f.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1444,7 +1335,7 @@
    ],
    "a": 0,
    "ex": "„lew” [lef] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy w, słyszymy f.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -1458,7 +1349,7 @@
     "rz"
    ],
    "ex": "„żołnierz” [żołniesz] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy rz, słyszymy sz.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1472,7 +1363,7 @@
     "b"
    ],
    "ex": "„sposób” [sposóp] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy b, słyszymy p.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1486,7 +1377,7 @@
     "w"
    ],
    "ex": "„psalmów” [psalmóf] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy w, słyszymy f.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1500,7 +1391,7 @@
     "b"
    ],
    "ex": "„Jakub” [jakup] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy b, słyszymy p.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1514,7 +1405,7 @@
     "ż"
    ],
    "ex": "„ponieważ” [poniewasz] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy ż, słyszymy sz.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1528,7 +1419,7 @@
     "d"
    ],
    "ex": "„grad” [grat] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. Piszemy d, słyszymy t.",
-   "c": "Ubezdźwięcznienie na końcu",
+   "c": "Dźwięczna na końcu wyrazu",
    "typ": "Co słyszymy?"
   },
   {
@@ -1536,35 +1427,35 @@
    "q": "Wyrazy „lód” i „lud” brzmią tak samo [lut].",
    "a": true,
    "ex": "Różnią się pisownią, ale wymawiamy je identycznie: [lut].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "tf",
    "q": "Wyrazy „kod” i „kot” brzmią tak samo [kot].",
    "a": true,
    "ex": "Różnią się pisownią, ale wymawiamy je identycznie: [kot].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "tf",
    "q": "Wyrazy „grad” i „grat” brzmią tak samo [grat].",
    "a": true,
    "ex": "Różnią się pisownią, ale wymawiamy je identycznie: [grat].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "tf",
    "q": "Wyrazy „mieć” i „miedź” brzmią tak samo [mieć].",
    "a": true,
    "ex": "Różnią się pisownią, ale wymawiamy je identycznie: [mieć].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "tf",
    "q": "Wyrazy „lont” i „ląd” brzmią tak samo [lont].",
    "a": true,
    "ex": "Różnią się pisownią, ale wymawiamy je identycznie: [lont].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "mc",
@@ -1577,7 +1468,7 @@
    ],
    "a": 0,
    "ex": "Oba wymawiamy [kot].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "pick",
@@ -1589,7 +1480,7 @@
     5
    ],
    "ex": "Dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. W pozostałych wyrazach na końcu słyszymy tę samą głoskę, którą piszemy.",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "pick",
@@ -1601,7 +1492,7 @@
     5
    ],
    "ex": "Dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. W pozostałych wyrazach na końcu słyszymy tę samą głoskę, którą piszemy.",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "pick",
@@ -1613,21 +1504,21 @@
     4
    ],
    "ex": "Dźwięczna spółgłoska na końcu wyrazu traci dźwięczność. W pozostałych wyrazach na końcu słyszymy tę samą głoskę, którą piszemy.",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "tf",
    "q": "Spółgłoska dźwięczna na końcu wyrazu zwykle traci dźwięczność.",
    "a": true,
    "ex": "chleb [chlep], ksiąg [ksiąk].",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "tf",
    "q": "W wyrazie „sposób” na końcu słyszymy głoskę b.",
    "a": false,
    "ex": "[sposóp] – b na końcu traci dźwięczność.",
-   "c": "Ubezdźwięcznienie na końcu"
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "mc",
@@ -1636,11 +1527,11 @@
     "ó i u to ta sama głoska, a d na końcu brzmi jak t",
     "oba mają akcent na końcu",
     "d jest głoską nosową",
-    "to upodobnienie postępowe"
+    "to uproszczenie zbitki spółgłoskowej"
    ],
    "a": 0,
-   "ex": "[lut] – ó = u, a dźwięczne d na końcu wyrazu traci dźwięczność.",
-   "c": "Ubezdźwięcznienie na końcu"
+   "ex": "[lut] – ó i u to ta sama głoska, a dźwięczne d na końcu wyrazu traci dźwięczność.",
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "match",
@@ -1663,8 +1554,8 @@
      "[japko]"
     ]
    ],
-   "ex": "Ubezdźwięcznienie na końcu, upodobnienie postępowe, udźwięcznienie wsteczne, uproszczenie.",
-   "c": "Ubezdźwięcznienie na końcu"
+   "ex": "lód – dźwięczna na końcu wyrazu; kwiat – w traci dźwięczność po k; liczba – cz zyskuje dźwięczność przed b; jabłko – uproszczenie zbitki.",
+   "c": "Dźwięczna na końcu wyrazu"
   },
   {
    "t": "mc",
@@ -1676,7 +1567,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "CZŁO-wiek – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "CZŁO-wiek – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1690,7 +1581,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "ko-LE-ga – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "ko-LE-ga – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1704,7 +1595,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "bo-I-sko – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "bo-I-sko – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1718,7 +1609,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "kom-PU-ter – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "kom-PU-ter – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1732,7 +1623,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "wa-KA-cje – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "wa-KA-cje – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1746,7 +1637,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "przy-JA-ciel – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "przy-JA-ciel – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1760,7 +1651,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "sa-MO-chód – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "sa-MO-chód – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1774,7 +1665,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "zro-BI-łam – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "zro-BI-łam – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1788,7 +1679,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "ry-ZY-ko – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "ry-ZY-ko – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1802,7 +1693,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "ma-te-ma-TYCZ-ny – przymiotnik (nie wyraz na -yka) – akcent typowy, na przedostatniej.",
+   "ex": "ma-te-ma-TYCZ-ny – przymiotnik nie kończy się na -yka, więc ma zwykły akcent na przedostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -1998,7 +1889,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "wi-ce-MISS – wyraz z cząstką wice-/super-/arcy-/eks- i jednosylabowym rzeczownikiem albo wyraz obcy.",
+   "ex": "wi-ce-MISS – cząstka (anty-, ekstra-, super-, kontr-, eks-, wice-, arcy-) + jednosylabowy rzeczownik: akcent na ostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -2012,7 +1903,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "su-per-SAM – wyraz z cząstką wice-/super-/arcy-/eks- i jednosylabowym rzeczownikiem albo wyraz obcy.",
+   "ex": "su-per-SAM – cząstka (anty-, ekstra-, super-, kontr-, eks-, wice-, arcy-) + jednosylabowy rzeczownik: akcent na ostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -2026,7 +1917,7 @@
     "czwartą od końca"
    ],
    "a": 0,
-   "ex": "eks-MĄŻ – wyraz z cząstką wice-/super-/arcy-/eks- i jednosylabowym rzeczownikiem albo wyraz obcy.",
+   "ex": "eks-MĄŻ – cząstka (anty-, ekstra-, super-, kontr-, eks-, wice-, arcy-) + jednosylabowy rzeczownik: akcent na ostatniej sylabie.",
    "c": "Akcent – zasady",
    "typ": "Gdzie pada akcent?"
   },
@@ -2055,7 +1946,7 @@
    "t": "tf",
    "q": "W wyrazie „matematyczny” akcent pada na przedostatnią sylabę.",
    "a": true,
-   "ex": "ma-te-ma-TYCZ-ny – reguła -yka dotyczy tylko rzeczowników na -yka.",
+   "ex": "ma-te-ma-TYCZ-ny – przymiotnik nie kończy się na -yka, więc ma zwykły akcent na przedostatniej sylabie.",
    "c": "Akcent – zasady"
   },
   {
@@ -2143,8 +2034,8 @@
     "[źwiat]"
    ],
    "a": 0,
-   "ex": "„świat” [śfiat] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„świat” [śfiat] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -2156,8 +2047,8 @@
     "[gwiat]"
    ],
    "a": 0,
-   "ex": "„kwiat” [kfiat] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„kwiat” [kfiat] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -2170,23 +2061,23 @@
    "zle": [
     "w"
    ],
-   "ex": "„kwas” [kfas] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„kwas” [kfas] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „kwas” [kfas]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „w” w wyrazie „kwas” [kfas]?",
    "o": [
-    "upodobnienie postępowe",
-    "upodobnienie wsteczne",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„kwas” [kfas] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe",
-   "typ": "Nazwij zjawisko"
+   "ex": "w stoi po bezdźwięcznym k, więc traci dźwięczność: słyszymy f.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -2197,8 +2088,8 @@
     "[chwyla]"
    ],
    "a": 0,
-   "ex": "„chwila” [chfila] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„chwila” [chfila] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -2211,23 +2102,23 @@
    "zle": [
     "w"
    ],
-   "ex": "„potwór” [potfór] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„potwór” [potfór] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „twardy” [tfardy]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „w” w wyrazie „twardy” [tfardy]?",
    "o": [
-    "upodobnienie postępowe",
-    "upodobnienie wsteczne",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„twardy” [tfardy] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe",
-   "typ": "Nazwij zjawisko"
+   "ex": "w stoi po bezdźwięcznym t, więc traci dźwięczność: słyszymy f (jak w „twoja” [tfoja]).",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -2238,37 +2129,37 @@
     "[dźwiczenie]"
    ],
    "a": 0,
-   "ex": "„ćwiczenie” [ćficzenie] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy w, słyszymy f.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„ćwiczenie” [ćficzenie] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy w, słyszymy f.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „ćwiczenie” [ćficzenie]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „w” w wyrazie „ćwiczenie” [ćficzenie]?",
    "o": [
-    "upodobnienie postępowe",
-    "upodobnienie wsteczne",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„ćwiczenie” [ćficzenie] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe",
-   "typ": "Nazwij zjawisko"
+   "ex": "w stoi po bezdźwięcznym ć, więc traci dźwięczność: słyszymy f.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „krzesło” [kszesło]?",
+   "q": "Co dzieje się w wymowie z głoską zapisaną jako „rz” w wyrazie „krzesło” [kszesło]?",
    "o": [
-    "upodobnienie postępowe",
-    "upodobnienie wsteczne",
-    "ubezdźwięcznienie na końcu wyrazu",
-    "uproszczenie grupy spółgłoskowej"
+    "traci dźwięczność pod wpływem sąsiedniej głoski",
+    "zyskuje dźwięczność pod wpływem sąsiedniej głoski",
+    "traci dźwięczność, bo stoi na końcu wyrazu",
+    "znika w wymowie (uproszczenie zbitki)"
    ],
    "a": 0,
-   "ex": "„krzesło” [kszesło] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe",
-   "typ": "Nazwij zjawisko"
+   "ex": "rz stoi po bezdźwięcznym k, więc traci dźwięczność: słyszymy sz.",
+   "typ": "Co dzieje się z głoską?",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -2279,8 +2170,8 @@
     "[bżygoda]"
    ],
    "a": 0,
-   "ex": "„przygoda” [pszygoda] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy rz, słyszymy sz.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„przygoda” [pszygoda] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy rz, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -2293,8 +2184,8 @@
    "zle": [
     "rz"
    ],
-   "ex": "„chrzan” [chszan] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy rz, słyszymy sz.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„chrzan” [chszan] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy rz, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
@@ -2306,8 +2197,8 @@
     "[dży]"
    ],
    "a": 0,
-   "ex": "„trzy” [tszy] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy rz, słyszymy sz.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„trzy” [tszy] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy rz, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -2319,8 +2210,8 @@
     "[bżepis]"
    ],
    "a": 0,
-   "ex": "„przepis” [pszepis] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy rz, słyszymy sz.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„przepis” [pszepis] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy rz, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -2333,23 +2224,23 @@
    "zle": [
     "rz"
    ],
-   "ex": "„przepis” [pszepis] – „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski. Piszemy rz, słyszymy sz.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„przepis” [pszepis] – spółgłoska traci dźwięczność pod wpływem sąsiedniej, bezdźwięcznej głoski. Piszemy rz, słyszymy sz.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Co słyszymy?"
   },
   {
    "t": "tf",
-   "q": "W wyrazie „twarz” [tfasz] zachodzą dwa zjawiska: upodobnienie postępowe i ubezdźwięcznienie na końcu wyrazu.",
+   "q": "W wyrazie „twarz” [tfasz] jedna spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski, a druga – dlatego, że stoi na końcu wyrazu.",
    "a": true,
-   "ex": "„twarz” [tfasz] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe"
+   "ex": "„twarz” [tfasz] – w po t brzmi jak f, a rz na końcu wyrazu – jak sz.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "tf",
-   "q": "W wyrazie „przecież” [pszeciesz] zachodzą dwa zjawiska: upodobnienie postępowe i ubezdźwięcznienie na końcu wyrazu.",
+   "q": "W wyrazie „przecież” [pszeciesz] jedna spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski, a druga – dlatego, że stoi na końcu wyrazu.",
    "a": true,
-   "ex": "„przecież” [pszeciesz] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe"
+   "ex": "„przecież” [pszeciesz] – rz po p brzmi jak sz, a ż na końcu wyrazu – też jak sz.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "mc",
@@ -2360,122 +2251,47 @@
     "[pszód]"
    ],
    "a": 0,
-   "ex": "„przód” [pszót] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe",
+   "ex": "„przód” [pszót] – rz po bezdźwięcznym p brzmi jak sz, a d na końcu wyrazu – jak t.",
+   "c": "Dźwięczność a sąsiednie głoski",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "tf",
-   "q": "W wyrazie „przód” [pszót] zachodzą dwa zjawiska: upodobnienie postępowe i ubezdźwięcznienie na końcu wyrazu.",
+   "q": "W wyrazie „przód” [pszót] jedna spółgłoska traci dźwięczność pod wpływem sąsiedniej głoski, a druga – dlatego, że stoi na końcu wyrazu.",
    "a": true,
-   "ex": "„przód” [pszót] – dźwięczna spółgłoska na końcu wyrazu traci dźwięczność; „w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski.",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem postępowym.",
-   "s": "przerwa chrzan wpis zakładka książka chwila",
-   "a": [
-    0,
-    1,
-    5
-   ],
-   "ex": "Postępowe: w lub rz po bezdźwięcznej (twoja [tfoja], trzy [tszy]). Pozostałe to upodobnienia wsteczne.",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem postępowym.",
-   "s": "ćwiczenie jakby potwór przygoda słówko żabka",
-   "a": [
-    0,
-    2,
-    3
-   ],
-   "ex": "Postępowe: w lub rz po bezdźwięcznej (twoja [tfoja], trzy [tszy]). Pozostałe to upodobnienia wsteczne.",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem postępowym.",
-   "s": "potwór jakby kwiecień krzesło liczba łyżka",
-   "a": [
-    0,
-    2,
-    3
-   ],
-   "ex": "Postępowe: w lub rz po bezdźwięcznej (twoja [tfoja], trzy [tszy]). Pozostałe to upodobnienia wsteczne.",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "pick",
-   "q": "Zaznacz wyrazy z upodobnieniem postępowym.",
-   "s": "podpis sweter główka trzeba zakładka chrzan",
-   "a": [
-    1,
-    3,
-    5
-   ],
-   "ex": "Postępowe: w lub rz po bezdźwięcznej (twoja [tfoja], trzy [tszy]). Pozostałe to upodobnienia wsteczne.",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "tf",
-   "q": "W upodobnieniu postępowym głoska upodabnia się do głoski poprzedniej.",
-   "a": true,
-   "ex": "„w” lub „rz” po spółgłosce bezdźwięcznej traci dźwięczność – upodabnia się do POPRZEDNIEJ głoski: twoja [tfoja].",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "tf",
-   "q": "Upodobnienie postępowe w polszczyźnie dotyczy głównie „w” i „rz” po spółgłosce bezdźwięcznej.",
-   "a": true,
-   "ex": "kwiat [kfiat], trzy [tszy].",
-   "c": "Upodobnienia postępowe"
+   "ex": "„przód” [pszót] – rz po p brzmi jak sz, a d na końcu wyrazu – jak t.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "tf",
    "q": "W wyrazie „przerwa” litera „w” brzmi jak f.",
    "a": false,
    "ex": "[pszerwa] – w po r się nie zmienia; zmienia się tylko rz po p.",
-   "c": "Upodobnienia postępowe"
-  },
-  {
-   "t": "mc",
-   "q": "Która głoska wywołuje upodobnienie w wyrazie „twoja” [tfoja]?",
-   "o": [
-    "t (poprzednia)",
-    "o (następna)",
-    "j",
-    "a"
-   ],
-   "a": 0,
-   "ex": "w upodabnia się do poprzedzającej, bezdźwięcznej t – to upodobnienie postępowe.",
-   "c": "Upodobnienia postępowe"
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "match",
    "q": "Dopasuj wyraz do zjawiska (2).",
    "p": [
     [
-     "prośba [proźba]",
-     "wsteczne"
+     "kwiat [kfiat]",
+     "traci dźwięczność przez sąsiednią głoskę"
     ],
     [
-     "trzy [tszy]",
-     "postępowe"
+     "prośba [proźba]",
+     "zyskuje dźwięczność przez sąsiednią głoskę"
     ],
     [
      "mróz [mrós]",
-     "na końcu wyrazu"
+     "traci dźwięczność na końcu wyrazu"
     ],
     [
      "pierwszy [pierszy]",
-     "uproszczenie"
+     "uproszczenie zbitki spółgłoskowej"
     ]
    ],
-   "ex": "Wsteczne – wpływ następnej głoski; postępowe – poprzedniej; na końcu wyrazu – utrata dźwięczności; uproszczenie – znika głoska.",
-   "c": "Upodobnienia postępowe"
+   "ex": "Spółgłoska może zmienić dźwięczność pod wpływem sąsiedniej (traci lub zyskuje), dźwięczna na końcu wyrazu traci dźwięczność, a zbitka spółgłoskowa może się uprościć.",
+   "c": "Dźwięczność a sąsiednie głoski"
   },
   {
    "t": "in",
@@ -2565,7 +2381,7 @@
     "c"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2578,7 +2394,7 @@
     "cz"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2591,7 +2407,7 @@
     "f"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2604,7 +2420,7 @@
     "t"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2617,7 +2433,7 @@
     "p"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2630,7 +2446,7 @@
     "ch"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2643,7 +2459,7 @@
     "dż"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2656,7 +2472,7 @@
     "w"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2669,7 +2485,7 @@
     "w"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2682,7 +2498,7 @@
     "g"
    ],
    "a": 0,
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2760,16 +2576,9 @@
   },
   {
    "t": "tf",
-   "q": "Głoska „ch” (h) ma dźwięczny odpowiednik w polszczyźnie.",
-   "a": false,
-   "ex": "ch (h) jest bezdźwięczna i nie ma pary.",
-   "c": "Dźwięczne i bezdźwięczne"
-  },
-  {
-   "t": "tf",
    "q": "Wszystkie samogłoski są dźwięczne.",
    "a": true,
-   "ex": "Przy samogłoskach wiązadła głosowe drgają.",
+   "ex": "Według podręcznika do głosek dźwięcznych należą wszystkie samogłoski.",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2844,7 +2653,7 @@
     4,
     6
    ],
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2856,7 +2665,7 @@
     3,
     6
    ],
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2868,7 +2677,7 @@
     4,
     6
    ],
-   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
+   "ex": "Dźwięczne: b, d, g, w, z, ż (rz), ź, dz, dź, dż, m, n, ń, l, ł, r, j i wszystkie samogłoski. Bezdźwięczne: p, t, k, f, s, ś, sz, c, ć, cz, ch (h).",
    "c": "Dźwięczne i bezdźwięczne"
   },
   {
@@ -2880,7 +2689,7 @@
     "te-le-FON"
    ],
    "a": 0,
-   "ex": "te-LE-fon – akcent na przedostatnią sylabie: typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "te-LE-fon – akcent na przedostatniej sylabie – to typowy akcent w języku polskim.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2894,7 +2703,7 @@
     "BI-blio-te-ka"
    ],
    "a": 0,
-   "ex": "bi-blio-TE-ka – akcent na przedostatnią sylabie: typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "bi-blio-TE-ka – akcent na przedostatniej sylabie – to typowy akcent w języku polskim.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2908,7 +2717,7 @@
     "in-te-LI-gen-cja"
    ],
    "a": 0,
-   "ex": "in-te-li-GEN-cja – akcent na przedostatnią sylabie: typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "in-te-li-GEN-cja – akcent na przedostatniej sylabie – to typowy akcent w języku polskim.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2921,7 +2730,7 @@
     "by-LIŚ-my"
    ],
    "a": 0,
-   "ex": "BY-liś-my – akcent na trzecią od końca sylabie: czas przeszły, 1. lub 2. osoba liczby mnogiej (-liśmy, -liście).",
+   "ex": "BY-liś-my – akcent na trzeciej sylabie od końca: czas przeszły, 1. lub 2. osoba liczby mnogiej (-liśmy, -liście).",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2935,7 +2744,7 @@
     "RY-so-wa-liś-cie"
    ],
    "a": 0,
-   "ex": "ry-so-WA-liś-cie – akcent na trzecią od końca sylabie: czas przeszły, 1. lub 2. osoba liczby mnogiej (-liśmy, -liście).",
+   "ex": "ry-so-WA-liś-cie – akcent na trzeciej sylabie od końca: czas przeszły, 1. lub 2. osoba liczby mnogiej (-liśmy, -liście).",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2949,7 +2758,7 @@
     "zro-bi-ła-BY"
    ],
    "a": 0,
-   "ex": "zro-BI-ła-by – akcent na trzecią od końca sylabie: tryb przypuszczający w liczbie pojedynczej lub 3. os. liczby mnogiej.",
+   "ex": "zro-BI-ła-by – akcent na trzeciej sylabie od końca: tryb przypuszczający w liczbie pojedynczej lub 3. os. liczby mnogiej.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2962,7 +2771,7 @@
     "za-CZĄŁ-by"
    ],
    "a": 0,
-   "ex": "ZA-czął-by – akcent na trzecią od końca sylabie: tryb przypuszczający w liczbie pojedynczej lub 3. os. liczby mnogiej.",
+   "ex": "ZA-czął-by – akcent na trzeciej sylabie od końca: tryb przypuszczający w liczbie pojedynczej lub 3. os. liczby mnogiej.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2976,7 +2785,7 @@
     "ma-te-ma-TY-ka"
    ],
    "a": 0,
-   "ex": "ma-te-MA-ty-ka – akcent na trzecią od końca sylabie: wyraz obcego pochodzenia na -yka/-ika.",
+   "ex": "ma-te-MA-ty-ka – akcent na trzeciej sylabie od końca: wyraz obcego pochodzenia na -yka/-ika.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -2990,7 +2799,7 @@
     "gra-ma-TY-ka"
    ],
    "a": 0,
-   "ex": "gra-MA-ty-ka – akcent na trzecią od końca sylabie: wyraz obcego pochodzenia na -yka/-ika.",
+   "ex": "gra-MA-ty-ka – akcent na trzeciej sylabie od końca: wyraz obcego pochodzenia na -yka/-ika.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -3004,7 +2813,7 @@
     "IN-for-ma-ty-ka"
    ],
    "a": 0,
-   "ex": "in-for-MA-ty-ka – akcent na trzecią od końca sylabie: wyraz obcego pochodzenia na -yka/-ika.",
+   "ex": "in-for-MA-ty-ka – akcent na trzeciej sylabie od końca: wyraz obcego pochodzenia na -yka/-ika.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -3017,7 +2826,7 @@
     "a-FRY-ka"
    ],
    "a": 0,
-   "ex": "A-fry-ka – akcent na trzecią od końca sylabie: wyraz obcego pochodzenia na -yka/-ika.",
+   "ex": "A-fry-ka – akcent na trzeciej sylabie od końca: wyraz obcego pochodzenia na -yka/-ika.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -3030,7 +2839,7 @@
     "o-pe-RA"
    ],
    "a": 0,
-   "ex": "O-pe-ra – akcent na trzecią od końca sylabie: wyraz obcego pochodzenia.",
+   "ex": "O-pe-ra – akcent na trzeciej sylabie od końca: wyraz obcego pochodzenia.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -3043,7 +2852,7 @@
     "AR-cy-wróg"
    ],
    "a": 0,
-   "ex": "ar-cy-WRÓG – akcent na ostatnią sylabie: wyraz z cząstką wice-/super-/arcy-/eks- i jednosylabowym rzeczownikiem albo wyraz obcy.",
+   "ex": "ar-cy-WRÓG – cząstka arcy- + jednosylabowy rzeczownik: akcent na ostatniej sylabie.",
    "c": "Akcent – wymowa",
    "typ": "Akcent – wymowa"
   },
@@ -3054,7 +2863,7 @@
     "pu"
    ],
    "tryb": "scisle",
-   "ex": "kom-PU-ter – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "kom-PU-ter – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – wymowa",
    "typ": "Sylaba akcentowana"
   },
@@ -3065,7 +2874,7 @@
     "czy"
    ],
    "tryb": "scisle",
-   "ex": "na-u-CZY-ciel – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "na-u-CZY-ciel – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – wymowa",
    "typ": "Sylaba akcentowana"
   },
@@ -3076,7 +2885,7 @@
     "mo"
    ],
    "tryb": "scisle",
-   "ex": "sa-MO-chód – typowy polski akcent – na przedostatniej sylabie.",
+   "ex": "sa-MO-chód – typowy akcent w języku polskim – na przedostatniej sylabie.",
    "c": "Akcent – wymowa",
    "typ": "Sylaba akcentowana"
   },
@@ -3262,7 +3071,7 @@
    "t": "num",
    "q": "Ile sylab ma wyraz „ciocia”?",
    "a": 2,
-   "ex": "Samogłoski w [ć-o-ć-a]: 2 – tyle sylab. „i” przed samogłoską nie tworzy sylaby.",
+   "ex": "Samogłoski w [ć-o-ć-a]: 2 – tyle sylab. „i” jest tu tylko znakiem miękkości, więc nie tworzy sylaby.",
    "c": "Sylaby",
    "typ": "Policz sylaby"
   },
@@ -3270,7 +3079,7 @@
    "t": "num",
    "q": "Ile sylab ma wyraz „szczęście”?",
    "a": 2,
-   "ex": "Samogłoski w [sz-cz-ę-ś-ć-e]: 2 – tyle sylab. „i” przed samogłoską nie tworzy sylaby.",
+   "ex": "Samogłoski w [sz-cz-ę-ś-ć-e]: 2 – tyle sylab. „i” jest tu tylko znakiem miękkości, więc nie tworzy sylaby.",
    "c": "Sylaby",
    "typ": "Policz sylaby"
   },
@@ -3278,7 +3087,7 @@
    "t": "num",
    "q": "Ile sylab ma wyraz „dzień”?",
    "a": 1,
-   "ex": "Samogłoski w [dź-e-ń]: 1 – tyle sylab. „i” przed samogłoską nie tworzy sylaby.",
+   "ex": "Samogłoski w [dź-e-ń]: 1 – tyle sylab. „i” jest tu tylko znakiem miękkości, więc nie tworzy sylaby.",
    "c": "Sylaby",
    "typ": "Policz sylaby"
   },
@@ -3308,7 +3117,7 @@
     "chmu-ra"
    ],
    "a": 0,
-   "ex": "Nie rozdzielamy dwuznaka „sz”: ka-sza.",
+   "ex": "„sz” to jedna głoska – nie rozdzielamy tych liter: ka-sza.",
    "c": "Sylaby"
   },
   {
@@ -3361,7 +3170,7 @@
     3,
     5
    ],
-   "ex": "Jedna samogłoska = jedna sylaba. „dzień”, „cień” – „i” to tylko znak miękkości.",
+   "ex": "Jedna samogłoska = jedna sylaba: chleb, koń, sad.",
    "c": "Sylaby"
   },
   {
@@ -3373,7 +3182,7 @@
     1,
     2
    ],
-   "ex": "Jedna samogłoska = jedna sylaba. „dzień”, „cień” – „i” to tylko znak miękkości.",
+   "ex": "Jedna samogłoska = jedna sylaba: dom, lis, dzień („i” w „dzień” to tylko znak miękkości).",
    "c": "Sylaby"
   },
   {
@@ -3385,7 +3194,7 @@
     3,
     5
    ],
-   "ex": "Jedna samogłoska = jedna sylaba. „dzień”, „cień” – „i” to tylko znak miękkości.",
+   "ex": "Jedna samogłoska = jedna sylaba: dom, koń, lis. „siano” ma dwie: sia-no.",
    "c": "Sylaby"
   },
   {
@@ -3704,7 +3513,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3718,7 +3527,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3732,7 +3541,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3746,7 +3555,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3760,7 +3569,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3774,7 +3583,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3788,7 +3597,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3802,7 +3611,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3816,7 +3625,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3830,7 +3639,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3844,7 +3653,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3858,7 +3667,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3872,7 +3681,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3886,7 +3695,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3900,7 +3709,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3914,13 +3723,13 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
   {
    "t": "mc",
-   "q": "Jaką funkcję pełni litera „i” w wyrazie „lis”?",
+   "q": "Jaką funkcję pełni litera „i” w wyrazie „miska”?",
    "o": [
     "znak miękkości i samogłoska",
     "tylko znak miękkości",
@@ -3928,7 +3737,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3942,7 +3751,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi na początku wyrazu lub po samogłosce – oznacza tylko samogłoskę [i].",
+   "ex": "„i” oznacza tu tylko samogłoskę i – niczego nie zmiękcza (jak w „liga” [l-i-g-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3956,7 +3765,7 @@
     "oznacza głoskę j"
    ],
    "a": 0,
-   "ex": "„i” stoi na początku wyrazu lub po samogłosce – oznacza tylko samogłoskę [i].",
+   "ex": "„i” oznacza tu tylko samogłoskę i – niczego nie zmiękcza (jak w „liga” [l-i-g-a]).",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3970,7 +3779,7 @@
     "tylko samogłoska"
    ],
    "a": 0,
-   "ex": "W wyrazach obcych „i” przed samogłoską może oznaczać głoskę j: chemia [ch-e-m-j-a].",
+   "ex": "Podręcznik: chemia [ch-e-m-j-a] – „i” oznacza tu głoskę j.",
    "c": "Funkcje litery „i”",
    "typ": "Funkcja litery „i”"
   },
@@ -3983,7 +3792,7 @@
     1,
     2
    ],
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”"
   },
   {
@@ -3995,7 +3804,7 @@
     2,
     3
    ],
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”"
   },
   {
@@ -4007,7 +3816,7 @@
     2,
     5
    ],
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”"
   },
   {
@@ -4019,19 +3828,19 @@
     1,
     4
    ],
-   "ex": "„i” stoi przed samogłoską – tylko zmiękcza poprzednią spółgłoskę, nie jest osobną głoską.",
+   "ex": "„i” jest tu tylko znakiem miękkości – nie oznacza osobnej głoski (jak w „siano” [ś-a-n-o]).",
    "c": "Funkcje litery „i”"
   },
   {
    "t": "pick",
    "q": "Zaznacz wyrazy, w których „i” jest jednocześnie znakiem miękkości i samogłoską.",
-   "s": "ich lis cisza cień siedem miska",
+   "s": "ich kij cisza cień siedem miska",
    "a": [
     1,
     2,
     5
    ],
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”"
   },
   {
@@ -4043,19 +3852,19 @@
     1,
     2
    ],
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”"
   },
   {
    "t": "pick",
    "q": "Zaznacz wyrazy, w których „i” jest jednocześnie znakiem miękkości i samogłoską.",
-   "s": "zima dziadek indyk kraina lis piłka",
+   "s": "zima dziadek indyk kraina kij piłka",
    "a": [
     0,
     4,
     5
    ],
-   "ex": "„i” stoi przed spółgłoską lub na końcu – zmiękcza poprzednią spółgłoskę i jednocześnie jest samogłoską [i] (jak w „piłka” [p'-i-ł-k-a]).",
+   "ex": "„i” oznacza tu samogłoskę i, a jednocześnie zmiękcza poprzednią spółgłoskę (jak w „piłka” [p'-i-ł-k-a]).",
    "c": "Funkcje litery „i”"
   },
   {
@@ -4076,7 +3885,7 @@
    "t": "tf",
    "q": "W wyrazie „nic” litera „i” jest samogłoską.",
    "a": true,
-   "ex": "„i” na końcu sylaby, przed spółgłoską – zmiękcza n i jest samogłoską: [ń-i-c].",
+   "ex": "[ń-i-c] – „i” oznacza samogłoskę i, a jednocześnie zmiękcza n.",
    "c": "Funkcje litery „i”"
   },
   {
@@ -4183,7 +3992,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „czapka”?",
    "a": 3,
-   "ex": "[cz-a-p-k-a] – spółgłoski: cz, p, k. Dwuznak to jedna spółgłoska.",
+   "ex": "[cz-a-p-k-a] – spółgłoski: cz, p, k. Kilka liter (np. cz, ch, dź) może oznaczać jedną głoskę.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4199,7 +4008,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „dźwig”?",
    "a": 3,
-   "ex": "[dź-w-i-g] – spółgłoski: dź, w, g. Dwuznak to jedna spółgłoska.",
+   "ex": "[dź-w-i-g] – spółgłoski: dź, w, g. Kilka liter (np. cz, ch, dź) może oznaczać jedną głoskę.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4207,7 +4016,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „nic”?",
    "a": 2,
-   "ex": "[ń-i-c] – spółgłoski: ń, c. Dwuznak to jedna spółgłoska.",
+   "ex": "[ń-i-c] – spółgłoski: ń, c.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4223,7 +4032,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „ciepło”?",
    "a": 3,
-   "ex": "[ć-e-p-ł-o] – spółgłoski: ć, p, ł. Dwuznak to jedna spółgłoska.",
+   "ex": "[ć-e-p-ł-o] – spółgłoski: ć, p, ł.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4231,7 +4040,7 @@
    "t": "num",
    "q": "Ile samogłosek słyszymy w wyrazie „sierść”?",
    "a": 1,
-   "ex": "[ś-e-r-ś-ć] – samogłoski: e. „i” przed samogłoską nie jest samogłoską.",
+   "ex": "[ś-e-r-ś-ć] – samogłoski: e. „i” jest tu tylko znakiem miękkości, nie samogłoską.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz samogłoski"
   },
@@ -4239,7 +4048,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „dziś”?",
    "a": 2,
-   "ex": "[dź-i-ś] – spółgłoski: dź, ś. Dwuznak to jedna spółgłoska.",
+   "ex": "[dź-i-ś] – spółgłoski: dź, ś. Kilka liter (np. cz, ch, dź) może oznaczać jedną głoskę.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4247,7 +4056,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „chleb”?",
    "a": 3,
-   "ex": "[ch-l-e-b] – spółgłoski: ch, l, b. Dwuznak to jedna spółgłoska.",
+   "ex": "[ch-l-e-b] – spółgłoski: ch, l, b. Kilka liter (np. cz, ch, dź) może oznaczać jedną głoskę.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4263,7 +4072,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „wróbel”?",
    "a": 4,
-   "ex": "[w-r-ó-b-e-l] – spółgłoski: w, r, b, l. Dwuznak to jedna spółgłoska.",
+   "ex": "[w-r-ó-b-e-l] – spółgłoski: w, r, b, l.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4271,7 +4080,7 @@
    "t": "num",
    "q": "Ile samogłosek słyszymy w wyrazie „ciężarówka”?",
    "a": 4,
-   "ex": "[ć-ę-ż-a-r-ó-w-k-a] – samogłoski: ę, a, ó, a. „i” przed samogłoską nie jest samogłoską.",
+   "ex": "[ć-ę-ż-a-r-ó-w-k-a] – samogłoski: ę, a, ó, a. „i” jest tu tylko znakiem miękkości, nie samogłoską.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz samogłoski"
   },
@@ -4279,7 +4088,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „dzieci”?",
    "a": 2,
-   "ex": "[dź-e-ć-i] – spółgłoski: dź, ć. Dwuznak to jedna spółgłoska.",
+   "ex": "[dź-e-ć-i] – spółgłoski: dź, ć. Kilka liter (np. cz, ch, dź) może oznaczać jedną głoskę.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4287,7 +4096,7 @@
    "t": "num",
    "q": "Ile spółgłosek słyszymy w wyrazie „cichy”?",
    "a": 2,
-   "ex": "[ć-i-ch-y] – spółgłoski: ć, ch. Dwuznak to jedna spółgłoska.",
+   "ex": "[ć-i-ch-y] – spółgłoski: ć, ch. Kilka liter (np. cz, ch, dź) może oznaczać jedną głoskę.",
    "c": "Samogłoski i spółgłoski",
    "typ": "Policz spółgłoski"
   },
@@ -4476,58 +4285,6 @@
   },
   {
    "t": "mc",
-   "q": "Jak wymawiamy wyraz „kąt”?",
-   "o": [
-    "[kont]",
-    "[kąt]",
-    "[kat]"
-   ],
-   "a": 0,
-   "ex": "„kąt” [kont] – ę/ą przed t, d, c, cz wymawiamy jako en/on.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „zęby”?",
-   "o": [
-    "[zemby]",
-    "[zęby]",
-    "[zeby]"
-   ],
-   "a": 0,
-   "ex": "„zęby” [zemby] – ę/ą przed p, b wymawiamy jako em/om.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „wziął”?",
-   "o": [
-    "[wzioł]",
-    "[wziął]",
-    "[wziąłk]"
-   ],
-   "a": 0,
-   "ex": "„wziął” [wzioł] – ę/ą przed l, ł tracą nosowość: e/o.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „pamiętać”?",
-   "o": [
-    "[pamientać]",
-    "[pamiętać]",
-    "[pamietać]"
-   ],
-   "a": 0,
-   "ex": "„pamiętać” [pamientać] – ę/ą przed t, d, c, cz wymawiamy jako en/on.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
    "q": "Jak wymawiamy wyraz „idę”?",
    "o": [
     "[ide]",
@@ -4562,58 +4319,6 @@
    ],
    "a": 0,
    "ex": "„proszę” [prosze] – ę na końcu wyrazu zwykle traci nosowość.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „mądry”?",
-   "o": [
-    "[mondry]",
-    "[mądry]",
-    "[madry]"
-   ],
-   "a": 0,
-   "ex": "„mądry” [mondry] – ę/ą przed t, d, c, cz wymawiamy jako en/on.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „zając”?",
-   "o": [
-    "[zajonc]",
-    "[zając]",
-    "[zajac]"
-   ],
-   "a": 0,
-   "ex": "„zając” [zajonc] – ę/ą przed t, d, c, cz wymawiamy jako en/on.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „wzięli”?",
-   "o": [
-    "[wzieli]",
-    "[wzięli]",
-    "[wzienli]"
-   ],
-   "a": 0,
-   "ex": "„wzięli” [wzieli] – ę/ą przed l, ł tracą nosowość: e/o.",
-   "c": "Ustne i nosowe",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jak wymawiamy wyraz „zdjęcie”?",
-   "o": [
-    "[zdjencie]",
-    "[zdjęcie]",
-    "[zdjecie]"
-   ],
-   "a": 0,
-   "ex": "„zdjęcie” [zdjencie] – ę/ą przed t, d, c, cz wymawiamy jako en/on.",
    "c": "Ustne i nosowe",
    "typ": "Jak wymawiamy?"
   },
@@ -4699,13 +4404,6 @@
   },
   {
    "t": "tf",
-   "q": "Przed ś, s, sz, z, ż, w, f, ch samogłoski ą i ę zachowują nosowość (np. gęś, wąs, mąż).",
-   "a": true,
-   "ex": "Tak – tu wymawiamy je nosowo.",
-   "c": "Ustne i nosowe"
-  },
-  {
-   "t": "tf",
    "q": "Wyrazy „tempo” i „tępo” brzmią tak samo [tempo].",
    "a": true,
    "ex": "Różnią się pisownią, ale wymawiamy je identycznie: [tempo].",
@@ -4733,8 +4431,8 @@
     "[jabłko]"
    ],
    "a": 0,
-   "ex": "„jabłko” [japko] – uproszczenie grupy spółgłoskowej: znika ł (a b brzmi jak p).",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„jabłko” [japko] – uproszczenie zbitki spółgłoskowej: znika ł (a b brzmi jak p).",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
@@ -4746,21 +4444,21 @@
     "[warszawski]"
    ],
    "a": 0,
-   "ex": "„warszawski” [warszaski] – uproszczenie grupy spółgłoskowej: znika w.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„warszawski” [warszaski] – uproszczenie zbitki spółgłoskowej: znika w.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „warszawski” [warszaski]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika w.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
@@ -4772,21 +4470,21 @@
     "[pierwszy]"
    ],
    "a": 0,
-   "ex": "„pierwszy” [pierszy] – uproszczenie grupy spółgłoskowej: znika w.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„pierwszy” [pierszy] – uproszczenie zbitki spółgłoskowej: znika w.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „pierwszy” [pierszy]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika w.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
@@ -4798,21 +4496,21 @@
     "[sześćset]"
    ],
    "a": 0,
-   "ex": "„sześćset” [szejset] – uproszczenie grupy spółgłoskowej: grupa ść upraszcza się do j.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„sześćset” [szejset] – uproszczenie zbitki spółgłoskowej: zbitka ść upraszcza się – słyszymy j.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „sześćset” [szejset]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
-   "ex": "W zbitce spółgłosek grupa ść upraszcza się do j.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "W zbitce spółgłosek zbitka ść upraszcza się – słyszymy j.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
@@ -4824,73 +4522,47 @@
     "[poszedłe]"
    ],
    "a": 0,
-   "ex": "„poszedł” [poszet] – uproszczenie grupy spółgłoskowej: znika ł, d na końcu brzmi jak t.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„poszedł” [poszet] – uproszczenie zbitki spółgłoskowej: znika ł, d na końcu brzmi jak t.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „poszedł” [poszet]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika ł, d na końcu brzmi jak t.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „mógł” [mók]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika ł, g brzmi jak k.",
-   "c": "Uproszczenia grup spółgłoskowych",
-   "typ": "Nazwij zjawisko"
-  },
-  {
-   "t": "mc",
-   "q": "Jak zwykle wymawiamy wyraz „pomysł”?",
-   "o": [
-    "[pomys]",
-    "[pomyst]",
-    "[pomysł]"
-   ],
-   "a": 0,
-   "ex": "„pomysł” [pomys] – uproszczenie grupy spółgłoskowej: znika ł.",
-   "c": "Uproszczenia grup spółgłoskowych",
-   "typ": "Jak wymawiamy?"
-  },
-  {
-   "t": "mc",
-   "q": "Jakie zjawisko zachodzi w wyrazie „pomysł” [pomys]?",
-   "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
-    "wymowa zgodna z pisownią"
-   ],
-   "a": 0,
-   "ex": "W zbitce spółgłosek znika ł.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „zjadł” [zjat]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika ł, d brzmi jak t.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
@@ -4902,34 +4574,34 @@
     "[niósł]"
    ],
    "a": 0,
-   "ex": "„niósł” [niós] – uproszczenie grupy spółgłoskowej: znika ł.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„niósł” [niós] – uproszczenie zbitki spółgłoskowej: znika ł.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „niósł” [niós]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika ł.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „rzekł” [żek]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika ł.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
@@ -4941,26 +4613,26 @@
     "[usiadłe]"
    ],
    "a": 0,
-   "ex": "„usiadł” [usiat] – uproszczenie grupy spółgłoskowej: znika ł, d brzmi jak t.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "ex": "„usiadł” [usiat] – uproszczenie zbitki spółgłoskowej: znika ł, d brzmi jak t.",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Jak wymawiamy?"
   },
   {
    "t": "mc",
    "q": "Jakie zjawisko zachodzi w wyrazie „usiadł” [usiat]?",
    "o": [
-    "uproszczenie grupy spółgłoskowej",
-    "upodobnienie postępowe",
+    "uproszczenie zbitki spółgłoskowej",
+    "zyskanie dźwięczności",
     "wymowa zgodna z pisownią"
    ],
    "a": 0,
    "ex": "W zbitce spółgłosek znika ł, d brzmi jak t.",
-   "c": "Uproszczenia grup spółgłoskowych",
+   "c": "Uproszczenie zbitek spółgłoskowych",
    "typ": "Nazwij zjawisko"
   },
   {
    "t": "pick",
-   "q": "Zaznacz wyrazy, w których zachodzi uproszczenie grupy spółgłoskowej.",
+   "q": "Zaznacz wyrazy, w których zachodzi uproszczenie zbitki spółgłoskowej.",
    "s": "usiadł mógł szkoła twoja pierwszy prośba",
    "a": [
     0,
@@ -4968,11 +4640,11 @@
     4
    ],
    "ex": "Uproszczenie: w zbitce spółgłosek jedna znika (jabłko [japko], pierwszy [pierszy]).",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "pick",
-   "q": "Zaznacz wyrazy, w których zachodzi uproszczenie grupy spółgłoskowej.",
+   "q": "Zaznacz wyrazy, w których zachodzi uproszczenie zbitki spółgłoskowej.",
    "s": "poszedł mógł twoja kwiat szkoła rzekł",
    "a": [
     0,
@@ -4980,59 +4652,59 @@
     5
    ],
    "ex": "Uproszczenie: w zbitce spółgłosek jedna znika (jabłko [japko], pierwszy [pierszy]).",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "tf",
-   "q": "Uproszczenie grupy spółgłoskowej polega na tym, że w wymowie znika jedna ze spółgłosek.",
+   "q": "Uproszczenie zbitki spółgłoskowej polega na tym, że w wymowie znika jedna ze spółgłosek.",
    "a": true,
    "ex": "jabłko [japko], warszawski [warszaski].",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "tf",
    "q": "W wyrazie „jabłko” w wymowie zwykle nie słychać „ł”.",
    "a": true,
-   "ex": "[japko] – uproszczenie grupy błk.",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "ex": "[japko] – uproszczenie zbitki błk.",
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "tf",
    "q": "Wyraz „warszawski” wymawiamy zwykle [warszaski].",
    "a": true,
-   "ex": "Uproszczenie grupy wsk.",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "ex": "Uproszczenie zbitki wsk.",
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "tf",
-   "q": "Uproszczenie grupy spółgłoskowej to to samo co ubezdźwięcznienie na końcu wyrazu.",
+   "q": "Uproszczenie zbitki spółgłoskowej to to samo co utrata dźwięczności na końcu wyrazu.",
    "a": false,
-   "ex": "Uproszczenie – jedna spółgłoska znika; ubezdźwięcznienie – głoska zostaje, ale traci dźwięczność.",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "ex": "Przy uproszczeniu jedna spółgłoska znika w wymowie (jabłko [japko]); na końcu wyrazu głoska zostaje, ale traci dźwięczność (chleb [chlep]).",
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "match",
-   "q": "Dopasuj wyraz do zjawiska.",
+   "q": "Dopasuj wyraz do zjawiska (3).",
    "p": [
     [
-     "ławka [łafka]",
-     "wsteczne"
+     "twoja [tfoja]",
+     "traci dźwięczność przez sąsiednią głoskę"
     ],
     [
-     "twoja [tfoja]",
-     "postępowe"
+     "jakże [jagże]",
+     "zyskuje dźwięczność przez sąsiednią głoskę"
     ],
     [
      "chleb [chlep]",
-     "na końcu wyrazu"
+     "traci dźwięczność na końcu wyrazu"
     ],
     [
      "jabłko [japko]",
-     "uproszczenie"
+     "uproszczenie zbitki spółgłoskowej"
     ]
    ],
-   "ex": "Wsteczne – wpływ następnej głoski; postępowe – poprzedniej; na końcu wyrazu – utrata dźwięczności; uproszczenie – znika głoska.",
-   "c": "Uproszczenia grup spółgłoskowych"
+   "ex": "Spółgłoska może zmienić dźwięczność pod wpływem sąsiedniej (traci lub zyskuje), dźwięczna na końcu wyrazu traci dźwięczność, a zbitka spółgłoskowa może się uprościć.",
+   "c": "Uproszczenie zbitek spółgłoskowych"
   },
   {
    "t": "mc",
@@ -5093,7 +4765,7 @@
     "sylaba",
     "głoska",
     "litera",
-    "dwuznak"
+    "akcent"
    ],
    "a": 0,
    "ex": "Sylaba (zgłoska).",
@@ -5142,13 +4814,13 @@
    "t": "mc",
    "q": "Które narządy mowy to narządy dolne?",
    "o": [
-    "płuca i tchawica",
+    "płuca",
     "krtań",
     "jama nosowa",
     "język i zęby"
    ],
    "a": 0,
-   "ex": "Płuca dostarczają strumień powietrza.",
+   "ex": "Na schemacie w podręczniku dolne narządy mowy to płuca – dostarczają strumień powietrza.",
    "c": "Pojęcia i narządy mowy"
   },
   {
@@ -5198,7 +4870,7 @@
      "dolne"
     ]
    ],
-   "ex": "Górne (nasada): jama gardłowa, ustna, nosowa; środkowe: krtań z wiązadłami; dolne: płuca, tchawica.",
+   "ex": "Górne (nasada): jama gardłowa, ustna, nosowa; środkowe: krtań z wiązadłami głosowymi; dolne: płuca.",
    "c": "Pojęcia i narządy mowy"
   },
   {
@@ -5235,16 +4907,6 @@
    "c": "Pojęcia i narządy mowy"
   },
   {
-   "t": "in",
-   "q": "Wpisz brakujące słowo: dwie litery oznaczające jedną głoskę to …",
-   "a": [
-    "dwuznak",
-    "dwuznaki"
-   ],
-   "ex": "Np. ch, cz, sz, rz.",
-   "c": "Pojęcia i narządy mowy"
-  },
-  {
    "t": "tf",
    "q": "Fonetyka zajmuje się pisownią wyrazów.",
    "a": false,
@@ -5255,8 +4917,364 @@
    "t": "tf",
    "q": "Narządy mowy dzielimy na górne, środkowe i dolne.",
    "a": true,
-   "ex": "Tak – nasada, krtań, płuca z tchawicą.",
+   "ex": "Górne – nasada, środkowe – krtań z wiązadłami głosowymi, dolne – płuca.",
    "c": "Pojęcia i narządy mowy"
+  },
+  {
+   "t": "match",
+   "q": "Dopasuj pary pojęć z podziału głosek.",
+   "p": [
+    [
+     "samogłoski",
+     "spółgłoski"
+    ],
+    [
+     "dźwięczne",
+     "bezdźwięczne"
+    ],
+    [
+     "ustne",
+     "nosowe"
+    ],
+    [
+     "twarde",
+     "miękkie"
+    ]
+   ],
+   "ex": "Podstawowe pojęcia związane z podziałem głosek: samogłoski i spółgłoski, dźwięczne i bezdźwięczne, ustne i nosowe, spółgłoski twarde i miękkie.",
+   "c": "Pojęcia i narządy mowy"
+  },
+  {
+   "t": "tf",
+   "q": "Głoski dzielimy m.in. na dźwięczne i bezdźwięczne oraz na ustne i nosowe.",
+   "a": true,
+   "ex": "Do tego samogłoski i spółgłoski oraz spółgłoski twarde i miękkie.",
+   "c": "Pojęcia i narządy mowy"
+  },
+  {
+   "t": "mc",
+   "q": "Na twarde i miękkie dzielimy:",
+   "o": [
+    "tylko spółgłoski",
+    "tylko samogłoski",
+    "wszystkie głoski",
+    "tylko głoski nosowe"
+   ],
+   "a": 0,
+   "ex": "Twardość i miękkość dotyczy tylko spółgłosek.",
+   "c": "Pojęcia i narządy mowy"
+  },
+  {
+   "t": "mc",
+   "q": "Co powoduje powstawanie różnych głosek?",
+   "o": [
+    "otwieranie i zamykanie się narządów mowy, blokowanie i uwalnianie strumienia powietrza",
+    "zmiana temperatury powietrza w płucach",
+    "szybkość oddychania",
+    "długość wyrazu"
+   ],
+   "a": 0,
+   "ex": "Poszczególne narządy mowy otwierają się i zamykają, blokują i uwalniają strumień powietrza – tak powstają różne głoski.",
+   "c": "Pojęcia i narządy mowy"
+  },
+  {
+   "t": "mc",
+   "q": "Jak na schemacie narządów mowy nazwano razem jamę gardłową, ustną i nosową?",
+   "o": [
+    "nasada",
+    "krtań",
+    "tchawica",
+    "wiązadła"
+   ],
+   "a": 0,
+   "ex": "Jama gardłowa, ustna i nosowa tworzą nasadę – to górne narządy mowy.",
+   "c": "Pojęcia i narządy mowy"
+  },
+  {
+   "t": "mc",
+   "q": "Jaką funkcję pełni litera „i” w wyrazie „liga”?",
+   "o": [
+    "tylko samogłoska",
+    "tylko znak miękkości",
+    "znak miękkości i samogłoska",
+    "oznacza głoskę j"
+   ],
+   "a": 0,
+   "ex": "Podręcznik: liga [l-i-g-a] – „i” jest tu odpowiednikiem samogłoski i.",
+   "typ": "Funkcja litery „i”",
+   "c": "Funkcje litery „i”"
+  },
+  {
+   "t": "mc",
+   "q": "Jaką funkcję pełni litera „i” w wyrazie „epopei”?",
+   "o": [
+    "oznacza połączenie głoskowe ji",
+    "tylko samogłoska",
+    "tylko znak miękkości",
+    "znak miękkości i samogłoska",
+    "oznacza głoskę j"
+   ],
+   "a": 0,
+   "ex": "epopei [e-p-o-p-e-j-i] – „i” oznacza tu połączenie głoskowe ji.",
+   "typ": "Funkcja litery „i”",
+   "c": "Funkcje litery „i”"
+  },
+  {
+   "t": "tf",
+   "q": "W wyrazie „epopei” litera „i” oznacza połączenie głosek ji.",
+   "a": true,
+   "ex": "[e-p-o-p-e-j-i].",
+   "c": "Funkcje litery „i”"
+  },
+  {
+   "t": "num",
+   "q": "Ile głosek ma wyraz „epopei”?",
+   "a": 7,
+   "ex": "[e-p-o-p-e-j-i] – 6 liter, ale 7 głosek, bo „i” oznacza tu połączenie ji.",
+   "typ": "Ile głosek?",
+   "c": "Funkcje litery „i”"
+  },
+  {
+   "t": "match",
+   "q": "Dopasuj wyraz do funkcji litery „i”.",
+   "p": [
+    [
+     "liga",
+     "tylko samogłoska"
+    ],
+    [
+     "siano",
+     "tylko znak miękkości"
+    ],
+    [
+     "piłka",
+     "samogłoska i znak miękkości"
+    ],
+    [
+     "chemia",
+     "głoska j"
+    ]
+   ],
+   "ex": "liga [l-i-g-a], siano [ś-a-n-o], piłka [p'-i-ł-k-a], chemia [ch-e-m-j-a].",
+   "c": "Funkcje litery „i”"
+  },
+  {
+   "t": "tf",
+   "q": "Wyrazy „konta” i „kąta” brzmią tak samo.",
+   "a": true,
+   "ex": "Oba wymawiamy [konta] – różnią się zapisem i znaczeniem.",
+   "c": "Ustne i nosowe"
+  },
+  {
+   "t": "tf",
+   "q": "Wyrazy „sondy” i „sądy” brzmią tak samo.",
+   "a": true,
+   "ex": "Oba wymawiamy [sondy] – różnią się zapisem i znaczeniem.",
+   "c": "Ustne i nosowe"
+  },
+  {
+   "t": "mc",
+   "q": "Który wyraz brzmi tak samo jak „kąta”?",
+   "o": [
+    "konta",
+    "kata",
+    "kota"
+   ],
+   "a": 0,
+   "ex": "„kąta” i „konta” wymawiamy [konta].",
+   "c": "Ustne i nosowe"
+  },
+  {
+   "t": "mc",
+   "q": "Który wyraz brzmi tak samo jak „sądy”?",
+   "o": [
+    "sondy",
+    "sady",
+    "sody"
+   ],
+   "a": 0,
+   "ex": "„sądy” i „sondy” wymawiamy [sondy].",
+   "c": "Ustne i nosowe"
+  },
+  {
+   "t": "tf",
+   "q": "Głoskę ę na końcu wyrazu zawsze wymawiamy nosowo.",
+   "a": false,
+   "ex": "Na końcu wyrazu ę zwykle traci nosowość (idę [ide]); nosowo wymawiamy zawsze ą (idą).",
+   "c": "Ustne i nosowe"
+  },
+  {
+   "t": "mc",
+   "q": "Jak poprawnie wymawiamy wyraz „idą”?",
+   "o": [
+    "z nosowym ą na końcu",
+    "[ido]",
+    "[idom]"
+   ],
+   "a": 0,
+   "ex": "Głoskę ą na końcu wyrazu wymawiamy zawsze jako nosową (nie: ido, idom).",
+   "c": "Ustne i nosowe"
+  },
+  {
+   "t": "tf",
+   "q": "Głoska „ń” jest dźwięczna.",
+   "a": true,
+   "ex": "Dźwięczne są m.in. m, n, ń, l, ł, r, j.",
+   "c": "Dźwięczne i bezdźwięczne"
+  },
+  {
+   "t": "tf",
+   "q": "Przy wymawianiu głosek dźwięcznych powietrze natrafia na opór w krtani.",
+   "a": true,
+   "ex": "Wiązadła głosowe są wtedy zsunięte.",
+   "c": "Dźwięczne i bezdźwięczne"
+  },
+  {
+   "t": "mc",
+   "q": "Na którą sylabę pada akcent w wyrazie „muzeum”?",
+   "o": [
+    "przedostatnią",
+    "ostatnią",
+    "trzecią od końca"
+   ],
+   "a": 0,
+   "ex": "mu-ZE-um – akcent na przedostatniej sylabie (nie: MU-ze-um).",
+   "typ": "Gdzie pada akcent?",
+   "c": "Akcent – zasady"
+  },
+  {
+   "t": "mc",
+   "q": "Na którą sylabę pada akcent w wyrazie „osiemset”?",
+   "o": [
+    "trzecią od końca",
+    "ostatnią",
+    "przedostatnią"
+   ],
+   "a": 0,
+   "ex": "O-siem-set – niektóre liczebniki mają akcent na trzeciej sylabie od końca.",
+   "typ": "Gdzie pada akcent?",
+   "c": "Akcent – zasady"
+  },
+  {
+   "t": "mc",
+   "q": "Na którą sylabę pada akcent w wyrazie „szukalibyśmy”?",
+   "o": [
+    "czwartą od końca",
+    "trzecią od końca",
+    "przedostatnią",
+    "ostatnią"
+   ],
+   "a": 0,
+   "ex": "szu-KA-li-byś-my – tryb przypuszczający, 1. os. lm.: akcent na czwartej sylabie od końca.",
+   "typ": "Gdzie pada akcent?",
+   "c": "Akcent – zasady"
+  },
+  {
+   "t": "mc",
+   "q": "Na którą sylabę pada akcent w skrótowcu „RP”?",
+   "o": [
+    "ostatnią",
+    "pierwszą"
+   ],
+   "a": 0,
+   "ex": "er-PE – w skrótowcach akcent pada na ostatnią sylabę.",
+   "typ": "Gdzie pada akcent?",
+   "c": "Akcent – zasady"
+  },
+  {
+   "t": "tf",
+   "q": "W wyrazach z cząstką anty-, ekstra- lub kontr- połączoną z jednosylabowym rzeczownikiem akcent pada na ostatnią sylabę.",
+   "a": true,
+   "ex": "Tak jak wi-ce-MISS, su-per-SAM.",
+   "c": "Akcent – zasady"
+  },
+  {
+   "t": "mc",
+   "q": "Wybierz poprawną wymowę (WIELKIE litery = sylaba akcentowana): „Ameryka”.",
+   "o": [
+    "a-ME-ry-ka",
+    "a-me-RY-ka",
+    "A-me-ry-ka"
+   ],
+   "a": 0,
+   "ex": "a-ME-ry-ka – wyraz obcy na -yka: akcent na trzeciej sylabie od końca.",
+   "typ": "Akcent – wymowa",
+   "c": "Akcent – wymowa"
+  },
+  {
+   "t": "mc",
+   "q": "Wybierz poprawną wymowę (WIELKIE litery = sylaba akcentowana): „rozwijałby”.",
+   "o": [
+    "roz-wi-JAŁ-by",
+    "roz-WI-jał-by",
+    "roz-wi-jał-BY"
+   ],
+   "a": 0,
+   "ex": "roz-wi-JAŁ-by – tryb przypuszczający, 3. os. lp.: akcent na trzeciej sylabie od końca.",
+   "typ": "Akcent – wymowa",
+   "c": "Akcent – wymowa"
+  },
+  {
+   "t": "mc",
+   "q": "Wybierz poprawną wymowę (WIELKIE litery = sylaba akcentowana): „nauczylibyście”.",
+   "o": [
+    "na-u-CZY-li-by-ście",
+    "na-u-czy-LI-by-ście",
+    "na-u-czy-li-BY-ście"
+   ],
+   "a": 0,
+   "ex": "na-u-CZY-li-by-ście – tryb przypuszczający, 2. os. lm.: akcent na czwartej sylabie od końca.",
+   "typ": "Akcent – wymowa",
+   "c": "Akcent – wymowa"
+  },
+  {
+   "t": "in",
+   "q": "Wpisz sylabę akcentowaną w wyrazie „podziwialibyście” (po-dzi-wia-li-by-ście).",
+   "a": [
+    "wia"
+   ],
+   "tryb": "scisle",
+   "ex": "po-dzi-WIA-li-by-ście – tryb przypuszczający, 2. os. lm.: czwarta sylaba od końca.",
+   "typ": "Sylaba akcentowana",
+   "c": "Akcent – wymowa"
+  },
+  {
+   "t": "in",
+   "q": "Wpisz sylabę akcentowaną w wyrazie „mieszkańcy” (miesz-kań-cy).",
+   "a": [
+    "kań"
+   ],
+   "tryb": "scisle",
+   "zle": [
+    "kan"
+   ],
+   "ex": "miesz-KAŃ-cy – typowy akcent na przedostatniej sylabie.",
+   "typ": "Sylaba akcentowana",
+   "c": "Akcent – wymowa"
+  },
+  {
+   "t": "in",
+   "q": "Wpisz sylabę akcentowaną w wyrazie „ulepił” (u-le-pił).",
+   "a": [
+    "le"
+   ],
+   "tryb": "scisle",
+   "ex": "u-LE-pił – typowy akcent na przedostatniej sylabie.",
+   "typ": "Sylaba akcentowana",
+   "c": "Akcent – wymowa"
+  },
+  {
+   "t": "mc",
+   "q": "Wybierz poprawną wymowę (WIELKIE litery = sylaba akcentowana): „atelier”.",
+   "o": [
+    "a-te-LIER",
+    "a-TE-lier",
+    "A-te-lier"
+   ],
+   "a": 0,
+   "ex": "a-te-LIER – niektóre wyrazy pochodzenia obcego mają akcent na ostatniej sylabie.",
+   "typ": "Akcent – wymowa",
+   "c": "Akcent – wymowa"
   }
  ]
 }
