@@ -24,7 +24,15 @@ setTimeout(()=>{
     if(!$('#qBody').children.length)errs.push(`pytanie ${i}: brak pola odpowiedzi`);}catch(e){errs.push(`pytanie ${i}: ${e.message}`);}});
   // 3. Pełny test „na chybił trafił” + powtórka błędów + fiszki
   try{
-    w.eval("S.cur=null;S.errors=[];renderHome();");$('#goTest').click();
+    w.eval("S.cur=null;S.errors=[];renderHome();");
+    // testy z działów (config.dzialy): każda kategoria istnieje, losowanie bierze tylko z działu
+    const DZ=A.CFG.dzialy||{};Object.entries(DZ).forEach(([d,k])=>{k.forEach(c=>{if(!A.Q.some(q=>q.c===c))errs.push(`dział „${d}”: brak pytań z kategorii „${c}”`);});
+      const ids=w.eval('draw')(A.CFG.liczbaPytan,d);if(!ids.length)errs.push(`dział „${d}”: pusty test`);
+      ids.forEach(id=>{const q=A.Q.find(x=>x._id===id);if(!k.includes(q.c))errs.push(`dział „${d}”: pytanie spoza działu (${q.c})`);});});
+    $('#goTest').click();
+    if(Object.keys(DZ).length){if($('#testPick').hidden)errs.push('Brak wyboru działu do testu');
+      else if($('#testList').children.length!==Object.keys(DZ).length+1)errs.push('Wybór działu: zła liczba przycisków');
+      $('#testList button').click();}
     for(let k=0;k<A.CFG.liczbaPytan&&!$('#quiz').hidden;k++){const b=$('#qBody');const o=b.querySelector('.opts .opt');
       if(o)o.click();else{const sp=b.querySelector('.spot img');if(sp)sp.dispatchEvent(new w.MouseEvent('click',{clientX:50,clientY:50,bubbles:true}));b.querySelectorAll('input').forEach(x=>x.value='xyz');b.querySelectorAll('.word').forEach((x,j)=>{if(j<1)x.click();});
         b.querySelectorAll('select').forEach(x=>x.value=x.options[1].value);let g=0;while(b.querySelector('.pool .opt')&&g++<50)b.querySelector('.pool .opt').click();$('#qActions button').click();}

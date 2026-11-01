@@ -257,6 +257,11 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <p class="hint" id="cHint">Przesuń w prawo – umiem, w lewo – jeszcze nie</p>
   <div class="duo"><button class="btn no" id="cNo">Jeszcze nie</button><button class="btn yes" id="cYes">Umiem</button></div>
 </section>
+<section id="testPick" hidden>
+  <div class="topbar"><button class="back" data-home>← Menu</button></div>
+  <h2>Z czego test?</h2>
+  <div class="picklist" id="testList"></div>
+</section>
 <section id="cardsPick" hidden>
   <div class="topbar"><button class="back" data-home>← Menu</button></div>
   <h2>Które fiszki?</h2>
@@ -299,6 +304,7 @@ Q.forEach(q=>{q._id=q.id||hash([q.t,q.q,q.s||'',q.b||'',JSON.stringify(q.o||q.p|
 CARDS.forEach(c=>{c._id=c.id||hash(c.p+'|'+c.o);});
 const QI={};Q.forEach((q,i)=>QI[q._id]=i);
 const TAGS=Object.keys(CFG.tagi);
+const DZIALY=CFG.dzialy||{};
 const TYPE={mc:'Wybierz jedną odpowiedź',tf:'Prawda czy fałsz?',in:'Wpisz odpowiedź',num:'Wpisz liczbę',pick:'Dotknij właściwych wyrazów',match:'Dopasuj w pary',multi:'Uzupełnij pola',spot:'Wskaż na obrazku',gap:'Wybierz właściwą formę',order:'Ułóż we właściwej kolejności'};
 const OK_MSG=['Świetnie!','Brawo!','Dokładnie tak!','Bezbłędnie!','Tak trzymaj!','Dobrze!'];
 const KO_MSG=['Nie tym razem – teraz już wiesz.','Prawie! Zobacz wyjaśnienie.','Spokojnie, błędy pomagają się uczyć.','To częsty błąd – zapamiętaj zasadę.'];
@@ -461,10 +467,18 @@ function renderHome(){
   const cur=S.cur&&S.cur.mode==='test';
   $('#testLabel').textContent=cur?'Dokończ test':'Test';
   renderGra();
-  $('#testDesc').textContent=cur?('Jesteś na pytaniu '+(Math.min(S.cur.res.length,S.cur.ids.length-1)+1)+' z '+S.cur.ids.length+'.'):(Math.min(CFG.liczbaPytan,Q.length)+' losowych zadań z puli '+Q.length+' i przewidywana ocena.');
+  $('#testDesc').textContent=cur?('Jesteś na pytaniu '+(Math.min(S.cur.res.length,S.cur.ids.length-1)+1)+' z '+S.cur.ids.length+'.'):(Math.min(CFG.liczbaPytan,Q.length)+' losowych zadań z puli '+Q.length+' i przewidywana ocena'+(Object.keys(DZIALY).length?' – z całości albo z wybranego działu.':'.'));
 }
 $('#goCards').onclick=openCards;
-$('#goTest').onclick=()=>{if(S.cur&&S.cur.mode==='test'){R=S.cur;resume();}else startQuiz('test');};
+$('#goTest').onclick=()=>{if(S.cur&&S.cur.mode==='test'){R=S.cur;resume();}else if(Object.keys(DZIALY).length)openTestPick();else startQuiz('test');};
+/* test z jednego działu: config.dzialy = {"Nazwa działu": ["kategoria", …]} */
+function openTestPick(){const L=$('#testList');L.innerHTML='';S.dz=S.dz||{};
+  const ile=dz=>Q.filter(q=>DZIALY[dz].includes(q.c)).length;
+  [[null,'Cały materiał',Q.length]].concat(Object.keys(DZIALY).map(d=>[d,d,ile(d)])).filter(x=>x[2]).forEach(([d,l,n])=>{
+    const b=document.createElement('button');b.className='mode';b.style.minHeight='64px';const w=d?S.dz[d]:S.last;
+    b.innerHTML='<span><b>'+esc(l)+'</b><span class="d">'+Math.min(CFG.liczbaPytan,n)+' zadań z puli '+n+(w?' · ostatnio: '+w.pct+'%, ocena '+w.g:'')+'</span></span>';
+    b.onclick=()=>startQuiz('test',d);L.appendChild(b);});
+  show('testPick');}
 $('#goReview').onclick=()=>startQuiz('review');
 $('#resetBtn').onclick=()=>{if(confirm('Na pewno wyczyścić postęp fiszek, błędy i wyniki?')){S={known:{},errors:[],last:null,cur:null,theme:S.theme};save();renderHome();}};
 
@@ -528,8 +542,8 @@ $('#cdAgain').onclick=()=>{CARDS.forEach(c=>{if(!ftag||c.tag===ftag)delete S.kno
 
 /* ===== TEST ===== */
 let R=null,combo=0;
-function draw(n){const by={};Q.forEach(q=>{(by[q.c||'_']=by[q.c||'_']||[]).push(q._id);});
-  const cats=shuffle(Object.keys(by)).map(c=>shuffle(by[c]));const out=[];let r=0;n=Math.min(n,Q.length);
+function draw(n,dz){const by={},kat=dz&&DZIALY[dz];Q.forEach(q=>{if(kat&&!kat.includes(q.c))return;(by[q.c||'_']=by[q.c||'_']||[]).push(q._id);});
+  const cats=shuffle(Object.keys(by)).map(c=>shuffle(by[c]));const out=[];let r=0;n=Math.min(n,Object.values(by).reduce((a,b)=>a+b.length,0));
   while(out.length<n){const c=cats[r%cats.length];if(c.length)out.push(c.pop());r++;}return shuffle(out);}
 /* Statystyki (GoatCounter, tylko na stronie): anonimowy kod urządzenia – losowy, wspólny dla wszystkich aplikacji w tej przeglądarce */
 const NA_STRONIE=location.hostname==='pawelziaja.github.io';
@@ -547,10 +561,10 @@ function podanaOdp(q){const b=$('#qBody'),val=s=>[...b.querySelectorAll(s)];
     case 'order':return val('.seq .opt').map(x=>x.textContent.replace(/^\d+/,'')).join(' → ');
     case 'spot':return 'kliknięcie poza celem';}return '';}
 if(NA_STRONIE){$('#devCode').textContent='Kod urządzenia: '+devId();$('#devCode').hidden=false;if(window.gcGotowy)gcEvent('aplikacja otwarta');}
-function startQuiz(mode){const pool=mode==='test'?draw(CFG.liczbaPytan):shuffle(S.errors.slice());
+function startQuiz(mode,dz){const pool=mode==='test'?draw(CFG.liczbaPytan,dz):shuffle(S.errors.slice());
   if(!pool.length){renderHome();show('home');return;}const nr=mode==='test'?(S.nTest=(S.nTest||0)+1):(S.nPowt=(S.nPowt||0)+1);
-  R={mode,ids:pool,res:[],nr};S.cur=R;save();combo=0;gcEvent(mode==='test'?'test #'+nr+' rozpoczęty':'powtórka #'+nr+' rozpoczęta');resume();}
-const nazwaR=()=>(R.mode==='test'?'test #':'powtórka #')+(R.nr||0);
+  R={mode,ids:pool,res:[],nr};if(dz)R.dz=dz;S.cur=R;save();combo=0;gcEvent(nazwaR()+(mode==='test'?' rozpoczęty':' rozpoczęta'));resume();}
+const nazwaR=()=>(R.mode==='test'?'test #':'powtórka #')+(R.nr||0)+(R.dz?' (dział: '+R.dz+')':'');
 function resume(){show('quiz');renderQ();}
 function btnOpts(box,labels,correct,onPick){labels.forEach((l,j)=>{const b=document.createElement('button');b.className='opt';b.textContent=l;
   b.onclick=()=>{box.querySelectorAll('.opt').forEach((x,i)=>{x.disabled=true;if(i===correct)x.classList.add('ok');});if(j!==correct)b.classList.add('ko');onPick(j===correct);};box.appendChild(b);});}
@@ -558,7 +572,7 @@ function inputEl(id,label,ph){return (label?'<label class="small" for="'+id+'">'
 function renderQ(){
   if(R.res.length>=R.ids.length){finishQuiz();return;}
   const i=R.res.length,q=Q[QI[R.ids[i]]];
-  $('#qMode').textContent=R.mode==='test'?'Test':'Powtórka błędów';
+  $('#qMode').textContent=R.mode==='test'?(R.dz?'Test: '+R.dz:'Test'):'Powtórka błędów';
   $('#qNum').textContent='Zadanie '+(i+1)+' z '+R.ids.length;
   $('#qScore').textContent='Dobrze: '+R.res.filter(Boolean).length;
   $('#qBar').style.width=(i/R.ids.length*100)+'%';
@@ -647,7 +661,7 @@ function answer(ok,q,extra,note){
 function finishQuiz(){
   const n=R.ids.length,good=R.res.filter(Boolean).length,pct=Math.round(good/n*100),wrong=R.ids.filter((id,k)=>!R.res[k]);
   $('#rTitle').textContent=R.mode==='test'?'Twój wynik':'Powtórka zakończona';$('#rPct').textContent=pct+'%';
-  if(R.mode==='test'){const g=gradeOf(pct);S.last={pct,g};S.best=Math.max(S.best||0,g);$('#rGrade').textContent=g;gcEvent(nazwaR()+' ukończony, ocena '+g+', wynik '+good+'/'+n);
+  if(R.mode==='test'){const g=gradeOf(pct);if(R.dz){S.dz=S.dz||{};S.dz[R.dz]={pct,g};}else{S.last={pct,g};S.best=Math.max(S.best||0,g);}$('#rGrade').textContent=g;gcEvent(nazwaR()+' ukończony, ocena '+g+', wynik '+good+'/'+n);
     const bonus={6:50,5:30,4:15}[g]||0;gra(bonus);if(bonus)toast('🏆 Bonus za ocenę '+g+': +'+bonus+' XP');if(g>=5){konfetti();graj('fanfara');}
     if(HW)setTimeout(()=>duch(g>=5?'Buu! Upiornie dobry wynik!':g>=3?'Buu! Popraw błędy – będzie straszniej dobrze!':'Buu! Spokojnie – fiszki i powtórka, potem znowu test!'),g>=5?900:300);
     $('#rInfo').textContent=good+' z '+n+' dobrze · przewidywana ocena: '+GNAME[g];

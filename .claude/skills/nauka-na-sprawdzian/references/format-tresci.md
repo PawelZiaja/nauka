@@ -20,6 +20,7 @@
 ```
 
 - `klucz` – identyfikator zapisu postępu (małe litery, cyfry, myślniki). Unikalny dla każdej aplikacji; **przy aktualizacji nie zmieniaj**.
+- `dzialy` – opcjonalnie: testy z jednego działu, `{"Nazwa działu": ["kategoria c", …]}`. Przycisk „Test” pokazuje wtedy wybór: cały materiał albo dział (wynik działu nie zmienia przewidywanej oceny z całości). Działy mogą się nakładać (np. „Oddziaływania i siły” i „Tylko siła”). Dodawaj je, gdy materiał ma kilka wyraźnych części.
 - `tagi` – etykiety fiszek (max 4 kolory). `tryb` – domyślny tryb sprawdzania wpisów.
 - `progi` – [minimalny %, ocena], od najwyższej. Domyślne jak wyżej.
 - `mowa` – kod języka do czytania na głos (`en-GB`, `en-US`, `de-DE`); przycisk 🔊 pojawia się przy fiszkach z polem `lang`.
