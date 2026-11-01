@@ -447,7 +447,7 @@ document.title=CFG.tytul;
 $('#hTitle').textContent=CFG.tytul;
 $('#hSub').textContent=[CFG.przedmiot,CFG.klasa?'klasa '+CFG.klasa:''].filter(Boolean).join(', ')+(HW?' · 🎃':'');
 if(CFG.podrecznik){const P=CFG.podrecznik,B=$('#book');B.hidden=false;B.querySelector('img').src=P.okladka||'';B.querySelector('img').hidden=!P.okladka;
-  B.querySelector('b').textContent=P.tytul+(P.wydawnictwo?' · '+P.wydawnictwo:'');B.querySelectorAll('span')[1].textContent=P.opis||'';}
+  B.querySelector('span').textContent=P.etykieta||'Podręcznik';B.querySelector('img').alt='Okładka: '+P.tytul;B.querySelector('b').textContent=P.tytul+(P.wydawnictwo?' · '+P.wydawnictwo:'');B.querySelectorAll('span')[1].textContent=P.opis||'';}
 function gradeOf(p){for(const [min,g] of CFG.progi)if(p>=min)return g;return 1;}
 function renderHome(){
   const k=CARDS.filter(c=>S.known[c._id]).length;

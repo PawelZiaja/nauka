@@ -57,9 +57,10 @@
  },
  "dodatkowe/angielski": {
   "przedmiot": "Język angielski",
-  "tytul": "Fiszki PLUS. Angielski – 1000 najważniejszych słów",
-  "wydawnictwo": "Edgard",
-  "opis": "fiszki i memolista, poziom A1–A2",
-  "okladka": "okladki/dodatkowe-angielski.jpg"
+  "etykieta": "Zestaw",
+  "tytul": "1000 najważniejszych słów angielskich",
+  "wydawnictwo": "",
+  "opis": "słówka i zwroty z 30 tematów, poziom A1–A2, z wymową i zdaniami przykładowymi",
+  "okladka": "okladki/dodatkowe-angielski.png"
  }
 }

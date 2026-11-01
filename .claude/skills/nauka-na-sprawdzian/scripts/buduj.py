@@ -130,10 +130,10 @@ def main():
         if pf.exists():
             pod = json.loads(pf.read_text(encoding='utf-8')).get(f'{out.resolve().parent.parent.name}/{out.resolve().parent.name}')
             if pod and 'podrecznik' not in cfg:
-                cfg['podrecznik'] = {k: pod[k] for k in ('tytul', 'wydawnictwo', 'opis')}
+                cfg['podrecznik'] = {k: pod[k] for k in ('tytul', 'wydawnictwo', 'opis', 'etykieta') if pod.get(k)}
                 cfg['podrecznik']['okladka'] = do_data_uri(pod['okladka'], kat, maks=200)
                 d['config'] = cfg
-                print(f'Podręcznik: {pod["tytul"]} ({pod["wydawnictwo"]})')
+                print(f'{pod.get("etykieta", "Podręcznik")}: {pod["tytul"]} ({pod.get("wydawnictwo", "")})')
             break
 
     tpl = (Path(__file__).resolve().parent.parent / 'assets' / 'szablon.html').read_text(encoding='utf-8')

@@ -61,7 +61,7 @@ def ksiazka(nr, folder):
     P = pod.get(f'klasa-{nr}/{folder}' if nr.isdigit() else f'{nr}/{folder}')
     if not P: return ''
     return (f'<div class="bk"><img src="{html.escape(P["okladka"])}" alt="Okładka: {html.escape(P["tytul"])}" loading="lazy">'
-            f'<span>Podręcznik: <b>{html.escape(P["tytul"])}</b> · {html.escape(P["wydawnictwo"])}<br><small>{html.escape(P["opis"])}</small></span></div>')
+            f'<span>{html.escape(P.get("etykieta", "Podręcznik"))}: <b>{html.escape(P["tytul"])}</b>{" · " + html.escape(P["wydawnictwo"]) if P.get("wydawnictwo") else ""}<br><small>{html.escape(P["opis"])}</small></span></div>')
 sekcje = []
 for klasa in sorted(apps, key=lambda x: int(x) if x.isdigit() else 99):
     przedm = ''.join(f'<h3>{html.escape(p)}</h3>' + ksiazka(klasa, fo) + ('' if lst else '<p class="pusto">Aplikacje pojawią się przed sprawdzianem.</p>') + ''.join(f'<a class="it" href="{html.escape(h)}" data-k="{html.escape(kl)}" data-n="{nf}"><span>{html.escape(t)}</span><span class="pg"></span></a>' for t, h, kl, nf in sorted(lst)) for (p, fo), lst in sorted(apps[klasa].items()))

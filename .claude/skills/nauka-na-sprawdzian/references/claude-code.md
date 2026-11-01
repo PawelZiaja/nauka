@@ -26,7 +26,7 @@ Rodzic podaje zwykle jedno zdanie (tytuł i/lub ścieżkę do folderu ze zdjęci
 10. Raport według `SKILL.md`, krok 7, z adresem `https://<login małymi literami>.github.io/nauka/klasa-X/przedmiot/temat.html`.
 
 ## Materiał spoza klas
-Słówka „na zapas”, kursy itp. (nie na sprawdzian konkretnej klasy) – w folderze głównym `dodatkowe/<przedmiot>/temat.html`, `config.klasa: ""`. `spis.py` pokazuje je w osobnej sekcji „Dodatkowe” pod klasami; podręcznik/zestaw w `podreczniki.json` pod kluczem `dodatkowe/<przedmiot>`.
+Słówka „na zapas”, kursy itp. (nie na sprawdzian konkretnej klasy) – w folderze głównym `dodatkowe/<przedmiot>/temat.html`, `config.klasa: ""`. `spis.py` pokazuje je w osobnej sekcji „Dodatkowe” pod klasami; podręcznik/zestaw w `podreczniki.json` pod kluczem `dodatkowe/<przedmiot>` (opcjonalnie `etykieta`, np. „Zestaw” zamiast „Podręcznik”; `wydawnictwo` może być puste). Okładkę cudzego produktu zastąp własną grafiką.
 
 ## Poprawki
 Edytuj `temat.json` (nie HTML), przebuduj, przetestuj, commit i push. Nie zmieniaj `config.klucz` – postęp dzieci zostaje.
