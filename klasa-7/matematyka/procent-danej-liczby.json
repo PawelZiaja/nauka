@@ -31,19 +31,13 @@
    "tag": "z",
    "p": "Co to jest promil (‰)?",
    "o": "Jedna tysięczna część całości: 1‰ = 1/1000 = 0,001.",
-   "w": "1% = 10‰."
+   "w": "Przykład z książki: 7‰ = 0,007."
   },
   {
    "tag": "z",
    "p": "Jak zamienić procent na ułamek dziesiętny?",
    "o": "Podzielić przez 100 – przesunąć przecinek o 2 miejsca w lewo.",
    "w": "19% = 0,19; 4% = 0,04; 120% = 1,2."
-  },
-  {
-   "tag": "z",
-   "p": "Jak zamienić ułamek na procent?",
-   "o": "Pomnożyć przez 100%.",
-   "w": "0,35 = 35%; 3/4 = 75%; 1,5 = 150%."
   },
   {
    "tag": "z",
@@ -108,8 +102,8 @@
   {
    "tag": "z",
    "p": "0,1% = ?",
-   "o": "1/1000 = 0,001 = 1‰",
-   "w": "Jedna tysięczna."
+   "o": "1/1000 = 0,001",
+   "w": "Jedna tysięczna – liczbę dzielimy przez 1000."
   },
   {
    "tag": "o",
@@ -127,13 +121,7 @@
    "tag": "o",
    "p": "Ułamek danej liczby – jak liczymy?",
    "o": "Mnożymy ułamek przez liczbę.",
-   "w": "3/4 z 80 zł = 60 zł; 0,7 z 30 = 21."
-  },
-  {
-   "tag": "o",
-   "p": "p% z a, a a% z p – co zauważysz?",
-   "o": "Wyniki są równe.",
-   "w": "8% z 50 = 50% z 8 = 4."
+   "w": "3/4 z 60 zł = 45 zł; 0,7 z 30 = 21."
   },
   {
    "tag": "o",
@@ -152,12 +140,6 @@
    "p": "Procent mniejszy od 1%",
    "o": "Wynik jest mniejszy od setnej części liczby.",
    "w": "0,5% z 800 = 0,005 · 800 = 4."
-  },
-  {
-   "tag": "o",
-   "p": "Kwota w zł – z jaką dokładnością podajemy wynik?",
-   "o": "Do 1 grosza, czyli do 0,01 zł.",
-   "w": "56,465 zł ≈ 56,47 zł."
   },
   {
    "tag": "o",
@@ -263,15 +245,33 @@
   },
   {
    "tag": "t",
-   "p": "Rabat 20% na bluzę za 150 zł – ile wynosi rabat?",
-   "o": "30 zł",
-   "w": "20% z 150 = 150 : 5 = 30 zł."
-  },
-  {
-   "tag": "t",
    "p": "Wyższy procent = więcej sztuk?",
    "o": "Nie zawsze – zależy od całości.",
    "w": "60% z 20 = 12, a 40% z 35 = 14."
+  },
+  {
+   "tag": "p",
+   "p": "Obliczanie „według wzoru” (przez 10%)",
+   "o": "100% to cała kwota → 10% to jej dziesiąta część → potem mnożymy.",
+   "w": "70% z 40 zł: 100% to 40 zł, 10% to 4 zł, 70% to 28 zł."
+  },
+  {
+   "tag": "t",
+   "p": "Etykieta: „truskawki (60%), masa 250 g” – ile gramów truskawek?",
+   "o": "60% z 250 g = 0,6 · 250 = 150 g",
+   "w": "Procent składnika z etykiety mnożymy przez masę zawartości."
+  },
+  {
+   "tag": "t",
+   "p": "Ile składnika w kilku sztukach (garściach, porcjach)?",
+   "o": "procent (jako ułamek) · liczba sztuk · masa jednej sztuki",
+   "w": "Garść 40 g, tłuszcz 5%; w 3 garściach: 0,05 · 3 · 40 = 6 g."
+  },
+  {
+   "tag": "t",
+   "p": "Procent z części całości (np. 80% powierzchni pod okopowe)",
+   "o": "Najpierw obliczamy część, potem procent z tej części.",
+   "w": "Pole 20 ha, okopowe 30% → 6 ha; ziemniaki 50% z 6 ha = 3 ha."
   }
  ],
  "pytania": [
@@ -451,62 +451,6 @@
    "c": "zamiana-dz"
   },
   {
-   "t": "num",
-   "q": "Zapisz liczbę 0,35 w procentach.",
-   "a": 35,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 0,35 · 100% = 35%.",
-   "c": "zamiana-dz"
-  },
-  {
-   "t": "num",
-   "q": "Zapisz liczbę 1,4 w procentach.",
-   "a": 140,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 1,4 · 100% = 140%.",
-   "c": "zamiana-dz"
-  },
-  {
-   "t": "num",
-   "q": "Zapisz liczbę 0,08 w procentach.",
-   "a": 8,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 0,08 · 100% = 8%.",
-   "c": "zamiana-dz"
-  },
-  {
-   "t": "num",
-   "q": "Zapisz liczbę 0,005 w procentach.",
-   "a": 0.5,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 0,005 · 100% = 0,5%.",
-   "c": "zamiana-dz"
-  },
-  {
-   "t": "num",
-   "q": "Zapisz liczbę 2 w procentach.",
-   "a": 200,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 2 · 100% = 200%.",
-   "c": "zamiana-dz"
-  },
-  {
-   "t": "num",
-   "q": "Zapisz liczbę 0,6 w procentach.",
-   "a": 60,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 0,6 · 100% = 60%.",
-   "c": "zamiana-dz"
-  },
-  {
-   "t": "num",
-   "q": "Zapisz liczbę 0,125 w procentach.",
-   "a": 12.5,
-   "jedn": "%",
-   "ex": "Mnożymy przez 100%: 0,125 · 100% = 12,5%.",
-   "c": "zamiana-dz"
-  },
-  {
    "t": "mc",
    "q": "Który ułamek dziesiętny odpowiada 5%?",
    "o": [
@@ -681,7 +625,7 @@
    "tryb": "scisle",
    "ph": "np. 3/4",
    "zle": [],
-   "ex": "1% = 1/100 = 1/100 (skracamy, ile się da).",
+   "ex": "1% = 1/100 – tego ułamka nie da się już skrócić.",
    "c": "zamiana-zw"
   },
   {
@@ -774,70 +718,6 @@
    "tryb": "scisle",
    "ph": "np. 1 1/2",
    "ex": "225% = 225/100 = 9/4 = 2 1/4.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 3/4?",
-   "a": 75,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 3/4 · 100% = 75%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 1/5?",
-   "a": 20,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 1/5 · 100% = 20%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 7/10?",
-   "a": 70,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 7/10 · 100% = 70%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 1/8?",
-   "a": 12.5,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 1/8 · 100% = 12,5%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 3/2?",
-   "a": 150,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 3/2 · 100% = 150%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 9/20?",
-   "a": 45,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 9/20 · 100% = 45%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 1/25?",
-   "a": 4,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 1/25 · 100% = 4%.",
-   "c": "zamiana-zw"
-  },
-  {
-   "t": "num",
-   "q": "Ile to procent: 2?",
-   "a": 200,
-   "jedn": "%",
-   "ex": "Rozszerzamy do mianownika 100 albo mnożymy przez 100%: 2 · 100% = 200%.",
    "c": "zamiana-zw"
   },
   {
@@ -1044,20 +924,6 @@
   },
   {
    "t": "tf",
-   "q": "1‰ = 0,1%",
-   "a": true,
-   "ex": "1‰ = 1/1000 = 0,1/100 = 0,1%.",
-   "c": "promile"
-  },
-  {
-   "t": "tf",
-   "q": "10‰ = 1%",
-   "a": true,
-   "ex": "10‰ = 10/1000 = 1/100 = 1%.",
-   "c": "promile"
-  },
-  {
-   "t": "tf",
    "q": "5‰ = 5%",
    "a": false,
    "ex": "5‰ = 0,005, a 5% = 0,05 – promil jest 10 razy mniejszy od procentu.",
@@ -1074,27 +940,6 @@
    ],
    "a": 0,
    "ex": "1‰ to 1/1000, a 1/1000 z 1000 to 1.",
-   "c": "promile"
-  },
-  {
-   "t": "mc",
-   "q": "Ile promili to 3%?",
-   "o": [
-    "30‰",
-    "3‰",
-    "300‰",
-    "0,3‰"
-   ],
-   "a": 0,
-   "ex": "1% = 10‰, więc 3% = 30‰.",
-   "c": "promile"
-  },
-  {
-   "t": "num",
-   "q": "Ile promili to 0,4%?",
-   "a": 4,
-   "jedn": "‰",
-   "ex": "1% = 10‰, więc 0,4% = 4‰.",
    "c": "promile"
   },
   {
@@ -2315,7 +2160,7 @@
    "alt": "Ulubiony sport – klasa 7 (30 osób): piłka nożna 40%, siatkówka 30%, koszykówka 20%, inne 10%",
    "a": 3,
    "jedn": "osób",
-   "ex": "10% z 30: 0,1 · 30 = 3 osób.",
+   "ex": "10% z 30: 0,1 · 30 = 3 osoby.",
    "c": "diagramy"
   },
   {
@@ -2648,7 +2493,7 @@
   },
   {
    "t": "num",
-   "q": "Bateria telefonu ma pojemność 4500 mAh. Pozostało 20% energii. Ile to mAh?",
+   "q": "Bateria telefonu ma pojemność 4500 mAh. Zostało 20% naładowania. Ile to mAh?",
    "a": 900,
    "jedn": "mAh",
    "ex": "20% = 1/5; 4500 : 5 = 900.",
@@ -3249,33 +3094,6 @@
   },
   {
    "t": "mc",
-   "q": "Co jest większe: 20% z 300 czy 30% z 200?",
-   "o": [
-    "są równe",
-    "20% z 300",
-    "30% z 200",
-    "nie da się porównać"
-   ],
-   "a": 0,
-   "ex": "20% z 300 = 60 i 30% z 200 = 60. Ogólnie: p% z a = a% z p (tu: 0,2·300 = 0,3·200).",
-   "c": "porownania"
-  },
-  {
-   "t": "tf",
-   "q": "8% z 50 jest równe 50% z 8.",
-   "a": true,
-   "ex": "0,08 · 50 = 4 i 0,5 · 8 = 4. Procent i liczbę można zamienić miejscami.",
-   "c": "porownania"
-  },
-  {
-   "t": "tf",
-   "q": "4% z 25 to tyle samo, co 25% z 4.",
-   "a": true,
-   "ex": "Oba wyniki to 1.",
-   "c": "porownania"
-  },
-  {
-   "t": "mc",
    "q": "Która liczba jest największa?",
    "o": [
     "25% z 80",
@@ -3308,27 +3126,6 @@
    "c": "porownania"
   },
   {
-   "t": "tf",
-   "q": "50% z 50% liczby to 25% tej liczby.",
-   "a": true,
-   "ex": "1/2 · 1/2 = 1/4 = 25%.",
-   "c": "porownania"
-  },
-  {
-   "t": "tf",
-   "q": "10% z 10% liczby to 1% tej liczby.",
-   "a": true,
-   "ex": "0,1 · 0,1 = 0,01 = 1%.",
-   "c": "porownania"
-  },
-  {
-   "t": "tf",
-   "q": "Jeśli 10% liczby to 7, to cała liczba to 70.",
-   "a": true,
-   "ex": "100% to 10 razy 10%: 10 · 7 = 70.",
-   "c": "porownania"
-  },
-  {
    "t": "num",
    "q": "25% pewnej liczby to 12. Ile wynosi 50% tej liczby?",
    "a": 24,
@@ -3349,13 +3146,6 @@
    "q": "10% liczby wynosi 4,5. Ile wynosi 30% tej liczby?",
    "a": 13.5,
    "ex": "3 · 4,5 = 13,5.",
-   "c": "porownania"
-  },
-  {
-   "t": "num",
-   "q": "20% liczby wynosi 9. Ile wynosi ta liczba?",
-   "a": 45,
-   "ex": "20% = 1/5, więc liczba = 5 · 9 = 45.",
    "c": "porownania"
   },
   {
@@ -3474,6 +3264,297 @@
    ],
    "ex": "10; 7; 5; 8; 2.",
    "c": "promile"
+  },
+  {
+   "t": "num",
+   "c": "porownania",
+   "q": "Pan Olek zapłacił 19% podatku od kwoty 18 000 zł, a pani Ula ten sam procent od kwoty 24 000 zł. O ile złotych większy podatek zapłaciła pani Ula?",
+   "a": 1140,
+   "jedn": "zł",
+   "ex": "0,19 · 18 000 = 3420 zł; 0,19 · 24 000 = 4560 zł; 4560 − 3420 = 1140 zł (albo 19% z różnicy 6000 zł)."
+  },
+  {
+   "t": "mc",
+   "c": "porownania",
+   "q": "W miasteczku A mieszka 12 000 osób, z czego 15% to dzieci. W miasteczku B mieszka 18 000 osób, z czego 10% to dzieci. Gdzie mieszka więcej dzieci?",
+   "o": [
+    "tyle samo",
+    "w A",
+    "w B",
+    "nie da się obliczyć"
+   ],
+   "a": 0,
+   "ex": "A: 0,15 · 12 000 = 1800; B: 0,1 · 18 000 = 1800. Tyle samo."
+  },
+  {
+   "t": "mc",
+   "c": "porownania",
+   "q": "Pan Kowal ma 25 ha ziemi, z czego łąki zajmują 40%. Pan Nowak ma 30 ha, a łąki zajmują 30%. Kto ma większą powierzchnię łąk?",
+   "o": [
+    "pan Kowal – o 1 ha",
+    "pan Nowak – o 1 ha",
+    "pan Kowal – o 10 ha",
+    "mają tyle samo"
+   ],
+   "a": 0,
+   "ex": "Kowal: 0,4 · 25 = 10 ha; Nowak: 0,3 · 30 = 9 ha. Kowal ma o 1 ha więcej."
+  },
+  {
+   "t": "tf",
+   "c": "porownania",
+   "q": "35% z 80 to więcej niż 40% z 65.",
+   "a": true,
+   "ex": "0,35 · 80 = 28; 0,4 · 65 = 26; 28 > 26."
+  },
+  {
+   "t": "num",
+   "c": "porownania",
+   "q": "O ile złotych 15% z 240 zł jest większe od 12% z 280 zł?",
+   "a": 2.4,
+   "jedn": "zł",
+   "ex": "0,15 · 240 = 36 zł; 0,12 · 280 = 33,6 zł; 36 − 33,6 = 2,4 zł."
+  },
+  {
+   "t": "mc",
+   "c": "porownania",
+   "q": "Klub A ma 40 członków, z czego 35% to dziewczęta. Klub B ma 30 członków, z czego 50% to dziewczęta. W którym klubie jest więcej dziewcząt?",
+   "o": [
+    "w B – 15",
+    "w A – 14",
+    "tyle samo",
+    "w A – 15"
+   ],
+   "a": 0,
+   "ex": "A: 0,35 · 40 = 14; B: 0,5 · 30 = 15. Wyższy procent z mniejszej całości dał tu więcej."
+  },
+  {
+   "t": "multi",
+   "c": "sprytnie",
+   "q": "Oblicz według wzoru 70% kwoty 60 zł (wyniki w zł).",
+   "pola": [
+    {
+     "l": "100% to",
+     "a": 60,
+     "num": true
+    },
+    {
+     "l": "10% to",
+     "a": 6.0,
+     "num": true
+    },
+    {
+     "l": "70% to",
+     "a": 42.0,
+     "num": true
+    }
+   ],
+   "ex": "100% to 60 zł; 10% to 6 zł; 70% to 7 · 6 = 42 zł."
+  },
+  {
+   "t": "multi",
+   "c": "sprytnie",
+   "q": "Oblicz według wzoru 90% kwoty 300 zł (wyniki w zł).",
+   "pola": [
+    {
+     "l": "100% to",
+     "a": 300,
+     "num": true
+    },
+    {
+     "l": "10% to",
+     "a": 30.0,
+     "num": true
+    },
+    {
+     "l": "90% to",
+     "a": 270.0,
+     "num": true
+    }
+   ],
+   "ex": "100% to 300 zł; 10% to 30 zł; 90% to 9 · 30 = 270 zł."
+  },
+  {
+   "t": "multi",
+   "c": "sprytnie",
+   "q": "Oblicz według wzoru 30% kwoty 85 zł (wyniki w zł).",
+   "pola": [
+    {
+     "l": "100% to",
+     "a": 85,
+     "num": true
+    },
+    {
+     "l": "10% to",
+     "a": 8.5,
+     "num": true
+    },
+    {
+     "l": "30% to",
+     "a": 25.5,
+     "num": true
+    }
+   ],
+   "ex": "100% to 85 zł; 10% to 8,5 zł; 30% to 3 · 8,5 = 25,5 zł."
+  },
+  {
+   "t": "multi",
+   "c": "sprytnie",
+   "q": "Oblicz według wzoru 60% kwoty 45 zł (wyniki w zł).",
+   "pola": [
+    {
+     "l": "100% to",
+     "a": 45,
+     "num": true
+    },
+    {
+     "l": "10% to",
+     "a": 4.5,
+     "num": true
+    },
+    {
+     "l": "60% to",
+     "a": 27.0,
+     "num": true
+    }
+   ],
+   "ex": "100% to 45 zł; 10% to 4,5 zł; 60% to 6 · 4,5 = 27 zł."
+  },
+  {
+   "t": "multi",
+   "c": "sprytnie",
+   "q": "Uzupełnij tabelkę dla liczby 60.",
+   "pola": [
+    {
+     "l": "10% liczby 60",
+     "a": 6,
+     "num": true
+    },
+    {
+     "l": "5% liczby 60",
+     "a": 3,
+     "num": true
+    },
+    {
+     "l": "15% liczby 60",
+     "a": 9,
+     "num": true
+    }
+   ],
+   "ex": "10% = 6; 5% to połowa z 10%, czyli 3; 15% = 6 + 3 = 9."
+  },
+  {
+   "t": "multi",
+   "c": "sprytnie",
+   "q": "Uzupełnij tabelkę dla liczby 300.",
+   "pola": [
+    {
+     "l": "10% liczby 300",
+     "a": 30,
+     "num": true
+    },
+    {
+     "l": "30% liczby 300",
+     "a": 90,
+     "num": true
+    },
+    {
+     "l": "80% liczby 300",
+     "a": 240,
+     "num": true
+    }
+   ],
+   "ex": "10% = 30; 30% = 3 · 30 = 90; 80% = 8 · 30 = 240."
+  },
+  {
+   "t": "num",
+   "c": "diagramy",
+   "q": "Garść orzeszków waży 30 g, a tłuszcz stanowi 48% ich masy. Ile gramów tłuszczu jest w 3 garściach orzeszków?",
+   "a": 43.2,
+   "jedn": "g",
+   "ex": "0,48 · 3 · 30 = 0,48 · 90 = 43,2 g."
+  },
+  {
+   "t": "num",
+   "c": "diagramy",
+   "q": "Jeden wafelek waży 20 g, a cukier stanowi 35% jego masy. Ile gramów cukru jest w 6 wafelkach?",
+   "a": 42,
+   "jedn": "g",
+   "ex": "0,35 · 6 · 20 = 0,35 · 120 = 42 g."
+  },
+  {
+   "t": "num",
+   "c": "diagramy",
+   "q": "Jeden krakers waży 3 g, a tłuszcz stanowi 20% jego masy. Ile gramów tłuszczu jest w 15 krakersach?",
+   "a": 9,
+   "jedn": "g",
+   "ex": "0,2 · 15 · 3 = 0,2 · 45 = 9 g."
+  },
+  {
+   "t": "num",
+   "c": "diagramy",
+   "q": "Kostka czekolady waży 5 g, a kakao stanowi 60% jej masy. Ile gramów kakao jest w 8 kostkach?",
+   "a": 24,
+   "jedn": "g",
+   "ex": "0,6 · 8 · 5 = 0,6 · 40 = 24 g."
+  },
+  {
+   "t": "mc",
+   "c": "diagramy",
+   "q": "Na podstawie diagramu: batonik zawiera…",
+   "img": "baton",
+   "alt": "Skład batonika (60 g): cukier 48%, tłuszcz 27%, białko 7%, inne 18%",
+   "o": [
+    "prawie 29 g cukru",
+    "48 g cukru",
+    "prawie 17 g białka",
+    "27 g tłuszczu"
+   ],
+   "a": 0,
+   "ex": "Cukier: 0,48 · 60 = 28,8 g (prawie 29 g). Białko: 0,07 · 60 = 4,2 g; tłuszcz: 0,27 · 60 = 16,2 g."
+  },
+  {
+   "t": "mc",
+   "c": "diagramy",
+   "q": "Na podstawie diagramu: opakowanie płatków zawiera…",
+   "img": "platki",
+   "alt": "Skład płatków (500 g): węglowodany 72%, białko 11%, tłuszcz 6%, błonnik 9%, woda 2%",
+   "o": [
+    "55 g białka",
+    "11 g białka",
+    "72 g węglowodanów",
+    "60 g tłuszczu"
+   ],
+   "a": 0,
+   "ex": "Białko: 0,11 · 500 = 55 g. Węglowodany: 0,72 · 500 = 360 g; tłuszcz: 0,06 · 500 = 30 g."
+  },
+  {
+   "t": "mc",
+   "c": "wieloetapowe",
+   "q": "W sklepie było 200 kubków. Kubki w kropki stanowiły 40% wszystkich. Sprzedawca stłukł 5% kubków w kropki. Ile kubków w kropki zostało?",
+   "o": [
+    "76",
+    "4",
+    "190",
+    "196"
+   ],
+   "a": 0,
+   "ex": "40% z 200 = 80 kubków w kropki; 5% z 80 = 4; 80 − 4 = 76."
+  },
+  {
+   "t": "num",
+   "c": "promile",
+   "q": "Sól stanowi 8‰ masy ciasta drożdżowego. Ile gramów soli jest w 3 kg (3000 g) takiego ciasta?",
+   "a": 24,
+   "jedn": "g",
+   "ex": "8‰ = 0,008; 0,008 · 3000 = 24 g."
+  },
+  {
+   "t": "num",
+   "c": "promile",
+   "q": "Bank pobiera opłatę 2‰ od kwoty przelewu. Ile złotych wynosi opłata od przelewu 4500 zł?",
+   "a": 9,
+   "jedn": "zł",
+   "ex": "2‰ = 0,002; 0,002 · 4500 = 9 zł."
   }
  ]
 }
