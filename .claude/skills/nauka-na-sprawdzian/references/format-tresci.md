@@ -31,7 +31,7 @@
 ```
 `p` przód, `o` odpowiedź (podkreślona markerem), `w` wyjaśnienie/przykład. `\n` = nowa linia.
 Opcjonalnie: `img` (obrazek na przodzie, klucz z `obrazy`), `imgO` (obrazek na odwrocie), `alt` (opis obrazka – wymagany przy obrazku), `dwa: true` (losowo pokazuje stronę `p` albo `o` jako przód – słówka w obie strony), `lang: "p"|"o"` (która strona jest w języku obcym – do wymowy).
-Fiszki językowe jak papierowe: `pi`/`oi` – wymowa pod słowem danej strony (np. `"oi": "/swɪm/"`), `ps`/`os` – zdanie przykładowe tej strony, słowo w `**…**` jest pogrubione (np. `"os": "My sister **swims** every Saturday."`, `"ps": "Moja siostra **pływa** w każdą sobotę."`). Na stronie obcej przy zdaniu jest 🔊. `**…**` działa też w `w`.
+Fiszki językowe jak papierowe: `pi`/`oi` – wymowa pod słowem danej strony (np. `"oi": "/swɪm/"`), `ps`/`os` – zdanie przykładowe tej strony, słowo w `**…**` jest pogrubione (np. `"os": "My sister **swims** every Saturday."`, `"ps": "Moja siostra **pływa** w każdą sobotę."`). Na stronie obcej przy zdaniu jest 🔊. `nr` – numer w prawym dolnym rogu karty (np. numer słówka z listy). `**…**` działa też w `w`.
 Przy więcej niż jednym tagu aplikacja pozwala wybrać zestaw fiszek (np. tylko „Słówka – jedzenie”), więc przy dużych taliach dziel je tagami na tematy.
 
 ## Pola wspólne pytań

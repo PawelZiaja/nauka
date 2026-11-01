@@ -96,6 +96,7 @@ button:focus-visible,select:focus-visible,input:focus-visible,.card:focus-visibl
 .answer{font-size:calc(1.2rem*var(--fs,1));font-weight:600;line-height:1.35}
 .answer mark,.hl{background:var(--hl-bg);color:var(--hl-text);padding:0 2px}
 .explain{color:var(--muted);font-size:calc(1rem*var(--fs,1))}
+.face .nr{position:absolute;right:14px;bottom:10px;font-size:.8rem;color:var(--muted)}.face .nr:empty{display:none}
 .ipa{margin:-6px 0 0;color:var(--muted);font-size:calc(1.05rem*var(--fs,1));font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",system-ui,sans-serif}
 .ctx{margin:4px 0 0;padding:10px 12px;border-radius:12px;background:var(--paper);border-left:4px solid var(--line);font-size:calc(1.05rem*var(--fs,1));line-height:1.4}
 .ctx b{color:var(--ink)} .ctx .say{min-height:36px;min-width:36px;font-size:1rem;margin-left:6px;vertical-align:middle}
@@ -175,7 +176,7 @@ select.ko,input.ko{border-color:var(--bad);background:var(--bad-bg)}
 .seq .nr{flex:none;width:28px;height:28px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:.85rem;font-weight:700}
 .pool{display:flex;flex-direction:column;gap:8px;margin-top:6px}
 .unit{display:flex;gap:8px;align-items:center}.unit span{font-weight:600;color:var(--muted)}
-.qtext .br{display:block;height:6px}
+.qtext .br,.face .br{display:block;height:6px}
 .qimg{display:block;width:100%;max-height:46vh;object-fit:contain;border-radius:12px;border:2px solid var(--line);background:#fff;cursor:zoom-in}
 figure{margin:0;display:flex;flex-direction:column;gap:4px}
 .cap{font-size:.8rem;color:var(--muted)}
@@ -248,8 +249,8 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <div class="stage">
     <div class="card" id="card" tabindex="0" role="button" aria-label="Fiszka – dotknij, aby odwrócić"><button class="dynia" id="dynia" hidden aria-label="Dynia – zbierz cukierek">🎃</button>
       <div class="in">
-        <div class="face front"><span class="tag" id="cTagF"></span><div class="fimg" id="cImgF"></div><div class="front-q" id="cFront"></div><button class="say" id="sayF" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaF" hidden></p><p class="ctx" id="cCtxF" hidden></p><p class="muted">Dotknij, żeby zobaczyć odpowiedź</p></div>
-        <div class="face back"><span class="tag" id="cTagB"></span><div class="fimg" id="cImgB"></div><div class="answer" id="cBack"></div><button class="say" id="sayB" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaB" hidden></p><p class="ctx" id="cCtxB" hidden></p><p class="explain" id="cExp"></p></div>
+        <div class="face front"><span class="tag" id="cTagF"></span><div class="fimg" id="cImgF"></div><div class="front-q" id="cFront"></div><button class="say" id="sayF" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaF" hidden></p><p class="ctx" id="cCtxF" hidden></p><p class="muted">Dotknij, żeby zobaczyć odpowiedź</p><span class="nr" id="cNrF"></span></div>
+        <div class="face back"><span class="tag" id="cTagB"></span><div class="fimg" id="cImgB"></div><div class="answer" id="cBack"></div><button class="say" id="sayB" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaB" hidden></p><p class="ctx" id="cCtxB" hidden></p><p class="explain" id="cExp"></p><span class="nr" id="cNrB"></span></div>
       </div>
     </div>
   </div>
@@ -482,7 +483,7 @@ function renderCard(){
   const ti=Math.max(0,TAGS.indexOf(c.tag));const label=CFG.tagi[c.tag]||'';
   ['#cTagF','#cTagB'].forEach(s=>{$(s).textContent=label;$(s).className='tag t'+(ti%4);$(s).hidden=!label;});
   const sw=!!c.dwa&&Math.random()<.5,F=sw?c.o:c.p,B=sw?c.p:c.o,fl=c.lang?((c.lang==='p')!==sw?'F':'B'):null;
-  $('#cFront').innerHTML=txt(F);$('#cBack').innerHTML='<mark>'+txt(B)+'</mark>';$('#cExp').innerHTML=txtB(c.w||'');
+  $('#cFront').innerHTML=txt(F);$('#cBack').innerHTML='<mark>'+txt(B)+'</mark>';$('#cExp').innerHTML=txtB(c.w||'');$('#cNrF').textContent=$('#cNrB').textContent=c.nr||'';
   /* fiszki jak papierowe: przy słowie wymowa (pi/oi) i zdanie przykładowe (ps/os) danej strony */
   [['F',sw?'o':'p'],['B',sw?'p':'o']].forEach(([s,k])=>{const ip=c[k+'i'],cx=c[k+'s'],obcy=c.lang===k&&canSay;
     $('#cIpa'+s).hidden=!ip;$('#cIpa'+s).textContent=ip||'';$('#cCtx'+s).hidden=!cx;
