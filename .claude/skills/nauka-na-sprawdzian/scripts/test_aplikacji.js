@@ -45,8 +45,9 @@ setTimeout(()=>{
     if(!G||!(G.xp>0))errs.push('Grywalizacja: brak punktów XP po teście');
     else if(!(G.ile>0))errs.push('Grywalizacja: odpowiedzi z testu nie liczą się do celu dnia');
     // losowe litery: bez punktów; prawdziwe próby – normalnie
-    ['kkff','hhgv','yyhk','hfcer','hhyrf','g','asdf'].forEach(s=>{if(!w.eval('losowe')(s))errs.push('Nie rozpoznaje losowych liter: '+s);});
-    ['demikres','ferystokles','helle','termo','olimpia','1887','4','Hera','Morze Kaspijskie'].forEach(s=>{if(w.eval('losowe')(s))errs.push('Prawdziwa próba uznana za losowe litery: '+s);});
+    ['kkff','hhgv','yyhk','hhyrf','g','asdf','hgvt'].forEach(s=>{if(!w.eval('losowe')(s,12))errs.push('Nie rozpoznaje losowych liter: '+s);});
+    ['demikres','ferystokles','helle','termo','olimpia','1887','4','Hera','Morze Kaspijskie','ghost','strength','spartan','gorozja'].forEach(s=>{if(w.eval('losowe')(s,5))errs.push('Prawdziwa próba uznana za losowe litery: '+s);});
+    if(w.eval('losowe')('m',1))errs.push('Krótka odpowiedź „m” przy poprawnej „l” uznana za losowe litery');
     w.eval('renderHome()');if(!/XP/.test($('#gXp').textContent))errs.push('Grywalizacja: brak paska poziomu na ekranie głównym');
   }catch(e){errs.push('Przebieg testu: '+e.message);}
   if(errs.length){console.log('❌ Problemy ('+errs.length+'):');errs.slice(0,60).forEach(e=>console.log(' - '+e));process.exit(2);}

@@ -634,12 +634,15 @@ function ansText(q){switch(q.t){
   case 'gap':return q.f||q.o[q.a];case 'multi':return q.pola.map(f=>f.l+': '+[].concat(f.a)[0].toString()).join('; ');
   case 'pick':{const w=q.s.split(' ');return q.a.map(k=>w[k].replace(/[.,!?;:]/g,'')).join(', ');}
   case 'match':return q.p.map(p=>p[0]+' → '+p[1]).join('; ');case 'spot':return q.f||'zielone kółko na obrazku';case 'order':return q.o.join(' → ');}}
-/* „losowe litery” – dziecko wpisuje cokolwiek, żeby pominąć pytanie (np. kkff, hhgv, hfcer, g, asdf). Taka odpowiedź nie daje punktów
-   ani nie liczy się do celu dnia. Prawdziwe próby (demikres, termo, 1887) liczą się normalnie. */
-function losowe(s){s=String(s||'').toLowerCase().replace(/\s+/g,'');if(!s||!/^[a-ząćęłńóśźż]+$/.test(s))return false;
-  if(s.length<=2||/^(.)\1/.test(s))return true;const sam=(s.match(/[aąeęioóuy]/g)||[]).length;if(s.length>=3&&sam/s.length<.25)return true;
-  return s.length>=3&&['qwertyuiop','asdfghjkl','zxcvbnm'].some(r=>r.includes(s));}
-function smiec(q){if(q.t!=='in'&&q.t!=='multi')return false;const v=[...$('#qBody').querySelectorAll('input')].map(x=>x.value).filter(x=>x.trim());return v.length>0&&v.every(losowe);}
+/* „losowe litery” – dziecko wpisuje cokolwiek, żeby pominąć pytanie (np. kkff, hhgv, yyhk, g, asdf). Taka odpowiedź nie daje punktów
+   ani nie liczy się do celu dnia. Prawdziwe próby (demikres, termo, ghost, 1887) liczą się normalnie – lepiej przepuścić bełkot niż ukarać próbę. */
+function losowe(s,min){s=String(s||'').toLowerCase().replace(/\s+/g,'');if(!s||!/^[a-ząćęłńóśźż]+$/.test(s))return false;
+  if(s.length<=2)return (min||3)>3;          /* „g” przy odpowiedzi „hellenizacja” – tak; „m” przy „l” – nie */
+  if(/^(.)\1/.test(s)||!/[aąeęioóuy]/.test(s))return true;   /* kkff, hhgv, yyhk, hgvt */
+  return ['qwertyuiop','asdfghjkl','zxcvbnm'].some(r=>r.includes(s));}   /* asdf, qwer */
+function smiec(q){if(q.t!=='in'&&q.t!=='multi')return false;
+  const min=Math.min(...[].concat(q.t==='in'?q.a:q.pola.flatMap(f=>[].concat(f.a))).map(a=>String(a).replace(/\s+/g,'').length));
+  const v=[...$('#qBody').querySelectorAll('input')].map(x=>x.value).filter(x=>x.trim());return v.length>0&&v.every(x=>losowe(x,min));}
 function qTitle(q){return q.t==='gap'?q.q.replace(/\[\[(.*?)\]\]/,'$1'):q.q;}
 function answer(ok,q,extra,note){
   R.res.push(ok?1:0);
