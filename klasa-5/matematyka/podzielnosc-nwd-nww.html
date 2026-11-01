@@ -96,6 +96,9 @@ button:focus-visible,select:focus-visible,input:focus-visible,.card:focus-visibl
 .answer{font-size:calc(1.2rem*var(--fs,1));font-weight:600;line-height:1.35}
 .answer mark,.hl{background:var(--hl-bg);color:var(--hl-text);padding:0 2px}
 .explain{color:var(--muted);font-size:calc(1rem*var(--fs,1))}
+.ipa{margin:-6px 0 0;color:var(--muted);font-size:calc(1.05rem*var(--fs,1));font-family:"Charis SIL","Doulos SIL","Lucida Sans Unicode","Segoe UI",system-ui,sans-serif}
+.ctx{margin:4px 0 0;padding:10px 12px;border-radius:12px;background:var(--paper);border-left:4px solid var(--line);font-size:calc(1.05rem*var(--fs,1));line-height:1.4}
+.ctx b{color:var(--ink)} .ctx .say{min-height:36px;min-width:36px;font-size:1rem;margin-left:6px;vertical-align:middle}
 .face .muted{font-size:calc(.95rem*var(--fs,1))}
 .hint{text-align:center;color:var(--muted);font-size:.85rem}
 .duo{display:flex;gap:10px}
@@ -245,8 +248,8 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <div class="stage">
     <div class="card" id="card" tabindex="0" role="button" aria-label="Fiszka – dotknij, aby odwrócić"><button class="dynia" id="dynia" hidden aria-label="Dynia – zbierz cukierek">🎃</button>
       <div class="in">
-        <div class="face front"><span class="tag" id="cTagF"></span><div class="fimg" id="cImgF"></div><div class="front-q" id="cFront"></div><button class="say" id="sayF" hidden aria-label="Odsłuchaj">🔊</button><p class="muted">Dotknij, żeby zobaczyć odpowiedź</p></div>
-        <div class="face back"><span class="tag" id="cTagB"></span><div class="fimg" id="cImgB"></div><div class="answer" id="cBack"></div><button class="say" id="sayB" hidden aria-label="Odsłuchaj">🔊</button><p class="explain" id="cExp"></p></div>
+        <div class="face front"><span class="tag" id="cTagF"></span><div class="fimg" id="cImgF"></div><div class="front-q" id="cFront"></div><button class="say" id="sayF" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaF" hidden></p><p class="ctx" id="cCtxF" hidden></p><p class="muted">Dotknij, żeby zobaczyć odpowiedź</p></div>
+        <div class="face back"><span class="tag" id="cTagB"></span><div class="fimg" id="cImgB"></div><div class="answer" id="cBack"></div><button class="say" id="sayB" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaB" hidden></p><p class="ctx" id="cCtxB" hidden></p><p class="explain" id="cExp"></p></div>
       </div>
     </div>
   </div>
@@ -312,6 +315,7 @@ function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
 const $=s=>document.querySelector(s);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const txt=s=>esc(s).replace(/\n/g,'<span class="br"></span>');
+const txtB=s=>txt(s).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>');
 const rnd=a=>a[Math.floor(Math.random()*a.length)];
 function shuffle(a){a=a.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
 function norm(s,cs){s=String(s).replace(/[₀-₉]/g,d=>String(d.charCodeAt(0)-8320)).replace(/[„”"“]/g,' ').replace(/[.!?;:]+(\s|$)/g,' ').replace(/,(\s|$)/g,' ').replace(/\s+/g,' ').trim();return cs?s:s.toLowerCase();}
@@ -355,7 +359,7 @@ function figHTML(k,alt,cap){if(!k)return '';return '<figure><img class="qimg" sr
 document.addEventListener('click',e=>{const im=e.target.closest&&e.target.closest('.qimg');if(!im)return;e.stopPropagation();const z=$('#zoom');z.querySelector('img').src=im.src;z.hidden=false;});
 $('#zoom').onclick=e=>{if(e.target.tagName!=='IMG')$('#zoom').hidden=true;};
 const canSay=typeof speechSynthesis!=='undefined'&&!!CFG.mowa;
-function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang=CFG.mowa;u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(t).replace(/\s*\([^)]*\)/g,'').replace(/…/g,''));u.lang=CFG.mowa;u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
 function show(id){document.querySelectorAll('main>section').forEach(s=>s.hidden=s.id!==id);$('main').classList.toggle('fit',id==='cards');window.scrollTo(0,0);if(id==='cards')fitCard();}
 document.querySelectorAll('[data-home]').forEach(b=>b.onclick=()=>{renderHome();show('home');});
 function applyTheme(){const r=document.documentElement;if(S.theme==='auto')r.removeAttribute('data-theme');else r.setAttribute('data-theme',S.theme);}
@@ -478,7 +482,12 @@ function renderCard(){
   const ti=Math.max(0,TAGS.indexOf(c.tag));const label=CFG.tagi[c.tag]||'';
   ['#cTagF','#cTagB'].forEach(s=>{$(s).textContent=label;$(s).className='tag t'+(ti%4);$(s).hidden=!label;});
   const sw=!!c.dwa&&Math.random()<.5,F=sw?c.o:c.p,B=sw?c.p:c.o,fl=c.lang?((c.lang==='p')!==sw?'F':'B'):null;
-  $('#cFront').innerHTML=txt(F);$('#cBack').innerHTML='<mark>'+txt(B)+'</mark>';$('#cExp').innerHTML=txt(c.w||'');
+  $('#cFront').innerHTML=txt(F);$('#cBack').innerHTML='<mark>'+txt(B)+'</mark>';$('#cExp').innerHTML=txtB(c.w||'');
+  /* fiszki jak papierowe: przy słowie wymowa (pi/oi) i zdanie przykładowe (ps/os) danej strony */
+  [['F',sw?'o':'p'],['B',sw?'p':'o']].forEach(([s,k])=>{const ip=c[k+'i'],cx=c[k+'s'],obcy=c.lang===k&&canSay;
+    $('#cIpa'+s).hidden=!ip;$('#cIpa'+s).textContent=ip||'';$('#cCtx'+s).hidden=!cx;
+    $('#cCtx'+s).innerHTML=cx?txtB(cx)+(obcy?'<button class="say" aria-label="Odsłuchaj zdanie">🔊</button>':''):'';
+    const b=$('#cCtx'+s).querySelector('.say');if(b)b.onclick=e=>{e.stopPropagation();say(cx.replace(/\*\*/g,''));};});
   $('#cImgF').innerHTML=figHTML(sw?c.imgO:c.img,c.alt);$('#cImgB').innerHTML=figHTML(sw?c.img:c.imgO,c.alt);
   card.classList.toggle('tall',!!(c.img||c.imgO));
   $('#sayF').hidden=!(canSay&&fl==='F');$('#sayB').hidden=!(canSay&&fl==='B');
