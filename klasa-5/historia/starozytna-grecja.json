@@ -138,8 +138,8 @@
   {
    "tag": "a",
    "p": "Kto rządził Spartą?",
-   "o": "dwóch królów jednocześnie (jeden szedł na wojnę, drugi zostawał w polis) i rada starszych – geruzja",
-   "w": "Władza królów była mocno ograniczona."
+   "o": "dwóch królów jednocześnie – jeden wyruszał jako dowódca na wojnę, drugi zostawał w polis",
+   "w": "Ich władza była dość mocno ograniczona. Najznamienitsi Spartanie po 60. roku życia zasiadali w radzie starszych – geruzji."
   },
   {
    "tag": "a",
@@ -593,8 +593,26 @@
   {
    "tag": "k",
    "p": "Pierwsze monety",
-   "o": "w VII w. p.n.e. – Lidyjczycy w Azji Mniejszej",
+   "o": "w VII w. p.n.e. – Lidowie z Azji Mniejszej (dzisiejsza Turcja)",
    "w": "Greccy kupcy upowszechnili pieniądz."
+  },
+  {
+   "tag": "k",
+   "p": "Teano",
+   "o": "żona Pitagorasa – uczyła się w jego szkole; zajmowała się filozofią, matematyką, astronomią i medycyną",
+   "w": "W szkole Pitagorasa oprócz mężczyzn uczyło się wiele kobiet (ciekawostka, s. 64)."
+  },
+  {
+   "tag": "k",
+   "p": "Sofokles",
+   "o": "twórca tragedii (ok. 496–406 p.n.e.); napisał ponad 100 utworów, zachowało się 7",
+   "w": "Pierwszy raz zwyciężył w konkursie teatralnym w wieku 28 lat, a w Wielkich Dionizjach – ok. 20 razy."
+  },
+  {
+   "tag": "w",
+   "p": "Aleksander wobec Persów (wg Plutarcha)",
+   "o": "szanował podbite narody i ich obyczaje – zbliżał obyczaje perskie i macedońskie zamiast rządzić przemocą",
+   "w": "Kazał 30 000 młodych Persów uczyć się greckiego i walki bronią macedońską. Opisał to grecki pisarz Plutarch w II w. n.e."
   }
  ],
  "pytania": [
@@ -1539,11 +1557,12 @@
    "o": [
     "wychowanie przez matkę",
     "nauka czytania, pisania i zwięzłego mówienia",
-    "szkolenie w koszarach",
+    "szkolenie wojskowe w koszarach",
     "10 lat obowiązkowej służby wojskowej",
-    "członkostwo w geruzji"
+    "opuszczenie koszar i ziemia od państwa",
+    "koniec obowiązku służby wojskowej"
    ],
-   "ex": "Do 7 lat – matka; od 7 – nauka; od 12 – koszary; od 20 – służba; po 60 – geruzja.",
+   "ex": "Do 7 lat – matka; od 7 – nauka; od 12 – koszary; od 20 – 10 lat służby; po 30 – opuszczenie koszar i ziemia; po 60 – koniec służby (najznamienitsi trafiali do geruzji).",
    "c": "sparta"
   },
   {
@@ -3320,7 +3339,7 @@
     "Herakles",
     "Herkules"
    ],
-   "ex": "Herakles (u Rzymian – Herkules).",
+   "ex": "Herakles – syn Zeusa, najsilniejszy z herosów; wykonał 12 prac.",
    "c": "mity"
   },
   {
@@ -3483,7 +3502,7 @@
     "Lakonia"
    ],
    "a": 0,
-   "ex": "Troja – Ilion; stąd tytuł „Iliada”.",
+   "ex": "Troja była zwana też Ilionem. O jej oblężeniu opowiada „Iliada”.",
    "c": "mity"
   },
   {
@@ -4149,7 +4168,7 @@
   },
   {
    "t": "mc",
-   "q": "Kiedy Lidyjczycy zaczęli jako pierwsi stosować monety?",
+   "q": "Kiedy Lidowie – sąsiedzi Greków z Azji Mniejszej – jako pierwsi zaczęli stosować monety?",
    "o": [
     "w VII w. p.n.e.",
     "w I w. n.e.",
@@ -5373,11 +5392,11 @@
    "o": [
     "z Dariuszem III",
     "z Kserksesem",
-    "z Dariuszem I (z Maratonu)",
+    "z Filipem II",
     "z Leonidasem"
    ],
    "a": 0,
-   "ex": "Pod Issos i Gaugamelą – Dariusz III.",
+   "ex": "Pod Issos (333 p.n.e.) i Gaugamelą (331 p.n.e.) Aleksander pokonał króla Dariusza III. Filip II był ojcem Aleksandra.",
    "c": "aleksander"
   },
   {
@@ -5642,7 +5661,7 @@
     "oblężenie Troi"
    ],
    "a": 0,
-   "ex": "Mozaika z Pompejów – bitwa pod Issos, 333 p.n.e.",
+   "ex": "Mozaika z ok. 100 r. p.n.e. uwiecznia moment ucieczki Dariusza III w bitwie pod Issos (333 p.n.e.).",
    "c": "aleksander",
    "img": "mozaika",
    "alt": "Fragment starożytnej mozaiki: jeździec bez hełmu w bitwie, po prawej król na rydwanie",
@@ -7183,6 +7202,157 @@
    "a": 0,
    "ex": "Olimp – w północno-wschodniej Grecji.",
    "c": "mapa"
+  },
+  {
+   "t": "mc",
+   "q": "Jak miała na imię żona Pitagorasa, która zajmowała się filozofią, matematyką, astronomią i medycyną?",
+   "o": [
+    "Teano",
+    "Penelopa",
+    "Hera",
+    "Afrodyta"
+   ],
+   "a": 0,
+   "ex": "Teano uczyła się w szkole Pitagorasa – prawdopodobnie była też autorką niektórych jego prac.",
+   "c": "filozofia"
+  },
+  {
+   "t": "tf",
+   "q": "Pitagoras i Tales z Miletu odkryli reguły matematyczne, które stosuje się do dzisiaj.",
+   "a": true,
+   "ex": "Prawda – wielu uwagi poświęcali Grecy matematyce i medycynie.",
+   "c": "filozofia"
+  },
+  {
+   "t": "num",
+   "q": "W wieku ilu lat Sofokles po raz pierwszy zwyciężył w konkursie teatralnym?",
+   "a": 28,
+   "tol": 0,
+   "jedn": "lat",
+   "ex": "Sofokles pierwszy raz wygrał w wieku 28 lat, a w Wielkich Dionizjach zwyciężał ok. 20 razy.",
+   "c": "teatr"
+  },
+  {
+   "t": "tf",
+   "q": "Uroczystości ku czci Dionizosa trwały około tygodnia.",
+   "a": true,
+   "ex": "Prawda – pierwszego dnia były procesje i ofiary, w pozostałe dni zawody dramatopisarzy.",
+   "c": "teatr"
+  },
+  {
+   "t": "mc",
+   "q": "Co robili Ateńczycy pierwszego dnia uroczystości ku czci Dionizosa?",
+   "o": [
+    "brali udział w procesjach i składali ofiary",
+    "oglądali komedie",
+    "rozgrywali pięciobój",
+    "wybierali urzędników"
+   ],
+   "a": 0,
+   "ex": "Pierwszego dnia – procesje i ofiary; w kolejne dni odbywały się zawody dramatopisarzy.",
+   "c": "teatr"
+  },
+  {
+   "t": "num",
+   "q": "Ile metrów wysokości miała wieża latarni na Faros według podręcznika?",
+   "a": 130,
+   "tol": 0,
+   "jedn": "m",
+   "ex": "Ogień rozpalano na szczycie 130-metrowej wieży (w różnych opisach wysokość waha się od 80 do ponad 200 m).",
+   "c": "sztuka"
+  },
+  {
+   "t": "mc",
+   "q": "Z jakiej odległości załogi statków widziały ogień latarni na Faros?",
+   "o": [
+    "nawet z 60 km",
+    "z 60 m",
+    "z 600 km",
+    "z 6 km"
+   ],
+   "a": 0,
+   "ex": "Ogień na szczycie wieży widziały statki znajdujące się nawet 60 km od brzegu.",
+   "c": "sztuka"
+  },
+  {
+   "t": "mc",
+   "q": "Co wzniesiono na fundamentach latarni na Faros?",
+   "o": [
+    "fort Qait Baj",
+    "Bibliotekę Aleksandryjską",
+    "świątynię Artemidy",
+    "Mauzoleum"
+   ],
+   "a": 0,
+   "ex": "W 2. połowie XV w. wyburzono resztki ruin i zbudowano fort Qait Baj, który miał chronić Aleksandrię przed flotą turecką.",
+   "c": "sztuka"
+  },
+  {
+   "t": "mc",
+   "q": "Skąd znamy imię architekta latarni na Faros?",
+   "o": [
+    "wykuł je w ścianie i ukrył pod tynkiem, który z czasem odpadł",
+    "zapisał je Homer w „Odysei”",
+    "było na monetach Aleksandra",
+    "wyryto je na posągu Zeusa w Olimpii"
+   ],
+   "a": 0,
+   "ex": "Sostratos, syn Deksyfanesa, wykuł napis w ścianie i kazał go otynkować – wiedział, że tynk z czasem odpadnie.",
+   "c": "sztuka"
+  },
+  {
+   "t": "tf",
+   "q": "Pierwsze wzmianki o koniu trojańskim znajdują się w „Odysei” Homera.",
+   "a": true,
+   "ex": "Prawda – szczegółowe opisy pochodzą z późniejszych utworów. W Turcji, gdzie odkryto ruiny Troi, stoi rekonstrukcja konia.",
+   "c": "mity"
+  },
+  {
+   "t": "mc",
+   "q": "Który grecki pisarz w II w. n.e. opisał szacunek Aleksandra Wielkiego wobec podbitych narodów?",
+   "o": [
+    "Plutarch",
+    "Homer",
+    "Sofokles",
+    "Hipokrates"
+   ],
+   "a": 0,
+   "ex": "Plutarch z Cheronei opisał, że Aleksander zbliżał obyczaje perskie i macedońskie zamiast rządzić przemocą.",
+   "c": "hellenizm"
+  },
+  {
+   "t": "num",
+   "q": "Ilu wybranych młodych Persów Aleksander kazał uczyć języka greckiego i walki bronią macedońską?",
+   "a": 30000,
+   "tol": 0,
+   "ex": "Według Plutarcha – 30 000 młodzieży perskiej.",
+   "c": "hellenizm"
+  },
+  {
+   "t": "mc",
+   "q": "Na czele jakiego sojuszu stanął Filip II po pokonaniu Greków w bitwie pod Cheroneą?",
+   "o": [
+    "Związku Korynckiego",
+    "Związku Spartańskiego",
+    "imperium perskiego",
+    "Związku Olimpijskiego"
+   ],
+   "a": 0,
+   "ex": "Do Związku Korynckiego należały wszystkie miasta-państwa Grecji właściwej oprócz Sparty.",
+   "c": "aleksander"
+  },
+  {
+   "t": "mc",
+   "q": "Co przekroczyła armia Aleksandra na początku wyprawy w 334 r. p.n.e.?",
+   "o": [
+    "cieśninę oddzielającą Europę od Azji",
+    "rzekę Indus",
+    "pustynię w Egipcie",
+    "Morze Kreteńskie"
+   ],
+   "a": 0,
+   "ex": "Grecy i Macedończycy przeprawili się przez cieśninę między Europą a Azją i pokonali Persów nad rzeczką Granik.",
+   "c": "aleksander"
   }
  ]
 }
