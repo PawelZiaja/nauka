@@ -2,6 +2,8 @@
 """Tworzy stronę startową index.html ze spisem wszystkich aplikacji w katalogu i jego podfolderach,
 pogrupowanych według klasy i przedmiotu (dane brane z config każdej aplikacji).
 Struktura na stronie: klasa-5/polski/temat.html, klasa-7/historia/temat.html itd.
+Materiał spoza klas (np. słówka „na zapas”) – w innym folderze głównym, np. dodatkowe/angielski/temat.html:
+osobna sekcja spisu pod klasami, nazwana jak folder („Dodatkowe”).
 Przy każdej aplikacji pasek opanowania fiszek i gwiazdki (z postępu zapisanego w przeglądarce),
 na górze seria dni i poziom – te same dane, co w aplikacjach (szablon.html, sekcja GRA).
 Użycie: python3 spis.py katalog_glowny [tytuł strony]"""
@@ -15,7 +17,9 @@ for f in sorted(kat.rglob('*.html')):
     t = f.read_text(encoding='utf-8', errors='ignore')
     m = re.search(r'<title>(.*?)</title>', t)
     p = re.search(r'"przedmiot":"(.*?)"', t); k = re.search(r'"klasa":"?(\d+)', t)
-    klasa = k.group(1) if k else '?'; przedm = p.group(1) if p else 'Inne'
+    klasa = k.group(1) if k else '?'
+    if not re.fullmatch(r'klasa-\d+', czesci[0]) and len(czesci) > 1: klasa = czesci[0]   # sekcja spoza klas
+    przedm = p.group(1) if p else 'Inne'
     kl = re.search(r'"klucz":"(.*?)"', t); nf = 0
     if f.with_suffix('.json').exists():
         d = json.loads(f.with_suffix('.json').read_text(encoding='utf-8'))
@@ -51,17 +55,18 @@ document.querySelectorAll('a.it[data-k]').forEach(a=>{const S=wczytaj('nauka-'+a
 # Podręczniki dzieci (podreczniki.json + okladki/): okładka przy każdym przedmiocie, także bez aplikacji
 pod = json.loads((kat / 'podreczniki.json').read_text(encoding='utf-8')) if (kat / 'podreczniki.json').exists() else {}
 for klucz, P in pod.items():
-    kl, folder = klucz.split('/'); nr = kl.replace('klasa-', '')
+    kl, folder = klucz.split('/'); nr = kl.replace('klasa-', '') if re.fullmatch(r'klasa-\d+', kl) else kl
     if not any(f == folder for _, f in apps.get(nr, {})): apps.setdefault(nr, {})[(P['przedmiot'], folder)] = []
 def ksiazka(nr, folder):
-    P = pod.get(f'klasa-{nr}/{folder}')
+    P = pod.get(f'klasa-{nr}/{folder}' if nr.isdigit() else f'{nr}/{folder}')
     if not P: return ''
     return (f'<div class="bk"><img src="{html.escape(P["okladka"])}" alt="Okładka: {html.escape(P["tytul"])}" loading="lazy">'
             f'<span>Podręcznik: <b>{html.escape(P["tytul"])}</b> · {html.escape(P["wydawnictwo"])}<br><small>{html.escape(P["opis"])}</small></span></div>')
 sekcje = []
 for klasa in sorted(apps, key=lambda x: int(x) if x.isdigit() else 99):
     przedm = ''.join(f'<h3>{html.escape(p)}</h3>' + ksiazka(klasa, fo) + ('' if lst else '<p class="pusto">Aplikacje pojawią się przed sprawdzianem.</p>') + ''.join(f'<a class="it" href="{html.escape(h)}" data-k="{html.escape(kl)}" data-n="{nf}"><span>{html.escape(t)}</span><span class="pg"></span></a>' for t, h, kl, nf in sorted(lst)) for (p, fo), lst in sorted(apps[klasa].items()))
-    sekcje.append(f'<details open><summary>Klasa {klasa}</summary>{przedm}</details>')
+    naglowek = f'Klasa {klasa}' if klasa.isdigit() or klasa == '?' else klasa.replace('-', ' ').capitalize()
+    sekcje.append(f'<details open><summary>{html.escape(naglowek)}</summary>{przedm}</details>')
 n = sum(len(l) for d in apps.values() for l in d.values())
 page = f'''<!DOCTYPE html><html lang="pl"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow"><title>{html.escape(tytul)}</title>

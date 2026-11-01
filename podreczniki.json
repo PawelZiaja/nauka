@@ -54,5 +54,12 @@
   "wydawnictwo": "GWO",
   "opis": "podręcznik do języka polskiego dla klasy 7",
   "okladka": "okladki/klasa-7-polski.jpg"
+ },
+ "dodatkowe/angielski": {
+  "przedmiot": "Język angielski",
+  "tytul": "Fiszki PLUS. Angielski – 1000 najważniejszych słów",
+  "wydawnictwo": "Edgard",
+  "opis": "fiszki i memolista, poziom A1–A2",
+  "okladka": "okladki/dodatkowe-angielski.jpg"
  }
 }

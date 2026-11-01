@@ -25,6 +25,9 @@ Rodzic podaje zwykle jedno zdanie (tytuł i/lub ścieżkę do folderu ze zdjęci
 9. Poczekaj na build GitHub Pages (`gh api repos/<login>/nauka/pages/builds/latest --jq .status` → `built`) i sprawdź, że adres odpowiada (`curl -s -o /dev/null -w "%{http_code}"` → 200).
 10. Raport według `SKILL.md`, krok 7, z adresem `https://<login małymi literami>.github.io/nauka/klasa-X/przedmiot/temat.html`.
 
+## Materiał spoza klas
+Słówka „na zapas”, kursy itp. (nie na sprawdzian konkretnej klasy) – w folderze głównym `dodatkowe/<przedmiot>/temat.html`, `config.klasa: ""`. `spis.py` pokazuje je w osobnej sekcji „Dodatkowe” pod klasami; podręcznik/zestaw w `podreczniki.json` pod kluczem `dodatkowe/<przedmiot>`.
+
 ## Poprawki
 Edytuj `temat.json` (nie HTML), przebuduj, przetestuj, commit i push. Nie zmieniaj `config.klucz` – postęp dzieci zostaje.
 
