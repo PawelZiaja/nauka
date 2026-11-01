@@ -35,7 +35,10 @@ setTimeout(()=>{
     // 4. Grywalizacja: po teście i fiszkach są punkty, cel dnia zaliczony (test ukończony), pasek na ekranie głównym
     const G=JSON.parse(w.localStorage.getItem('nauka-gra')||'null');
     if(!G||!(G.xp>0))errs.push('Grywalizacja: brak punktów XP po teście');
-    else if(!Object.keys(G.dni||{}).length)errs.push('Grywalizacja: ukończony test nie zaliczył celu dnia');
+    else if(!(G.ile>0))errs.push('Grywalizacja: odpowiedzi z testu nie liczą się do celu dnia');
+    // losowe litery: bez punktów; prawdziwe próby – normalnie
+    ['kkff','hhgv','yyhk','hfcer','hhyrf','g','asdf'].forEach(s=>{if(!w.eval('losowe')(s))errs.push('Nie rozpoznaje losowych liter: '+s);});
+    ['demikres','ferystokles','helle','termo','olimpia','1887','4','Hera','Morze Kaspijskie'].forEach(s=>{if(w.eval('losowe')(s))errs.push('Prawdziwa próba uznana za losowe litery: '+s);});
     w.eval('renderHome()');if(!/XP/.test($('#gXp').textContent))errs.push('Grywalizacja: brak paska poziomu na ekranie głównym');
   }catch(e){errs.push('Przebieg testu: '+e.message);}
   if(errs.length){console.log('❌ Problemy ('+errs.length+'):');errs.slice(0,60).forEach(e=>console.log(' - '+e));process.exit(2);}

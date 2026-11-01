@@ -38,7 +38,7 @@ if(g.xp>0){document.getElementById('game').hidden=false;
   document.getElementById('gX').textContent=g.xp+' XP'+(nx?' / '+nx[0]:'');
   document.getElementById('gB').style.width=(nx?(g.xp-POZIOMY[i][0])/(nx[0]-POZIOMY[i][0])*100:100)+'%';
   const ile=g.dzis===dzien()?g.ile:0;
-  document.getElementById('gG').textContent=g.dni[dzien()]?'✔ Cel dnia zaliczony':'Cel dnia: '+Math.min(ile,10)+'/10 odpowiedzi albo jeden cały test';
+  document.getElementById('gG').textContent=g.dni[dzien()]?'✔ Cel dnia zaliczony':'Cel dnia: '+Math.min(ile,10)+'/10 odpowiedzi (fiszki lub zadania)';
   if(HW&&g.cukD===dzien()&&g.cuk)document.getElementById('gG').textContent+=' · 🍬 '+g.cuk;}
 document.querySelectorAll('a.it[data-k]').forEach(a=>{const S=wczytaj('nauka-'+a.dataset.k);if(!S)return;
   const n=+a.dataset.n,k=Math.min(n,Object.values(S.known||{}).filter(Boolean).length),best=S.best||(S.last&&S.last.g)||0;
