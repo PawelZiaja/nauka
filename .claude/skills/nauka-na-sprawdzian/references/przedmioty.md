@@ -27,6 +27,7 @@ Zasada nadrzędna: tolerancja nie może zaliczyć odpowiedzi, która jest **inn�
 ## Angielski i niemiecki
 - **Dużo fiszek: 80–200.** Słówka i zwroty z działu, każdy z `dwa: true` (losowy kierunek: pl→obcy i obcy→pl), `lang` po stronie obcej i `config.mowa` (`en-GB` / `de-DE`) – przycisk 🔊 czyta wymowę. Dziel tagami na tematy (np. „Jedzenie”, „Czasowniki”), bo aplikacja pozwala uczyć się wybranego zestawu. W `w` – przykładowe zdanie.
 - Słówka w obie strony: `in` z `tryb: scisle` (pisownia jest sprawdzana), z wariantami (`dog`, `a dog`; `do not`, `don't`).
+- Rodzic chce, by uczeń z szerszym słownictwem nie tracił punktów: do `a` dopisuj **synonimy i dłuższe naturalne sformułowania** o tym samym znaczeniu (sofa/couch, client/customer, „clean the dust” dla „to dust”, AmE: apartment, subway), z „to” i bez, z przedimkiem. Nie dopisuj słów o innym znaczeniu (ghost ≠ strach) ani cyfr zamiast liczebników. W `ex` wymień „też dobrze: …”. Synonimów nie używaj jako błędnych opcji w `mc`/`gap`/`match`.
 - Gramatyka: `gap` (wybór formy: was/were, der/die/das, am/is/are), `multi` (odmiana czasownika przez osoby), `mc`.
 - Niemiecki: rzeczowniki z rodzajnikiem (`der Hund`) i `cs: true`, gdy sprawdzana jest wielka litera rzeczownika. Umlauty są częścią pisowni – warianty „ae/oe/ue” dodaj tylko, jeśli nauczyciel je uznaje.
 - Polecenia po polsku (dla klas 4–6 obowiązkowo), przykłady w języku obcym.
