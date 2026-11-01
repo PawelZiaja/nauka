@@ -32,8 +32,8 @@
   {
    "tag": "r",
    "p": "Wody powierzchniowe",
-   "o": "wody na powierzchni lądu: rzeki, jeziora, sztuczne zbiorniki, bagna",
-   "w": "W tym dziale: rzeki, jeziora i zbiorniki w Polsce."
+   "o": "rzeki, jeziora i sztuczne zbiorniki wodne",
+   "w": "Należą do najcenniejszych dóbr naturalnych; mają ogromne znaczenie dla ludności i gospodarki."
   },
   {
    "tag": "r",
@@ -63,7 +63,7 @@
    "tag": "r",
    "p": "Dopływ lewobrzeżny",
    "o": "dopływ uchodzący z lewej strony – patrząc zgodnie z kierunkiem biegu rzeki",
-   "w": "Np. Pilica, Bzura – Wisły; Nysa Kłodzka, Bóbr – Odry."
+   "w": "Np. Pilica, Nida – Wisły; Nysa Kłodzka, Bóbr – Odry."
   },
   {
    "tag": "r",
@@ -104,7 +104,7 @@
   {
    "tag": "r",
    "p": "Regulacja rzeki",
-   "o": "prostowanie i umacnianie koryta, np. budowa stopni wodnych, ostróg, wałów",
+   "o": "prostowanie i umacnianie koryta rzeki (np. budowa stopni wodnych)",
    "w": "Odra została uregulowana i skrócona o ok. 150 km."
   },
   {
@@ -168,11 +168,6 @@
   },
   {
    "tag": "r",
-   "p": "Gdzie uchodzi Odra?",
-   "o": "do Zalewu Szczecińskiego (Morze Bałtyckie)"
-  },
-  {
-   "tag": "r",
    "p": "Warta",
    "o": "prawobrzeżny dopływ Odry; ok. 800 km, cała w Polsce",
    "w": "Źródła na Wyżynie Krakowsko-Częstochowskiej, ujście koło Kostrzyna nad Odrą. Licząc tylko długość w Polsce – byłaby drugą rzeką kraju."
@@ -180,14 +175,14 @@
   {
    "tag": "r",
    "p": "Najważniejsze dopływy Wisły",
-   "o": "prawe: Dunajec, San, Wieprz, Narew (z Bugiem)\nlewe: Przemsza, Nida, Pilica, Bzura",
-   "w": "Prawe płyną z Karpat i ze wschodu, lewe – z wyżyn i nizin na zachodzie."
+   "o": "prawe: Dunajec, San, Wieprz, Narew (z Bugiem)\nlewe: Nida, Pilica",
+   "w": "Ćwiczenie z podręcznika: odczytaj je z mapy sieci rzecznej."
   },
   {
    "tag": "r",
    "p": "Najważniejsze dopływy Odry",
-   "o": "lewe: Nysa Kłodzka, Bóbr, Nysa Łużycka\nprawe: Mała Panew, Barycz, Warta (z Notecią)",
-   "w": "Lewe płyną z Sudetów."
+   "o": "lewe: Nysa Łużycka, Bóbr, Nysa Kłodzka\nprawe: Warta (z Notecią i Prosną), Barycz",
+   "w": "Ćwiczenie z podręcznika: odczytaj je z mapy sieci rzecznej."
   },
   {
    "tag": "r",
@@ -203,8 +198,8 @@
   {
    "tag": "r",
    "p": "Rzeki pobrzeża Bałtyku – przykłady",
-   "o": "Łeba, Słupia, Parsęta, Rega",
-   "w": "Płyną prosto do Bałtyku, nie są dopływami Wisły ani Odry."
+   "o": "np. Parsęta, Łeba",
+   "w": "Płyną prosto do Bałtyku – nie są dopływami Wisły ani Odry."
   },
   {
    "tag": "r",
@@ -247,7 +242,7 @@
    "tag": "j",
    "p": "Jezioro rynnowe",
    "o": "podłużne i głębokie; misa wyżłobiona przez wody płynące pod lądolodem",
-   "w": "Jeziorak, Gopło, Szelment Wielki, Hańcza.",
+   "w": "Jeziorak, Gopło, Szelment Wielki.",
    "imgO": "jrynnowe",
    "alt": "Jezioro rynnowe – widok i przekrój"
   },
@@ -255,7 +250,7 @@
    "tag": "j",
    "p": "Jezioro cyrkowe",
    "o": "małe i głębokie; wypełnia cyrk (kocioł) lodowcowy w górach",
-   "w": "Czarny Staw pod Rysami (Tatry), Wielki i Mały Staw (Karkonosze).",
+   "w": "Np. Czarny Staw pod Rysami. Występują w Tatrach Wysokich i Karkonoszach.",
    "imgO": "jcyrkowe",
    "alt": "Jezioro cyrkowe w górach – przekrój"
   },
@@ -263,7 +258,7 @@
    "tag": "j",
    "p": "Jezioro przybrzeżne",
    "o": "powstało przez odcięcie zatoki morskiej mierzeją; dość duże, ale płytkie",
-   "w": "Łebsko, Gardno, Sarbsko, Jamno.",
+   "w": "Gardno, Sarbsko, Jamno.",
    "imgO": "jprzybrzezne",
    "alt": "Jezioro przybrzeżne oddzielone od morza mierzeją"
   },
@@ -271,7 +266,7 @@
    "tag": "j",
    "p": "Mierzeja",
    "o": "wąski pas lądu (piasku) oddzielający zatokę lub jezioro od morza",
-   "w": "Dzięki mierzejom powstały jeziora przybrzeżne i zalewy."
+   "w": "Dzięki mierzejom powstały jeziora przybrzeżne (odcięte zatoki morskie)."
   },
   {
    "tag": "j",
@@ -301,7 +296,7 @@
    "tag": "j",
    "p": "Drugie najgłębsze jezioro",
    "o": "Drawsko – 79,7 m",
-   "w": "Pojezierze Drawskie (Pomorze)."
+   "w": "Polska w pigułce: Hańcza 108,5 m, Drawsko 79,7 m."
   },
   {
    "tag": "j",
@@ -313,24 +308,19 @@
    "tag": "j",
    "p": "Sztuczny zbiornik wodny",
    "o": "zbiornik powstały po spiętrzeniu rzeki zaporą",
-   "w": "Magazynuje wodę, chroni przed powodzią, daje energię, służy rekreacji."
+   "w": "Magazynuje wodę, gromadzi nadmiar wody w czasie powodzi, daje energię, służy rekreacji."
   },
   {
    "tag": "j",
    "p": "Jezioro Solińskie",
-   "o": "najpojemniejszy sztuczny zbiornik w Polsce – na Sanie (Bieszczady)",
+   "o": "najpojemniejszy sztuczny zbiornik w Polsce – na Sanie",
    "w": "Magazynowanie wody i produkcja energii elektrycznej."
   },
   {
    "tag": "j",
    "p": "Zbiorniki na Dunajcu",
-   "o": "Jezioro Czorsztyńskie, Rożnowskie, Czchowskie"
-  },
-  {
-   "tag": "j",
-   "p": "Jezioro Włocławskie",
-   "o": "sztuczny zbiornik na Wiśle",
-   "w": "Jedyny duży zbiornik zaporowy na samej Wiśle."
+   "o": "Jezioro Czorsztyńskie, Rożnowskie, Czchowskie",
+   "w": "Odczytaj z mapy obszarów zagrożonych powodzią w woj. małopolskim."
   },
   {
    "tag": "k",
@@ -373,12 +363,6 @@
   },
   {
    "tag": "k",
-   "p": "Zalew (np. Zalew Wiślany, Szczeciński)",
-   "o": "płytka zatoka oddzielona od morza mierzeją",
-   "w": "Zalew Wiślany – Mierzeja Wiślana; Zalew Szczeciński – ujście Odry."
-  },
-  {
-   "tag": "k",
    "p": "Łacha",
    "o": "piaszczysta wysepka lub płycizna w korycie rzeki, usypana przez wodę",
    "w": "Typowe w środkowym biegu Wisły."
@@ -386,40 +370,30 @@
   {
    "tag": "p",
    "p": "Powódź",
-   "o": "wezbranie, w czasie którego woda występuje z brzegów i zalewa okoliczne tereny, powodując straty i zagrożenie dla ludzi"
-  },
-  {
-   "tag": "p",
-   "p": "Wezbranie",
-   "o": "wyraźny wzrost poziomu wody w rzece (np. po roztopach lub ulewach)",
-   "w": "Jeśli woda wystąpi z brzegów i wyrządza szkody – mamy powódź."
+   "o": "podniesienie się poziomu wody (np. w rzece) do tego stopnia, że występuje ona z brzegów i zalewa okoliczne tereny",
+   "w": "Powoduje straty materialne i stwarza zagrożenie dla ludności."
   },
   {
    "tag": "p",
    "p": "Główne przyczyny powodzi w Polsce",
-   "o": "roztopy (wiosna) i intensywne opady deszczu (lato); na wybrzeżu – cofka"
+   "o": "roztopy (wiosna) i intensywne opady deszczu (najczęściej latem); na wybrzeżu – cofka"
   },
   {
    "tag": "p",
    "p": "Powódź roztopowa",
-   "o": "wiosną, gdy szybko topnieje gruba pokrywa śniegu"
+   "o": "powódź wiosną, gdy szybko topnieje śnieg (roztopy)"
   },
   {
    "tag": "p",
    "p": "Powódź opadowa",
-   "o": "po ulewnych lub długotrwałych opadach deszczu – zwykle latem",
-   "w": "Tak było w 1997 i 2010 r."
+   "o": "powódź po intensywnych opadach deszczu – najczęściej latem",
+   "w": "Zawodzą wtedy nawet wały i zbiorniki."
   },
   {
    "tag": "p",
-   "p": "Powódź zatorowa",
-   "o": "gdy kra lodowa blokuje koryto i spiętrza wodę – zimą lub na przedwiośniu"
-  },
-  {
-   "tag": "p",
-   "p": "Cofka (powódź sztormowa)",
+   "p": "Cofka",
    "o": "podniesienie się poziomu wody w ujściu rzeki, gdy silny wiatr od morza „wpycha” wodę w głąb lądu",
-   "w": "Występuje na obszarach nadmorskich.",
+   "w": "Przyczyna powodzi na obszarach nadmorskich (warunki – ćwiczenie z podręcznika: dodatkowe źródła).",
    "imgO": "cofka",
    "alt": "Schemat: wiatr od morza podnosi wodę w ujściu rzeki"
   },
@@ -473,22 +447,23 @@
   },
   {
    "tag": "p",
-   "p": "Obszar zalewowy (międzywale)",
+   "p": "Obszar zalewowy",
    "o": "teren między korytem rzeki a wałem, zalewany przy wezbraniu",
    "w": "Leży na tej samej wysokości co tereny za wałem."
   },
   {
    "tag": "p",
    "p": "Polder przeciwpowodziowy",
-   "o": "obszar otoczony wałami, na który celowo wpuszcza się wodę – rozlewa się tam bez wyrządzania strat",
+   "o": "obszar, na którym woda może się rozlewać bez wyrządzania strat",
    "imgO": "polder",
-   "alt": "Schemat polderu przy rzece"
+   "alt": "Schemat polderu przy rzece",
+   "w": "Element kompleksowej ochrony przeciwpowodziowej."
   },
   {
    "tag": "p",
    "p": "Retencja naturalna",
    "o": "zdolność do gromadzenia wody i zatrzymywania jej przez dłuższy czas",
-   "w": "Mają ją np. lasy, łąki, mokradła."
+   "w": "Mają ją np. obszary leśne."
   },
   {
    "tag": "p",
@@ -511,6 +486,24 @@
    "p": "Wady sztucznych zbiorników",
    "o": "drogie; często wymagają wysiedlenia ludzi; zmieniają warunki życia roślin i zwierząt",
    "w": "Pełnią też inne funkcje, więc nie zawsze mają miejsce na falę powodziową."
+  },
+  {
+   "tag": "r",
+   "p": "Odra – śródlądowa droga wodna",
+   "o": "ok. 650 km; przewozi się nią głównie węgiel i materiały budowlane",
+   "w": "Odra stała się najdłuższą śródlądową drogą wodną dzięki regulacji."
+  },
+  {
+   "tag": "p",
+   "p": "Zapory i sztuczne zbiorniki a powodzie",
+   "o": "regulują przepływ rzek i gromadzą nadmiar wody – dość skuteczny, choć drogi sposób ochrony",
+   "w": "Pełnią też inne funkcje (elektrownie, rekreacja), więc ich możliwości przeciwpowodziowe nie są w pełni wykorzystane."
+  },
+  {
+   "tag": "p",
+   "p": "Naturalne fragmenty dolin rzecznych",
+   "o": "mają dużą zdolność do przyjmowania fal powodziowych",
+   "w": "Np. dolina Odry koło Dobrzenia Wielkiego."
   }
  ],
  "pytania": [
@@ -550,7 +543,7 @@
     "wał przeciwpowodziowy"
    ],
    "a": 0,
-   "ex": "Dział wodny biegnie zwykle przez najwyżej położone tereny.",
+   "ex": "Dział wodny oddziela sąsiednie dorzecza; główny dział wodny – zlewiska.",
    "c": "siec"
   },
   {
@@ -706,7 +699,7 @@
    "t": "tf",
    "q": "Dorzecze Pregoły należy do zlewiska Morza Północnego.",
    "a": false,
-   "ex": "Pregoła uchodzi do Bałtyku (Zalew Wiślany).",
+   "ex": "Pregoła należy do zlewiska Morza Bałtyckiego (mapa sieci rzecznej).",
    "c": "siec"
   },
   {
@@ -1421,34 +1414,6 @@
    "c": "wisla-odra"
   },
   {
-   "t": "mc",
-   "q": "Do czego uchodzi Odra?",
-   "o": [
-    "do Zalewu Szczecińskiego",
-    "do Zatoki Gdańskiej",
-    "do Zatoki Puckiej",
-    "do jeziora Dąbie jako ostatecznego ujścia"
-   ],
-   "a": 0,
-   "ex": "Odra wpada do Zalewu Szczecińskiego.",
-   "c": "wisla-odra"
-  },
-  {
-   "t": "in",
-   "q": "Do jakiego zalewu uchodzi Odra?",
-   "a": [
-    "Zalew Szczeciński",
-    "Zalewu Szczecińskiego",
-    "Zalew Szczecinski",
-    "Zalewu Szczecinskiego"
-   ],
-   "ex": "Ujście Odry – Zalew Szczeciński.",
-   "c": "wisla-odra",
-   "zle": [
-    "Zalew Wiślany"
-   ]
-  },
-  {
    "t": "in",
    "q": "Do jakiej zatoki uchodzi Wisła?",
    "a": [
@@ -1558,7 +1523,7 @@
     "Słowiński PN"
    ],
    "a": 0,
-   "ex": "Kampinoski PN leży koło Warszawy.",
+   "ex": "Kampinoski Park Narodowy chroni szczególnie cenne tereny nad środkowym odcinkiem Wisły.",
    "c": "wisla-odra"
   },
   {
@@ -1584,7 +1549,7 @@
     "pelikany i flamingi"
    ],
    "a": 0,
-   "ex": "Gniazdują na piaszczystych łachach.",
+   "ex": "Lasy olszowe i mieszane nad Wisłą są siedliskiem wielu ptaków, np. rybitw i mew.",
    "c": "wisla-odra"
   },
   {
@@ -1745,25 +1710,23 @@
    "q": "Ułóż miasta nad Wisłą od źródeł do ujścia.",
    "o": [
     "Kraków",
-    "Sandomierz",
     "Warszawa",
-    "Płock",
-    "Toruń"
+    "Toruń",
+    "Gdańsk"
    ],
-   "ex": "Wisła płynie z Beskidów na wschód, potem na północ i północny zachód.",
+   "ex": "Wisła płynie od Beskidu Śląskiego przez Kraków i Warszawę, potem przez Toruń do Zatoki Gdańskiej (mapa).",
    "c": "wisla-odra"
   },
   {
    "t": "order",
    "q": "Ułóż miasta nad Odrą od źródeł do ujścia.",
    "o": [
-    "Racibórz",
     "Opole",
     "Wrocław",
     "Głogów",
     "Szczecin"
    ],
-   "ex": "Odra płynie z Czech na północny zachód.",
+   "ex": "Odra płynie z Czech na północny zachód: Opole → Wrocław → Głogów → Szczecin (mapy).",
    "c": "wisla-odra"
   },
   {
@@ -1811,40 +1774,15 @@
      "Wisła"
     ],
     [
-     "Zalew Szczeciński",
-     "Odra"
+     "Kostrzyn nad Odrą (ujście)",
+     "Warta"
     ],
     [
      "Wyżyna Krakowsko-Częstochowska",
      "Warta"
     ]
    ],
-   "ex": "Źródła i ujścia rzek.",
-   "c": "wisla-odra"
-  },
-  {
-   "t": "order",
-   "q": "Ułóż rzeki od najdłuższej (długość całkowita).",
-   "o": [
-    "Wisła",
-    "Odra",
-    "Bug",
-    "Narew",
-    "Pilica"
-   ],
-   "ex": "Wisła 1022, Odra 841, Bug 772, Narew 484, Pilica 319 km.",
-   "c": "wisla-odra"
-  },
-  {
-   "t": "order",
-   "q": "Ułóż rzeki od najdłuższej (długość całkowita).",
-   "o": [
-    "Odra",
-    "Bug",
-    "San",
-    "Dunajec"
-   ],
-   "ex": "Odra 841, Bug 772, San ok. 458, Dunajec 247 km.",
+   "ex": "Źródła Wisły – Barania Góra; Odry – Góry Odrzańskie; Warta płynie od Wyżyny Krakowsko-Częstochowskiej do Kostrzyna; Wisła uchodzi do Zatoki Gdańskiej.",
    "c": "wisla-odra"
   },
   {
@@ -1953,32 +1891,6 @@
   },
   {
    "t": "mc",
-   "q": "Drwęca to dopływ…",
-   "o": [
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Wisły",
-    "prawobrzeżny Odry",
-    "lewobrzeżny Odry"
-   ],
-   "a": 0,
-   "ex": "Drwęca uchodzi do Wisły z prawej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Przemsza to dopływ…",
-   "o": [
-    "lewobrzeżny Wisły",
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Odry",
-    "prawobrzeżny Odry"
-   ],
-   "a": 0,
-   "ex": "Przemsza uchodzi do Wisły z lewej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
    "q": "Nida to dopływ…",
    "o": [
     "lewobrzeżny Wisły",
@@ -1992,19 +1904,6 @@
   },
   {
    "t": "mc",
-   "q": "Kamienna to dopływ…",
-   "o": [
-    "lewobrzeżny Wisły",
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Odry",
-    "prawobrzeżny Odry"
-   ],
-   "a": 0,
-   "ex": "Kamienna uchodzi do Wisły z lewej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
    "q": "Pilica to dopływ…",
    "o": [
     "lewobrzeżny Wisły",
@@ -2014,32 +1913,6 @@
    ],
    "a": 0,
    "ex": "Pilica uchodzi do Wisły z lewej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Bzura to dopływ…",
-   "o": [
-    "lewobrzeżny Wisły",
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Odry",
-    "prawobrzeżny Odry"
-   ],
-   "a": 0,
-   "ex": "Bzura uchodzi do Wisły z lewej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Brda to dopływ…",
-   "o": [
-    "lewobrzeżny Wisły",
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Odry",
-    "prawobrzeżny Odry"
-   ],
-   "a": 0,
-   "ex": "Brda uchodzi do Wisły z lewej strony (patrząc z biegiem rzeki).",
    "c": "doplywy"
   },
   {
@@ -2105,32 +1978,6 @@
    ],
    "a": 0,
    "ex": "Nysa Łużycka uchodzi do Odry z lewej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Kłodnica to dopływ…",
-   "o": [
-    "prawobrzeżny Odry",
-    "lewobrzeżny Odry",
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Wisły"
-   ],
-   "a": 0,
-   "ex": "Kłodnica uchodzi do Odry z prawej strony (patrząc z biegiem rzeki).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Mała Panew to dopływ…",
-   "o": [
-    "prawobrzeżny Odry",
-    "lewobrzeżny Odry",
-    "prawobrzeżny Wisły",
-    "lewobrzeżny Wisły"
-   ],
-   "a": 0,
-   "ex": "Mała Panew uchodzi do Odry z prawej strony (patrząc z biegiem rzeki).",
    "c": "doplywy"
   },
   {
@@ -2202,13 +2049,6 @@
   },
   {
    "t": "tf",
-   "q": "Kłodnica jest lewobrzeżnym dopływem Odry.",
-   "a": false,
-   "ex": "Kłodnica to dopływ prawobrzeżny Odry.",
-   "c": "doplywy"
-  },
-  {
-   "t": "tf",
    "q": "Warta jest lewobrzeżnym dopływem Odry.",
    "a": false,
    "ex": "Warta to dopływ prawobrzeżny Odry.",
@@ -2230,13 +2070,6 @@
   },
   {
    "t": "tf",
-   "q": "Bzura jest prawobrzeżnym dopływem Wisły.",
-   "a": false,
-   "ex": "Bzura to dopływ lewobrzeżny Wisły.",
-   "c": "doplywy"
-  },
-  {
-   "t": "tf",
    "q": "Nysa Kłodzka jest prawobrzeżnym dopływem Odry.",
    "a": false,
    "ex": "Nysa Kłodzka to dopływ lewobrzeżny Odry.",
@@ -2251,23 +2084,9 @@
   },
   {
    "t": "tf",
-   "q": "Brda jest prawobrzeżnym dopływem Wisły.",
-   "a": false,
-   "ex": "Brda to dopływ lewobrzeżny Wisły.",
-   "c": "doplywy"
-  },
-  {
-   "t": "tf",
    "q": "Bóbr jest lewobrzeżnym dopływem Odry.",
    "a": true,
    "ex": "Zgadza się – Bóbr uchodzi z lewej strony.",
-   "c": "doplywy"
-  },
-  {
-   "t": "tf",
-   "q": "Brda jest lewobrzeżnym dopływem Wisły.",
-   "a": true,
-   "ex": "Zgadza się – Brda uchodzi z lewej strony.",
    "c": "doplywy"
   },
   {
@@ -2303,13 +2122,6 @@
    "q": "Dunajec jest prawobrzeżnym dopływem Wisły.",
    "a": true,
    "ex": "Zgadza się – Dunajec uchodzi z prawej strony.",
-   "c": "doplywy"
-  },
-  {
-   "t": "tf",
-   "q": "Przemsza jest lewobrzeżnym dopływem Wisły.",
-   "a": true,
-   "ex": "Zgadza się – Przemsza uchodzi z lewej strony.",
    "c": "doplywy"
   },
   {
@@ -2458,19 +2270,6 @@
   },
   {
    "t": "mc",
-   "q": "Do dorzecza której rzeki należy Obra (dopływ Warty)?",
-   "o": [
-    "Odry",
-    "Wisły",
-    "Pregoły",
-    "Niemna"
-   ],
-   "a": 0,
-   "ex": "Obra wpada do Warty, a ta – do Odry.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
    "q": "Do dorzecza której rzeki należy Kwisa (dopływ Bobru)?",
    "o": [
     "Odry",
@@ -2492,7 +2291,7 @@
     "do Pilicy"
    ],
    "a": 0,
-   "ex": "Bug wpada do Narwi (Zalew Zegrzyński), a Narew – do Wisły.",
+   "ex": "Bug wpada do Narwi, a Narew – do Wisły (mapa sieci rzecznej).",
    "c": "doplywy"
   },
   {
@@ -2502,7 +2301,7 @@
     "do Warty",
     "do Wisły",
     "do Odry bezpośrednio",
-    "do Brdy"
+    "do Baryczy"
    ],
    "a": 0,
    "ex": "Noteć – prawy dopływ Warty; razem należą do dorzecza Odry.",
@@ -2523,19 +2322,6 @@
   },
   {
    "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Słupia?",
-   "o": [
-    "dorzecza rzek pobrzeża Bałtyku",
-    "dorzecze Wisły",
-    "dorzecze Odry",
-    "dorzecze Pregoły"
-   ],
-   "a": 0,
-   "ex": "Słupia płynie wprost do Bałtyku.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
    "q": "Do którego dorzecza należy rzeka Parsęta?",
    "o": [
     "dorzecza rzek pobrzeża Bałtyku",
@@ -2544,113 +2330,7 @@
     "dorzecze Pregoły"
    ],
    "a": 0,
-   "ex": "Parsęta płynie wprost do Bałtyku (Kołobrzeg).",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Rega?",
-   "o": [
-    "dorzecza rzek pobrzeża Bałtyku",
-    "dorzecze Wisły",
-    "dorzecze Odry",
-    "dorzecze Pregoły"
-   ],
-   "a": 0,
-   "ex": "Rega płynie wprost do Bałtyku.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Łyna?",
-   "o": [
-    "dorzecze Pregoły",
-    "dorzecze Dunaju",
-    "dorzecze Odry",
-    "dorzecza rzek pobrzeża Bałtyku"
-   ],
-   "a": 0,
-   "ex": "Łyna płynie z Warmii do Rosji i wpada do Pregoły.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Czarna Hańcza?",
-   "o": [
-    "dorzecze Niemna",
-    "dorzecze Dniestru",
-    "dorzecze Odry",
-    "dorzecze Pregoły"
-   ],
-   "a": 0,
-   "ex": "Czarna Hańcza wypływa z jeziora Hańcza i płynie do Niemna.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Izera?",
-   "o": [
-    "dorzecze Łaby",
-    "dorzecze Wisły",
-    "dorzecze Niemna",
-    "dorzecze Pregoły"
-   ],
-   "a": 0,
-   "ex": "Izera płynie do Czech i wpada do Łaby.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Czarna Orawa?",
-   "o": [
-    "dorzecze Dunaju",
-    "dorzecze Pregoły",
-    "dorzecza rzek pobrzeża Bałtyku",
-    "dorzecze Niemna"
-   ],
-   "a": 0,
-   "ex": "Orawa należy do dorzecza Dunaju.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Do którego dorzecza należy rzeka Strwiąż?",
-   "o": [
-    "dorzecze Dniestru",
-    "dorzecze Odry",
-    "dorzecze Łaby",
-    "dorzecze Niemna"
-   ],
-   "a": 0,
-   "ex": "Strwiąż w Bieszczadach należy do dorzecza Dniestru.",
-   "c": "doplywy"
-  },
-  {
-   "t": "match",
-   "q": "Dopasuj rzekę do dorzecza.",
-   "p": [
-    [
-     "Warta",
-     "dorzecze Odry"
-    ],
-    [
-     "Bug",
-     "dorzecze Wisły"
-    ],
-    [
-     "Łyna",
-     "dorzecze Pregoły"
-    ],
-    [
-     "Czarna Hańcza",
-     "dorzecze Niemna"
-    ],
-    [
-     "Słupia",
-     "rzeki pobrzeża Bałtyku"
-    ]
-   ],
-   "ex": "Bug → Narew → Wisła; Warta → Odra; Łyna → Pregoła; Czarna Hańcza → Niemen; Słupia → Bałtyk.",
+   "ex": "Parsęta płynie wprost do Bałtyku – należy do dorzeczy rzek pobrzeża Bałtyku.",
    "c": "doplywy"
   },
   {
@@ -2662,23 +2342,51 @@
      "dorzecze Odry"
     ],
     [
-     "San",
+     "Pilica",
      "dorzecze Wisły"
-    ],
-    [
-     "Izera",
-     "dorzecze Łaby"
-    ],
-    [
-     "Czarna Orawa",
-     "dorzecze Dunaju"
     ],
     [
      "Parsęta",
      "rzeki pobrzeża Bałtyku"
+    ],
+    [
+     "Barycz",
+     "dorzecze Odry"
+    ],
+    [
+     "Wieprz",
+     "dorzecze Wisły"
     ]
    ],
-   "ex": "Noteć → Warta → Odra; San → Wisła; Izera → Łaba; Orawa → Dunaj; Parsęta → Bałtyk.",
+   "ex": "Noteć (→ Warta) i Barycz – Odra; Pilica i Wieprz – Wisła; Parsęta – wprost do Bałtyku.",
+   "c": "doplywy"
+  },
+  {
+   "t": "match",
+   "q": "Dopasuj rzekę do dorzecza.",
+   "p": [
+    [
+     "Prosna",
+     "dorzecze Odry"
+    ],
+    [
+     "San",
+     "dorzecze Wisły"
+    ],
+    [
+     "Łeba",
+     "rzeki pobrzeża Bałtyku"
+    ],
+    [
+     "Bóbr",
+     "dorzecze Odry"
+    ],
+    [
+     "Narew",
+     "dorzecze Wisły"
+    ]
+   ],
+   "ex": "Prosna (→ Warta) i Bóbr – Odra; San i Narew – Wisła; Łeba – wprost do Bałtyku.",
    "c": "doplywy"
   },
   {
@@ -2690,7 +2398,7 @@
      "prawobrzeżny Wisły"
     ],
     [
-     "Kamienna",
+     "Nida",
      "lewobrzeżny Wisły"
     ],
     [
@@ -2698,15 +2406,11 @@
      "prawobrzeżny Odry"
     ],
     [
-     "Kłodnica",
-     "prawobrzeżny Odry"
-    ],
-    [
      "Bystrzyca",
      "lewobrzeżny Odry"
     ]
    ],
-   "ex": "Widawa – prawobrzeżny Odry; Kłodnica – prawobrzeżny Odry; Wieprz – prawobrzeżny Wisły; Bystrzyca – lewobrzeżny Odry; Kamienna – lewobrzeżny Wisły.",
+   "ex": "Wieprz – prawy Wisły; Nida – lewy Wisły; Widawa – prawy Odry; Bystrzyca – lewy Odry.",
    "c": "doplywy"
   },
   {
@@ -2714,7 +2418,7 @@
    "q": "Dopasuj rzekę do opisu.",
    "p": [
     [
-     "Mała Panew",
+     "Barycz",
      "prawobrzeżny Odry"
     ],
     [
@@ -2722,47 +2426,15 @@
      "prawobrzeżny Wisły"
     ],
     [
-     "Widawa",
-     "prawobrzeżny Odry"
-    ],
-    [
      "Kaczawa",
      "lewobrzeżny Odry"
     ],
     [
-     "Bzura",
+     "Pilica",
      "lewobrzeżny Wisły"
     ]
    ],
-   "ex": "Mała Panew – prawobrzeżny Odry; Narew – prawobrzeżny Wisły; Widawa – prawobrzeżny Odry; Kaczawa – lewobrzeżny Odry; Bzura – lewobrzeżny Wisły.",
-   "c": "doplywy"
-  },
-  {
-   "t": "match",
-   "q": "Dopasuj rzekę do opisu.",
-   "p": [
-    [
-     "Mała Panew",
-     "prawobrzeżny Odry"
-    ],
-    [
-     "Barycz",
-     "prawobrzeżny Odry"
-    ],
-    [
-     "Drwęca",
-     "prawobrzeżny Wisły"
-    ],
-    [
-     "Bystrzyca",
-     "lewobrzeżny Odry"
-    ],
-    [
-     "Kaczawa",
-     "lewobrzeżny Odry"
-    ]
-   ],
-   "ex": "Drwęca – prawobrzeżny Wisły; Barycz – prawobrzeżny Odry; Mała Panew – prawobrzeżny Odry; Kaczawa – lewobrzeżny Odry; Bystrzyca – lewobrzeżny Odry.",
+   "ex": "Barycz – prawy Odry; Narew – prawy Wisły; Kaczawa – lewy Odry; Pilica – lewy Wisły.",
    "c": "doplywy"
   },
   {
@@ -2774,6 +2446,26 @@
      "prawobrzeżny Odry"
     ],
     [
+     "San",
+     "prawobrzeżny Wisły"
+    ],
+    [
+     "Nysa Kłodzka",
+     "lewobrzeżny Odry"
+    ],
+    [
+     "Szreniawa",
+     "lewobrzeżny Wisły"
+    ]
+   ],
+   "ex": "Warta – prawy Odry; San – prawy Wisły; Nysa Kłodzka – lewy Odry; Szreniawa – lewy Wisły (mapa woj. małopolskiego).",
+   "c": "doplywy"
+  },
+  {
+   "t": "match",
+   "q": "Dopasuj rzekę do opisu.",
+   "p": [
+    [
      "Wisłoka",
      "prawobrzeżny Wisły"
     ],
@@ -2782,15 +2474,15 @@
      "prawobrzeżny Wisły"
     ],
     [
-     "Przemsza",
-     "lewobrzeżny Wisły"
+     "Bóbr",
+     "lewobrzeżny Odry"
     ],
     [
-     "Kamienna",
-     "lewobrzeżny Wisły"
+     "Widawa",
+     "prawobrzeżny Odry"
     ]
    ],
-   "ex": "Warta – prawobrzeżny Odry; Wisłoka – prawobrzeżny Wisły; Soła – prawobrzeżny Wisły; Przemsza – lewobrzeżny Wisły; Kamienna – lewobrzeżny Wisły.",
+   "ex": "Wisłoka i Soła – prawe Wisły; Bóbr – lewy Odry; Widawa – prawy Odry.",
    "c": "doplywy"
   },
   {
@@ -2801,10 +2493,9 @@
     "San",
     "Wieprz",
     "Pilica",
-    "Narew",
-    "Brda"
+    "Narew"
    ],
-   "ex": "Dunajec (koło Opatowca), San (koło Sandomierza), Wieprz (Dęblin), Pilica (przed Warszawą), Narew (Modlin), Brda (Bydgoszcz).",
+   "ex": "Na mapie sieci rzecznej: najpierw Dunajec, potem San, Wieprz, Pilica (przed Warszawą) i Narew (za Warszawą).",
    "c": "doplywy"
   },
   {
@@ -2817,19 +2508,19 @@
     "Nysa Łużycka",
     "Warta"
    ],
-   "ex": "Nysa Kłodzka (koło Brzegu), Barycz (koło Głogowa), Bóbr (Krosno Odrzańskie), Nysa Łużycka, Warta (Kostrzyn).",
+   "ex": "Na mapie: Nysa Kłodzka (przed Wrocławiem), Barycz, Bóbr, Nysa Łużycka, a na końcu Warta (Kostrzyn nad Odrą).",
    "c": "doplywy"
   },
   {
    "t": "pick",
    "q": "Zaznacz wszystkie prawobrzeżne dopływy Wisły.",
-   "s": "Pilica Dunajec Bzura San Nida Narew",
+   "s": "Pilica Dunajec Szreniawa San Nida Narew",
    "a": [
     1,
     3,
     5
    ],
-   "ex": "Prawe: Dunajec, San, Narew. Lewe: Pilica, Bzura, Nida.",
+   "ex": "Prawe: Dunajec, San, Narew. Lewe: Pilica, Szreniawa, Nida.",
    "c": "doplywy"
   },
   {
@@ -2841,7 +2532,7 @@
     3,
     5
    ],
-   "ex": "Lewe: Bóbr, Kaczawa, Bystrzyca (z Sudetów). Prawe: Warta, Barycz, Widawa.",
+   "ex": "Lewe: Bóbr, Kaczawa, Bystrzyca. Prawe: Warta, Barycz, Widawa (mapy).",
    "c": "doplywy"
   },
   {
@@ -2866,32 +2557,6 @@
     4
    ],
    "ex": "Narew, Pilica, Dunajec – Wisła. Barycz, Nysa (Kłodzka/Łużycka), Kaczawa – Odra.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Dlaczego lewobrzeżne dopływy Odry (np. Nysa Kłodzka, Bóbr) są groźne w czasie ulew?",
-   "o": [
-    "spływają z Sudetów – woda z gór szybko spływa stromymi dolinami",
-    "płyną przez Pojezierze Mazurskie",
-    "są zasilane przez lodowce",
-    "płyną z Bałtyku"
-   ],
-   "a": 0,
-   "ex": "Z gór woda spływa gwałtownie, dlatego Kotlina Kłodzka często cierpi przez powodzie.",
-   "c": "doplywy"
-  },
-  {
-   "t": "mc",
-   "q": "Skąd spływają prawobrzeżne dopływy górnej Wisły (np. Dunajec, Raba, San)?",
-   "o": [
-    "z Karpat",
-    "z Sudetów",
-    "z Pojezierza Pomorskiego",
-    "z Wyżyny Lubelskiej wyłącznie"
-   ],
-   "a": 0,
-   "ex": "Karpackie rzeki szybko wzbierają po ulewach.",
    "c": "doplywy"
   },
   {
@@ -3163,7 +2828,7 @@
     "starorzecza"
    ],
    "a": 0,
-   "ex": "Np. Czarny Staw pod Rysami, Wielki Staw w Karkonoszach.",
+   "ex": "Np. Czarny Staw pod Rysami.",
    "c": "jeziora"
   },
   {
@@ -3210,25 +2875,13 @@
   },
   {
    "t": "order",
-   "q": "Ułóż jeziora od największego (powierzchnia).",
-   "o": [
-    "Śniardwy",
-    "Mamry",
-    "Łebsko",
-    "Jeziorak"
-   ],
-   "ex": "Śniardwy 113,4 km², Mamry 102,8 km², Łebsko ok. 71 km², Jeziorak ok. 32 km².",
-   "c": "jeziora"
-  },
-  {
-   "t": "order",
    "q": "Ułóż jeziora od najgłębszego.",
    "o": [
     "Hańcza",
     "Drawsko",
     "Śniardwy"
    ],
-   "ex": "Hańcza 108,5 m, Drawsko 79,7 m; Śniardwy są płytkie (najgłębsze miejsce ok. 23 m).",
+   "ex": "Hańcza 108,5 m, Drawsko 79,7 m; Śniardwy są płytkie (średnia głębokość ok. 6 m).",
    "c": "jeziora"
   },
   {
@@ -3272,37 +2925,11 @@
      "Tatry"
     ],
     [
-     "Łebsko",
-     "Pobrzeże Bałtyku"
+     "Gardno",
+     "wybrzeże Bałtyku"
     ]
    ],
-   "ex": "Suwalszczyzna, Mazury, Tatry, wybrzeże.",
-   "c": "jeziora"
-  },
-  {
-   "t": "mc",
-   "q": "Jezioro Łebsko jest…",
-   "o": [
-    "największym jeziorem przybrzeżnym w Polsce",
-    "najgłębszym jeziorem Polski",
-    "sztucznym zbiornikiem na Wiśle",
-    "jeziorem cyrkowym w Tatrach"
-   ],
-   "a": 0,
-   "ex": "Ok. 71 km², Słowiński Park Narodowy.",
-   "c": "jeziora"
-  },
-  {
-   "t": "mc",
-   "q": "Jezioro Jeziorak jest…",
-   "o": [
-    "najdłuższym jeziorem w Polsce (jezioro rynnowe)",
-    "najgłębszym jeziorem Polski",
-    "jeziorem cyrkowym",
-    "sztucznym zbiornikiem"
-   ],
-   "a": 0,
-   "ex": "Ma ok. 27 km długości – typowy podłużny kształt jeziora rynnowego.",
+   "ex": "Hańcza – Suwalszczyzna; Śniardwy – Mazury; Czarny Staw – Tatry; Gardno – jezioro przybrzeżne nad Bałtykiem.",
    "c": "jeziora"
   },
   {
@@ -3385,19 +3012,6 @@
   },
   {
    "t": "mc",
-   "q": "Jakim typem jeziora jest Hańcza?",
-   "o": [
-    "rynnowe",
-    "morenowe",
-    "cyrkowe",
-    "przybrzeżne"
-   ],
-   "a": 0,
-   "ex": "Hańcza – jezioro rynnowe: misa wyżłobiona przez wody płynące pod lądolodem.",
-   "c": "typy-jezior"
-  },
-  {
-   "t": "mc",
    "q": "Jakim typem jeziora jest Czarny Staw pod Rysami?",
    "o": [
     "cyrkowe",
@@ -3407,32 +3021,6 @@
    ],
    "a": 0,
    "ex": "Czarny Staw pod Rysami – jezioro cyrkowe: wypełnia cyrk (kocioł) lodowcowy w górach.",
-   "c": "typy-jezior"
-  },
-  {
-   "t": "mc",
-   "q": "Jakim typem jeziora jest Wielki Staw w Karkonoszach?",
-   "o": [
-    "cyrkowe",
-    "morenowe",
-    "rynnowe",
-    "przybrzeżne"
-   ],
-   "a": 0,
-   "ex": "Wielki Staw w Karkonoszach – jezioro cyrkowe: wypełnia cyrk (kocioł) lodowcowy w górach.",
-   "c": "typy-jezior"
-  },
-  {
-   "t": "mc",
-   "q": "Jakim typem jeziora jest Mały Staw w Karkonoszach?",
-   "o": [
-    "cyrkowe",
-    "morenowe",
-    "rynnowe",
-    "przybrzeżne"
-   ],
-   "a": 0,
-   "ex": "Mały Staw w Karkonoszach – jezioro cyrkowe: wypełnia cyrk (kocioł) lodowcowy w górach.",
    "c": "typy-jezior"
   },
   {
@@ -3472,19 +3060,6 @@
    ],
    "a": 0,
    "ex": "Jamno – jezioro przybrzeżne: zatoka odcięta od morza mierzeją.",
-   "c": "typy-jezior"
-  },
-  {
-   "t": "mc",
-   "q": "Jakim typem jeziora jest Łebsko?",
-   "o": [
-    "przybrzeżne",
-    "morenowe",
-    "rynnowe",
-    "cyrkowe"
-   ],
-   "a": 0,
-   "ex": "Łebsko – jezioro przybrzeżne: zatoka odcięta od morza mierzeją.",
    "c": "typy-jezior"
   },
   {
@@ -3568,68 +3143,6 @@
    ]
   },
   {
-   "t": "in",
-   "q": "Wpisz typ jeziora (ze względu na pochodzenie misy): Wielki Staw w Karkonoszach.",
-   "a": [
-    "cyrkowe",
-    "jezioro cyrkowe",
-    "cyrkowe"
-   ],
-   "ex": "Wielki Staw w Karkonoszach – jezioro cyrkowe.",
-   "c": "typy-jezior",
-   "zle": [
-    "morenowe",
-    "rynnowe",
-    "przybrzeżne"
-   ]
-  },
-  {
-   "t": "in",
-   "q": "Wpisz typ jeziora (ze względu na pochodzenie misy): Mały Staw w Karkonoszach.",
-   "a": [
-    "cyrkowe",
-    "jezioro cyrkowe",
-    "cyrkowe"
-   ],
-   "ex": "Mały Staw w Karkonoszach – jezioro cyrkowe.",
-   "c": "typy-jezior",
-   "zle": [
-    "morenowe",
-    "rynnowe",
-    "przybrzeżne"
-   ]
-  },
-  {
-   "t": "in",
-   "q": "Wpisz typ jeziora (ze względu na pochodzenie misy): Hańcza.",
-   "a": [
-    "rynnowe",
-    "jezioro rynnowe",
-    "rynnowe"
-   ],
-   "ex": "Hańcza – jezioro rynnowe.",
-   "c": "typy-jezior",
-   "zle": [
-    "morenowe",
-    "cyrkowe",
-    "przybrzeżne"
-   ]
-  },
-  {
-   "t": "tf",
-   "q": "Hańcza to jezioro cyrkowe.",
-   "a": false,
-   "ex": "Hańcza to jezioro rynnowe.",
-   "c": "typy-jezior"
-  },
-  {
-   "t": "tf",
-   "q": "Wielki Staw w Karkonoszach to jezioro morenowe.",
-   "a": false,
-   "ex": "Wielki Staw w Karkonoszach to jezioro cyrkowe.",
-   "c": "typy-jezior"
-  },
-  {
    "t": "tf",
    "q": "Gardno to jezioro rynnowe.",
    "a": false,
@@ -3666,7 +3179,7 @@
      "morenowe"
     ],
     [
-     "Hańcza",
+     "Jeziorak",
      "rynnowe"
     ],
     [
@@ -3674,11 +3187,11 @@
      "cyrkowe"
     ],
     [
-     "Łebsko",
+     "Gardno",
      "przybrzeżne"
     ]
    ],
-   "ex": "Mamry – morenowe; Hańcza – rynnowe; Czarny Staw pod Rysami – cyrkowe; Łebsko – przybrzeżne.",
+   "ex": "Mamry – morenowe; Jeziorak – rynnowe; Czarny Staw pod Rysami – cyrkowe; Gardno – przybrzeżne.",
    "c": "typy-jezior"
   },
   {
@@ -3690,7 +3203,7 @@
      "morenowe"
     ],
     [
-     "Hańcza",
+     "Gopło",
      "rynnowe"
     ],
     [
@@ -3702,7 +3215,7 @@
      "przybrzeżne"
     ]
    ],
-   "ex": "Kisajno – morenowe; Hańcza – rynnowe; Czarny Staw pod Rysami – cyrkowe; Jamno – przybrzeżne.",
+   "ex": "Kisajno – morenowe; Gopło – rynnowe; Czarny Staw pod Rysami – cyrkowe; Jamno – przybrzeżne.",
    "c": "typy-jezior"
   },
   {
@@ -3830,7 +3343,7 @@
     "zaporowe"
    ],
    "a": 0,
-   "ex": "Np. Łebsko, Gardno, Jamno.",
+   "ex": "Np. Gardno, Sarbsko, Jamno.",
    "c": "typy-jezior"
   },
   {
@@ -3889,7 +3402,7 @@
    "a": [
     "mierzeja"
    ],
-   "ex": "Np. Mierzeja Łebska oddziela Łebsko od Bałtyku.",
+   "ex": "Mierzeje odcięły zatoki morskie od otwartego morza – tak powstały jeziora przybrzeżne.",
    "c": "typy-jezior"
   },
   {
@@ -3923,7 +3436,7 @@
    "t": "tf",
    "q": "Jeziora przybrzeżne są dosyć duże, ale płytkie.",
    "a": true,
-   "ex": "Np. Łebsko – ok. 71 km², a głębokość do kilku metrów.",
+   "ex": "Np. Gardno, Sarbsko, Jamno – dość duże, ale o niewielkich głębokościach.",
    "c": "typy-jezior"
   },
   {
@@ -3974,7 +3487,7 @@
    "o": [
     "Jeziorak",
     "Kisajno",
-    "Wielki Staw w Karkonoszach",
+    "Czarny Staw pod Rysami",
     "Sarbsko"
    ],
    "a": 0,
@@ -4024,7 +3537,7 @@
    "q": "Które jezioro jest przykładem typu przedstawionego na schemacie?",
    "o": [
     "Śniardwy",
-    "Hańcza",
+    "Gopło",
     "Czarny Staw pod Rysami",
     "Gardno"
    ],
@@ -4076,7 +3589,7 @@
    "o": [
     "Czarny Staw pod Rysami",
     "Śniardwy",
-    "Hańcza",
+    "Jeziorak",
     "Gardno"
    ],
    "a": 0,
@@ -4140,13 +3653,12 @@
   {
    "t": "pick",
    "q": "Zaznacz jeziora rynnowe.",
-   "s": "Jeziorak Śniardwy Gopło Gardno Hańcza Mamry",
+   "s": "Jeziorak Śniardwy Gopło Gardno Kisajno Mamry",
    "a": [
     0,
-    2,
-    4
+    2
    ],
-   "ex": "Rynnowe: Jeziorak, Gopło, Hańcza. Morenowe: Śniardwy, Mamry. Przybrzeżne: Gardno.",
+   "ex": "Rynnowe: Jeziorak, Gopło. Morenowe: Śniardwy, Kisajno, Mamry. Przybrzeżne: Gardno.",
    "c": "typy-jezior"
   },
   {
@@ -4164,13 +3676,13 @@
   {
    "t": "pick",
    "q": "Zaznacz jeziora morenowe.",
-   "s": "Mamry Łebsko Kisajno Jeziorak Śniardwy Jamno",
+   "s": "Mamry Gardno Kisajno Jeziorak Śniardwy Jamno",
    "a": [
     0,
     2,
     4
    ],
-   "ex": "Morenowe: Mamry, Kisajno, Śniardwy.",
+   "ex": "Morenowe: Mamry, Kisajno, Śniardwy. Gardno i Jamno – przybrzeżne, Jeziorak – rynnowe.",
    "c": "typy-jezior"
   },
   {
@@ -4240,71 +3752,6 @@
   },
   {
    "t": "mc",
-   "q": "Na jakiej rzece powstał zbiornik Jezioro Włocławskie?",
-   "o": [
-    "Wisła",
-    "Dunajec",
-    "Nysa Kłodzka",
-    "Bystrzyca"
-   ],
-   "a": 0,
-   "ex": "Jezioro Włocławskie – zbiornik zaporowy na rzece Wisła.",
-   "c": "zbiorniki"
-  },
-  {
-   "t": "mc",
-   "q": "Na jakiej rzece powstał zbiornik Zalew Zegrzyński?",
-   "o": [
-    "Narew",
-    "San",
-    "Dunajec",
-    "Bóbr"
-   ],
-   "a": 0,
-   "ex": "Zalew Zegrzyński – zbiornik zaporowy na rzece Narew.",
-   "c": "zbiorniki"
-  },
-  {
-   "t": "mc",
-   "q": "Na jakiej rzece powstał zbiornik Zalew Sulejowski?",
-   "o": [
-    "Pilica",
-    "Nysa Kłodzka",
-    "San",
-    "Narew"
-   ],
-   "a": 0,
-   "ex": "Zalew Sulejowski – zbiornik zaporowy na rzece Pilica.",
-   "c": "zbiorniki"
-  },
-  {
-   "t": "mc",
-   "q": "Na jakiej rzece powstał zbiornik Jeziorsko?",
-   "o": [
-    "Warta",
-    "Dunajec",
-    "Narew",
-    "San"
-   ],
-   "a": 0,
-   "ex": "Jeziorsko – zbiornik zaporowy na rzece Warta.",
-   "c": "zbiorniki"
-  },
-  {
-   "t": "mc",
-   "q": "Na jakiej rzece powstał zbiornik Jezioro Nyskie?",
-   "o": [
-    "Nysa Kłodzka",
-    "Bystrzyca",
-    "Bóbr",
-    "Narew"
-   ],
-   "a": 0,
-   "ex": "Jezioro Nyskie – zbiornik zaporowy na rzece Nysa Kłodzka.",
-   "c": "zbiorniki"
-  },
-  {
-   "t": "mc",
    "q": "Na jakiej rzece powstał zbiornik Jezioro Pilchowickie?",
    "o": [
     "Bóbr",
@@ -4342,19 +3789,19 @@
      "Dunajec"
     ],
     [
-     "Jezioro Włocławskie",
-     "Wisła"
-    ],
-    [
      "Jezioro Dobczyckie",
      "Raba"
     ],
     [
-     "Zalew Sulejowski",
-     "Pilica"
+     "Jezioro Pilchowickie",
+     "Bóbr"
+    ],
+    [
+     "Jezioro Mietkowskie",
+     "Bystrzyca"
     ]
    ],
-   "ex": "Solina – San; Rożnów – Dunajec; Włocławek – Wisła; Dobczyce – Raba; Sulejów – Pilica.",
+   "ex": "Solina – San; Rożnów – Dunajec; Dobczyce – Raba (mapa woj. małopolskiego); Pilchowice – Bóbr, Mietków – Bystrzyca (mapa woj. dolnośląskiego).",
    "c": "zbiorniki"
   },
   {
@@ -4366,23 +3813,19 @@
      "Dunajec"
     ],
     [
-     "Jeziorsko",
-     "Warta"
+     "Jezioro Solińskie",
+     "San"
     ],
     [
-     "Jezioro Nyskie",
-     "Nysa Kłodzka"
+     "Jezioro Mietkowskie",
+     "Bystrzyca"
     ],
     [
-     "Jezioro Pilchowickie",
-     "Bóbr"
-    ],
-    [
-     "Zalew Zegrzyński",
-     "Narew"
+     "Jezioro Dobczyckie",
+     "Raba"
     ]
    ],
-   "ex": "Czorsztyn – Dunajec; Jeziorsko – Warta; Nysa – Nysa Kłodzka; Pilchowice – Bóbr; Zegrze – Narew.",
+   "ex": "Czorsztyn – Dunajec; Solina – San; Mietków – Bystrzyca; Dobczyce – Raba.",
    "c": "zbiorniki"
   },
   {
@@ -4390,12 +3833,12 @@
    "q": "Najpojemniejszy sztuczny zbiornik wodny w Polsce to…",
    "o": [
     "Jezioro Solińskie",
-    "Jezioro Włocławskie",
-    "Zalew Zegrzyński",
+    "Jezioro Rożnowskie",
+    "Jezioro Dobczyckie",
     "Jezioro Czorsztyńskie"
    ],
    "a": 0,
-   "ex": "Solina na Sanie w Bieszczadach.",
+   "ex": "Jezioro Solińskie na Sanie – najpojemniejszy sztuczny zbiornik w Polsce.",
    "c": "zbiorniki"
   },
   {
@@ -4408,7 +3851,7 @@
     "Zalew Soliński",
     "Soliński"
    ],
-   "ex": "Na Sanie, w Bieszczadach.",
+   "ex": "Leży na Sanie.",
    "c": "zbiorniki"
   },
   {
@@ -4468,7 +3911,7 @@
     "Śniardwy",
     "Jezioro Solińskie",
     "Jezioro Rożnowskie",
-    "Jezioro Włocławskie"
+    "Jezioro Czorsztyńskie"
    ],
    "a": 0,
    "ex": "Śniardwy to naturalne jezioro morenowe.",
@@ -4496,13 +3939,6 @@
   },
   {
    "t": "tf",
-   "q": "Jezioro Włocławskie to sztuczny zbiornik na Wiśle.",
-   "a": true,
-   "ex": "Zapora we Włocławku.",
-   "c": "zbiorniki"
-  },
-  {
-   "t": "tf",
    "q": "Budowa sztucznego zbiornika może wymagać wysiedlenia ludności.",
    "a": true,
    "ex": "Zalewany jest teren dawnych wsi i pól.",
@@ -4512,7 +3948,7 @@
    "t": "tf",
    "q": "Sztuczne zbiorniki nie mają wpływu na rośliny i zwierzęta.",
    "a": false,
-   "ex": "Zmieniają warunki ich życia (zalanie doliny, zatrzymanie wędrówek ryb).",
+   "ex": "Tworzenie sztucznych zbiorników wpływa na warunki życia roślin i zwierząt.",
    "c": "zbiorniki"
   },
   {
@@ -4537,7 +3973,7 @@
     2,
     4
    ],
-   "ex": "Sztuczne: Solina, Rożnów, Czorsztyn. Naturalne: Mamry (morenowe), Hańcza (rynnowe), Gardno (przybrzeżne).",
+   "ex": "Sztuczne: Solina, Rożnów, Czorsztyn. Naturalne: Mamry (morenowe), Hańcza (polodowcowe), Gardno (przybrzeżne).",
    "c": "zbiorniki"
   },
   {
@@ -4894,7 +4330,7 @@
     "zaćmienie"
    ],
    "a": 0,
-   "ex": "Kropelki wody rozszczepiają światło.",
+   "ex": "Woda spadająca z wysokości niemal 70 m uderza o skały – w słońcu powstaje tęcza.",
    "c": "krajobrazy"
   },
   {
@@ -4937,55 +4373,18 @@
    "c": "krajobrazy"
   },
   {
-   "t": "mc",
-   "q": "Zalew Wiślany to…",
-   "o": [
-    "płytka zatoka Bałtyku oddzielona od morza Mierzeją Wiślaną",
-    "sztuczny zbiornik na Wiśle",
-    "jezioro cyrkowe",
-    "starorzecze Wisły w Warszawie"
-   ],
-   "a": 0,
-   "ex": "Zalew jest odcięty mierzeją, ale łączy się z morzem.",
-   "c": "krajobrazy"
-  },
-  {
    "t": "in",
-   "q": "Jak nazywa się płytka zatoka przy ujściu Odry?",
-   "a": [
-    "Zalew Szczeciński",
-    "Zalew Szczecinski"
-   ],
-   "ex": "Odra uchodzi do Zalewu Szczecińskiego.",
-   "c": "krajobrazy",
-   "zle": [
-    "Zalew Wiślany",
-    "Zalew Wislany"
-   ]
-  },
-  {
-   "t": "in",
-   "q": "Jak nazywa się zalew na wschód od delty Wisły, częściowo należący do Polski (Pętla Żuławska)?",
+   "q": "Pętlę Żuławską tworzą szlaki wodne delty Wisły oraz… (jaki zalew?)",
    "a": [
     "Zalew Wiślany",
     "Zalew Wislany"
    ],
-   "ex": "Oddziela go od morza Mierzeja Wiślana.",
+   "ex": "Pętla Żuławska – szlaki wodne delty Wisły i Zalewu Wiślanego, 303 km.",
    "c": "krajobrazy",
    "zle": [
     "Zalew Szczeciński",
     "Zalew Szczecinski"
    ]
-  },
-  {
-   "t": "in",
-   "q": "Jak nazywa się wąski pas lądu oddzielający Zalew Wiślany od Bałtyku?",
-   "a": [
-    "Mierzeja Wiślana",
-    "Mierzeja Wislana"
-   ],
-   "ex": "Mierzeja = wąski pas piasku między zatoką a morzem.",
-   "c": "krajobrazy"
   },
   {
    "t": "mc",
@@ -5141,7 +4540,7 @@
    "t": "mc",
    "q": "Czym jest cofka?",
    "o": [
-    "podniesieniem się poziomu wody w ujściu rzeki (np. gdy wiatr wpycha wodę morską)",
+    "podniesieniem się poziomu wody w ujściu rzeki",
     "cofnięciem się lodowca",
     "spadkiem poziomu wody w jeziorze",
     "budową wału"
@@ -5191,7 +4590,7 @@
    "o": [
     "cofkę",
     "powódź roztopową",
-    "zator lodowy",
+    "regulację rzeki",
     "suszę"
    ],
    "a": 0,
@@ -5206,10 +4605,10 @@
    "q": "Jak nazywa się zjawisko przedstawione na schemacie?",
    "a": [
     "cofka",
-    "powódź sztormowa",
-    "cofka morska"
+    "cofka morska",
+    "powódź sztormowa"
    ],
-   "ex": "Cofka – powódź sztormowa.",
+   "ex": "Cofka – podniesienie się poziomu wody w ujściu rzeki.",
    "c": "powodzie",
    "img": "cofka",
    "alt": "Schemat: wiatr od morza i podniesiony poziom wody w ujściu rzeki",
@@ -5217,54 +4616,38 @@
   },
   {
    "t": "mc",
-   "q": "Jaki rodzaj powodzi wywołuje: szybkie topnienie grubej pokrywy śniegu wiosną?",
+   "q": "Jaki rodzaj powodzi wywołuje szybkie topnienie śniegu wiosną (roztopy)?",
    "o": [
     "powódź roztopowa",
     "powódź opadowa",
-    "powódź zatorowa",
-    "powódź sztormowa (cofka)"
+    "cofka"
    ],
    "a": 0,
-   "ex": "Powódź roztopowa: szybkie topnienie grubej pokrywy śniegu wiosną.",
+   "ex": "Roztopy zwiększają przepływy rzek wiosną.",
    "c": "powodzie"
   },
   {
    "t": "mc",
-   "q": "Jaki rodzaj powodzi wywołuje: ulewne lub długotrwałe opady deszczu?",
+   "q": "Jaki rodzaj powodzi wywołują intensywne opady deszczu?",
    "o": [
     "powódź opadowa",
     "powódź roztopowa",
-    "powódź zatorowa",
-    "powódź sztormowa (cofka)"
+    "cofka"
    ],
    "a": 0,
-   "ex": "Powódź opadowa: ulewne lub długotrwałe opady deszczu.",
+   "ex": "Intensywne opady deszczu zdarzają się najczęściej latem.",
    "c": "powodzie"
   },
   {
    "t": "mc",
-   "q": "Jaki rodzaj powodzi wywołuje: kra lodowa blokuje koryto i spiętrza wodę?",
+   "q": "Jak nazywa się zjawisko, gdy silny wiatr od morza wpycha wodę w ujście rzeki i jej poziom się podnosi?",
    "o": [
-    "powódź zatorowa",
+    "cofka",
     "powódź roztopowa",
-    "powódź opadowa",
-    "powódź sztormowa (cofka)"
+    "powódź opadowa"
    ],
    "a": 0,
-   "ex": "Powódź zatorowa: kra lodowa blokuje koryto i spiętrza wodę.",
-   "c": "powodzie"
-  },
-  {
-   "t": "mc",
-   "q": "Jaki rodzaj powodzi wywołuje: silny wiatr od morza wpycha wodę w ujście rzeki?",
-   "o": [
-    "powódź sztormowa (cofka)",
-    "powódź roztopowa",
-    "powódź opadowa",
-    "powódź zatorowa"
-   ],
-   "a": 0,
-   "ex": "Powódź sztormowa (cofka): silny wiatr od morza wpycha wodę w ujście rzeki.",
+   "ex": "Cofka – przyczyna powodzi na obszarach nadmorskich.",
    "c": "powodzie"
   },
   {
@@ -5272,23 +4655,19 @@
    "q": "Dopasuj przyczynę do rodzaju powodzi.",
    "p": [
     [
-     "szybkie topnienie grubej pokrywy śniegu wiosną",
+     "topnienie śniegu wiosną",
      "roztopowa"
     ],
     [
-     "ulewne lub długotrwałe opady deszczu",
+     "intensywne opady deszczu",
      "opadowa"
     ],
     [
-     "kra lodowa blokuje koryto i spiętrza wodę",
-     "zatorowa"
-    ],
-    [
-     "silny wiatr od morza wpycha wodę w ujście rzeki",
-     "sztormowa (cofka)"
+     "podniesienie się poziomu wody w ujściu rzeki",
+     "cofka"
     ]
    ],
-   "ex": "Roztopowa – śnieg; opadowa – deszcz; zatorowa – kra; sztormowa – wiatr od morza.",
+   "ex": "Roztopy – wiosna; opady – najczęściej lato; cofka – wybrzeże.",
    "c": "powodzie"
   },
   {
@@ -5300,32 +4679,15 @@
      "roztopowa"
     ],
     [
-     "lato, kilkudniowe ulewy",
+     "lato, intensywne opady",
      "opadowa"
     ],
     [
-     "zima, rzeka pokryta krą",
-     "zatorowa"
-    ],
-    [
-     "wybrzeże, sztorm",
-     "sztormowa (cofka)"
+     "wybrzeże, silny wiatr od morza",
+     "cofka"
     ]
    ],
    "ex": "Każdy rodzaj powodzi ma inną przyczynę.",
-   "c": "powodzie"
-  },
-  {
-   "t": "mc",
-   "q": "Jaki rodzaj powodzi był w lipcu 1997 r. w dorzeczu Odry?",
-   "o": [
-    "opadowa",
-    "roztopowa",
-    "zatorowa",
-    "sztormowa"
-   ],
-   "a": 0,
-   "ex": "Wywołały ją kilkudniowe, bardzo obfite opady deszczu.",
    "c": "powodzie"
   },
   {
@@ -5339,26 +4701,6 @@
    ],
    "a": 0,
    "ex": "Dużo śniegu topnieje naraz.",
-   "c": "powodzie"
-  },
-  {
-   "t": "mc",
-   "q": "Wezbranie to…",
-   "o": [
-    "wyraźny wzrost poziomu wody w rzece",
-    "spadek poziomu wody w rzece",
-    "zamarznięcie rzeki",
-    "wysychanie jeziora"
-   ],
-   "a": 0,
-   "ex": "Gdy woda wystąpi z brzegów i powoduje szkody – to powódź.",
-   "c": "powodzie"
-  },
-  {
-   "t": "tf",
-   "q": "Każde wezbranie jest powodzią.",
-   "a": false,
-   "ex": "Powódź to wezbranie, przy którym woda zalewa tereny i powoduje straty.",
    "c": "powodzie"
   },
   {
@@ -5393,10 +4735,10 @@
    "t": "mc",
    "q": "Co oznacza poziom wody A na schemacie?",
    "o": [
-    "normalny stan wody – woda płynie w korycie",
-    "wezbranie – woda zalała obszar zalewowy, ale nie przelała się przez wały",
-    "powódź – woda przelewa się przez wały i zalewa tereny za nimi",
-    "susza – rzeka wyschła"
+    "woda płynie w korycie",
+    "woda zalała obszar zalewowy, ale nie przelała się przez wały",
+    "powódź: woda przelewa się przez wały i zalewa tereny za nimi",
+    "rzeka wyschła"
    ],
    "a": 0,
    "ex": "Poziom A – woda w korycie.",
@@ -5409,13 +4751,13 @@
    "t": "mc",
    "q": "Co oznacza poziom wody B na schemacie?",
    "o": [
-    "wezbranie – woda zalała obszar zalewowy, ale nie przelała się przez wały",
-    "normalny stan wody – woda płynie w korycie",
-    "powódź – woda przelewa się przez wały i zalewa tereny za nimi",
-    "susza – rzeka wyschła"
+    "woda zalała obszar zalewowy, ale nie przelała się przez wały",
+    "woda płynie w korycie",
+    "powódź: woda przelewa się przez wały i zalewa tereny za nimi",
+    "rzeka wyschła"
    ],
    "a": 0,
-   "ex": "Poziom B – woda w międzywalu.",
+   "ex": "Poziom B – woda zalała obszar zalewowy między korytem a wałami.",
    "c": "powodzie",
    "img": "wezbranie",
    "alt": "Przekrój doliny z wałami i trzema poziomami wody A, B, C",
@@ -5425,10 +4767,10 @@
    "t": "mc",
    "q": "Co oznacza poziom wody C na schemacie?",
    "o": [
-    "powódź – woda przelewa się przez wały i zalewa tereny za nimi",
-    "normalny stan wody – woda płynie w korycie",
-    "wezbranie – woda zalała obszar zalewowy, ale nie przelała się przez wały",
-    "susza – rzeka wyschła"
+    "powódź: woda przelewa się przez wały i zalewa tereny za nimi",
+    "woda płynie w korycie",
+    "woda zalała obszar zalewowy, ale nie przelała się przez wały",
+    "rzeka wyschła"
    ],
    "a": 0,
    "ex": "Poziom C – woda ponad wałami.",
@@ -5456,13 +4798,13 @@
    "t": "order",
    "q": "Ułóż etapy powstawania powodzi opadowej.",
    "o": [
-    "kilka dni ulewnych opadów",
+    "kilka dni intensywnych opadów deszczu",
     "szybki wzrost przepływu w rzece",
-    "wezbranie – woda wypełnia międzywale",
+    "woda zalewa obszar zalewowy",
     "woda przelewa się przez wały lub je przerywa",
     "zalanie domów, dróg i pól"
    ],
-   "ex": "Opady → przepływ → wezbranie → przelanie wałów → straty.",
+   "ex": "Opady → przepływ → obszar zalewowy → przelanie lub przerwanie wałów → straty.",
    "c": "powodzie"
   },
   {
@@ -5513,7 +4855,7 @@
     "Barycz"
    ],
    "a": 0,
-   "ex": "Spływa z Sudetów przez Kotlinę Kłodzką.",
+   "ex": "Nysa Kłodzka płynie przez Kłodzko – w 2024 r. fala powodziowa miała tam niemal 8 m.",
    "c": "zagrozenia"
   },
   {
@@ -5521,17 +4863,17 @@
    "q": "Który dopływ Wisły podręcznik podaje jako groźny w czasie powodzi?",
    "o": [
     "Dunajec",
-    "Bzura",
-    "Drwęca",
-    "Brda"
+    "Wkra",
+    "Pilica",
+    "Nida"
    ],
    "a": 0,
-   "ex": "Spływa z Tatr i Pienin.",
+   "ex": "Podręcznik: zagrożenie stanowią też dopływy, np. Dunajec (dopływ Wisły).",
    "c": "zagrozenia"
   },
   {
    "t": "in",
-   "q": "Podaj nazwę dopływu Odry, który stanowi duże zagrożenie powodziowe (Kotlina Kłodzka).",
+   "q": "Podaj nazwę dopływu Odry, który podręcznik wymienia jako groźny w czasie powodzi (płynie przez Kłodzko).",
    "a": [
     "Nysa Kłodzka",
     "Nysa Klodzka"
@@ -5545,7 +4887,7 @@
   },
   {
    "t": "in",
-   "q": "Podaj nazwę karpackiego dopływu Wisły, który podręcznik wymienia jako groźny w czasie powodzi.",
+   "q": "Podaj nazwę dopływu Wisły, który podręcznik wymienia jako groźny w czasie powodzi.",
    "a": [
     "Dunajec"
    ],
@@ -5562,7 +4904,7 @@
     "w sierpniu 2005 r."
    ],
    "a": 0,
-   "ex": "Tzw. powódź tysiąclecia.",
+   "ex": "Lipiec 1997 r. – dorzecze Odry: 56 ofiar, ok. 12 mld zł strat.",
    "c": "zagrozenia"
   },
   {
@@ -5673,7 +5015,7 @@
   },
   {
    "t": "mc",
-   "q": "Które miasto zostało częściowo zalane w 2010 r. po przerwaniu wałów na Wiśle?",
+   "q": "Które miasto zostało częściowo zalane w 2010 r. po przerwaniu wałów przeciwpowodziowych?",
    "o": [
     "Sandomierz",
     "Toruń",
@@ -5731,7 +5073,7 @@
    "o": [
     "powódź w dorzeczu Odry (lipiec)",
     "powódź w dorzeczach Odry i Wisły (maj–czerwiec), zalanie Sandomierza",
-    "powódź w Kotlinie Kłodzkiej (fala niemal 8 m w Kłodzku)"
+    "powódź w Kłodzku (fala niemal 8 m)"
    ],
    "ex": "1997 → 2010 → 2024.",
    "c": "zagrozenia"
@@ -5790,19 +5132,6 @@
     ]
    ],
    "ex": "Kłodzko (Nysa Kłodzka) i Wrocław – dorzecze Odry; Sandomierz i Dunajec – dorzecze Wisły.",
-   "c": "zagrozenia"
-  },
-  {
-   "t": "mc",
-   "q": "Dlaczego tereny w górach i u ich podnóża są szczególnie narażone na gwałtowne powodzie?",
-   "o": [
-    "bo woda szybko spływa ze stromych stoków do rzek",
-    "bo w górach nie pada deszcz",
-    "bo tam nie ma rzek",
-    "bo góry zatrzymują całą wodę"
-   ],
-   "a": 0,
-   "ex": "Dlatego groźne są karpackie i sudeckie dopływy.",
    "c": "zagrozenia"
   },
   {
@@ -5968,7 +5297,7 @@
   },
   {
    "t": "mc",
-   "q": "Jak spłycenie koryta przez naniesiony materiał wpływa na kolejne wezbrania?",
+   "q": "Jak spłycenie koryta przez naniesiony materiał wpływa na kolejne powodzie?",
    "o": [
     "koryto mieści mniej wody, więc łatwiej o wylanie",
     "koryto mieści więcej wody",
@@ -6046,13 +5375,13 @@
   },
   {
    "t": "in",
-   "q": "Jak nazywa się obszar otoczony wałami, gdzie celowo wpuszcza się wodę w czasie powodzi, by się rozlała bez strat?",
+   "q": "Jak nazywa się obszar, gdzie woda w czasie powodzi może się rozlewać bez wyrządzania strat?",
    "a": [
     "polder",
     "polder przeciwpowodziowy",
     "poldery"
    ],
-   "ex": "Polder przyjmuje część fali powodziowej.",
+   "ex": "Polder przeciwpowodziowy – element kompleksowej ochrony.",
    "c": "ochrona"
   },
   {
@@ -6160,13 +5489,13 @@
    "t": "mc",
    "q": "Dlaczego możliwości przeciwpowodziowe zbiorników często nie są w pełni wykorzystane?",
    "o": [
-    "bo pełnią też inne funkcje (np. elektrownia, rekreacja) i są zwykle mocno napełnione",
+    "bo pełnią też inne funkcje (np. zasilanie elektrowni wodnych, rekreacja)",
     "bo są zawsze puste",
     "bo nie mają zapór",
     "bo leżą nad morzem"
    ],
    "a": 0,
-   "ex": "Pełny zbiornik nie przyjmie fali powodziowej.",
+   "ex": "Zbiornik wykorzystywany np. przez elektrownię nie zawsze ma miejsce na falę powodziową.",
    "c": "ochrona"
   },
   {
@@ -6295,7 +5624,7 @@
    "p": [
     [
      "wał przeciwpowodziowy",
-     "zatrzymuje wodę w międzywalu"
+     "nie pozwala wodzie wylać poza obszar zalewowy"
     ],
     [
      "sztuczny zbiornik",
@@ -6307,7 +5636,7 @@
     ],
     [
      "retencja naturalna",
-     "las i mokradła zatrzymują wodę"
+     "np. las gromadzi i przetrzymuje wodę"
     ]
    ],
    "ex": "Różne metody – ten sam cel.",
@@ -6323,7 +5652,7 @@
     "teren chroniony za wałem"
    ],
    "a": 0,
-   "ex": "Koryto – międzywale (obszar zalewowy) – wał – teren chroniony.",
+   "ex": "Koryto rzeki – obszar zalewowy – wał przeciwpowodziowy – teren chroniony za wałem.",
    "c": "ochrona",
    "img": "wal",
    "alt": "Przekrój doliny rzecznej z wałami i domami",
@@ -6333,13 +5662,13 @@
    "t": "mc",
    "q": "Co oznaczono numerem 2 na przekroju doliny?",
    "o": [
-    "obszar zalewowy (międzywale)",
+    "obszar zalewowy",
     "koryto rzeki",
     "wał przeciwpowodziowy",
     "teren chroniony za wałem"
    ],
    "a": 0,
-   "ex": "Koryto – międzywale (obszar zalewowy) – wał – teren chroniony.",
+   "ex": "Koryto rzeki – obszar zalewowy – wał przeciwpowodziowy – teren chroniony za wałem.",
    "c": "ochrona",
    "img": "wal",
    "alt": "Przekrój doliny rzecznej z wałami i domami",
@@ -6349,11 +5678,11 @@
    "t": "in",
    "q": "Wpisz nazwę elementu oznaczonego numerem 2 na przekroju doliny.",
    "a": [
-    "obszar zalewowy (międzywale)",
     "obszar zalewowy",
+    "teren zalewowy",
     "międzywale",
     "miedzywale",
-    "teren zalewowy"
+    "obszar zalewowy (międzywale)"
    ],
    "ex": "Schemat doliny z wałami przeciwpowodziowymi.",
    "c": "ochrona",
@@ -6367,11 +5696,11 @@
    "o": [
     "wał przeciwpowodziowy",
     "koryto rzeki",
-    "obszar zalewowy (międzywale)",
+    "obszar zalewowy",
     "polder"
    ],
    "a": 0,
-   "ex": "Koryto – międzywale (obszar zalewowy) – wał – teren chroniony.",
+   "ex": "Koryto rzeki – obszar zalewowy – wał przeciwpowodziowy – teren chroniony za wałem.",
    "c": "ochrona",
    "img": "wal",
    "alt": "Przekrój doliny rzecznej z wałami i domami",
@@ -6397,12 +5726,12 @@
    "q": "Co oznaczono numerem 4 na przekroju doliny?",
    "o": [
     "teren chroniony za wałem",
-    "obszar zalewowy (międzywale)",
+    "obszar zalewowy",
     "koryto rzeki",
     "wał przeciwpowodziowy"
    ],
    "a": 0,
-   "ex": "Koryto – międzywale (obszar zalewowy) – wał – teren chroniony.",
+   "ex": "Koryto rzeki – obszar zalewowy – wał przeciwpowodziowy – teren chroniony za wałem.",
    "c": "ochrona",
    "img": "wal",
    "alt": "Przekrój doliny rzecznej z wałami i domami",
@@ -6534,7 +5863,7 @@
   },
   {
    "t": "spot",
-   "q": "Wskaż ujście Odry (Zalew Szczeciński).",
+   "q": "Wskaż ujście Odry.",
    "img": "mapa",
    "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
    "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)",
@@ -6579,7 +5908,7 @@
   },
   {
    "t": "spot",
-   "q": "Wskaż jezioro Jeziorak (najdłuższe jezioro Polski).",
+   "q": "Wskaż jezioro Jeziorak (jezioro rynnowe).",
    "img": "mapa",
    "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
    "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)",
@@ -6588,8 +5917,8 @@
     "y": 22.8,
     "r": 3.5
    },
-   "f": "Pojezierze Iławskie – wąskie, podłużne jezioro na zachód od Mazur",
-   "ex": "Poprawne miejsce: Pojezierze Iławskie – wąskie, podłużne jezioro na zachód od Mazur.",
+   "f": "wąskie, podłużne jezioro na zachód od Mazur",
+   "ex": "Poprawne miejsce: wąskie, podłużne jezioro na zachód od Mazur.",
    "c": "mapa"
   },
   {
@@ -6624,7 +5953,7 @@
   },
   {
    "t": "spot",
-   "q": "Wskaż miejsce, gdzie San uchodzi do Wisły (koło Sandomierza).",
+   "q": "Wskaż miejsce, gdzie San uchodzi do Wisły.",
    "img": "mapa",
    "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
    "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)",
@@ -6633,13 +5962,13 @@
     "y": 69.8,
     "r": 4
    },
-   "f": "południowy wschód, gdzie rzeka z Bieszczad łączy się z Wisłą",
-   "ex": "Poprawne miejsce: południowy wschód, gdzie rzeka z Bieszczad łączy się z Wisłą.",
+   "f": "południowy wschód – San łączy się z Wisłą",
+   "ex": "Poprawne miejsce: południowy wschód – San łączy się z Wisłą.",
    "c": "mapa"
   },
   {
    "t": "spot",
-   "q": "Wskaż miejsce, gdzie Narew uchodzi do Wisły (koło Warszawy).",
+   "q": "Wskaż miejsce, gdzie Narew uchodzi do Wisły.",
    "img": "mapa",
    "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
    "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)",
@@ -6693,13 +6022,13 @@
     "y": 89.5,
     "r": 5
    },
-   "f": "Bieszczady, na Sanie – południowo-wschodni kraniec Polski",
-   "ex": "Poprawne miejsce: Bieszczady, na Sanie – południowo-wschodni kraniec Polski.",
+   "f": "na Sanie – południowo-wschodni kraniec Polski",
+   "ex": "Poprawne miejsce: na Sanie – południowo-wschodni kraniec Polski.",
    "c": "mapa"
   },
   {
    "t": "spot",
-   "q": "Wskaż Wrocław nad Odrą – miasto zalane w czasie powodzi w 1997 r.",
+   "q": "Wskaż Wrocław nad Odrą – Dolny Śląsk, obszar zagrożony powodziami.",
    "img": "mapa",
    "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
    "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)",
@@ -6723,8 +6052,8 @@
     "y": 73.2,
     "r": 5
    },
-   "f": "Kotlina Kłodzka, przy granicy z Czechami",
-   "ex": "Poprawne miejsce: Kotlina Kłodzka, przy granicy z Czechami.",
+   "f": "Dolny Śląsk, nad Nysą Kłodzką, przy granicy z Czechami",
+   "ex": "Poprawne miejsce: Dolny Śląsk, nad Nysą Kłodzką, przy granicy z Czechami.",
    "c": "mapa"
   },
   {
@@ -6740,21 +6069,6 @@
    },
    "f": "Pojezierze Suwalskie, północno-wschodni kraniec Polski",
    "ex": "Poprawne miejsce: Pojezierze Suwalskie, północno-wschodni kraniec Polski.",
-   "c": "mapa"
-  },
-  {
-   "t": "spot",
-   "q": "Wskaż kolano Wisły – miejsce koło Bydgoszczy, gdzie Wisła skręca na północ.",
-   "img": "mapa",
-   "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
-   "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)",
-   "cel": {
-    "x": 40.5,
-    "y": 31.5,
-    "r": 4
-   },
-   "f": "Kujawy, na zachód od Torunia",
-   "ex": "Poprawne miejsce: Kujawy, na zachód od Torunia.",
    "c": "mapa"
   },
   {
@@ -6895,7 +6209,7 @@
     "Wisła"
    ],
    "a": 0,
-   "ex": "E – San: prawy dopływ Wisły z Bieszczad.",
+   "ex": "E – San: prawy dopływ Wisły (na nim Jezioro Solińskie).",
    "c": "mapa",
    "img": "mapaL",
    "alt": "Mapa Polski z rzekami oznaczonymi literami A–F",
@@ -6907,7 +6221,7 @@
    "a": [
     "San"
    ],
-   "ex": "E – San: prawy dopływ Wisły z Bieszczad.",
+   "ex": "E – San: prawy dopływ Wisły (na nim Jezioro Solińskie).",
    "c": "mapa",
    "img": "mapaL",
    "alt": "Mapa Polski z rzekami oznaczonymi literami A–F",
@@ -7096,6 +6410,121 @@
    "img": "mapa",
    "alt": "Mapa Polski z rzekami i jeziorami, bez nazw",
    "podpis": "Mapa: TUBS, „Relief Map of Poland”, Wikimedia Commons, CC BY-SA 3.0 (rzeki pogrubione)"
+  },
+  {
+   "t": "tf",
+   "q": "Jezioro Solińskie to najpojemniejszy sztuczny zbiornik wodny w Polsce.",
+   "a": true,
+   "ex": "Leży na Sanie; magazynuje wodę i służy do produkcji energii elektrycznej.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "tf",
+   "q": "Zapory i sztuczne zbiorniki regulują wielkość przepływu rzek i gromadzą nadmiar wody.",
+   "a": true,
+   "ex": "Dlatego ich budowa, choć droga, jest dość skutecznym sposobem ograniczania zagrożenia powodziowego.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "mc",
+   "q": "Na której rzece leży Jezioro Pilchowickie (mapa woj. dolnośląskiego)?",
+   "o": [
+    "Bóbr",
+    "Bystrzyca",
+    "Barycz",
+    "Widawa"
+   ],
+   "a": 0,
+   "ex": "Jezioro Pilchowickie – sztuczny zbiornik na Bobrze, koło Jeleniej Góry.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "mc",
+   "q": "Który sztuczny zbiornik leży na Rabie (mapa woj. małopolskiego)?",
+   "o": [
+    "Jezioro Dobczyckie",
+    "Jezioro Rożnowskie",
+    "Jezioro Czorsztyńskie",
+    "Jezioro Solińskie"
+   ],
+   "a": 0,
+   "ex": "Jezioro Dobczyckie – zbiornik na Rabie, koło Myślenic.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "mc",
+   "q": "Który z tych zbiorników NIE leży na Dunajcu?",
+   "o": [
+    "Jezioro Dobczyckie",
+    "Jezioro Rożnowskie",
+    "Jezioro Czorsztyńskie",
+    "Jezioro Czchowskie"
+   ],
+   "a": 0,
+   "ex": "Na Dunajcu: Czorsztyńskie, Rożnowskie, Czchowskie. Dobczyckie leży na Rabie.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "tf",
+   "q": "Tworzenie sztucznych zbiorników wodnych nigdy nie wymaga wysiedlenia ludności.",
+   "a": false,
+   "ex": "Wymaga niekiedy wysiedlenia ludności oraz wpływa na warunki życia roślin i zwierząt.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "mc",
+   "q": "Dlaczego budowa sztucznych zbiorników ogranicza zagrożenie powodziowe?",
+   "o": [
+    "bo gromadzą nadmiar wody i regulują przepływ rzeki",
+    "bo przyspieszają spływ wody do morza",
+    "bo zwiększają opady w okolicy",
+    "bo obniżają poziom wód gruntowych"
+   ],
+   "a": 0,
+   "ex": "Ćwiczenie z podręcznika: zbiornik zatrzymuje część fali powodziowej.",
+   "c": "zbiorniki"
+  },
+  {
+   "t": "mc",
+   "q": "Jakie towary transportuje się Odrą przede wszystkim?",
+   "o": [
+    "węgiel i materiały budowlane",
+    "ropę i gaz",
+    "samochody",
+    "zboże z Mazur"
+   ],
+   "a": 0,
+   "ex": "Odra – śródlądowa droga wodna na długości ok. 650 km.",
+   "c": "gospodarka"
+  },
+  {
+   "t": "tf",
+   "q": "Najdłuższa rzeka Polski jest jednocześnie najdłuższą śródlądową drogą wodną.",
+   "a": false,
+   "ex": "Najdłuższa rzeka to Wisła, a najdłuższa śródlądowa droga wodna – uregulowana Odra.",
+   "c": "gospodarka"
+  },
+  {
+   "t": "mc",
+   "q": "Która dolina jest w podręczniku przykładem naturalnej doliny o dużej zdolności przyjmowania fal powodziowych?",
+   "o": [
+    "dolina Odry koło Dobrzenia Wielkiego",
+    "Dolina Roztoki w Tatrach",
+    "uregulowany górny bieg Odry",
+    "zabudowane centrum Kłodzka"
+   ],
+   "a": 0,
+   "ex": "Naturalne fragmenty dolin rzecznych dobrze przyjmują fale powodziowe.",
+   "c": "ochrona"
+  },
+  {
+   "t": "num",
+   "q": "O ile kilometrów (w przybliżeniu) skrócono koryto Odry przez zabiegi hydrotechniczne?",
+   "a": 150,
+   "jedn": "km",
+   "tol": 10,
+   "ex": "Wyprostowanie koryta skróciło Odrę o ok. 150 km – fala powodziowa płynie przez to szybciej.",
+   "c": "ochrona"
   }
  ]
 }
