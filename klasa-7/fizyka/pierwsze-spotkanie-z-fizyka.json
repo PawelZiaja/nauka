@@ -28,8 +28,6 @@
   "ter2": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNDAgNTgwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjI0MCIgaGVpZ2h0PSI1ODAiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIxMDQiIHk9IjM2IiB3aWR0aD0iMzIiIGhlaWdodD0iNDcwIiByeD0iMTYiIGZpbGw9IiNmZmYiIHN0cm9rZT0iIzU1NSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHJlY3QgeD0iMTEzIiB5PSI0MjguMCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjkyLjAiIGZpbGw9IiNkNjI4MjgiLz48Y2lyY2xlIGN4PSIxMjAiIGN5PSI1MjIiIHI9IjMwIiBmaWxsPSIjZDYyODI4IiBzdHJva2U9IiM1NTUiIHN0cm9rZS13aWR0aD0iMyIvPjx0ZXh0IHg9IjE5MC4wIiB5PSIzMC4wIiBmb250LXNpemU9IjIwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIiBmb250LXdlaWdodD0iYm9sZCI+wrBDPC90ZXh0PjxsaW5lIHgxPSIxNDAiIHkxPSI0NjAuMCIgeDI9IjE2MiIgeTI9IjQ2MC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE3MC4wIiB5PSI0NjcuMCIgZm9udC1zaXplPSIxOSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmaWxsPSIjMjIyIj7iiJIxMDwvdGV4dD48bGluZSB4MT0iMTQwIiB5MT0iNDQ0LjAiIHgyPSIxNTIiIHkyPSI0NDQuMCIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuMyIvPjxsaW5lIHgxPSIxNDAiIHkxPSI0MjguMCIgeDI9IjE1MiIgeTI9IjQyOC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjQxMi4wIiB4Mj0iMTUyIiB5Mj0iNDEyLjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iMzk2LjAiIHgyPSIxNTIiIHkyPSIzOTYuMCIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuMyIvPjxsaW5lIHgxPSIxNDAiIHkxPSIzODAuMCIgeDI9IjE2MiIgeTI9IjM4MC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjE3MC4wIiB5PSIzODcuMCIgZm9udC1zaXplPSIxOSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmaWxsPSIjMjIyIj4wPC90ZXh0PjxsaW5lIHgxPSIxNDAiIHkxPSIzNjQuMCIgeDI9IjE1MiIgeTI9IjM2NC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjM0OC4wIiB4Mj0iMTUyIiB5Mj0iMzQ4LjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iMzMyLjAiIHgyPSIxNTIiIHkyPSIzMzIuMCIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuMyIvPjxsaW5lIHgxPSIxNDAiIHkxPSIzMTYuMCIgeDI9IjE1MiIgeTI9IjMxNi4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjMwMC4wIiB4Mj0iMTYyIiB5Mj0iMzAwLjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTcwLjAiIHk9IjMwNy4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZpbGw9IiMyMjIiPjEwPC90ZXh0PjxsaW5lIHgxPSIxNDAiIHkxPSIyODQuMCIgeDI9IjE1MiIgeTI9IjI4NC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjI2OC4wIiB4Mj0iMTUyIiB5Mj0iMjY4LjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iMjUyLjAiIHgyPSIxNTIiIHkyPSIyNTIuMCIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuMyIvPjxsaW5lIHgxPSIxNDAiIHkxPSIyMzYuMCIgeDI9IjE1MiIgeTI9IjIzNi4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjIyMC4wIiB4Mj0iMTYyIiB5Mj0iMjIwLjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTcwLjAiIHk9IjIyNy4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZpbGw9IiMyMjIiPjIwPC90ZXh0PjxsaW5lIHgxPSIxNDAiIHkxPSIyMDQuMCIgeDI9IjE1MiIgeTI9IjIwNC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjE4OC4wIiB4Mj0iMTUyIiB5Mj0iMTg4LjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iMTcyLjAiIHgyPSIxNTIiIHkyPSIxNzIuMCIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuMyIvPjxsaW5lIHgxPSIxNDAiIHkxPSIxNTYuMCIgeDI9IjE1MiIgeTI9IjE1Ni4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjE0MC4wIiB4Mj0iMTYyIiB5Mj0iMTQwLjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTcwLjAiIHk9IjE0Ny4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZpbGw9IiMyMjIiPjMwPC90ZXh0PjxsaW5lIHgxPSIxNDAiIHkxPSIxMjQuMCIgeDI9IjE1MiIgeTI9IjEyNC4wIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS4zIi8+PGxpbmUgeDE9IjE0MCIgeTE9IjEwOC4wIiB4Mj0iMTUyIiB5Mj0iMTA4LjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iOTIuMCIgeDI9IjE1MiIgeTI9IjkyLjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iNzYuMCIgeDI9IjE1MiIgeTI9Ijc2LjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIxLjMiLz48bGluZSB4MT0iMTQwIiB5MT0iNjAuMCIgeDI9IjE2MiIgeTI9IjYwLjAiIHN0cm9rZT0iIzIyMiIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMTcwLjAiIHk9IjY3LjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJzdGFydCIgZmlsbD0iIzIyMiI+NDA8L3RleHQ+PC9zdmc+",
   "os1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgMTUwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIxNzcuNSIgeT0iNTIiIHdpZHRoPSIyNTUuMCIgaGVpZ2h0PSIzNiIgZmlsbD0iI2JkYmRiZCIvPjxsaW5lIHgxPSIzMC4wIiB5MT0iNzAuMCIgeDI9IjU5Ni4wIiB5Mj0iNzAuMCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxwb2x5Z29uIHBvaW50cz0iNjEwLjAsNzAuMCA1OTYuMCw3Ni4zIDU5Ni4wLDYzLjciIGZpbGw9IiMzMzMiLz48bGluZSB4MT0iNTAuMCIgeTE9IjYyIiB4Mj0iNTAuMCIgeTI9Ijc4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjUwLjAiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj4xMzY8L3RleHQ+PGxpbmUgeDE9IjExMy44IiB5MT0iNjIiIHgyPSIxMTMuOCIgeTI9Ijc4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjExMy44IiB5PSIxMTIuMCIgZm9udC1zaXplPSIxOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzIyMiI+MTM3PC90ZXh0PjxsaW5lIHgxPSIxNzcuNSIgeTE9IjYyIiB4Mj0iMTc3LjUiIHkyPSI3OCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxNzcuNSIgeT0iMTEyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPjEzODwvdGV4dD48bGluZSB4MT0iMjQxLjIiIHkxPSI2MiIgeDI9IjI0MS4yIiB5Mj0iNzgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMjQxLjIiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj4xMzk8L3RleHQ+PGxpbmUgeDE9IjMwNS4wIiB5MT0iNjIiIHgyPSIzMDUuMCIgeTI9Ijc4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjMwNS4wIiB5PSIxMTIuMCIgZm9udC1zaXplPSIxOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzIyMiI+MTQwPC90ZXh0PjxsaW5lIHgxPSIzNjguOCIgeTE9IjYyIiB4Mj0iMzY4LjgiIHkyPSI3OCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIzNjguOCIgeT0iMTEyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPjE0MTwvdGV4dD48bGluZSB4MT0iNDMyLjUiIHkxPSI2MiIgeDI9IjQzMi41IiB5Mj0iNzgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNDMyLjUiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj4xNDI8L3RleHQ+PGxpbmUgeDE9IjQ5Ni4yIiB5MT0iNjIiIHgyPSI0OTYuMiIgeTI9Ijc4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjQ5Ni4yIiB5PSIxMTIuMCIgZm9udC1zaXplPSIxOSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzIyMiI+MTQzPC90ZXh0PjxsaW5lIHgxPSI1NjAuMCIgeTE9IjYyIiB4Mj0iNTYwLjAiIHkyPSI3OCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI1NjAuMCIgeT0iMTEyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPjE0NDwvdGV4dD48Y2lyY2xlIGN4PSIxNzcuNSIgY3k9IjcwLjAiIHI9IjYiIGZpbGw9IiNjMDM5MmIiLz48Y2lyY2xlIGN4PSI0MzIuNSIgY3k9IjcwLjAiIHI9IjYiIGZpbGw9IiNjMDM5MmIiLz48Y2lyY2xlIGN4PSIzMDUuMCIgY3k9IjcwLjAiIHI9IjYiIGZpbGw9IiMxZjVmYTgiLz48dGV4dCB4PSI2MTUuMCIgeT0iNDUuMCIgZm9udC1zaXplPSIyMCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iIzIyMiIgZm9udC1zdHlsZT0iaXRhbGljIj5sIFttbV08L3RleHQ+PC9zdmc+",
   "os2": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgMTUwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSIxNTAiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIyMjAuMCIgeT0iNTIiIHdpZHRoPSIxNzAuMCIgaGVpZ2h0PSIzNiIgZmlsbD0iI2JkYmRiZCIvPjxsaW5lIHgxPSIzMC4wIiB5MT0iNzAuMCIgeDI9IjU5Ni4wIiB5Mj0iNzAuMCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIuNSIvPjxwb2x5Z29uIHBvaW50cz0iNjEwLjAsNzAuMCA1OTYuMCw3Ni4zIDU5Ni4wLDYzLjciIGZpbGw9IiMzMzMiLz48bGluZSB4MT0iNTAuMCIgeTE9IjYyIiB4Mj0iNTAuMCIgeTI9Ijc4IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IHg9IjUwLjAiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj42PC90ZXh0PjxsaW5lIHgxPSIxMzUuMCIgeTE9IjYyIiB4Mj0iMTM1LjAiIHkyPSI3OCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxMzUuMCIgeT0iMTEyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPjYsNTwvdGV4dD48bGluZSB4MT0iMjIwLjAiIHkxPSI2MiIgeDI9IjIyMC4wIiB5Mj0iNzgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMjIwLjAiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj43PC90ZXh0PjxsaW5lIHgxPSIzMDUuMCIgeTE9IjYyIiB4Mj0iMzA1LjAiIHkyPSI3OCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIzMDUuMCIgeT0iMTEyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPjcsNTwvdGV4dD48bGluZSB4MT0iMzkwLjAiIHkxPSI2MiIgeDI9IjM5MC4wIiB5Mj0iNzgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iMzkwLjAiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj44PC90ZXh0PjxsaW5lIHgxPSI0NzUuMCIgeTE9IjYyIiB4Mj0iNDc1LjAiIHkyPSI3OCIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI0NzUuMCIgeT0iMTEyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPjgsNTwvdGV4dD48bGluZSB4MT0iNTYwLjAiIHkxPSI2MiIgeDI9IjU2MC4wIiB5Mj0iNzgiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iNTYwLjAiIHk9IjExMi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBmaWxsPSIjMjIyIj45PC90ZXh0PjxjaXJjbGUgY3g9IjIyMC4wIiBjeT0iNzAuMCIgcj0iNiIgZmlsbD0iI2MwMzkyYiIvPjxjaXJjbGUgY3g9IjM5MC4wIiBjeT0iNzAuMCIgcj0iNiIgZmlsbD0iI2MwMzkyYiIvPjxjaXJjbGUgY3g9IjMwNS4wIiBjeT0iNzAuMCIgcj0iNiIgZmlsbD0iIzFmNWZhOCIvPjx0ZXh0IHg9IjYxNS4wIiB5PSI0NS4wIiBmb250LXNpemU9IjIwIiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjMjIyIiBmb250LXN0eWxlPSJpdGFsaWMiPkYgW05dPC90ZXh0Pjwvc3ZnPg==",
-  "magA": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTQwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIzMCIgeT0iNDUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIGZpbGw9IiNkOTUzNGYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPk48L3RleHQ+PHJlY3QgeD0iMTMwIiB5PSI0NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzNiNzNiOSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPlM8L3RleHQ+PHJlY3QgeD0iMzMwIiB5PSI0NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2Q5NTM0ZiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIzODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPk48L3RleHQ+PHJlY3QgeD0iNDMwIiB5PSI0NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzNiNzNiOSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI0ODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPlM8L3RleHQ+PC9zdmc+",
-  "magB": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1NjAgMTQwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIxNDAiIGZpbGw9IiNmZmYiLz48cmVjdCB4PSIzMCIgeT0iNDUiIHdpZHRoPSIxMDAiIGhlaWdodD0iNTAiIGZpbGw9IiNkOTUzNGYiIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLXdpZHRoPSIyIi8+PHRleHQgeD0iODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPk48L3RleHQ+PHJlY3QgeD0iMTMwIiB5PSI0NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzNiNzNiOSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIxODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPlM8L3RleHQ+PHJlY3QgeD0iMzMwIiB5PSI0NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzNiNzNiOSIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSIzODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPlM8L3RleHQ+PHJlY3QgeD0iNDMwIiB5PSI0NSIgd2lkdGg9IjEwMCIgaGVpZ2h0PSI1MCIgZmlsbD0iI2Q5NTM0ZiIgc3Ryb2tlPSIjMzMzIiBzdHJva2Utd2lkdGg9IjIiLz48dGV4dCB4PSI0ODAuMCIgeT0iNzkuMCIgZm9udC1zaXplPSIyNiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iI2ZmZiIgZm9udC13ZWlnaHQ9ImJvbGQiPk48L3RleHQ+PC9zdmc+",
   "wekO": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzgwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzODAiIGZpbGw9IiNmZmYiLz48bGluZSB4MT0iMjAiIHkxPSIzMTIiIHgyPSI1ODAiIHkyPSIzMTIiIHN0cm9rZT0iIzhkNmU2MyIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHJlY3QgeD0iNzAiIHk9IjIyMiIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjZjNkOWE0IiBzdHJva2U9IiM4YTZkM2IiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjEyNSIgeT0iMjA2IiB3aWR0aD0iNTAiIGhlaWdodD0iMTYiIHJ4PSI1IiBmaWxsPSJub25lIiBzdHJva2U9IiM4YTZkM2IiIHN0cm9rZS13aWR0aD0iMyIvPjxsaW5lIHgxPSIxNzguMCIgeTE9IjI5Mi4wIiB4Mj0iNTc2LjQiIHkyPSI2Mi4wIiBzdHJva2U9IiM3NzciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iOSA3Ii8+PGxpbmUgeDE9IjIzMC4wIiB5MT0iMjYyLjAiIHgyPSI0MTAuMSIgeTI9IjE1OC4wIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iNSIvPjxwb2x5Z29uIHBvaW50cz0iNDI5LjIsMTQ3LjAgNDE1LjEsMTY2LjYgNDA1LjIsMTQ5LjQiIGZpbGw9IiNjMDM5MmIiLz48Y2lyY2xlIGN4PSIyMzAuMCIgY3k9IjI2Mi4wIiByPSI3IiBmaWxsPSIjMjIyIi8+PHRleHQgeD0iMjgzLjYiIHk9IjE4NC41IiBmb250LXNpemU9IjI4IiBmaWxsPSIjYzAzOTJiIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PHRzcGFuIGZvbnQtc3R5bGU9Iml0YWxpYyI+RjwvdHNwYW4+PHRzcGFuPjwvdHNwYW4+PC90ZXh0PjxsaW5lIHgxPSIyODQuNiIgeTE9IjE2MC43IiB4Mj0iMjk2LjAiIHkyPSIxNjAuNyIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iMzAxLjAsMTYwLjcgMjk2LjAsMTYyLjkgMjk2LjAsMTU4LjQiIGZpbGw9IiNjMDM5MmIiLz48bGluZSB4MT0iMjMwIiB5MT0iMjcwIiB4Mj0iMjUwIiB5Mj0iMzQwIiBzdHJva2U9IiMzMzMiLz48dGV4dCB4PSIyNTAuMCIgeT0iMzYwLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZpbGw9IiMyMjIiPnB1bmt0IHByennFgm/FvGVuaWE8L3RleHQ+PGxpbmUgeDE9IjQzMyIgeTE9IjE0MyIgeDI9IjQ3MCIgeTI9IjE4NSIgc3Ryb2tlPSIjMzMzIi8+PHRleHQgeD0iNDc1LjAiIHk9IjIwNS4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0ic3RhcnQiIGZpbGw9IiMyMjIiPnp3cm90IChncm90KTwvdGV4dD48dGV4dCB4PSIzOTUuMCIgeT0iMjYyLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJzdGFydCIgZmlsbD0iIzIyMiI+d2FydG/Fm8SHIOKAkyBkxYJ1Z2/Fm8SHPC90ZXh0Pjx0ZXh0IHg9IjM5NS4wIiB5PSIyODQuMCIgZm9udC1zaXplPSIxOSIgdGV4dC1hbmNob3I9InN0YXJ0IiBmaWxsPSIjMjIyIj5zdHJ6YcWCa2k8L3RleHQ+PHRleHQgeD0iNTYwLjAiIHk9IjQwLjAiIGZvbnQtc2l6ZT0iMTkiIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiMyMjIiPmtpZXJ1bmVrIOKAkyBwcm9zdGEsPC90ZXh0Pjx0ZXh0IHg9IjU2MC4wIiB5PSI2Mi4wIiBmb250LXNpemU9IjE5IiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjMjIyIj53emTFgnXFvCBrdMOzcmVqIGR6aWHFgmEgc2nFgmE8L3RleHQ+PC9zdmc+",
   "wek": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2MDAgMzgwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjYwMCIgaGVpZ2h0PSIzODAiIGZpbGw9IiNmZmYiLz48bGluZSB4MT0iMjAiIHkxPSIzMTIiIHgyPSI1ODAiIHkyPSIzMTIiIHN0cm9rZT0iIzhkNmU2MyIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHJlY3QgeD0iNzAiIHk9IjIyMiIgd2lkdGg9IjE2MCIgaGVpZ2h0PSI5MCIgcng9IjEwIiBmaWxsPSIjZjNkOWE0IiBzdHJva2U9IiM4YTZkM2IiIHN0cm9rZS13aWR0aD0iMyIvPjxyZWN0IHg9IjEyNSIgeT0iMjA2IiB3aWR0aD0iNTAiIGhlaWdodD0iMTYiIHJ4PSI1IiBmaWxsPSJub25lIiBzdHJva2U9IiM4YTZkM2IiIHN0cm9rZS13aWR0aD0iMyIvPjxsaW5lIHgxPSIxNzguMCIgeTE9IjI5Mi4wIiB4Mj0iNTc2LjQiIHkyPSI2Mi4wIiBzdHJva2U9IiM3NzciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWRhc2hhcnJheT0iOSA3Ii8+PGxpbmUgeDE9IjIzMC4wIiB5MT0iMjYyLjAiIHgyPSI0MTAuMSIgeTI9IjE1OC4wIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iNSIvPjxwb2x5Z29uIHBvaW50cz0iNDI5LjIsMTQ3LjAgNDE1LjEsMTY2LjYgNDA1LjIsMTQ5LjQiIGZpbGw9IiNjMDM5MmIiLz48Y2lyY2xlIGN4PSIyMzAuMCIgY3k9IjI2Mi4wIiByPSI3IiBmaWxsPSIjMjIyIi8+PHRleHQgeD0iMjgzLjYiIHk9IjE4NC41IiBmb250LXNpemU9IjI4IiBmaWxsPSIjYzAzOTJiIiBzdHJva2U9IiNmZmYiIHN0cm9rZS13aWR0aD0iNSIgcGFpbnQtb3JkZXI9InN0cm9rZSI+PHRzcGFuIGZvbnQtc3R5bGU9Iml0YWxpYyI+RjwvdHNwYW4+PHRzcGFuPjwvdHNwYW4+PC90ZXh0PjxsaW5lIHgxPSIyODQuNiIgeTE9IjE2MC43IiB4Mj0iMjk2LjAiIHkyPSIxNjAuNyIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iMzAxLjAsMTYwLjcgMjk2LjAsMTYyLjkgMjk2LjAsMTU4LjQiIGZpbGw9IiNjMDM5MmIiLz48L3N2Zz4=",
   "sia1": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgNDQwIiBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiI+PHJlY3Qgd2lkdGg9IjY0MCIgaGVpZ2h0PSI0NDAiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSIzMjAuMCIgeT0iMzYuMCIgZm9udC1zaXplPSIyMSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzIyMiIgZm9udC13ZWlnaHQ9ImJvbGQiPjEga3JhdGthID0gMSBOPC90ZXh0PjxsaW5lIHgxPSIyMCIgeTE9IjYwIiB4Mj0iMjAiIHkyPSI0MjAiIHN0cm9rZT0iI2NmZDhkYyIgc3Ryb2tlLXdpZHRoPSIxLjUiLz48bGluZSB4MT0iNjAiIHkxPSI2MCIgeDI9IjYwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjEwMCIgeTE9IjYwIiB4Mj0iMTAwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjE0MCIgeTE9IjYwIiB4Mj0iMTQwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjE4MCIgeTE9IjYwIiB4Mj0iMTgwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjIyMCIgeTE9IjYwIiB4Mj0iMjIwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjI2MCIgeTE9IjYwIiB4Mj0iMjYwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjMwMCIgeTE9IjYwIiB4Mj0iMzAwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjM0MCIgeTE9IjYwIiB4Mj0iMzQwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjM4MCIgeTE9IjYwIiB4Mj0iMzgwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjQyMCIgeTE9IjYwIiB4Mj0iNDIwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjQ2MCIgeTE9IjYwIiB4Mj0iNDYwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjUwMCIgeTE9IjYwIiB4Mj0iNTAwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjU0MCIgeTE9IjYwIiB4Mj0iNTQwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjU4MCIgeTE9IjYwIiB4Mj0iNTgwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjYyMCIgeTE9IjYwIiB4Mj0iNjIwIiB5Mj0iNDIwIiBzdHJva2U9IiNjZmQ4ZGMiIHN0cm9rZS13aWR0aD0iMS41Ii8+PGxpbmUgeDE9IjIwIiB5MT0iNjAiIHgyPSI2MjAiIHkyPSI2MCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjEwMCIgeDI9IjYyMCIgeTI9IjEwMCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjE0MCIgeDI9IjYyMCIgeTI9IjE0MCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjE4MCIgeDI9IjYyMCIgeTI9IjE4MCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjIyMCIgeDI9IjYyMCIgeTI9IjIyMCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjI2MCIgeDI9IjYyMCIgeTI9IjI2MCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjMwMCIgeDI9IjYyMCIgeTI9IjMwMCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjM0MCIgeDI9IjYyMCIgeTI9IjM0MCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjM4MCIgeDI9IjYyMCIgeTI9IjM4MCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSIyMCIgeTE9IjQyMCIgeDI9IjYyMCIgeTI9IjQyMCIgc3Ryb2tlPSIjY2ZkOGRjIiBzdHJva2Utd2lkdGg9IjEuNSIvPjxsaW5lIHgxPSI2MC4wIiB5MT0iMTQwLjAiIHgyPSIxNjQuMCIgeTI9IjE0MC4wIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iNCIvPjxwb2x5Z29uIHBvaW50cz0iMTgwLjAsMTQwLjAgMTY0LjAsMTQ3LjIgMTY0LjAsMTMyLjgiIGZpbGw9IiNjMDM5MmIiLz48Y2lyY2xlIGN4PSI2MC4wIiBjeT0iMTQwLjAiIHI9IjYiIGZpbGw9IiMyMjIiLz48dGV4dCB4PSIxMDYuMiIgeT0iMTMwLjAiIGZvbnQtc2l6ZT0iMjciIGZpbGw9IiMyMjIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBwYWludC1vcmRlcj0ic3Ryb2tlIj48dHNwYW4gZm9udC1zdHlsZT0iaXRhbGljIj5GPC90c3Bhbj48dHNwYW4gZm9udC1zaXplPSIxOCIgZHk9IjciPjE8L3RzcGFuPjx0c3BhbiBkeT0iLTciPjwvdHNwYW4+PC90ZXh0PjxsaW5lIHgxPSIxMDcuMiIgeTE9IjEwNy4wIiB4Mj0iMTE4LjAiIHkyPSIxMDcuMCIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iMTIzLjAsMTA3LjAgMTE4LjAsMTA5LjMgMTE4LjAsMTA0LjgiIGZpbGw9IiMyMjIiLz48bGluZSB4MT0iNTQwLjAiIHkxPSIyMjAuMCIgeDI9IjM1Ni4wIiB5Mj0iMjIwLjAiIHN0cm9rZT0iI2MwMzkyYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBvbHlnb24gcG9pbnRzPSIzNDAuMCwyMjAuMCAzNTYuMCwyMTIuOCAzNTYuMCwyMjcuMiIgZmlsbD0iI2MwMzkyYiIvPjxjaXJjbGUgY3g9IjU0MC4wIiBjeT0iMjIwLjAiIHI9IjYiIGZpbGw9IiMyMjIiLz48dGV4dCB4PSI0MjYuMiIgeT0iMjEwLjAiIGZvbnQtc2l6ZT0iMjciIGZpbGw9IiMyMjIiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSI1IiBwYWludC1vcmRlcj0ic3Ryb2tlIj48dHNwYW4gZm9udC1zdHlsZT0iaXRhbGljIj5GPC90c3Bhbj48dHNwYW4gZm9udC1zaXplPSIxOCIgZHk9IjciPjI8L3RzcGFuPjx0c3BhbiBkeT0iLTciPjwvdHNwYW4+PC90ZXh0PjxsaW5lIHgxPSI0MjcuMiIgeTE9IjE4Ny4xIiB4Mj0iNDM4LjAiIHkyPSIxODcuMSIgc3Ryb2tlPSIjMjIyIiBzdHJva2Utd2lkdGg9IjEuNiIvPjxwb2x5Z29uIHBvaW50cz0iNDQzLjAsMTg3LjEgNDM4LjAsMTg5LjMgNDM4LjAsMTg0LjgiIGZpbGw9IiMyMjIiLz48bGluZSB4MT0iMTAwLjAiIHkxPSIzODAuMCIgeDI9IjEwMC4wIiB5Mj0iMzE2LjAiIHN0cm9rZT0iI2MwMzkyYiIgc3Ryb2tlLXdpZHRoPSI0Ii8+PHBvbHlnb24gcG9pbnRzPSIxMDAuMCwzMDAuMCAxMDcuMiwzMTYuMCA5Mi44LDMxNi4wIiBmaWxsPSIjYzAzOTJiIi8+PGNpcmNsZSBjeD0iMTAwLjAiIGN5PSIzODAuMCIgcj0iNiIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjExMC4wIiB5PSIzNTAuMCIgZm9udC1zaXplPSIyNyIgZmlsbD0iIzIyMiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiIHBhaW50LW9yZGVyPSJzdHJva2UiPjx0c3BhbiBmb250LXN0eWxlPSJpdGFsaWMiPkY8L3RzcGFuPjx0c3BhbiBmb250LXNpemU9IjE4IiBkeT0iNyI+MzwvdHNwYW4+PHRzcGFuIGR5PSItNyI+PC90c3Bhbj48L3RleHQ+PGxpbmUgeDE9IjExMS4wIiB5MT0iMzI3LjEiIHgyPSIxMjEuNyIgeTI9IjMyNy4xIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSIxMjYuNywzMjcuMSAxMjEuNywzMjkuMyAxMjEuNywzMjQuOCIgZmlsbD0iIzIyMiIvPjxsaW5lIHgxPSIxODAuMCIgeTE9IjI2MC4wIiB4Mj0iMTgwLjAiIHkyPSIzMjQuMCIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjQiLz48cG9seWdvbiBwb2ludHM9IjE4MC4wLDM0MC4wIDE3Mi44LDMyNC4wIDE4Ny4yLDMyNC4wIiBmaWxsPSIjYzAzOTJiIi8+PGNpcmNsZSBjeD0iMTgwLjAiIGN5PSIyNjAuMCIgcj0iNiIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjE5MC4wIiB5PSIzMTAuMCIgZm9udC1zaXplPSIyNyIgZmlsbD0iIzIyMiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiIHBhaW50LW9yZGVyPSJzdHJva2UiPjx0c3BhbiBmb250LXN0eWxlPSJpdGFsaWMiPkY8L3RzcGFuPjx0c3BhbiBmb250LXNpemU9IjE4IiBkeT0iNyI+NDwvdHNwYW4+PHRzcGFuIGR5PSItNyI+PC90c3Bhbj48L3RleHQ+PGxpbmUgeDE9IjE5MS4wIiB5MT0iMjg3LjEiIHgyPSIyMDEuNyIgeTI9IjI4Ny4xIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSIyMDYuNywyODcuMSAyMDEuNywyODkuMyAyMDEuNywyODQuOCIgZmlsbD0iIzIyMiIvPjxsaW5lIHgxPSIzMDAuMCIgeTE9IjM0MC4wIiB4Mj0iNTI0LjAiIHkyPSIzNDAuMCIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjQiLz48cG9seWdvbiBwb2ludHM9IjU0MC4wLDM0MC4wIDUyNC4wLDM0Ny4yIDUyNC4wLDMzMi44IiBmaWxsPSIjYzAzOTJiIi8+PGNpcmNsZSBjeD0iMzAwLjAiIGN5PSIzNDAuMCIgcj0iNiIgZmlsbD0iIzIyMiIvPjx0ZXh0IHg9IjQwNi4yIiB5PSIzMzAuMCIgZm9udC1zaXplPSIyNyIgZmlsbD0iIzIyMiIgc3Ryb2tlPSIjZmZmIiBzdHJva2Utd2lkdGg9IjUiIHBhaW50LW9yZGVyPSJzdHJva2UiPjx0c3BhbiBmb250LXN0eWxlPSJpdGFsaWMiPkY8L3RzcGFuPjx0c3BhbiBmb250LXNpemU9IjE4IiBkeT0iNyI+NTwvdHNwYW4+PHRzcGFuIGR5PSItNyI+PC90c3Bhbj48L3RleHQ+PGxpbmUgeDE9IjQwNy4yIiB5MT0iMzA3LjEiIHgyPSI0MTguMCIgeTI9IjMwNy4xIiBzdHJva2U9IiMyMjIiIHN0cm9rZS13aWR0aD0iMS42Ii8+PHBvbHlnb24gcG9pbnRzPSI0MjMuMCwzMDcuMSA0MTguMCwzMDkuMyA0MTguMCwzMDQuOCIgZmlsbD0iIzIyMiIvPjwvc3ZnPg==",
@@ -89,6 +87,12 @@
   },
   {
    "tag": "p",
+   "p": "Prawa fizyczne",
+   "o": "reguły, które fizycy formułują na podstawie obserwacji i doświadczeń",
+   "w": "Obserwacje i doświadczenia pokazują, które czynniki są istotne dla przebiegu zjawiska."
+  },
+  {
+   "tag": "p",
    "p": "Pomiar",
    "o": "porównanie wartości mierzonej wielkości z jej wzorcem (jednostką)",
    "w": "Mierząc długość ołówka, przykładasz linijkę – porównujesz go ze wzorcem długości."
@@ -116,6 +120,12 @@
    "p": "Niepewność przy pojedynczym pomiarze",
    "o": "równa dokładności przyrządu (najmniejszej działce skali)",
    "w": "Linijka z podziałką co 1 mm → niepewność 1 mm."
+  },
+  {
+   "tag": "p",
+   "p": "Dokładność wyniku a dokładność przyrządu",
+   "o": "dokładność wyniku nie może być większa niż dokładność przyrządu pomiarowego",
+   "w": "Linijką z podziałką co 1 mm nie zmierzysz długości z dokładnością do 0,1 mm."
   },
   {
    "tag": "p",
@@ -152,8 +162,8 @@
   {
    "tag": "p",
    "p": "Cyfry znaczące",
-   "o": "wszystkie cyfry wyniku oprócz zer na początku",
-   "w": "0,0864 – trzy cyfry znaczące (8, 6, 4); 144,2 – cztery."
+   "o": "wszystkie cyfry wyniku oprócz zer na początku (o rzędzie nie mniejszym niż najniższy rząd niepewności)",
+   "w": "Liczba cyfr znaczących oznacza dokładność, z jaką należy podać wynik. 0,0864 – trzy cyfry znaczące (8, 6, 4)."
   },
   {
    "tag": "p",
@@ -184,14 +194,6 @@
    "alt": "Siłomierz ze skalą 0–2 N, wskaźnik na 1,3 N"
   },
   {
-   "tag": "p",
-   "p": "Odczytaj objętość wody w menzurce.",
-   "o": "V = 65 ml ± 5 ml",
-   "w": "Działka menzurki to 5 ml, więc niepewność też 5 ml.",
-   "img": "men1",
-   "alt": "Menzurka ze skalą co 5 ml, woda do 65 ml"
-  },
-  {
    "tag": "j",
    "p": "Układ SI",
    "o": "Międzynarodowy Układ Jednostek Miar (Système international d’unités)",
@@ -199,9 +201,15 @@
   },
   {
    "tag": "j",
+   "p": "Wzorzec kilograma (ciekawostka)",
+   "o": "walec ze stopu platyny z irydem przechowywany w Sèvres pod Paryżem",
+   "w": "Oprócz oryginału istnieją oficjalne kopie – w samym Sèvres jest ich sześć."
+  },
+  {
+   "tag": "j",
    "p": "Jednostki podstawowe i pochodne – przykłady",
-   "o": "podstawowe: metr, kilogram, sekunda; pochodne: np. metr na sekundę, niuton",
-   "w": "Jednostki pochodne tworzy się z podstawowych."
+   "o": "podstawowe: np. metr, kilogram, sekunda; pochodne: np. metr na sekundę",
+   "w": "Tabela jednostek układu SI jest na końcu podręcznika."
   },
   {
    "tag": "j",
@@ -267,7 +275,7 @@
    "tag": "j",
    "p": "hekto- (h)",
    "o": "100",
-   "w": "1 hl (hektolitr) = 100 l."
+   "w": "Uwaga: sam symbol h oznacza godzinę (1 h = 60 min)."
   },
   {
    "tag": "j",
@@ -397,14 +405,6 @@
   },
   {
    "tag": "o",
-   "p": "Przyciągają się czy odpychają?",
-   "o": "przyciągają się – przeciwne bieguny (S i N) są zwrócone do siebie",
-   "w": "Jednoimienne bieguny (N–N, S–S) się odpychają.",
-   "img": "magA",
-   "alt": "Dwa magnesy sztabkowe ustawione N S, N S"
-  },
-  {
-   "tag": "o",
    "p": "Cztery oddziaływania podstawowe (rozszerzenie)",
    "o": "grawitacyjne, elektromagnetyczne, silne i słabe",
    "w": "Pozostałe, np. sprężyste czy tarcie, wynikają z oddziaływań podstawowych."
@@ -432,6 +432,18 @@
    "p": "Jak duża jest siła 1 N?",
    "o": "mniej więcej tyle, ile naciska na dłoń tabliczka czekolady 100 g",
    "w": "Ziemia przyciąga ciało o masie 100 g siłą ok. 1 N."
+  },
+  {
+   "tag": "s",
+   "p": "Siła grawitacji (siła ciężkości)",
+   "o": "siła, z jaką Ziemia przyciąga ciało – skierowana w dół",
+   "w": "Kubek zawieszony na siłomierzu: F = 3,6 N ± 0,1 N – to siła, z jaką Ziemia przyciąga kubek."
+  },
+  {
+   "tag": "s",
+   "p": "Siła sprężystości",
+   "o": "siła, z jaką działa odkształcone ciało, np. rozciągnięta sprężyna siłomierza albo ugięty stół",
+   "w": "Sprężyna siłomierza działa na kubek w górę – zwrot przeciwny do siły grawitacji."
   },
   {
    "tag": "s",
@@ -552,6 +564,12 @@
    "p": "Zegar słoneczny",
    "o": "pierwszy zegar (ponad 1500 lat p.n.e.) – czas wskazuje cień nieruchomego pręta (gnomonu)",
    "w": "Wady: nie działa nocą i w pochmurne dni."
+  },
+  {
+   "tag": "p",
+   "p": "Zegar wodny",
+   "o": "czas odmierzano ilością cieczy wypływającej z naczynia przez niewielki otwór",
+   "w": "Wada: przy wyższym poziomie woda wypływała szybciej niż przy niskim."
   },
   {
    "tag": "p",
@@ -1051,7 +1069,7 @@
   },
   {
    "t": "mc",
-   "q": "Ładujemy telefon raz ładowarką 20 W, raz ładowarką 5 W i porównujemy czas ładowania. Co to jest?",
+   "q": "Ładujemy telefon raz szybką, a raz zwykłą ładowarką i porównujemy czas ładowania. Co to jest?",
    "o": [
     "obserwacja",
     "doświadczenie"
@@ -4061,7 +4079,7 @@
   },
   {
    "t": "mc",
-   "q": "Stoper w telefonie pokazujący setne części sekundy. Jaka jest niepewność pojedynczego pomiaru tym przyrządem?",
+   "q": "Stoper w telefonie pokazuje setne części sekundy. Z jaką dokładnością wskazuje on wynik?",
    "o": [
     "0,01 s",
     "0,1 s",
@@ -4069,7 +4087,7 @@
     "0,001 s"
    ],
    "a": 0,
-   "ex": "Niepewność pojedynczego pomiaru = dokładność przyrządu: 0,01 s.",
+   "ex": "Stoper wskazuje wynik z dokładnością do 0,01 s. Ale przy pomiarze „ręcznym” niepewność jest większa – człowiek włącza i zatrzymuje stoper z opóźnieniem (doświadczenie 3).",
    "c": "niepewnosc"
   },
   {
@@ -5062,19 +5080,6 @@
   },
   {
    "t": "mc",
-   "q": "Igła kompasu ustawia się w kierunku północ–południe. Jakie to oddziaływanie?",
-   "o": [
-    "mechaniczne",
-    "grawitacyjne",
-    "magnetyczne",
-    "elektrostatyczne"
-   ],
-   "a": 2,
-   "ex": "To oddziaływanie magnetyczne. Działają magnesy (lub magnes i żelazo).",
-   "c": "oddzialywania"
-  },
-  {
-   "t": "mc",
    "q": "Kolega pcha wózek w supermarkecie. Jakie to oddziaływanie?",
    "o": [
     "mechaniczne",
@@ -5266,42 +5271,14 @@
   },
   {
    "t": "mc",
-   "q": "Magnesy A. Czy te magnesy się przyciągają, czy odpychają?",
-   "img": "magA",
-   "alt": "Dwa magnesy: N S i N S – do siebie zwrócone bieguny S i N",
-   "o": [
-    "przyciągają się",
-    "odpychają się"
-   ],
-   "a": 0,
-   "ex": "Do siebie zwrócone są bieguny S i N (różnoimienne) – magnesy się przyciągają.",
-   "c": "oddzialywania"
-  },
-  {
-   "t": "mc",
-   "q": "Magnesy B. Czy te magnesy się przyciągają, czy odpychają?",
-   "img": "magB",
-   "alt": "Dwa magnesy: N S i S N – do siebie zwrócone bieguny S i S",
-   "o": [
-    "przyciągają się",
-    "odpychają się"
-   ],
-   "a": 1,
-   "ex": "Do siebie zwrócone są dwa bieguny S (jednoimienne) – magnesy się odpychają.",
-   "c": "oddzialywania"
-  },
-  {
-   "t": "mc",
-   "q": "Jeden z magnesów obrócono o 180°. Co się stanie?",
-   "img": "magA",
-   "alt": "Dwa magnesy N S i N S",
+   "q": "Dwa magnesy sztabkowe leżące na stole przyciągają się. Jeden z nich obrócono o 180°. Co się stanie?",
    "o": [
     "zaczną się odpychać",
     "nadal będą się przyciągać",
     "przestaną na siebie działać"
    ],
    "a": 0,
-   "ex": "Po obrocie do siebie zwrócone będą jednoimienne bieguny – odpychanie.",
+   "ex": "Doświadczenie 4C: w jednym ułożeniu magnesy się przyciągają, a po obrocie jednego z nich o 180° – odpychają.",
    "c": "oddzialywania"
   },
   {
@@ -5662,7 +5639,7 @@
     "niuton (N)",
     "kilogram (kg)",
     "metr (m)",
-    "dżul (J)"
+    "sekunda (s)"
    ],
    "a": 0,
    "ex": "Jednostką siły jest niuton.",
@@ -7175,6 +7152,366 @@
    ],
    "tryb": "scisle",
    "ex": "Błąd: 5 s · 36 = 180 s = 3 min. Rzeczywista godzina: od 17:57 do 18:03.",
+   "c": "zegary"
+  },
+  {
+   "t": "mc",
+   "q": "Kto zapyta: „Jak wdychanie dymu może wpłynąć na funkcje życiowe organizmu?”",
+   "o": [
+    "biolog",
+    "fizyk",
+    "chemik",
+    "ekolog"
+   ],
+   "a": 0,
+   "ex": "„Fizyka wokół nas” (s. 6): biolog bada wpływ dymu na organizm, fizyk – dlaczego dym się unosi, chemik – skąd się bierze, ekolog – jak chronić środowisko.",
+   "c": "fizyka"
+  },
+  {
+   "t": "mc",
+   "q": "Kto zapyta: „Jak można chronić środowisko przed zanieczyszczeniami?”",
+   "o": [
+    "ekolog",
+    "fizyk",
+    "chemik",
+    "biolog"
+   ],
+   "a": 0,
+   "ex": "Ekolog zastanawia się nad ochroną środowiska; fizyk pyta m.in., czy energię można uzyskać inaczej niż ze spalania węgla.",
+   "c": "fizyka"
+  },
+  {
+   "t": "mc",
+   "q": "Na czym polega eksperyment?",
+   "o": [
+    "na odtwarzaniu zjawiska wielokrotnie w kontrolowanych warunkach",
+    "na samym przyglądaniu się zjawisku, którego nie możemy wywołać",
+    "na zapisaniu wyniku w zeszycie",
+    "na przeczytaniu opisu zjawiska w książce"
+   ],
+   "a": 0,
+   "ex": "Np. spadanie przedmiotów można odtwarzać wielokrotnie – to eksperyment. Tornado czy ruch planet możemy tylko obserwować.",
+   "c": "fizyka"
+  },
+  {
+   "t": "tf",
+   "q": "Dzięki badaniom fizycznym powstały m.in. okulary, a wady wzroku leczy się za pomocą lasera.",
+   "a": true,
+   "ex": "Podręcznik s. 7: nawet zwykłe okulary są efektem badań fizycznych; wady wzroku leczymy laserem.",
+   "c": "fizyka"
+  },
+  {
+   "t": "mc",
+   "q": "Czym zajmował się Isaac Newton pod koniec XVII wieku, poza nauką?",
+   "o": [
+    "był nadzorcą Mennicy Królewskiej w Londynie",
+    "konstruował silniki parowe",
+    "budował zegary wahadłowe",
+    "przesyłał fale radiowe"
+   ],
+   "a": 0,
+   "ex": "Ciekawostka (s. 29): Newton objął stanowisko nadzorcy Mennicy Królewskiej i zbierał dowody w sprawach o fałszowanie pieniędzy.",
+   "c": "fizyka"
+  },
+  {
+   "t": "tf",
+   "q": "Na międzynarodowych zawodach łazików marsjańskich University Rover Challenge polscy studenci od lat zdobywają pierwsze miejsca.",
+   "a": true,
+   "ex": "Ciekawostka (s. 7): np. łazik Legendary IV zaprojektowali studenci Politechniki Rzeszowskiej.",
+   "c": "fizyka"
+  },
+  {
+   "t": "mc",
+   "q": "Z czego wykonany jest oryginalny wzorzec kilograma przechowywany w Sèvres?",
+   "o": [
+    "ze stopu platyny z irydem",
+    "ze stali",
+    "z czystego złota",
+    "z miedzi"
+   ],
+   "a": 0,
+   "ex": "Ciekawostka (s. 13): wzorzec masy to walec ze stopu platyny z irydem o masie 1 kg.",
+   "c": "wielkosci"
+  },
+  {
+   "t": "mc",
+   "q": "Czym w starożytnym Rzymie mierzono krótkie odcinki?",
+   "o": [
+    "szerokością kciuka",
+    "krokiem",
+    "milą",
+    "metrem"
+   ],
+   "a": 0,
+   "ex": "Ciekawostka (s. 15): Rzymianie mierzyli odległości długością stopy, krótsze odcinki – szerokością kciuka, a dłuższe – krokiem.",
+   "c": "wielkosci"
+  },
+  {
+   "t": "mc",
+   "q": "Ile kroków stanowiło dawną milę?",
+   "o": [
+    "tysiąc",
+    "sto",
+    "dziesięć",
+    "milion"
+   ],
+   "a": 0,
+   "ex": "Ciekawostka (s. 15): tysiąc kroków stanowiło milę – po łacinie „mille” znaczy „tysiąc”.",
+   "c": "wielkosci"
+  },
+  {
+   "t": "mc",
+   "q": "Pierwszą jednostką długości, która nie była wzorowana na części ciała, był…",
+   "o": [
+    "metr",
+    "łokieć",
+    "cal",
+    "krok"
+   ],
+   "a": 0,
+   "ex": "Metr ustalono w XVIII w. we Francji, dzieląc odległość od bieguna północnego do równika przez 10 mln.",
+   "c": "wielkosci"
+  },
+  {
+   "t": "mc",
+   "q": "Które zdanie jest fałszywe?",
+   "o": [
+    "Przykładami ciał fizycznych są: Księżyc, glina oraz porcelanowy talerzyk.",
+    "Przykładami substancji są: szkło, stal oraz tworzywo sztuczne.",
+    "Wielkość fizyczna to każda cecha ciała lub zjawiska, którą można wyrazić ilościowo."
+   ],
+   "a": 0,
+   "ex": "Test 1, zad. 2: glina to substancja (materiał), a nie ciało fizyczne.",
+   "c": "wielkosci"
+  },
+  {
+   "t": "mc",
+   "q": "Dlaczego mierząc gumkę linijką, nie podamy jej dokładnej długości?",
+   "o": [
+    "z wszystkich tych powodów naraz",
+    "tylko dlatego, że podziałka jest co 1 mm",
+    "tylko dlatego, że krawędzie gumki wypadają między kreskami",
+    "tylko dlatego, że kreski podziałki mają szerokość"
+   ],
+   "a": 0,
+   "ex": "Podręcznik s. 17: podziałka jest co 1 mm, krawędzie przedmiotu zwykle wypadają między kreskami, a same kreski mają szerokość.",
+   "c": "niepewnosc"
+  },
+  {
+   "t": "num",
+   "q": "Kuba zmierzył 7 razy linijką średnicę pokrywki garnka: 21,1 cm • 21,0 cm • 21,2 cm • 20,9 cm • 21,0 cm • 21,3 cm • 21,1 cm. Oblicz średnią i zaokrąglij ją do trzech cyfr znaczących.",
+   "a": 21.1,
+   "jedn": "cm",
+   "ex": "Suma = 147,6 cm; 147,6 : 7 ≈ 21,0857 cm ≈ 21,1 cm (trzy cyfry znaczące).",
+   "c": "srednia",
+   "tol": 2.11e-05
+  },
+  {
+   "t": "num",
+   "q": "Siłomierzem mierzono 7 razy, jaką siłą trzeba pociągnąć kubek, by ruszył: 1,4 N • 1,5 N • 1,3 N • 1,1 N • 1,6 N • 1,4 N • 1,3 N. Oblicz średnią i zaokrąglij ją do jednego miejsca po przecinku.",
+   "a": 1.4,
+   "jedn": "N",
+   "ex": "Suma = 9,6 N; 9,6 : 7 ≈ 1,37 N ≈ 1,4 N – tyle miejsc po przecinku, ile w pomiarach.",
+   "c": "srednia",
+   "tol": 1.4e-06
+  },
+  {
+   "t": "mc",
+   "q": "Czas spadania kropel z dachu: 0,83 s; 0,96 s; 0,74 s; 0,88 s; 0,79 s. Średnia wynosi…",
+   "o": [
+    "0,84 s",
+    "0,82 s",
+    "0,86 s"
+   ],
+   "a": 0,
+   "ex": "Test 2, zad. 3: suma = 4,20 s; 4,20 : 5 = 0,84 s.",
+   "c": "srednia"
+  },
+  {
+   "t": "num",
+   "q": "Zaokrąglij 637,4 cm do trzech cyfr znaczących.",
+   "a": 637,
+   "jedn": "cm",
+   "ex": "637,4 cm ≈ 637 cm. Liczymy cyfry od pierwszej niezerowej; pierwsza pomijana cyfra < 5 → w dół, ≥ 5 → w górę.",
+   "c": "cyfry",
+   "tol": 0.000637
+  },
+  {
+   "t": "num",
+   "q": "Zaokrąglij 0,023506 kg do trzech cyfr znaczących.",
+   "a": 0.0235,
+   "jedn": "kg",
+   "ex": "0,023506 kg ≈ 0,0235 kg. Liczymy cyfry od pierwszej niezerowej; pierwsza pomijana cyfra < 5 → w dół, ≥ 5 → w górę.",
+   "c": "cyfry",
+   "tol": 2.35e-08
+  },
+  {
+   "t": "num",
+   "q": "Zaokrąglij 12,08 s do trzech cyfr znaczących.",
+   "a": 12.1,
+   "jedn": "s",
+   "ex": "12,08 s ≈ 12,1 s. Liczymy cyfry od pierwszej niezerowej; pierwsza pomijana cyfra < 5 → w dół, ≥ 5 → w górę.",
+   "c": "cyfry",
+   "tol": 1.21e-05
+  },
+  {
+   "t": "num",
+   "q": "Zaokrąglij 45,1 m do dwóch cyfr znaczących.",
+   "a": 45,
+   "jedn": "m",
+   "ex": "45,1 m ≈ 45 m. Liczymy cyfry od pierwszej niezerowej; pierwsza pomijana cyfra < 5 → w dół, ≥ 5 → w górę.",
+   "c": "cyfry",
+   "tol": 4.4999999999999996e-05
+  },
+  {
+   "t": "num",
+   "q": "Zaokrąglij 0,3092 g do dwóch cyfr znaczących.",
+   "a": 0.31,
+   "jedn": "g",
+   "ex": "0,3092 g ≈ 0,31 g. Liczymy cyfry od pierwszej niezerowej; pierwsza pomijana cyfra < 5 → w dół, ≥ 5 → w górę.",
+   "c": "cyfry",
+   "tol": 3.1e-07
+  },
+  {
+   "t": "num",
+   "q": "Zaokrąglij 13,35 dm do dwóch cyfr znaczących.",
+   "a": 13,
+   "jedn": "dm",
+   "ex": "13,35 dm ≈ 13 dm. Liczymy cyfry od pierwszej niezerowej; pierwsza pomijana cyfra < 5 → w dół, ≥ 5 → w górę.",
+   "c": "cyfry",
+   "tol": 1.3e-05
+  },
+  {
+   "t": "mc",
+   "q": "Siła grawitacji to inaczej…",
+   "o": [
+    "siła ciężkości",
+    "siła sprężystości",
+    "siła wypadkowa",
+    "siła równoważąca"
+   ],
+   "a": 0,
+   "ex": "Podręcznik s. 32: siła grawitacji (inaczej siła ciężkości) to siła, z jaką Ziemia przyciąga ciało.",
+   "c": "sila"
+  },
+  {
+   "t": "mc",
+   "q": "Kubek wisi nieruchomo na siłomierzu. Która siła równoważy siłę grawitacji działającą na kubek?",
+   "o": [
+    "siła sprężystości sprężyny siłomierza",
+    "siła ciężkości stołu",
+    "siła wypadkowa",
+    "żadna – siła grawitacji wtedy nie działa"
+   ],
+   "a": 0,
+   "ex": "Podręcznik s. 35: siłę grawitacji równoważy siła sprężystości rozciągniętej sprężyny siłomierza, o zwrocie przeciwnym.",
+   "c": "sila"
+  },
+  {
+   "t": "mc",
+   "q": "Na dwóch siłomierzach wiszą klocki. Jakie dwie cechy mają wspólne siły, którymi klocki działają na siłomierze?",
+   "o": [
+    "kierunek (pionowy) i zwrot (w dół)",
+    "wartość i punkt przyłożenia",
+    "wartość i kierunek",
+    "zwrot i punkt przyłożenia"
+   ],
+   "a": 0,
+   "ex": "Test 2, zad. 4: obie siły działają pionowo w dół; wartości (wskazania) i punkty przyłożenia są różne.",
+   "c": "sila"
+  },
+  {
+   "t": "num",
+   "q": "Zaprzęg 8 psów rusza z saniami. Do tyłu działa siła 300 N, a wypadkowa wynosi 20 N i jest zwrócona do przodu. Z jaką siłą ciągnie sanie każdy pies (wszystkie jednakowo)?",
+   "a": 40,
+   "jedn": "N",
+   "ex": "Test 3, zad. 2: psy razem: 300 N + 20 N = 320 N; 320 N : 8 = 40 N.",
+   "c": "wypadkowa",
+   "tol": 3.9999999999999996e-05
+  },
+  {
+   "t": "tf",
+   "q": "Łódź wikingów poruszało kilkudziesięciu wioślarzy, bo potrzebna była odpowiednio duża siła wypadkowa.",
+   "a": true,
+   "ex": "Ciekawostka (s. 36): kilkudziesięciu mężczyzn działało siłą wypadkową zdolną poruszyć łódź; dziś w wioślarstwie duża wypadkowa decyduje o zwycięstwie.",
+   "c": "wypadkowa"
+  },
+  {
+   "t": "mc",
+   "q": "Jak nazywa się nieruchoma wskazówka zegara słonecznego, której cień wskazuje czas?",
+   "o": [
+    "gnomon",
+    "wahadło",
+    "kotwica",
+    "ciężarek"
+   ],
+   "a": 0,
+   "ex": "W zegarze słonecznym wykorzystywano zmianę położenia cienia gnomonu, związaną z pozornym ruchem Słońca.",
+   "c": "zegary"
+  },
+  {
+   "t": "mc",
+   "q": "Który zegar wyparł zegary słoneczne?",
+   "o": [
+    "zegar wodny",
+    "zegar atomowy",
+    "zegar kwarcowy",
+    "zegar wahadłowy"
+   ],
+   "a": 0,
+   "ex": "Zegary słoneczne zostały z czasem wyparte przez zegary wodne – czas mierzono ilością wypływającej cieczy.",
+   "c": "zegary"
+  },
+  {
+   "t": "mc",
+   "q": "Kto skonstruował w 1927 r. zegar kwarcowy?",
+   "o": [
+    "Warren Marrison i Joseph Horton",
+    "Christiaan Huygens",
+    "James Watt i Thomas Newcomen",
+    "Isaac Newton"
+   ],
+   "a": 0,
+   "ex": "Zegar kwarcowy zbudowali w 1927 r. Warren Marrison i Joseph Horton.",
+   "c": "zegary"
+  },
+  {
+   "t": "mc",
+   "q": "Jak dokładne są zegary atomowe?",
+   "o": [
+    "różnica nie przekracza 1 sekundy po kilkuset latach, a nawet po kilku milionach lat",
+    "spóźniają się o kilka sekund na rok",
+    "spóźniają się o kilkadziesiąt sekund na dobę",
+    "mylą się o 0,01 s na dobę"
+   ],
+   "a": 0,
+   "ex": "Zegary atomowe są podstawą wzorców czasu. Kilka sekund na rok – najlepsze zegary kwarcowe; kilkadziesiąt sekund na dobę – pierwsze wahadłowe.",
+   "c": "zegary"
+  },
+  {
+   "t": "mc",
+   "q": "Dzięki dopracowaniu konstrukcji zegarów wahadłowych na przełomie XIX i XX w. ich dokładność sięgała…",
+   "o": [
+    "0,01 s na dobę",
+    "kilkudziesięciu sekund na dobę",
+    "1 s na kilka milionów lat",
+    "kilkunastu minut na dobę"
+   ],
+   "a": 0,
+   "ex": "Pierwsze zegary wahadłowe myliły się o kilkadziesiąt sekund na dobę, a na przełomie XIX i XX w. – już tylko o 0,01 s.",
+   "c": "zegary"
+  },
+  {
+   "t": "mc",
+   "q": "W klepsydrze między dwoma naczyniami przesypywał się…",
+   "o": [
+    "piasek lub proszek cynkowy",
+    "olej",
+    "woda",
+    "rtęć"
+   ],
+   "a": 0,
+   "ex": "Klepsydra mierzyła czas dokładniej niż zegar wodny; przesypywał się w niej piasek lub proszek cynkowy.",
    "c": "zegary"
   }
  ]
