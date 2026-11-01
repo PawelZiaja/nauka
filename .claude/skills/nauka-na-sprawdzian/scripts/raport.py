@@ -37,7 +37,8 @@ def main():
     a = [x for x in argv if not x.startswith('--')]
     dzis = datetime.date.today()
     od = a[0] if a else dzis.isoformat()
-    do = a[1] if len(a) > 1 else (datetime.date.fromisoformat(od) + datetime.timedelta(days=1)).isoformat()
+    # data końcowa włącznie (GoatCounter traktuje „end” jako koniec przedziału bez tego dnia)
+    do = (datetime.date.fromisoformat(a[1] if len(a) > 1 else od) + datetime.timedelta(days=1)).isoformat()
     # urz -> aplikacja -> {'proby': {(rodzaj,nr): {...}}, 'stare': [...], 'fiszki': set(), 'otwarta': n}
     U = defaultdict(lambda: defaultdict(lambda: {'proby': defaultdict(lambda: {'bledy': []}), 'stare': [], 'fiszki': set(), 'otwarta': 0}))
     for h in pobierz(od, do):
