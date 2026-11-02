@@ -560,7 +560,7 @@ function podanaOdp(q){const b=$('#qBody'),val=s=>[...b.querySelectorAll(s)];
     case 'in':case 'num':case 'multi':return val('input').map(x=>x.value).join('; ');
     case 'match':return val('select').map((x,k)=>q.p[k][0]+' → '+x.value).join('; ');
     case 'pick':return val('.word.ok,.word.ko').map(x=>x.textContent).join(', ')||'(nic)';
-    case 'order':return val('.seq .opt').map(x=>x.textContent.replace(/^\d+/,'')).join(' → ');
+    case 'order':return val('.seq .opt').map(x=>(x.querySelector('span:last-child')||x).textContent).join(' → ');
     case 'spot':return 'kliknięcie poza celem';}return '';}
 if(NA_STRONIE){$('#devCode').textContent='Kod urządzenia: '+devId();$('#devCode').hidden=false;if(window.gcGotowy)gcEvent('aplikacja otwarta');}
 function startQuiz(mode,dz){const pool=mode==='test'?draw(CFG.liczbaPytan,dz):shuffle(S.errors.slice());

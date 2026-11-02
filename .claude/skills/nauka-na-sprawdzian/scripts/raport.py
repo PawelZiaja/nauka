@@ -5,7 +5,7 @@ po kolei (numer podejścia, godzina, ocena, wynik) z listą błędów, a pod spo
 Klucz API w zmiennej GOATCOUNTER_TOKEN (nigdy nie wpisuj go do repozytorium).
 Użycie: python3 raport.py [od RRRR-MM-DD] [do RRRR-MM-DD] [--nazwy kod=imię,kod=imię]
 Bez dat – dzisiaj. Imiona podawaj tylko w poleceniu (repozytorium jest publiczne)."""
-import json, os, re, sys, urllib.request, urllib.parse, datetime
+import json, os, re, sys, time, urllib.request, urllib.error, urllib.parse, datetime
 from collections import defaultdict
 
 SITE = 'https://ziaja.goatcounter.com/api/v0'
@@ -17,7 +17,12 @@ def pobierz(od, do):
         if wyklucz: q['exclude_paths'] = ','.join(map(str, wyklucz))
         req = urllib.request.Request(SITE + '/stats/hits?' + urllib.parse.urlencode(q),
                                      headers={'Authorization': 'Bearer ' + os.environ['GOATCOUNTER_TOKEN']})
-        d = json.load(urllib.request.urlopen(req, timeout=30))
+        for proba in range(4):   # GoatCounter czasem zwraca chwilowy błąd (np. 404) – ponów
+            try:
+                d = json.load(urllib.request.urlopen(req, timeout=30)); break
+            except urllib.error.HTTPError:
+                if proba == 3: raise
+                time.sleep(2 * (proba + 1))
         hits += d['hits']; wyklucz += [h['path_id'] for h in d['hits']]
         if not d.get('more') or not d['hits']: return hits
 
