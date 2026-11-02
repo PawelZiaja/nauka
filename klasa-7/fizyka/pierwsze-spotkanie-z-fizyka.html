@@ -231,7 +231,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <div class="stats">
     <div class="stat"><b id="stCards">0/0</b><span>fiszek umiesz</span></div>
     <div class="stat"><b id="stErr">0</b><span>błędów do poprawy</span></div>
-    <div class="stat"><b id="stBest">–</b><span>ostatni test</span></div>
+    <div class="stat"><b id="stBest">–</b><span id="stBestL">ostatni test</span></div>
   </div>
   <div class="modes">
     <button class="mode" id="goCards"><span class="ic">🃏</span><span><b>Fiszki</b><span class="d">Dotknij, żeby odwrócić. Ucz się pojęć i zasad.</span></span></button>
@@ -315,6 +315,8 @@ const KEY='nauka-'+CFG.klucz;
 let S={known:{},errors:[],last:null,cur:null,theme:'auto'};
 try{const r=localStorage.getItem(KEY);if(r)S=Object.assign(S,JSON.parse(r));}catch(e){}
 S.errors=S.errors.filter(id=>id in QI);
+/* testy z działów sprzed zapisu „lastAny”: pokaż ostatni z nich jako ostatni test */
+if(!S.lastAny&&S.dz){const k=Object.keys(S.dz).pop();if(k)S.lastAny=Object.assign({dz:k},S.dz[k]);}
 if(S.cur&&!S.cur.ids.every(id=>id in QI))S.cur=null;
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
 
@@ -460,7 +462,7 @@ function renderHome(){
   const k=CARDS.filter(c=>S.known[c._id]).length;
   $('#stCards').textContent=k+'/'+CARDS.length;
   $('#stErr').textContent=S.errors.length;
-  $('#stBest').textContent=S.last?S.last.pct+'%':'–';
+  const OT=S.lastAny||S.last;$('#stBest').textContent=OT?OT.pct+'%':'–';$('#stBestL').textContent='ostatni test'+(OT&&OT.dz?': '+OT.dz:'');
   $('#goCards').hidden=!CARDS.length;
   $('#goReview').disabled=!S.errors.length;
   $('#revDesc').textContent=S.errors.length?('Do poprawy: '+S.errors.length+'. Popraw je, a znikną z listy.'):'Brak błędów do poprawy. Zrób najpierw test.';
@@ -664,7 +666,7 @@ function answer(ok,q,extra,note){
 function finishQuiz(){
   const n=R.ids.length,good=R.res.filter(Boolean).length,pct=Math.round(good/n*100),wrong=R.ids.filter((id,k)=>!R.res[k]);
   $('#rTitle').textContent=R.mode==='test'?'Twój wynik':'Powtórka zakończona';$('#rPct').textContent=pct+'%';
-  if(R.mode==='test'){const g=gradeOf(pct);if(R.dz){S.dz=S.dz||{};S.dz[R.dz]={pct,g};}else{S.last={pct,g};S.best=Math.max(S.best||0,g);}$('#rGrade').textContent=g;gcEvent(nazwaR()+' ukończony, ocena '+g+', wynik '+good+'/'+n);
+  if(R.mode==='test'){const g=gradeOf(pct);if(R.dz){S.dz=S.dz||{};S.dz[R.dz]={pct,g};S.lastAny={pct,g,dz:R.dz};}else{S.last={pct,g};S.lastAny={pct,g};S.best=Math.max(S.best||0,g);}$('#rGrade').textContent=g;gcEvent(nazwaR()+' ukończony, ocena '+g+', wynik '+good+'/'+n);
     const bonus={6:50,5:30,4:15}[g]||0;gra(bonus);if(bonus)toast('🏆 Bonus za ocenę '+g+': +'+bonus+' XP');if(g>=5){konfetti();graj('fanfara');}
     if(HW)setTimeout(()=>duch(g>=5?'Buu! Upiornie dobry wynik!':g>=3?'Buu! Popraw błędy – będzie straszniej dobrze!':'Buu! Spokojnie – fiszki i powtórka, potem znowu test!'),g>=5?900:300);
     $('#rInfo').textContent=good+' z '+n+' dobrze · przewidywana ocena: '+GNAME[g];
