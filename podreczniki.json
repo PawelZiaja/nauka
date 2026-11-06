@@ -62,5 +62,12 @@
   "wydawnictwo": "",
   "opis": "słówka i zwroty z 30 tematów, poziom A1–A2, z wymową i zdaniami przykładowymi",
   "okladka": "okladki/dodatkowe-angielski.png"
+ },
+ "klasa-7/biologia": {
+  "przedmiot": "Biologia",
+  "tytul": "Puls życia 7",
+  "wydawnictwo": "Nowa Era",
+  "opis": "podręcznik do biologii dla klasy 7, nowa edycja 2026–2028",
+  "okladka": "okladki/klasa-7-biologia.jpg"
  }
 }
