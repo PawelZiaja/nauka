@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="same-origin">
+<title>Codziennie coś nowego</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F2F4F8; --surface:#FFFFFF; --ink:#16203A; --muted:#58627C; --line:#DADFE9;
+  --accent:#2950D8; --accent-ink:#FFFFFF; --hl:#FFE14A; --ok:#1B8150; --bad:#BE3328; --ok-bg:#E3F4EA; --bad-bg:#FBE6E3;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F131C; --surface:#171D2A; --ink:#E6E9F1; --muted:#97A0B6; --line:#283043;
+    --accent:#7F9CFF; --accent-ink:#0D1323; --hl:rgba(255,225,74,.30); --ok:#5ACB8C; --bad:#FF7B6F; --ok-bg:rgba(90,203,140,.14); --bad-bg:rgba(255,123,111,.14);
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F131C; --surface:#171D2A; --ink:#E6E9F1; --muted:#97A0B6; --line:#283043;
+  --accent:#7F9CFF; --accent-ink:#0D1323; --hl:rgba(255,225,74,.30); --ok:#5ACB8C; --bad:#FF7B6F; --ok-bg:rgba(90,203,140,.14); --bad-bg:rgba(255,123,111,.14);
+  color-scheme:dark;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Instrument Sans",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+button{font:inherit;color:inherit;cursor:pointer}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:4px}
+
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{max-width:680px;margin:0 auto;padding:12px 20px 0;display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand{font-family:Literata,Georgia,serif;font-weight:600;font-size:1.15rem;text-decoration:none}
+.streak{color:var(--muted);font-size:.9rem}
+.streak b{color:var(--ink);font-weight:600}
+nav{max-width:680px;margin:0 auto;padding:0 12px;display:flex;gap:4px}
+nav a{display:inline-block;text-decoration:none;padding:10px 8px 11px;color:var(--muted);border-bottom:2px solid transparent;font-weight:500}
+nav a[aria-current="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.count{display:inline-block;min-width:1.4em;padding:0 .4em;margin-left:4px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:.75rem;line-height:1.5;text-align:center}
+
+main{max-width:680px;margin:0 auto;padding:28px 20px 96px}
+.btn{border:0;background:var(--accent);color:var(--accent-ink);padding:12px 18px;border-radius:10px;font-weight:600}
+.btn:disabled{opacity:.5;cursor:default}
+.ghost{background:none;border:1px solid var(--line);padding:9px 14px;border-radius:10px;font-weight:500;text-decoration:none;display:inline-block}
+.link{background:none;border:0;padding:0;color:var(--muted);text-decoration:underline;text-underline-offset:3px;font-size:.9rem}
+.muted{color:var(--muted)}
+.err{margin-top:16px;padding:12px 14px;border-radius:10px;background:var(--bad-bg);color:var(--bad)}
+
+.welcome h1{font-family:Literata,Georgia,serif;font-size:clamp(2rem,7vw,2.8rem);line-height:1.1;margin:8px 0 14px;font-weight:600;letter-spacing:-.01em}
+.welcome p{margin:0 0 12px;max-width:52ch}
+.welcome .sig{font-family:Literata,Georgia,serif;font-style:italic}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin:22px 0 0;padding:14px 16px;border:1px solid var(--line);border-radius:10px;background:var(--surface);font-size:.92rem}
+.stats b{font-weight:600}
+.search{width:100%;margin:28px 0 4px;padding:11px 14px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--ink);font:inherit}
+.search::placeholder{color:var(--muted)}
+
+.lesson .meta{color:var(--muted);font-size:.9rem;margin:0}
+.lesson h1{font-family:Literata,Georgia,serif;font-weight:600;font-size:clamp(1.8rem,6vw,2.5rem);line-height:1.15;margin:6px 0 12px;letter-spacing:-.01em}
+.hook{font-family:Literata,Georgia,serif;font-style:italic;font-size:1.15rem;line-height:1.55;color:var(--muted);margin:0 0 18px}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.prose{font-family:Literata,Georgia,serif;font-size:1.08rem;line-height:1.72}
+.prose h2{font-family:"Instrument Sans",system-ui,sans-serif;font-size:1.05rem;font-weight:600;margin:30px 0 6px}
+.prose p{margin:0 0 14px}
+.hl{border:0;padding:0 .14em;margin:0 -.04em;font:inherit;color:inherit;border-radius:.25em .15em .3em .2em;
+  background:linear-gradient(100deg,transparent 0 1.5%,var(--hl) 2.5% 97.5%,transparent 98.5%);box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.takeaway{margin:30px 0 0;padding:16px 18px;border-left:3px solid var(--accent);background:var(--surface);border-radius:0 10px 10px 0}
+.takeaway h2{margin:0 0 4px;font-size:.95rem;font-weight:600}
+.takeaway p{margin:0;font-family:Literata,Georgia,serif;line-height:1.6}
+
+section.block{margin-top:40px}
+section.block > h2{font-size:1.15rem;margin:0 0 12px}
+.words{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.words li{padding:12px 0;border-bottom:1px solid var(--line)}
+.words .w{font-weight:600}
+.words .pos{color:var(--muted);font-size:.85rem;margin-left:6px}
+.words .pl{color:var(--muted)}
+.words .ex{font-family:Literata,Georgia,serif;font-style:italic;font-size:.95rem;margin-top:2px}
+
+.q{margin:0 0 22px}
+.q p{font-weight:600;margin:0 0 8px}
+.opts{display:grid;gap:6px}
+.opt{text-align:left;background:var(--surface);border:1px solid var(--line);padding:10px 12px;border-radius:10px}
+.opt.right{border-color:var(--ok);background:var(--ok-bg)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt:disabled{cursor:default}
+.q p.why{font-weight:400;margin:8px 0 0;font-size:.95rem;color:var(--muted)}
+.done{margin-top:20px;padding:14px 16px;border-radius:10px;background:var(--ok-bg);color:var(--ok);font-weight:500}
+.next{margin-top:36px;display:flex;gap:8px;flex-wrap:wrap}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:32px 24px;text-align:center;min-height:220px;display:flex;flex-direction:column;justify-content:center;gap:8px}
+.card .big{font-family:Literata,Georgia,serif;font-size:2rem;font-weight:600}
+.card .def{font-family:Literata,Georgia,serif;font-size:1.05rem}
+.row{display:flex;gap:8px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+
+.toc h2{font-size:1.15rem;margin:30px 0 8px}
+.hist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.hist a{text-decoration:none;border-bottom:1px solid var(--line);padding:14px 2px;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:baseline}
+.hist .d{color:var(--muted);font-size:.85rem;min-width:5.5em}
+.hist .t{font-family:Literata,Georgia,serif}
+.hist .t small{display:block;font-family:"Instrument Sans",system-ui,sans-serif;color:var(--muted);font-size:.85rem}
+.hist .k{color:var(--muted);font-size:.8rem;white-space:nowrap}
+.hist .k.ok{color:var(--ok)}
+.hist a.seen .t{color:var(--muted)}
+
+#sheet{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--surface);border-top:1px solid var(--line);
+  padding:18px 20px calc(18px + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(10,20,40,.12);transform:translateY(110%);transition:transform .2s ease}
+#sheet.open{transform:none}
+@media (prefers-reduced-motion:reduce){#sheet{transition:none}}
+#sheet .in{max-width:680px;margin:0 auto}
+#sheet .top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+#sheet .w{font-family:Literata,Georgia,serif;font-size:1.4rem;font-weight:600}
+#toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 14px;border-radius:10px;font-size:.9rem;display:none;z-index:30}
+</style>
+</head>
+<body>
+<header>
+  <div class="bar"><a class="brand" href="#">Codziennie coś nowego</a><span class="streak" id="progress"></span></div>
+  <nav id="tabs"></nav>
+</header>
+<main id="app"><p class="muted">Ładowanie…</p></main>
+<div id="sheet" role="dialog" aria-label="Słówko"><div class="in" id="sheetIn"></div></div>
+<div id="toast" role="status"></div>
+
+<script>
+(() => {
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const pad = n => String(n).padStart(2, "0");
+const dayStr = (d = new Date()) => `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+const parseDay = s => { const [y,m,d] = s.split("-").map(Number); return new Date(y, m-1, d); };
+const addDays = (s, n) => { const d = parseDay(s); d.setDate(d.getDate()+n); return dayStr(d); };
+const today = () => dayStr();
+const KIND_PL = { book: "Książka", curiosity: "Ciekawostka" };
+const INTERVALS = [1, 3, 7, 14, 30, 60];
+const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+
+/* ---------- reader progress (localStorage, per device) ---------- */
+const KEY = "cdcn:v1";
+let P = { read: {}, answers: {}, cards: {} };
+try { const v = JSON.parse(localStorage.getItem(KEY) || "null"); if (v && typeof v === "object") P = { read: v.read || {}, answers: v.answers || {}, cards: v.cards || {} }; } catch {}
+let warned = false;
+function persist() {
+  try { localStorage.setItem(KEY, JSON.stringify(P)); }
+  catch { if (!warned) { warned = true; toast("Ta przeglądarka nie zapisuje postępu (np. tryb prywatny)."); } }
+}
+
+/* ---------- analytics (GoatCounter) ---------- */
+const gcQueue = [];
+function gc(opts) {
+  const g = window.goatcounter;
+  if (g && typeof g.count === "function") { try { g.count(opts); } catch {} }
+  else gcQueue.push(opts);
+}
+window.addEventListener("load", () => {
+  const flush = () => { if (window.goatcounter && window.goatcounter.count) gcQueue.splice(0).forEach(gc); };
+  flush(); setTimeout(flush, 1500);
+});
+const gcEvent = (name, title) => gc({ path: name, title: title || name, event: true });
+
+/* ---------- lessons ---------- */
+let lessons = [], loadErr = "";
+function clean(d) {
+  if (!d || typeof d !== "object" || !DATE_RE.test(String(d.date || "")) || !Array.isArray(d.sections) || !d.sections.length) return null;
+  return {
+    date: String(d.date), kind: d.kind === "book" ? "book" : "curiosity",
+    title: String(d.title || "Lekcja"), author: String(d.author || ""),
+    hook: String(d.hook || ""), takeaway: String(d.takeaway || ""),
+    sections: d.sections.map(s => ({ heading: String(s && s.heading || ""), body: String(s && s.body || "") })),
+    vocab: (Array.isArray(d.vocab) ? d.vocab : []).filter(w => w && w.word).map(w => ({
+      word: String(w.word), pos: String(w.pos || ""), definition: String(w.definition || ""), pl: String(w.pl || ""), example: String(w.example || "")
+    })),
+    quiz: (Array.isArray(d.quiz) ? d.quiz : []).filter(q => q && Array.isArray(q.options) && q.options.length).map(q => ({
+      question: String(q.question || ""), options: q.options.map(String), answer: Number(q.answer) || 0, explanation: String(q.explanation || "")
+    }))
+  };
+}
+async function load() {
+  try {
+    const r = await fetch("lessons.json", { cache: "no-cache" });
+    if (!r.ok) throw 0;
+    const data = await r.json();
+    const list = Array.isArray(data) ? data : (data && data.lessons) || [];
+    const byDate = new Map();
+    list.map(clean).filter(Boolean).forEach(l => byDate.set(l.date, l));
+    lessons = [...byDate.values()].sort((a, b) => b.date.localeCompare(a.date));
+  } catch { loadErr = "Nie udało się wczytać lekcji. Odśwież stronę za chwilę."; }
+  route();
+}
+const find = date => lessons.find(l => l.date === date);
+
+/* ---------- flashcards ---------- */
+function addCards(l) {
+  let changed = false;
+  l.vocab.forEach((_, i) => { const k = l.date + "|" + i; if (!P.cards[k]) { P.cards[k] = { box: 0, due: addDays(today(), 1) }; changed = true; } });
+  return changed;
+}
+function dueList() {
+  const t = today(), out = [];
+  for (const [k, c] of Object.entries(P.cards)) {
+    const [date, i] = k.split("|"); const l = find(date);
+    if (l && l.vocab[+i] && c.due <= t) out.push({ date, i: +i });
+  }
+  return out;
+}
+
+/* ---------- text-to-speech ---------- */
+const canSpeak = "speechSynthesis" in window;
+let speaking = false, voices = [];
+function loadVoices() { try { voices = speechSynthesis.getVoices(); } catch {} }
+if (canSpeak) { loadVoices(); speechSynthesis.addEventListener?.("voiceschanged", loadVoices); }
+function voice() { if (!voices.length) loadVoices(); return voices.find(v => /^en[-_]GB/i.test(v.lang)) || voices.find(v => /^en/i.test(v.lang)) || null; }
+function utter(t) { const u = new SpeechSynthesisUtterance(t); u.lang = "en-GB"; const v = voice(); if (v) u.voice = v; u.rate = .96; return u; }
+function speakChunks(chunks) {
+  speechSynthesis.cancel(); speaking = true;
+  chunks.forEach((c, i) => { const u = utter(c); if (i === chunks.length - 1) u.onend = () => { speaking = false; updateListen(); }; speechSynthesis.speak(u); });
+  updateListen();
+}
+function stopSpeaking() { if (canSpeak) speechSynthesis.cancel(); speaking = false; updateListen(); }
+function updateListen() { const b = $("#listen"); if (b) b.textContent = speaking ? "Zatrzymaj" : "Odsłuchaj"; }
+function sayWord(t) { if (!canSpeak) return; speechSynthesis.cancel(); speaking = false; updateListen(); speechSynthesis.speak(utter(t)); }
+
+/* ---------- helpers ---------- */
+function toast(msg) { const t = $("#toast"); t.textContent = msg; t.style.display = "block"; clearTimeout(toast.t); toast.t = setTimeout(() => t.style.display = "none", 3500); }
+function plDate(s, opts = { day: "numeric", month: "long", year: "numeric" }) { return parseDay(s).toLocaleDateString("pl-PL", opts); }
+const plural = (n, one, few, many) => n === 1 ? one : (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? few : many;
+const quizDone = l => l.quiz.length && l.quiz.every((_, i) => (P.answers[l.date] || [])[i] != null);
+const fold = s => s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+
+/* ---------- views ---------- */
+let view = "home", viewing = null, query = "";
+let review = { queue: [], pos: 0, shown: false };
+
+function renderHeader() {
+  const due = dueList().length;
+  const t = [["#", "Spis lekcji", view === "home"], ["#powtorki", "Powtórki" + (due ? `<span class="count">${due}</span>` : ""), view === "review"]];
+  $("#tabs").innerHTML = t.map(([href, label, cur]) => `<a href="${href}" aria-current="${cur}">${label}</a>`).join("");
+  const n = lessons.filter(l => P.read[l.date]).length;
+  $("#progress").innerHTML = lessons.length ? `Przeczytane: <b>${n}</b> z ${lessons.length}` : "";
+}
+
+function tocItem(l) {
+  const seen = !!P.read[l.date], done = quizDone(l);
+  const score = done ? l.quiz.filter((q, i) => P.answers[l.date][i] === q.answer).length : 0;
+  const mark = done ? `<span class="k ok">✓ ${score}/${l.quiz.length}</span>` : seen ? `<span class="k">przeczytana</span>` : `<span class="k"></span>`;
+  return `<li><a href="#${l.date}" class="${seen ? "seen" : ""}"><span class="d">${esc(plDate(l.date, { day: "numeric", month: "short" }))}</span><span class="t">${esc(l.title)}${l.author ? `<small>${esc(l.author)}</small>` : ""}</span>${mark}</a></li>`;
+}
+function renderToc() {
+  const q = fold(query.trim());
+  const match = l => !q || fold([l.title, l.author, l.hook, ...l.vocab.map(w => w.word)].join(" ")).includes(q);
+  const books = lessons.filter(l => l.kind === "book" && match(l)), cur = lessons.filter(l => l.kind === "curiosity" && match(l));
+  if (!books.length && !cur.length) return `<p class="muted">${lessons.length ? "Nic nie pasuje do wyszukiwania." : "Lekcje pojawią się tu wkrótce."}</p>`;
+  return (books.length ? `<h2>Książki <span class="muted">(${books.length})</span></h2><ul class="hist">${books.map(tocItem).join("")}</ul>` : "")
+       + (cur.length ? `<h2>Ciekawostki <span class="muted">(${cur.length})</span></h2><ul class="hist">${cur.map(tocItem).join("")}</ul>` : "");
+}
+function renderHome() {
+  const read = lessons.filter(l => P.read[l.date]).length, words = Object.keys(P.cards).length, due = dueList().length;
+  return `<div class="welcome">
+    <h1>Codziennie coś nowego</h1>
+    <p>Cześć! Codziennie przygotowuję sobie krótką lekcję: raz o ciekawej książce, raz jakąś ciekawostkę ze świata. Pomyślałem, że może Was też coś zaciekawi.</p>
+    <p>Wybierz temat ze spisu, przeczytaj albo odsłuchaj (ok. 10 minut) i sprawdź się w trzech pytaniach. Trudniejsze angielskie słówka są zaznaczone: kliknij, a zobaczysz tłumaczenie. Potem wrócą do Ciebie w powtórkach.</p>
+    <p class="muted">Bez logowania i bez konta. Twoje postępy zapisują się tylko na tym urządzeniu.</p>
+    <p class="sig">Paweł</p>
+    ${read ? `<div class="stats"><span>Przeczytane: <b>${read}</b> z ${lessons.length}</span><span>Słówka w powtórkach: <b>${words}</b></span>${due ? `<a href="#powtorki">Do powtórki dziś: <b>${due}</b></a>` : ""}</div>` : ""}
+  </div>
+  ${loadErr ? `<p class="err">${esc(loadErr)}</p>` : ""}
+  ${lessons.length > 6 ? `<input class="search" id="search" type="search" placeholder="Szukaj tytułu, autora, słówka…" value="${esc(query)}" aria-label="Szukaj lekcji">` : ""}
+  <div class="toc" id="toc">${renderToc()}</div>`;
+}
+
+function markVocab(lesson) {
+  const used = new Set();
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return lesson.sections.map(s => {
+    let raw = s.body; const hits = [];
+    lesson.vocab.forEach((w, i) => {
+      if (used.has(i)) return;
+      const re = new RegExp("(^|[^A-Za-z])(" + escRe(w.word) + ")(?![A-Za-z])", "i");
+      raw = raw.replace(re, (m, pre, word) => { used.add(i); hits.push([i, word]); return pre + "\u0001" + (hits.length - 1) + "\u0002"; });
+    });
+    let html = esc(raw).replace(/\u0001(\d+)\u0002/g, (_, k) => `<button class="hl" data-act="word" data-i="${hits[k][0]}">${esc(hits[k][1])}</button>`);
+    html = html.split(/\n\s*\n/).map(p => `<p>${p.replace(/\n/g, " ")}</p>`).join("");
+    return `<h2>${esc(s.heading)}</h2>${html}`;
+  }).join("");
+}
+
+function renderLesson(l) {
+  const answered = P.answers[l.date] || [];
+  const allDone = quizDone(l);
+  const score = l.quiz.filter((q, i) => answered[i] === q.answer).length;
+  const meta = l.kind === "book" ? `${KIND_PL.book}${l.author ? ", " + esc(l.author) : ""}` : KIND_PL.curiosity;
+  const idx = lessons.indexOf(l), newer = lessons[idx - 1], older = lessons[idx + 1];
+  return `<article class="lesson">
+    <p class="meta">${esc(plDate(l.date))}. ${meta}</p>
+    <h1>${esc(l.title)}</h1>
+    ${l.hook ? `<p class="hook">${esc(l.hook)}</p>` : ""}
+    <div class="tools">
+      ${canSpeak ? `<button class="ghost" id="listen" data-act="listen">${speaking ? "Zatrzymaj" : "Odsłuchaj"}</button>` : ""}
+      <button class="ghost" data-act="share">Kopiuj link</button>
+    </div>
+    <div class="prose">${markVocab(l)}</div>
+    ${l.takeaway ? `<aside class="takeaway"><h2>Do zapamiętania</h2><p>${esc(l.takeaway)}</p></aside>` : ""}
+    ${l.vocab.length ? `<section class="block"><h2>Słówka z lekcji</h2><ul class="words">
+      ${l.vocab.map(w => `<li><span class="w">${esc(w.word)}</span><span class="pos">${esc(w.pos)}</span>
+        <div>${esc(w.definition)} <span class="pl">(${esc(w.pl)})</span></div>
+        <div class="ex">${esc(w.example)}</div></li>`).join("")}
+    </ul></section>` : ""}
+    ${l.quiz.length ? `<section class="block"><h2>Sprawdź się</h2>
+      ${l.quiz.map((q, qi) => {
+        const a = answered[qi];
+        return `<div class="q"><p>${esc(q.question)}</p><div class="opts">
+          ${q.options.map((o, oi) => {
+            let cls = "opt";
+            if (a != null && oi === q.answer) cls += " right";
+            else if (a === oi) cls += " wrong";
+            return `<button class="${cls}" data-act="ans" data-q="${qi}" data-o="${oi}" ${a != null ? "disabled" : ""}>${esc(o)}</button>`;
+          }).join("")}
+        </div>${a != null ? `<p class="why">${esc(q.explanation)}</p>` : ""}</div>`;
+      }).join("")}
+      ${allDone ? `<p class="done">Lekcja zaliczona: ${score} z ${l.quiz.length} poprawnie. Słówka wrócą w powtórkach od jutra.</p>` : ""}
+    </section>` : ""}
+    <div class="next">
+      <a class="ghost" href="#">Spis lekcji</a>
+      ${older ? `<a class="ghost" href="#${older.date}">← Wcześniejsza</a>` : ""}
+      ${newer ? `<a class="ghost" href="#${newer.date}">Nowsza →</a>` : ""}
+    </div>
+  </article>`;
+}
+
+function renderReview() {
+  const h = `<h1 class="brand" style="font-size:1.6rem">Powtórki</h1>`;
+  if (!review.queue.length || review.pos >= review.queue.length) {
+    const due = dueList(), total = Object.keys(P.cards).length;
+    if (!total) return `${h}<p class="muted">Tu trafią słówka z lekcji, które otworzysz. Wracają po 1, 3, 7, 14, 30 i 60 dniach, jeśli je pamiętasz.</p><p><a class="ghost" href="#">Wybierz lekcję</a></p>`;
+    if (!due.length) return `${h}<p class="muted">${review.pos && review.queue.length ? "Wszystko powtórzone na dziś." : "Nic do powtórki na dziś."} W kolekcji ${total} ${plural(total, "słówko", "słówka", "słówek")}. Każde wraca po 1, 3, 7, 14, 30 i 60 dniach, jeśli je pamiętasz.</p>`;
+    return `${h}<p class="muted">Do powtórki dziś: ${due.length}.</p><button class="btn" data-act="startrev">Zacznij powtórkę</button>`;
+  }
+  const it = review.queue[review.pos], w = find(it.date).vocab[it.i];
+  return `<p class="muted">${review.pos + 1} z ${review.queue.length}</p>
+    <div class="card">
+      <div class="big">${esc(w.word)}</div>
+      ${review.shown ? `<div class="def">${esc(w.definition)}</div><div class="muted">${esc(w.pl)}</div><div class="muted" style="font-style:italic">${esc(w.example)}</div>`
+        : `<div class="muted">Przypomnij sobie znaczenie</div>`}
+    </div>
+    <div class="row">
+      ${canSpeak ? `<button class="ghost" data-act="say" data-t="${esc(w.word)}">Wymowa</button>` : ""}
+      ${review.shown
+        ? `<button class="ghost" data-act="grade" data-g="0">Nie pamiętam</button><button class="btn" data-act="grade" data-g="1">Pamiętam</button>`
+        : `<button class="btn" data-act="reveal">Pokaż znaczenie</button>`}
+    </div>`;
+}
+
+function render() {
+  renderHeader();
+  let html;
+  if (view === "review") html = renderReview();
+  else if (view === "lesson") { const l = find(viewing); html = l ? renderLesson(l) : `<p class="err">Nie ma takiej lekcji.</p><p><a class="ghost" href="#">Spis lekcji</a></p>`; }
+  else html = renderHome();
+  $("#app").innerHTML = html;
+}
+
+/* ---------- routing ---------- */
+let lastPath = null;
+function route() {
+  const h = decodeURIComponent(location.hash.replace(/^#\/?/, ""));
+  stopSpeaking(); closeSheet();
+  let path;
+  if (DATE_RE.test(h)) {
+    view = "lesson"; viewing = h; path = "/lekcja/" + h;
+    const l = find(h);
+    if (l) { const first = !P.read[h]; if (first) P.read[h] = Date.now(); if (addCards(l) || first) persist(); }
+  } else if (h === "powtorki") { view = "review"; review = { queue: [], pos: 0, shown: false }; path = "/powtorki"; }
+  else { view = "home"; path = "/"; }
+  render(); scrollTo(0, 0);
+  if (path !== lastPath && !loadErr) {
+    lastPath = path;
+    const l = view === "lesson" && find(viewing);
+    gc({ path, title: l ? l.title : (view === "review" ? "Powtórki" : "Codziennie coś nowego") });
+  }
+}
+window.addEventListener("hashchange", route);
+
+/* ---------- word sheet ---------- */
+function openSheet(w) {
+  $("#sheetIn").innerHTML = `<div class="top"><span class="w">${esc(w.word)}</span><button class="link" data-act="close">Zamknij</button></div>
+    <p class="muted" style="margin:2px 0 8px">${esc(w.pos)}</p>
+    <p style="margin:0 0 4px">${esc(w.definition)}</p><p class="muted" style="margin:0 0 8px">${esc(w.pl)}</p>
+    <p style="margin:0 0 12px;font-family:Literata,Georgia,serif;font-style:italic">${esc(w.example)}</p>
+    ${canSpeak ? `<button class="ghost" data-act="say" data-t="${esc(w.word)}">Wymowa</button>` : ""}`;
+  $("#sheet").classList.add("open");
+}
+function closeSheet() { $("#sheet").classList.remove("open"); }
+
+/* ---------- events ---------- */
+document.addEventListener("input", e => {
+  if (e.target.id === "search") { query = e.target.value; $("#toc").innerHTML = renderToc(); }
+});
+document.addEventListener("click", async e => {
+  const b = e.target.closest("[data-act]");
+  if (!b) { if (!e.target.closest("#sheet")) closeSheet(); return; }
+  const act = b.dataset.act;
+  if (act !== "word" && act !== "say") closeSheet();
+  const l = view === "lesson" && find(viewing);
+  if (act === "word") { if (l) openSheet(l.vocab[+b.dataset.i]); }
+  else if (act === "close") closeSheet();
+  else if (act === "say") sayWord(b.dataset.t);
+  else if (act === "share") {
+    try { await navigator.clipboard.writeText(location.href); toast("Link skopiowany."); } catch { toast(location.href); }
+  }
+  else if (act === "listen") {
+    if (speaking) { stopSpeaking(); return; }
+    if (!l) return;
+    speakChunks([l.title, l.hook, ...l.sections.flatMap(s => [s.heading, ...s.body.split(/\n\s*\n/)]), l.takeaway].filter(Boolean));
+    gcEvent("odsluch", l.title);
+  }
+  else if (act === "ans") {
+    if (!l) return;
+    const a = P.answers[l.date] = P.answers[l.date] || [];
+    if (a[+b.dataset.q] != null) return;
+    a[+b.dataset.q] = +b.dataset.o;
+    persist(); render();
+    if (quizDone(l)) gcEvent("quiz-ukonczony", l.title);
+  }
+  else if (act === "startrev") { review = { queue: dueList().sort(() => Math.random() - .5), pos: 0, shown: false }; render(); gcEvent("powtorka", "Powtórka słówek"); }
+  else if (act === "reveal") { review.shown = true; render(); }
+  else if (act === "grade") {
+    const it = review.queue[review.pos], k = it.date + "|" + it.i, c = P.cards[k] || { box: 0 };
+    if (b.dataset.g === "1") { c.box = Math.min((c.box || 0) + 1, INTERVALS.length - 1); c.due = addDays(today(), INTERVALS[c.box]); }
+    else { c.box = 0; c.due = addDays(today(), 1); }
+    P.cards[k] = c; persist();
+    review.pos++; review.shown = false; render();
+  }
+});
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeSheet(); });
+
+load();
+})();
+</script>
+<script data-goatcounter="https://lekcja-dnia.goatcounter.com/count" data-goatcounter-settings='{"no_onload": true}' async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+{
+ "exportedAt": "2026-11-08T12:00:00Z",
+ "sample": true,
+ "lessons": [
+  {
+   "date": "2026-11-06",
+   "kind": "book",
+   "title": "The Goal",
+   "author": "Eliyahu Goldratt",
+   "hook": "A plant manager has ninety days to save his factory, and the answer turns out to be hiding in a single slow machine. The lesson applies to almost any system that has to deliver work.",
+   "sections": [
+    {
+     "heading": "A novel about throughput",
+     "body": "Most management books lecture. Goldratt chose to tell a story instead: a factory manager called Alex Rogo is told that his plant will be closed unless it starts making money within three months. Everyone around him is busy, the machines are running flat out, and yet orders are late and inventory piles up in every corner.\n\nThe novel format is not a gimmick. It lets the reader watch a smart person cling to sensible-sounding beliefs and then slowly discard them, which is exactly how real organisations change their minds."
+    },
+    {
+     "heading": "The bottleneck sets the pace",
+     "body": "The central insight is deceptively simple. In any chain of dependent steps, the output of the whole system is governed by its slowest link, the constraint. An hour gained at a non-constraint is a mirage; an hour lost at the constraint is an hour lost for the entire plant.\n\nThis turns conventional efficiency thinking on its head. Keeping every machine and every person fully utilised feels responsible, but upstream of the bottleneck it only produces queues of half-finished work that tie up cash and hide problems."
+    },
+    {
+     "heading": "Five focusing steps",
+     "body": "Goldratt distils the method into a loop. Identify the constraint. Decide how to exploit it, so that it never sits idle or works on the wrong thing. Subordinate everything else to that decision. Only then elevate the constraint by adding capacity. Finally, go back to the start, because once one bottleneck is relieved another will emerge somewhere else.\n\nThe order matters. Teams love to jump straight to buying a new machine or hiring more people, when a surprising amount of capacity can usually be squeezed out of the existing constraint for free."
+    },
+    {
+     "heading": "Why it matters beyond factories",
+     "body": "Software teams, sales pipelines and charging depots all behave like production lines. If code review is the slowest step, writing more code faster simply lengthens the review queue. If a single grid connection limits a depot, clever scheduling around that connection beats adding chargers.\n\nThe practical habit is to ask, before optimising anything, whether it sits on the critical path. If it does not, the improvement may be real locally and still worthless for the system as a whole."
+    }
+   ],
+   "takeaway": "Find the one step that limits the whole system and make every other decision serve it; local efficiency elsewhere is often an illusion.",
+   "vocab": [
+    {
+     "word": "flat out",
+     "pos": "phrase",
+     "definition": "as fast or as hard as possible",
+     "pl": "na pełnych obrotach",
+     "example": "The support team has been working flat out since the release."
+    },
+    {
+     "word": "deceptively simple",
+     "pos": "phrase",
+     "definition": "appearing easy while actually being subtle or difficult",
+     "pl": "pozornie prosty",
+     "example": "The rule sounds deceptively simple, but applying it consistently is hard."
+    },
+    {
+     "word": "mirage",
+     "pos": "noun",
+     "definition": "something that appears real or possible but is not",
+     "pl": "miraż, złudzenie",
+     "example": "The promised savings turned out to be a mirage once maintenance costs were included."
+    },
+    {
+     "word": "on its head",
+     "pos": "phrase",
+     "definition": "(turn something on its head) reverse the usual way of thinking about it",
+     "pl": "wywraca do góry nogami",
+     "example": "Remote work turns conventional thinking about offices on its head."
+    },
+    {
+     "word": "distils",
+     "pos": "verb",
+     "definition": "extracts the essential meaning of something",
+     "pl": "destyluje, streszcza do sedna",
+     "example": "The report distils three years of research into ten pages."
+    },
+    {
+     "word": "squeezed out",
+     "pos": "verb",
+     "definition": "obtained with effort from a limited source",
+     "pl": "wyciśnięty",
+     "example": "Another five percent of range was squeezed out of the battery by better thermal management."
+    }
+   ],
+   "quiz": [
+    {
+     "question": "According to the book, what determines the output of a whole system?",
+     "options": [
+      "The average speed of all steps",
+      "Its slowest step, the constraint",
+      "The number of people employed",
+      "The most expensive machine"
+     ],
+     "answer": 1,
+     "explanation": "The throughput of a chain of dependent steps is limited by its constraint."
+    },
+    {
+     "question": "What happens when you keep non-bottleneck resources fully utilised?",
+     "options": [
+      "Throughput rises proportionally",
+      "Costs fall automatically",
+      "Work-in-progress piles up in front of the constraint",
+      "The bottleneck disappears"
+     ],
+     "answer": 2,
+     "explanation": "Extra output upstream only creates queues that tie up cash and hide problems."
+    },
+    {
+     "question": "Which step should usually come before adding capacity to the constraint?",
+     "options": [
+      "Exploiting the existing constraint",
+      "Hiring more staff everywhere",
+      "Measuring every machine's utilisation",
+      "Closing the plant"
+     ],
+     "answer": 0,
+     "explanation": "The five focusing steps exploit and subordinate before they elevate."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "curiosity",
+   "title": "Why Europe runs on 50 Hz and America on 60 Hz",
+   "author": "",
+   "hook": "The frequency humming in your walls was not chosen by physics. It was the outcome of a commercial race in the 1890s, and we are still living with the result.",
+   "sections": [
+    {
+     "heading": "A choice nobody planned",
+     "body": "Early electric systems were a patchwork. Individual companies picked whatever frequency suited their generators and lamps, and in the 1880s one could find networks running anywhere from 25 to 133 cycles per second. There was no grand standard, only competing equipment catalogues.\n\nLow frequencies made large rotating machines and long transmission lines easier to build, while higher frequencies stopped incandescent lamps from visibly flickering. Every engineer was juggling these trade-offs with incomplete knowledge."
+    },
+    {
+     "heading": "Two manufacturers, two answers",
+     "body": "In the United States, Westinghouse settled on 60 Hz around 1890, partly because it suited both lighting and the induction motors it was starting to sell. In Germany, AEG standardised on 50 Hz, a figure that fitted neatly into the metric preference for round numbers and the design of its generators.\n\nOnce a dominant supplier had committed, the rest of each market followed. Utilities bought compatible equipment, factories bought compatible motors, and the choice quickly became entrenched."
+    },
+    {
+     "heading": "Path dependence in action",
+     "body": "Economists call this path dependence: an early, somewhat arbitrary decision becomes locked in because switching later would be ruinously expensive. Japan is the most striking example. Tokyo bought German generators and Osaka bought American ones, so to this day the eastern half of the country runs at 50 Hz and the western half at 60 Hz, linked only by a handful of converter stations.\n\nThat split became painfully visible after the 2011 earthquake, when the east lost generating capacity and the west could send only a trickle of power across the frequency border."
+    },
+    {
+     "heading": "Does the difference matter today?",
+     "body": "For most consumer electronics, hardly at all, because switch-mode power supplies rectify the input anyway. For motors, transformers and grid equipment it still matters: a motor runs about twenty percent faster at 60 Hz, and transformer cores must be sized for the lower frequency.\n\nFor anyone designing charging infrastructure or exporting electrical equipment, the lesson is broader. Many 'technical' standards are historical accidents, and knowing their origin helps you judge which constraints are truly physical and which are merely inherited."
+    }
+   ],
+   "takeaway": "50 Hz and 60 Hz are the legacy of two manufacturers' commercial choices, locked in by path dependence rather than by any physical optimum.",
+   "vocab": [
+    {
+     "word": "patchwork",
+     "pos": "noun",
+     "definition": "a collection of different, poorly coordinated parts",
+     "pl": "mozaika, zlepek",
+     "example": "The company's IT landscape was a patchwork of tools bought by different departments."
+    },
+    {
+     "word": "juggling",
+     "pos": "verb",
+     "definition": "trying to handle several competing demands at once",
+     "pl": "żonglowanie, godzenie wielu rzeczy naraz",
+     "example": "She is juggling three projects and a product launch."
+    },
+    {
+     "word": "entrenched",
+     "pos": "adjective",
+     "definition": "firmly established and difficult to change",
+     "pl": "zakorzeniony, okopany",
+     "example": "Entrenched habits in the team made the new process hard to adopt."
+    },
+    {
+     "word": "ruinously expensive",
+     "pos": "phrase",
+     "definition": "so costly that it would cause serious financial damage",
+     "pl": "rujnująco drogi",
+     "example": "Rewriting the whole platform from scratch would be ruinously expensive."
+    },
+    {
+     "word": "a trickle",
+     "pos": "phrase",
+     "definition": "a very small, slow amount of something",
+     "pl": "strużka, znikoma ilość",
+     "example": "After the price rise, orders slowed to a trickle."
+    },
+    {
+     "word": "historical accidents",
+     "pos": "phrase",
+     "definition": "outcomes produced by chance circumstances in the past rather than by design",
+     "pl": "przypadki historyczne",
+     "example": "Many keyboard layouts are historical accidents rather than ergonomic choices."
+    }
+   ],
+   "quiz": [
+    {
+     "question": "Why did different frequencies exist in the 1880s?",
+     "options": [
+      "Physics required different values in each country",
+      "Companies chose frequencies to suit their own equipment",
+      "Governments set them by law",
+      "Lamps only worked at 50 Hz"
+     ],
+     "answer": 1,
+     "explanation": "Without a standard, each company picked whatever suited its generators and lamps."
+    },
+    {
+     "question": "What is path dependence?",
+     "options": [
+      "Electricity choosing the shortest path",
+      "An early arbitrary choice becoming locked in because change is too costly",
+      "A method for routing transmission lines",
+      "A rule for synchronising generators"
+     ],
+     "answer": 1,
+     "explanation": "Switching later becomes so expensive that the original choice persists."
+    },
+    {
+     "question": "Why does Japan have two grid frequencies?",
+     "options": [
+      "Tokyo and Osaka bought generators from different suppliers",
+      "The mountains block 60 Hz signals",
+      "It was a deliberate safety design",
+      "The east uses direct current"
+     ],
+     "answer": 0,
+     "explanation": "Tokyo bought German 50 Hz equipment, Osaka American 60 Hz equipment."
+    }
+   ]
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "book",
+   "title": "The Mom Test",
+   "author": "Rob Fitzpatrick",
+   "hook": "Everyone will tell you your idea is great, including your mother. This short book explains how to ask questions that even people who love you cannot lie about.",
+   "sections": [
+    {
+     "heading": "The problem with asking for opinions",
+     "body": "When you describe your idea and ask whether people would use it, you are inviting polite fiction. Friends, colleagues and potential customers want to be supportive, so they offer compliments and hypothetical promises that cost them nothing.\n\nFitzpatrick's point is that the fault lies with the question, not with the people. If a conversation can be passed by being nice, it will be, and you will walk away with a false sense of validation."
+    },
+    {
+     "heading": "Talk about their life, not your idea",
+     "body": "The remedy is to steer the conversation towards concrete past behaviour. Instead of asking whether someone would pay for a tool, ask how they dealt with the problem last time, what it cost them, and what they have already tried.\n\nSpecifics are hard to fake. A person who has never looked for a solution is unlikely to buy yours, however enthusiastic they sound; someone who has cobbled together spreadsheets and workarounds is showing you genuine pain."
+    },
+    {
+     "heading": "Spotting bad data",
+     "body": "The book catalogues the usual suspects: compliments, generic claims about the future ('I would definitely use that'), and long wish lists of features. None of them are evidence. Treat them as noise and gently dig for the reason behind each request.\n\nA useful signal of real interest is commitment. It might be time, such as agreeing to a follow-up meeting with their boss, reputation, such as introducing you to a colleague, or money, such as a pre-order. If nothing is put on the line, the meeting was probably just pleasant."
+    },
+    {
+     "heading": "Keeping conversations casual",
+     "body": "Fitzpatrick advises against formal interviews where possible. A relaxed chat at a conference or a quick call feels less like a sales pitch, and people are more candid when they do not feel they are being researched.\n\nFor a product owner this translates into a simple discipline: before writing a ticket, be able to point to a real customer story behind it, not merely a request someone voiced in a meeting."
+    }
+   ],
+   "takeaway": "Ask about specific past behaviour and look for commitment; compliments and promises about the future are not evidence.",
+   "vocab": [
+    {
+     "word": "polite fiction",
+     "pos": "phrase",
+     "definition": "something people say to be kind even though they know it is not quite true",
+     "pl": "uprzejma fikcja",
+     "example": "Saying the meeting was useful was a polite fiction everyone accepted."
+    },
+    {
+     "word": "steer",
+     "pos": "verb",
+     "definition": "to guide something in a particular direction",
+     "pl": "kierować, sterować",
+     "example": "She steered the discussion back to the budget."
+    },
+    {
+     "word": "cobbled together",
+     "pos": "verb",
+     "definition": "made roughly or quickly from whatever was available",
+     "pl": "sklecony naprędce",
+     "example": "The prototype was cobbled together over a weekend."
+    },
+    {
+     "word": "usual suspects",
+     "pos": "phrase",
+     "definition": "the people or things you would normally expect to be involved",
+     "pl": "zwykli podejrzani, typowe przypadki",
+     "example": "Slow tests and flaky builds were the usual suspects behind the delays."
+    },
+    {
+     "word": "on the line",
+     "pos": "phrase",
+     "definition": "at risk; offered as a real commitment",
+     "pl": "na szali, zaangażowany",
+     "example": "With a pilot contract, the customer finally put something on the line."
+    },
+    {
+     "word": "candid",
+     "pos": "adjective",
+     "definition": "open and honest, even when the truth is uncomfortable",
+     "pl": "szczery",
+     "example": "Thanks for the candid feedback on the onboarding flow."
+    }
+   ],
+   "quiz": [
+    {
+     "question": "Why do people give misleading feedback on ideas, according to the book?",
+     "options": [
+      "They want to steal the idea",
+      "They are being polite, and the question allows it",
+      "They don't understand technology",
+      "They are paid competitors"
+     ],
+     "answer": 1,
+     "explanation": "If a question can be passed by being nice, people will be nice."
+    },
+    {
+     "question": "Which question follows the book's advice best?",
+     "options": [
+      "Would you pay for this app?",
+      "Do you like my idea?",
+      "How did you handle this problem the last time it happened?",
+      "What features should the app have?"
+     ],
+     "answer": 2,
+     "explanation": "Asking about concrete past behaviour produces evidence that is hard to fake."
+    },
+    {
+     "question": "What counts as a strong signal of real interest?",
+     "options": [
+      "An enthusiastic compliment",
+      "A long feature wish list",
+      "A commitment of time, reputation or money",
+      "A promise to use it someday"
+     ],
+     "answer": 2,
+     "explanation": "Commitment means the person is putting something on the line."
+    }
+   ]
+  }
+ ]
+}
