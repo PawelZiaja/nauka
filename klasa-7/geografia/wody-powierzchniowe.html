@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Wody powierzchniowe i powodzie</title>
 <script>/* licznik odwiedzin GoatCounter (panel: ziaja.goatcounter.com) – tylko na stronie, nie w pliku ani podglądzie */
-if(location.hostname==='pawelziaja.github.io'){var gc=document.createElement('script');gc.async=true;gc.src='https://gc.zgo.at/count.js';gc.dataset.goatcounter='https://ziaja.goatcounter.com/count';gc.onload=function(){window.gcGotowy=true;if(window.gcEvent)gcEvent('aplikacja otwarta');};document.head.appendChild(gc);}</script>
+if(['pawelziaja.github.io','nauka-ziaja.netlify.app'].indexOf(location.hostname)>=0){var gc=document.createElement('script');gc.async=true;gc.src='https://gc.zgo.at/count.js';gc.dataset.goatcounter='https://ziaja.goatcounter.com/count';gc.onload=function(){window.gcGotowy=true;if(window.gcEvent)gcEvent('aplikacja otwarta');};document.head.appendChild(gc);}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -87,8 +87,13 @@ button:focus-visible,select:focus-visible,input:focus-visible,.card:focus-visibl
 .stage{perspective:1200px;flex:1 1 auto;min-height:0;display:flex;flex-direction:column;justify-content:center}
 .card{position:relative;flex:1 1 auto;min-height:200px;max-height:520px;touch-action:pan-y;user-select:none;-webkit-user-select:none;transition:transform .25s}
 .card .in{position:absolute;inset:0;transition:transform .45s;transform-style:preserve-3d}
+/* napis przy przesuwaniu fiszki – przezroczystość rośnie z odległością (--tak / --nie ustawia skrypt) */
+.stamp{position:absolute;top:16px;z-index:4;padding:4px 12px;border:3px solid;border-radius:10px;background:var(--surface);font-weight:800;font-size:1.05rem;letter-spacing:.03em;pointer-events:none;opacity:0}
+.stamp.tak{left:14px;color:var(--good);transform:rotate(-8deg);opacity:var(--tak,0)}
+.stamp.nie{right:14px;color:var(--bad);transform:rotate(8deg);opacity:var(--nie,0)}
+.card.drag{cursor:grabbing}
 .card.flip .in{transform:rotateY(180deg)}
-.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;background:var(--surface);border:2px solid var(--line);box-shadow:0 4px 0 var(--line);padding:18px 18px;display:flex;flex-direction:column;justify-content:center;gap:10px;overflow:auto}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:20px;background:var(--surface);border:2px solid var(--line);box-shadow:0 4px 0 var(--line);padding:18px 18px;display:flex;flex-direction:column;justify-content:center;gap:10px;overflow:auto;touch-action:pan-y}
 .face.back{transform:rotateY(180deg)}
 .tag{align-self:flex-start;font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:99px;border:2px solid currentColor}
 .tag.t0{color:var(--c0)} .tag.t1{color:var(--c1)} .tag.t2{color:var(--c2)} .tag.t3{color:var(--c3)}
@@ -239,6 +244,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
     <button class="mode" id="goReview"><span class="ic">🔁</span><span><b>Powtórka błędów</b><span class="d" id="revDesc"></span></span></button>
   </div>
   <div class="book" id="book" hidden><img alt="Okładka podręcznika"><div><span>Podręcznik</span><b></b><span></span></div></div>
+  <div id="glosBox" hidden style="margin-top:14px"><label for="glosSel" class="muted" style="display:block;font-size:.9rem;margin:0 0 6px">🔊 Głos czytający</label><select id="glosSel"></select><p class="muted" id="glosInfo" style="font-size:.8rem;margin:6px 0 0"></p></div>
   <div class="spacer"></div>
   <button class="btn ghost" id="resetBtn" style="min-height:48px;font-size:.95rem">Wyczyść cały postęp</button>
   <p class="muted" id="devCode" hidden style="text-align:center;font-size:.8rem;margin:10px 0 0"></p>
@@ -247,7 +253,7 @@ figure{margin:0;display:flex;flex-direction:column;gap:4px}
   <div class="topbar"><button class="back" data-home>← Menu</button><span class="muted" id="cProg"></span></div>
   <div class="bar"><i id="cBar"></i></div>
   <div class="stage">
-    <div class="card" id="card" tabindex="0" role="button" aria-label="Fiszka – dotknij, aby odwrócić"><button class="dynia" id="dynia" hidden aria-label="Dynia – zbierz cukierek">🎃</button>
+    <div class="card" id="card" tabindex="0" role="button" aria-label="Fiszka – dotknij, aby odwrócić"><button class="dynia" id="dynia" hidden aria-label="Dynia – zbierz cukierek">🎃</button><span class="stamp tak" id="stTak" aria-hidden="true">UMIEM ✓</span><span class="stamp nie" aria-hidden="true">JESZCZE NIE</span>
       <div class="in">
         <div class="face front"><span class="tag" id="cTagF"></span><div class="fimg" id="cImgF"></div><div class="front-q" id="cFront"></div><button class="say" id="sayF" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaF" hidden></p><p class="ctx" id="cCtxF" hidden></p><p class="muted">Dotknij, żeby zobaczyć odpowiedź</p><span class="nr" id="cNrF"></span></div>
         <div class="face back"><span class="tag" id="cTagB"></span><div class="fimg" id="cImgB"></div><div class="answer" id="cBack"></div><button class="say" id="sayB" hidden aria-label="Odsłuchaj">🔊</button><p class="ipa" id="cIpaB" hidden></p><p class="ctx" id="cCtxB" hidden></p><p class="explain" id="cExp"></p><span class="nr" id="cNrB"></span></div>
@@ -368,7 +374,18 @@ function figHTML(k,alt,cap){if(!k)return '';return '<figure><img class="qimg" sr
 document.addEventListener('click',e=>{const im=e.target.closest&&e.target.closest('.qimg');if(!im)return;e.stopPropagation();const z=$('#zoom');z.querySelector('img').src=im.src;z.hidden=false;});
 $('#zoom').onclick=e=>{if(e.target.tagName!=='IMG')$('#zoom').hidden=true;};
 const canSay=typeof speechSynthesis!=='undefined'&&!!CFG.mowa;
-function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(t).replace(/\s*\([^)]*\)/g,'').replace(/…/g,''));u.lang=CFG.mowa;u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
+const JEZ=String(CFG.mowa||'').slice(0,2).toLowerCase(),GLOS_KEY='nauka-glos-'+JEZ;
+function glosy(){try{return speechSynthesis.getVoices().filter(v=>String(v.lang).toLowerCase().replace('_','-').slice(0,2)===JEZ);}catch(e){return[];}}
+function glos(){let n='';try{n=localStorage.getItem(GLOS_KEY)||'';}catch(e){}return n?glosy().find(v=>v.voiceURI===n||v.name===n)||null:null;}
+function say(t){try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(String(t).replace(/\s*\([^)]*\)/g,'').replace(/…/g,''));const v=glos();if(v){u.voice=v;u.lang=v.lang;}else u.lang=CFG.mowa;u.rate=.9;speechSynthesis.speak(u);}catch(e){}}
+function renderGlos(){const box=$('#glosBox');if(!box)return;if(!canSay){box.hidden=true;return;}
+  const L=glosy().sort((a,b)=>(b.lang.replace('_','-')===CFG.mowa)-(a.lang.replace('_','-')===CFG.mowa)||a.name.localeCompare(b.name));
+  if(!L.length){box.hidden=true;return;}const sel=$('#glosSel'),cur=glos();sel.innerHTML='';
+  sel.appendChild(new Option('Domyślny głos telefonu',''));L.forEach(v=>sel.appendChild(new Option(v.name+' ('+v.lang+')'+(v.localService?'':' – internet'),v.voiceURI)));
+  sel.value=cur?cur.voiceURI:'';box.hidden=false;
+  $('#glosInfo').textContent=L.length===1?'Przeglądarka pokazuje tylko 1 głos – inny wybierzesz w ustawieniach telefonu (Syntezator mowy).':'Głosów do wyboru: '+L.length+'. Wybór działa we wszystkich aplikacjach na tej stronie.';}
+if(canSay){$('#glosSel').onchange=e=>{try{localStorage.setItem(GLOS_KEY,e.target.value);}catch(x){}say({en:'Hello! This is my voice.',de:'Hallo! Das ist meine Stimme.'}[JEZ]||'Hello!');};
+  try{speechSynthesis.addEventListener('voiceschanged',renderGlos);}catch(e){}renderGlos();setTimeout(renderGlos,800);}
 function show(id){document.querySelectorAll('main>section').forEach(s=>s.hidden=s.id!==id);$('main').classList.toggle('fit',id==='cards');window.scrollTo(0,0);if(id==='cards')fitCard();}
 document.querySelectorAll('[data-home]').forEach(b=>b.onclick=()=>{renderHome();show('home');});
 function applyTheme(){const r=document.documentElement;if(S.theme==='auto')r.removeAttribute('data-theme');else r.setAttribute('data-theme',S.theme);}
@@ -532,11 +549,25 @@ function cardAnswer(know){if(!fq.length)return;const card=$('#card');
   if(know&&HW){umiemN++;if(umiemN%10===0){duch();cukierek(5);}else if(umiemN%5===0)nietoperz();}
   card.style.transform='';card.classList.add(know?'go-r':'go-l');setTimeout(renderCard,220);}
 $('#cYes').onclick=()=>cardAnswer(true);$('#cNo').onclick=()=>cardAnswer(false);
-(function(){const card=$('#card');let x0=null,y0=0,dx=0;
-  card.addEventListener('pointerdown',e=>{if(e.target.closest('.say,.qimg,.dynia')){x0=null;return;}x0=e.clientX;y0=e.clientY;dx=0;card.style.transition='none';});
-  card.addEventListener('pointermove',e=>{if(x0===null)return;dx=e.clientX-x0;if(Math.abs(dx)>Math.abs(e.clientY-y0)&&Math.abs(dx)>6)card.style.transform='translateX('+dx+'px) rotate('+dx/25+'deg)';});
-  card.addEventListener('pointerup',()=>{if(x0===null)return;card.style.transition='';x0=null;if(dx>80)cardAnswer(true);else if(dx<-80)cardAnswer(false);else{card.style.transform='';if(Math.abs(dx)<8)flipCard();}});
-  card.addEventListener('pointercancel',()=>{x0=null;card.style.transition='';card.style.transform='';});
+(function(){const card=$('#card');let x0=null,y0=0,dx=0,t0=0,os=null,pid=null;
+  /* Przesuwanie: kierunek ustala się po 8 px (pion = przewijanie, nie ruszamy karty); dotyk „przyklejony” do karty
+     (setPointerCapture), więc gest nie gubi się poza kartą; odpowiedź: przesunięcie o 30% szerokości albo szybkie machnięcie. */
+  const prog=()=>Math.min(1,Math.abs(dx)/((card.clientWidth||300)*.3));
+  const puść=()=>{card.classList.remove('drag');card.style.removeProperty('--tak');card.style.removeProperty('--nie');};
+  const wróć=()=>{card.style.transition='';card.style.transform='';puść();};
+  card.addEventListener('pointerdown',e=>{if(e.button>0||e.target.closest('.say,.qimg,.dynia')){x0=null;return;}
+    x0=e.clientX;y0=e.clientY;dx=0;t0=performance.now();os=null;pid=e.pointerId;card.style.transition='none';});
+  card.addEventListener('pointermove',e=>{if(x0===null||e.pointerId!==pid)return;const mx=e.clientX-x0,my=e.clientY-y0;
+    if(os===null){if(Math.hypot(mx,my)<8)return;os=Math.abs(mx)>Math.abs(my)*1.2?'x':'y';
+      if(os==='x'){try{card.setPointerCapture(pid);}catch(_){}card.classList.add('drag');
+        $('#stTak').textContent=card.classList.contains('flip')?'UMIEM ✓':'👀 NAJPIERW ODWRÓĆ';}}
+    if(os!=='x')return;dx=mx;card.style.transform='translateX('+dx+'px) rotate('+dx/22+'deg)';
+    card.style.setProperty('--tak',dx>0?prog():0);card.style.setProperty('--nie',dx<0?prog():0);});
+  card.addEventListener('pointerup',e=>{if(x0===null||e.pointerId!==pid)return;x0=null;
+    if(os===null){wróć();flipCard();return;}if(os!=='x'){wróć();return;}
+    const szybko=Math.abs(dx)>40&&Math.abs(dx)/Math.max(performance.now()-t0,1)>.5;
+    if(prog()>=1||szybko){card.style.transition='';puść();try{navigator.vibrate&&navigator.vibrate(12);}catch(_){}cardAnswer(dx>0);}else wróć();});
+  card.addEventListener('pointercancel',()=>{x0=null;wróć();});
   card.addEventListener('keydown',e=>{if(e.key===' '||e.key==='Enter'){e.preventDefault();flipCard();}else if(e.key==='ArrowRight')cardAnswer(true);else if(e.key==='ArrowLeft')cardAnswer(false);});
 })();
 $('#cdTest').onclick=()=>startQuiz('test');
@@ -548,7 +579,7 @@ function draw(n,dz){const by={},kat=dz&&DZIALY[dz];Q.forEach(q=>{if(kat&&!kat.in
   const cats=shuffle(Object.keys(by)).map(c=>shuffle(by[c]));const out=[];let r=0;n=Math.min(n,Object.values(by).reduce((a,b)=>a+b.length,0));
   while(out.length<n){const c=cats[r%cats.length];if(c.length)out.push(c.pop());r++;}return shuffle(out);}
 /* Statystyki (GoatCounter, tylko na stronie): anonimowy kod urządzenia – losowy, wspólny dla wszystkich aplikacji w tej przeglądarce */
-const NA_STRONIE=location.hostname==='pawelziaja.github.io';
+const NA_STRONIE=['pawelziaja.github.io','nauka-ziaja.netlify.app'].indexOf(location.hostname)>=0;
 function devId(){let d='';try{d=localStorage.getItem('nauka-urzadzenie')||'';if(!d){d=Math.random().toString(36).slice(2,6);localStorage.setItem('nauka-urzadzenie',d);}}catch(e){}return d||'brak';}
 /* GoatCounter liczy każdą ścieżkę raz na urządzenie, więc zdarzenia z testów mają numer podejścia (test #3), a błędy – identyfikator pytania.
    dod – dopisek na końcu ścieżki, tyt – własny tytuł (np. pytanie i odpowiedź dziecka). window.__gcTest – podgląd zdarzeń w testach. */

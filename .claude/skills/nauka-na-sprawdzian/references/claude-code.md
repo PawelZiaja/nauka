@@ -21,9 +21,10 @@ Rodzic podaje zwykle jedno zdanie (tytuł i/lub ścieżkę do folderu ze zdjęci
 5. Test: `NODE_PATH=~/.nauka-narzedzia/node_modules node <skill>/scripts/test_aplikacji.js klasa-X/przedmiot/temat.html` (PowerShell: `$env:NODE_PATH="$HOME\.nauka-narzedzia\node_modules"`, ścieżki bezwzględne). Potem przejrzyj losowe 20–30 pytań.
 6. Spis: `python <skill>/scripts/spis.py . "Nauka na sprawdziany"` (pomija `robocze/`, `node_modules/` i ukryte foldery). Sprawdź w `index.html`, że nie ma pozycji „Klasa ?”.
 7. Zachowaj plik treści w repozytorium obok aplikacji jako `temat.json` – sprawdź, że nie zawiera ścieżek do prywatnych plików (`grep -c "Downloads\|pawel"` → 0).
-8. `git add` (tylko aplikacja, jej JSON i `index.html`) → `git commit -m "Klasa X, przedmiot: temat"` → `git push` – **bez pytania** (tak ustalił rodzic w `CLAUDE.md`).
-9. Poczekaj na build GitHub Pages (`gh api repos/<login>/nauka/pages/builds/latest --jq .status` → `built`) i sprawdź, że adres odpowiada (`curl -s -o /dev/null -w "%{http_code}"` → 200).
-10. Raport według `SKILL.md`, krok 7, z adresem `https://<login małymi literami>.github.io/nauka/klasa-X/przedmiot/temat.html`.
+8. **Jedno wdrożenie na zadanie** (GitHub raz zablokował konto bez podania przyczyny – podejrzenie: bardzo częste automatyczne publikacje): wszystkie commity zadania zbieraj lokalnie lub na gałęzi roboczej i wypychaj na `main` **raz, na końcu**, po komplecie testów. Nie wypychaj po każdej drobnej poprawce. Strona nie może być indeksowana: każda strona HTML ma `<meta name="robots" content="noindex, nofollow">` (szablon i `spis.py` dodają to same – nie usuwaj).
+9. `git add` (tylko aplikacja, jej JSON i `index.html`) → `git commit -m "Klasa X, przedmiot: temat"` → `git push` – **bez pytania** (tak ustalił rodzic w `CLAUDE.md`).
+10. Poczekaj na build GitHub Pages (`gh api repos/<login>/nauka/pages/builds/latest --jq .status` → `built`) i sprawdź, że adres odpowiada (`curl -s -o /dev/null -w "%{http_code}"` → 200).
+11. Raport według `SKILL.md`, krok 7, z adresem `https://<login małymi literami>.github.io/nauka/klasa-X/przedmiot/temat.html`.
 
 ## Materiał spoza klas
 Słówka „na zapas”, kursy itp. (nie na sprawdzian konkretnej klasy) – w folderze głównym `dodatkowe/<przedmiot>/temat.html`, `config.klasa: ""`. `spis.py` pokazuje je w osobnej sekcji „Dodatkowe” pod klasami; podręcznik/zestaw w `podreczniki.json` pod kluczem `dodatkowe/<przedmiot>` (opcjonalnie `etykieta`, np. „Zestaw” zamiast „Podręcznik”; `wydawnictwo` może być puste). Okładkę cudzego produktu zastąp własną grafiką.
