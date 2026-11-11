@@ -2574,13 +2574,13 @@
   {
    "t": "pick",
    "q": "Zaznacz składniki substancji międzykomórkowej tkanki kostnej.",
-   "s": "Substancja międzykomórkowa zawiera sole wapnia, sole fosforu i białka, ale nie zawiera mazi ani szpiku.",
+   "s": "Substancja międzykomórkowa zawiera wapń, fosfor i białka, ale nie zawiera mazi ani szpiku.",
    "a": [
     3,
-    5,
-    8
+    4,
+    6
    ],
-   "ex": "Sole (mineralne) i białka (organiczne).",
+   "ex": "W kości są sole mineralne – głównie sole wapnia i fosforu – oraz białka. Maź jest w stawie, a szpik w jamie szpikowej.",
    "c": "chemia"
   },
   {
