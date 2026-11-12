@@ -1,7 +1,7 @@
 # Nowa lekcja w czystym czacie Claude
 
 Jak używać: otwórz nowy czat na claude.ai i wklej cały tekst spod kreski.
-Lista „Already covered” to stan strony lekcja-dnia.netlify.app na 11.11.2026. Po każdej nowej lekcji dopisz jej tytuł do listy (albo poproś Claude Code o odświeżony plik).
+Lista „Already covered” to stan strony lekcja-dnia.netlify.app na 12.11.2026. Po każdej nowej lekcji dopisz jej tytuł do listy (albo poproś Claude Code o odświeżony plik).
 Wynik (JSON) dołącz w Claude Code razem z tekstem z `aktualizacja-lekcji-prompt.md`; strona go dołączy do reszty.
 
 ---
@@ -20,6 +20,10 @@ Already covered (do not repeat the book, the topic, or a close variant of it):
 - 2026-11-06, book: The Goal (Eliyahu Goldratt)
 - 2026-11-07, curiosity: Why Europe runs on 50 Hz and America on 60 Hz (history of grid frequency standards, path dependence)
 - 2026-11-08, curiosity: When Electric Cars Ruled the Road (early electric cars, the electric starter, Model T, network effects)
+- 2026-11-09, book: Never Split the Difference (Chris Voss)
+- 2026-11-10, curiosity: The Steel Box That Shrank the World (shipping containers, Malcom McLean, standardisation)
+- 2026-11-11, book: Good Strategy Bad Strategy (Richard Rumelt)
+- 2026-11-12, curiosity: Galloping Gertie: Why the Tacoma Narrows Bridge Really Fell (aeroelastic flutter vs resonance, feedback loops)
 
 Requirements:
 - 650 to 850 words across 4 or 5 sections, natural C1 English: idiomatic, precise, varied, never padded.

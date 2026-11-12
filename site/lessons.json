@@ -1,6 +1,333 @@
 {
-  "exportedAt": "2026-11-08",
+  "exportedAt": "2026-11-12",
   "lessons": [
+    {
+      "date": "2026-11-12",
+      "kind": "curiosity",
+      "title": "Galloping Gertie: Why the Tacoma Narrows Bridge Really Fell",
+      "author": "",
+      "hook": "Generations of physics students have been told that a bridge in Washington State collapsed because the wind hit its resonant frequency. The real explanation is stranger, and far more useful to anyone who designs systems.",
+      "sections": [
+        {
+          "heading": "An elegant, flexible bridge",
+          "body": "When the Tacoma Narrows Bridge opened in July 1940, it was the third-longest suspension bridge in the world and a showcase of the era's taste for slender, graceful design. Its designer, Leon Moisseiff, was among the most respected bridge engineers of his day. Instead of the deep steel trusses that normally stiffened a suspension deck, he used shallow plate girders only about 2.4 metres deep. The result was strikingly thin, cheaper to build and, as it turned out, dangerously flexible.\n\nEven during construction, workers noticed that the deck rose and fell in moderate winds. Locals nicknamed it \"Galloping Gertie\", and some drove across just for the rollercoaster sensation. Engineers added cables and dampers to tame the motion, with limited success."
+        },
+        {
+          "heading": "Four months later",
+          "body": "On 7 November 1940, a steady wind of around 65 km/h blew through the Narrows. That morning the motion changed character. Instead of simply rising and falling, the deck began to twist, one edge lifting while the other dropped, so that the roadway tilted dramatically from side to side. The twisting grew for roughly an hour until a long section of the deck tore loose and fell into the water below.\n\nRemarkably, the only fatality was a dog left in a car abandoned on the bridge. The whole sequence was filmed, and the footage remains one of the most famous engineering clips ever recorded."
+        },
+        {
+          "heading": "Not resonance, but flutter",
+          "body": "The popular explanation is resonance: the wind supposedly pushed the bridge rhythmically at its natural frequency, like a parent pushing a child on a swing. The trouble is that the wind that day was steady, not pulsing in a regular rhythm, so there was no periodic push to match.\n\nWhat actually happened is called aeroelastic flutter, and the key idea is feedback. When the thin deck twisted slightly, it changed the way air flowed around it, and that altered airflow pushed the deck further into the twist. The structure's own motion was generating the forces that drove it. Once the wind speed crossed a critical threshold, the energy pumped in on each cycle exceeded what the structure could dissipate, and the oscillation grew until something gave way. Engineers call this a self-excited oscillation, a subtler and more insidious phenomenon than forced resonance.\n\nA useful way to picture it is a flag flapping in a steady breeze. Nobody is shaking the flag rhythmically, yet it keeps rippling, because each movement of the fabric reshapes the airflow, which then pushes the fabric again. The Tacoma deck behaved like an enormous steel flag, except that its flapping put loads on the hangers and girders that they had never been designed to withstand."
+        },
+        {
+          "heading": "What changed afterwards",
+          "body": "The collapse ended the fashion for ever-slimmer decks. The official investigation concluded that the bridge had been designed competently for static loads, but its aerodynamic behaviour had never been seriously analysed, partly because no comparable failure had been studied before. From then on, wind-tunnel testing of scale models became standard practice for major bridges, and designers began paying close attention to the shape of a deck's cross-section, not just its strength. The replacement bridge, opened in 1950, used deep, open trusses that let the wind pass through and resisted twisting far better.\n\nToday the second-generation bridge still stands, and a parallel span was added in 2007 to carry the growing traffic."
+        },
+        {
+          "heading": "Why it matters beyond bridges",
+          "body": "The deeper lesson is about feedback loops. A system that responds to its environment can, under the wrong conditions, start feeding its own instability. The same pattern appears when a microphone picks up its own loudspeaker and the sound system howls, or when a poorly tuned controller hunts back and forth around its set point instead of settling.\n\nCharging software faces a version of this too. If a load-balancing algorithm reacts too aggressively to measurements that its own decisions produced, power allocations can swing back and forth rather than converge. The remedy is the same in principle as at Tacoma: understand the loop, add damping, and test under realistic conditions instead of trusting a design that only looks good on paper."
+        }
+      ],
+      "takeaway": "The Tacoma Narrows Bridge was not shaken apart by rhythmic gusts; its own motion turned a steady wind into a growing force. Whenever a system reacts to its own effects, look for the feedback loop.",
+      "vocab": [
+        {
+          "word": "strikingly",
+          "pos": "adverb",
+          "definition": "in a way that is very noticeable or impressive",
+          "pl": "uderzająco, wyjątkowo",
+          "example": "The new dashboard is strikingly simple compared with the old one."
+        },
+        {
+          "word": "tame",
+          "pos": "verb",
+          "definition": "to bring something wild or unruly under control",
+          "pl": "okiełznać, poskromić",
+          "example": "We added rate limiting to tame the bursts of status messages from older chargers."
+        },
+        {
+          "word": "dissipate",
+          "pos": "verb",
+          "definition": "to lose or spread out energy, especially as heat, so that it disappears",
+          "pl": "rozpraszać (energię)",
+          "example": "The cabinet needs extra ventilation to dissipate heat from the power modules."
+        },
+        {
+          "word": "gave way",
+          "pos": "phrase",
+          "definition": "collapsed or broke under pressure",
+          "pl": "puściło, załamało się",
+          "example": "The old cable tray finally gave way under the weight of the new feeders."
+        },
+        {
+          "word": "insidious",
+          "pos": "adjective",
+          "definition": "developing gradually and unnoticed, but with harmful effects",
+          "pl": "podstępny, zdradliwy",
+          "example": "Configuration drift is insidious: nothing breaks until everything does."
+        },
+        {
+          "word": "hunts",
+          "pos": "verb",
+          "definition": "(of a control system) oscillates around a target value instead of settling",
+          "pl": "oscyluje, „pływa” wokół wartości zadanej",
+          "example": "If the gain is set too high, the regulator hunts around the target current."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Why is simple resonance a poor explanation for the collapse?",
+          "options": [
+            "The wind was steady, so there was no rhythmic push matching the bridge's frequency",
+            "The bridge was too stiff to resonate",
+            "The wind was too weak to move the deck",
+            "Resonance only affects metal cables, not decks"
+          ],
+          "answer": 0,
+          "explanation": "Resonance needs a periodic force, but the wind that day was steady."
+        },
+        {
+          "question": "What drove the aeroelastic flutter?",
+          "options": [
+            "Heavy traffic crossing the bridge",
+            "The deck's twisting changed the airflow, which in turn increased the twisting",
+            "Corrosion weakening the main cables",
+            "Earth tremors beneath the towers"
+          ],
+          "answer": 1,
+          "explanation": "Flutter is a feedback loop in which the structure's own motion generates the forces that amplify it."
+        },
+        {
+          "question": "Which change in bridge design followed the collapse?",
+          "options": [
+            "Suspension bridges were banned in the United States",
+            "Decks became even thinner to reduce wind load",
+            "Wind-tunnel testing and attention to deck shape became standard",
+            "Bridges were built only in sheltered valleys"
+          ],
+          "answer": 2,
+          "explanation": "Engineers began testing models in wind tunnels and designing decks for aerodynamic stability."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-10",
+      "kind": "curiosity",
+      "title": "The Steel Box That Shrank the World",
+      "author": "",
+      "hook": "The most important invention in modern trade is not the internet or the jet engine but a plain steel box, and its real breakthrough was not the box itself but the system built around it.",
+      "sections": [
+        {
+          "heading": "Ports before the box",
+          "body": "Until the late 1950s, loading a cargo ship was a slow, labour-intensive craft. Goods arrived at the docks in sacks, barrels, crates and bales of every shape, and gangs of dockworkers carried, hoisted and stowed them piece by piece. A ship could spend almost as long in port being loaded and unloaded as it spent at sea.\n\nTheft was rampant, breakage was common, and handling often made up a large share of the total cost of shipping. For many goods, moving them across an ocean was relatively cheap; moving them across the quay was not."
+        },
+        {
+          "heading": "A trucker's idea",
+          "body": "The change came from outside the shipping industry. Malcom McLean was an American trucking entrepreneur who grew frustrated watching his lorries wait for hours at ports. His insight was that the trailer body could be lifted off its wheels and put straight onto a ship, so that the cargo inside would never have to be touched between the factory and the customer. In 1956 he converted a tanker to carry boxes on deck and sent the Ideal X from Newark to Houston with 58 containers on board.\n\nThe economics were startling. By most estimates, loading loose cargo at the time cost several dollars per ton, while loading containers cost a small fraction of that, a saving of well over ninety per cent. Ships could turn around in hours instead of days, and goods could travel sealed from origin to destination.\n\nMcLean understood that he was not really in the shipping business at all, but in the business of moving freight from door to door. That shift in perspective mattered more than any piece of hardware. He went on to build Sea-Land, one of the first lines designed entirely around containers, and to lobby ports and regulators to accept a model that most of the industry still dismissed as eccentric."
+        },
+        {
+          "heading": "Why it took twenty years",
+          "body": "Yet the container did not conquer the world overnight. The box was the easy part; the hard part was everything around it. Ports needed giant cranes and vast storage yards. Railways and trucking firms needed matching equipment. Shipping lines had developed rival box sizes and corner fittings, so one company's containers would not fit another's cranes. Dockworkers' unions, understandably, resisted a technology that threatened most of their jobs.\n\nThings accelerated once international standards for container dimensions and fittings were agreed in the late 1960s, which is why the industry still measures capacity in twenty-foot equivalent units. When any box could go on any ship, train or truck, the benefits snowballed. The huge American supply effort during the Vietnam War also gave container shipping a large, reliable customer at a crucial moment."
+        },
+        {
+          "heading": "Winners, losers and a new map",
+          "body": "Containerisation redrew the geography of trade. Historic waterfront ports in cramped city centres, such as Manhattan's piers and London's old docks, went into decline because they had no room for cranes and container yards, while new terminals sprang up on open land nearby, such as Port Newark–Elizabeth and Felixstowe. Dock employment collapsed in many cities, hollowing out working-class neighbourhoods that had depended on it for generations.\n\nAt the same time, cheap and predictable transport made it practical to spread manufacturing across continents. A phone or a car seat can contain parts from a dozen countries precisely because shipping a box of components halfway around the world costs very little compared with the value inside it. Global supply chains, and the rise of export-driven Asian economies, would have been far harder without it."
+        },
+        {
+          "heading": "The lesson for innovators",
+          "body": "The container story is a classic case of an innovation whose value lay almost entirely in standardisation and the surrounding system rather than in clever engineering. A steel box is trivial to build; persuading ports, carriers, unions and governments to reorganise around it took two decades.\n\nEngineers in EV charging will recognise the pattern. A connector or a protocol is only as useful as its adoption across vendors, which is why open standards such as OCPP matter more than any single brilliant charger. The unglamorous work of agreeing interfaces is often where the real leverage lies."
+        }
+      ],
+      "takeaway": "The shipping container changed the world not because the box was clever, but because everyone agreed to build around the same box. Standards and systems often matter more than inventions.",
+      "vocab": [
+        {
+          "word": "rampant",
+          "pos": "adjective",
+          "definition": "(of something bad) spreading or happening widely and uncontrollably",
+          "pl": "szerzący się, powszechny, niekontrolowany",
+          "example": "Before the new access system, misuse of shared charging cards was rampant."
+        },
+        {
+          "word": "startling",
+          "pos": "adjective",
+          "definition": "very surprising, sometimes in a slightly shocking way",
+          "pl": "zdumiewający, zaskakujący",
+          "example": "The pilot depot showed a startling drop in peak demand charges."
+        },
+        {
+          "word": "snowballed",
+          "pos": "verb",
+          "definition": "grew rapidly in size or importance, each gain accelerating the next",
+          "pl": "narastało lawinowo",
+          "example": "Once two big operators adopted the platform, interest from smaller ones snowballed."
+        },
+        {
+          "word": "sprang up",
+          "pos": "phrase",
+          "definition": "appeared or developed suddenly and in large numbers",
+          "pl": "wyrosły (nagle), powstały jak grzyby po deszczu",
+          "example": "Charging hubs sprang up along the motorway within just a few years."
+        },
+        {
+          "word": "hollowing out",
+          "pos": "phrase",
+          "definition": "removing the important or valuable part of something, leaving it weakened",
+          "pl": "wydrążanie, osłabianie od środka",
+          "example": "Outsourcing every core function risks hollowing out the company's expertise."
+        },
+        {
+          "word": "unglamorous",
+          "pos": "adjective",
+          "definition": "dull, unexciting or not attracting admiration, though often important",
+          "pl": "mało efektowny, niewdzięczny",
+          "example": "Writing integration tests is unglamorous, but it saves countless night-time incidents."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What was Malcom McLean's key insight?",
+          "options": [
+            "Building much bigger cargo ships",
+            "Paying dockworkers by the ton instead of by the hour",
+            "Moving cargo in one sealed box so it never had to be handled piece by piece",
+            "Shipping goods by rail instead of by sea"
+          ],
+          "answer": 2,
+          "explanation": "The saving came from never touching individual items between origin and destination."
+        },
+        {
+          "question": "Why did it take around twenty years for containers to dominate trade?",
+          "options": [
+            "Steel boxes were technically very hard to manufacture",
+            "It required standards, new port infrastructure and overcoming union resistance",
+            "Governments banned containers until the 1970s",
+            "Containers were too expensive for most shippers"
+          ],
+          "answer": 1,
+          "explanation": "The box was simple; reorganising the whole transport system around it was the slow part."
+        },
+        {
+          "question": "Why did many historic city-centre ports decline?",
+          "options": [
+            "Their harbours were too shallow for modern ships",
+            "Their dockworkers refused to work with containers",
+            "Containers were taxed more heavily in cities",
+            "They lacked space for cranes and container yards"
+          ],
+          "answer": 3,
+          "explanation": "Container handling needs large areas of open land, which cramped waterfronts could not provide."
+        }
+      ]
+    },
+    {
+      "date": "2026-11-09",
+      "kind": "book",
+      "title": "Never Split the Difference",
+      "author": "Chris Voss",
+      "hook": "A former FBI hostage negotiator argues that most business negotiations fail for the same reason kidnapping talks do: one side tries to win the argument instead of understanding the other. His toolkit is surprisingly gentle, and surprisingly effective.",
+      "sections": [
+        {
+          "heading": "From hostage talks to sales calls",
+          "body": "Chris Voss spent years as the FBI's lead international kidnapping negotiator, and after leaving the bureau he began teaching negotiation to business students and executives. His central claim sounds almost heretical in a business school: people are not the rational calculators that classic negotiation theory assumes. Under pressure they are driven by fear, pride and the need to feel in control, and a negotiator who ignores emotions is ignoring most of the game.\n\nThat is also why he distrusts the idea of meeting halfway. Splitting the difference often produces a compromise that neither side really wanted, chosen mainly because it ends the discomfort of disagreeing. Voss would rather find out what the other party actually needs and build the deal around that."
+        },
+        {
+          "heading": "Tactical empathy",
+          "body": "The core of the method is what Voss calls tactical empathy: deliberately working out how the other side sees the situation and then saying it out loud. Empathy here is not agreement or sympathy. You can understand someone's position perfectly without conceding anything. The point is that people who feel understood stop defending themselves and start talking, and the more they talk, the more you learn.\n\nTwo simple tools do most of the work. Mirroring means repeating the last few words the other person said, with a slightly questioning tone, which nudges them to elaborate. Labelling means naming the emotion or concern you sense, for example: \"It sounds like the delivery timeline is what really worries you.\" A well-chosen label defuses tension, and a wrong one costs little, because the other side will simply correct you, which is useful information too."
+        },
+        {
+          "heading": "Why 'no' is a good start",
+          "body": "Voss is sceptical of several pieces of sales folklore. Pushing someone towards an early \"yes\" tends to make them wary: they sense a trap and dig in. A \"no\", by contrast, makes people feel safe and in control, so it often opens the real conversation. Asking whether something would be a bad idea invites a comfortable no that actually moves things forward.\n\nHe also distinguishes between two kinds of agreement. \"You're right\" is frequently what people say just to end a discussion. The response worth aiming for is \"that's right\", which signals that the other side recognises its own view in your summary. Another technique is the accusation audit: before making a difficult proposal, list the negative things the other side probably thinks about you and say them first. This takes the sting out of their objections and makes you seem fair rather than defensive.\n\nBehind all of these techniques lies one observation: people are far more afraid of losing something than they are excited about gaining something of equal value. Voss suggests framing your proposal around what the other side stands to lose by walking away, rather than around what they might gain, because a potential loss tends to concentrate the mind far more effectively."
+        },
+        {
+          "heading": "Questions that hand the problem back",
+          "body": "Instead of flatly rejecting an unreasonable demand, Voss recommends calibrated questions: open questions beginning with \"how\" or \"what\" that hand the problem back to the other side. Asking how a requested deadline could realistically be met forces the customer to engage with your constraints, without you ever having to refuse outright. Questions beginning with \"why\" are best avoided, because they tend to sound accusatory.\n\nOn price, he favours a structured approach: set an ambitious target, make a series of shrinking concessions, and finish on a precise, non-round number. An offer of 37,850 euros sounds like the result of careful calculation; 40,000 sounds like an opening bid waiting to be haggled down."
+        },
+        {
+          "heading": "Using it at work",
+          "body": "For anyone selling software to transit operators or negotiating scope with stakeholders, the main lesson is to slow down. Spend the first part of a tough meeting finding out what the other side fears, what constraints they face and who else must approve the deal. Label their worries, summarise until they agree with your summary, and only then talk about your offer.\n\nNone of this is manipulation if it is done honestly. At its best, the method is simply disciplined listening, and in most negotiations careful listening is a rarer and more valuable skill than clever arguing."
+        }
+      ],
+      "takeaway": "Negotiation is less about winning arguments than about making the other side feel genuinely understood. Listen, label and ask how before you ever name your price.",
+      "vocab": [
+        {
+          "word": "heretical",
+          "pos": "adjective",
+          "definition": "strongly opposed to generally accepted beliefs or opinions",
+          "pl": "heretycki, sprzeczny z przyjętymi poglądami",
+          "example": "Suggesting we ship fewer features felt almost heretical in that roadmap meeting."
+        },
+        {
+          "word": "defuses",
+          "pos": "verb",
+          "definition": "reduces the tension or danger in a difficult situation",
+          "pl": "rozładowuje (napięcie)",
+          "example": "A quick apology usually defuses an angry customer call faster than any explanation."
+        },
+        {
+          "word": "dig in",
+          "pos": "phrase",
+          "definition": "to refuse firmly to change your opinion or position",
+          "pl": "okopać się na swoim stanowisku, uprzeć się",
+          "example": "Once the client felt cornered, they started to dig in on every clause."
+        },
+        {
+          "word": "takes the sting out of",
+          "pos": "phrase",
+          "definition": "makes something less unpleasant, painful or hurtful",
+          "pl": "łagodzi, odbiera czemuś ostrze",
+          "example": "Admitting the delay up front takes the sting out of the bad news."
+        },
+        {
+          "word": "outright",
+          "pos": "adverb",
+          "definition": "completely and openly, without hesitation or reservation",
+          "pl": "wprost, otwarcie, kategorycznie",
+          "example": "The operator didn't reject the proposal outright, but asked for more data."
+        },
+        {
+          "word": "haggled down",
+          "pos": "phrase",
+          "definition": "(of a price) reduced through persistent bargaining",
+          "pl": "stargowany, zbity (o cenie)",
+          "example": "The quote was haggled down by nearly a fifth before the contract was signed."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "What does Voss mean by tactical empathy?",
+          "options": [
+            "Agreeing with the other side to build trust",
+            "Understanding and voicing the other side's perspective without necessarily agreeing",
+            "Hiding your own emotions during the negotiation",
+            "Offering early concessions to show goodwill"
+          ],
+          "answer": 1,
+          "explanation": "Tactical empathy is about showing you understand the other side's view, which is not the same as conceding to it."
+        },
+        {
+          "question": "Why does Voss value hearing 'no' early in a conversation?",
+          "options": [
+            "It ends unproductive talks quickly",
+            "It shows the other side is bluffing",
+            "It makes people feel safe and in control, which opens the real conversation",
+            "It signals that your price is too high"
+          ],
+          "answer": 2,
+          "explanation": "Saying no lets people feel protected, so they relax and reveal what they actually need."
+        },
+        {
+          "question": "What is a calibrated question?",
+          "options": [
+            "An open 'how' or 'what' question that hands the problem back to the other side",
+            "A yes-or-no question that forces a decision",
+            "A 'why' question that challenges the other side's reasoning",
+            "A question that includes a precise, non-round number"
+          ],
+          "answer": 0,
+          "explanation": "Calibrated questions make the other side work on your constraints without you having to refuse."
+        }
+      ]
+    },
     {
       "author": "",
       "date": "2026-11-08",
