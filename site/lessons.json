@@ -111,6 +111,115 @@
       ]
     },
     {
+      "date": "2026-11-11",
+      "kind": "book",
+      "title": "Good Strategy Bad Strategy",
+      "author": "Richard Rumelt",
+      "hook": "Most documents labelled 'strategy' are really wish lists dressed up in ambitious language. Rumelt shows how to tell the difference, and why a real strategy is mostly about deciding what not to do.",
+      "sections": [
+        {
+          "heading": "Most strategies aren't strategies",
+          "body": "Richard Rumelt, a business school professor who spent decades advising companies and governments, noticed that a great deal of what passes for strategy is nothing of the kind. A typical strategy deck opens with a bold vision, lists a dozen goals, sprinkles in words like \"synergy\" and \"customer-centric\", and closes with a slide of company values. It looks impressive, yet it gives nobody a clue what to do differently on Monday morning.\n\nHe calls this bad strategy, and it is not merely the absence of a good one. It has recognisable symptoms: fluff, meaning grand, abstract language that masks a lack of real thinking; a failure to name the actual obstacle; treating ambitions and targets as if they were a plan; and objectives so numerous or so vague that they cannot guide anyone. \"Grow revenue by 30% and become the market leader\" is a wish, not a strategy. It says where you would like to end up, but nothing about why you are not there already or how you intend to get there."
+        },
+        {
+          "heading": "Why leaders settle for wish lists",
+          "body": "If bad strategy is so easy to spot, why is it everywhere? Partly because good strategy demands choices, and choices create losers. Picking one direction means telling some teams, customers or executives that their priority will have to wait. It is far more comfortable to staple everyone's wishes together into a long list and call it a strategic plan. Rumelt sees this as a failure of nerve rather than a failure of intelligence.\n\nThe other culprit is the popular belief that a positive attitude and an inspiring vision are enough on their own. Rumelt is blunt about this: enthusiasm is no substitute for analysis. A team can be highly motivated and still be heading confidently in the wrong direction."
+        },
+        {
+          "heading": "The kernel: diagnosis, guiding policy, coherent action",
+          "body": "At the heart of the book is what Rumelt calls the kernel of good strategy. First comes a diagnosis: an honest account of what is going on and which challenge matters most. A good diagnosis simplifies a messy situation until it becomes tractable. Second, a guiding policy: an overall approach to that challenge, which rules some options in and, crucially, many others out. Third, coherent actions: concrete steps that dovetail with one another, so that effort is concentrated instead of being spread thin.\n\nImagine a vendor of depot charging software that keeps losing deals. Its diagnosis might be that operators do not doubt the features; they fear their buses will not be ready for the morning pull-out if something fails overnight. The guiding policy follows: compete on operational reliability rather than on feature count. The coherent actions then almost write themselves: invest in failover and alerting, publish uptime figures, train support for night-time incidents, and politely decline feature requests that do not serve that aim. That last action is the one most bad strategies quietly leave out."
+        },
+        {
+          "heading": "Where strategic power comes from",
+          "body": "Rumelt also describes the sources of advantage that good strategies exploit. Leverage means focusing effort on a pivotal point where a modest push produces outsized results. Proximate objectives are targets close enough to reach: an overwhelming ambition becomes manageable once it is turned into a nearby goal the team actually knows how to achieve.\n\nAnother idea will feel familiar to any engineer: chain-link systems. When performance depends on the weakest link, polishing one strong component achieves almost nothing, and the whole system only improves when the bottleneck is tackled. Finally, he warns about inertia and entropy. Organisations resist change, and left alone they drift towards disorder, so keeping a strategy alive takes continuous, deliberate attention."
+        },
+        {
+          "heading": "Putting it to work",
+          "body": "The book's most practical gift is a simple test you can apply to any plan, including your own roadmap. Ask three questions. What is the diagnosis? What does the policy rule out? Do the actions support each other? If every roadmap item can be justified on its own but nobody can explain how they add up, you have a list, not a strategy.\n\nA useful habit is to write the diagnosis in a single paragraph before discussing any solutions. It forces the hard conversation early, and it gives you a principled reason to say no later."
+        }
+      ],
+      "takeaway": "A strategy is a clear diagnosis of the critical challenge plus a focused, coherent response to it. If your plan does not say what you will stop doing, it is probably a wish list.",
+      "vocab": [
+        {
+          "word": "passes for",
+          "pos": "phrase",
+          "definition": "is accepted or regarded as something, often without deserving to be",
+          "pl": "uchodzi za",
+          "example": "In some meetings, talking loudly passes for leadership."
+        },
+        {
+          "word": "masks",
+          "pos": "verb",
+          "definition": "hides or disguises something so that it is not noticed",
+          "pl": "maskuje, ukrywa",
+          "example": "A polished dashboard often masks how unreliable the underlying data is."
+        },
+        {
+          "word": "failure of nerve",
+          "pos": "phrase",
+          "definition": "a loss of courage at the moment a difficult decision has to be made",
+          "pl": "brak odwagi, stchórzenie",
+          "example": "Keeping all twelve projects alive was less a compromise than a failure of nerve."
+        },
+        {
+          "word": "tractable",
+          "pos": "adjective",
+          "definition": "easy enough to deal with, manage or solve",
+          "pl": "wykonalny, dający się rozwiązać",
+          "example": "Splitting the migration into three phases made the problem far more tractable."
+        },
+        {
+          "word": "dovetail",
+          "pos": "verb",
+          "definition": "to fit together well or complement each other neatly",
+          "pl": "zazębiać się, idealnie do siebie pasować",
+          "example": "Our release plan needs to dovetail with the customer's depot schedule."
+        },
+        {
+          "word": "outsized",
+          "pos": "adjective",
+          "definition": "much larger than would normally be expected",
+          "pl": "nieproporcjonalnie duży",
+          "example": "A single well-placed alert had an outsized effect on night-shift downtime."
+        }
+      ],
+      "quiz": [
+        {
+          "question": "Which of these is a hallmark of bad strategy, according to Rumelt?",
+          "options": [
+            "Naming the single most important obstacle",
+            "Treating ambitious targets as if they were a plan",
+            "Concentrating resources on a few actions",
+            "Explicitly ruling some options out"
+          ],
+          "answer": 1,
+          "explanation": "A target describes where you want to be, but a strategy must explain how to overcome what stands in the way."
+        },
+        {
+          "question": "What are the three elements of the 'kernel' of good strategy?",
+          "options": [
+            "Vision, mission and values",
+            "Goals, KPIs and deadlines",
+            "Diagnosis, guiding policy and coherent actions",
+            "Leverage, inertia and entropy"
+          ],
+          "answer": 2,
+          "explanation": "The kernel links an honest diagnosis to an overall approach and to actions that reinforce each other."
+        },
+        {
+          "question": "In a chain-link system, what happens if you improve only an already strong component?",
+          "options": [
+            "Very little, because the weakest link still limits the whole",
+            "Performance improves in proportion to the effort",
+            "The weakest link automatically improves too",
+            "The system becomes more prone to entropy"
+          ],
+          "answer": 0,
+          "explanation": "When the weakest link sets the limit, only tackling that bottleneck raises overall performance."
+        }
+      ]
+    },
+    {
       "date": "2026-11-10",
       "kind": "curiosity",
       "title": "The Steel Box That Shrank the World",
